@@ -1,12 +1,9 @@
 ---
-title:  "Learning Hugo"
-date:   2022-02-15 16:08:22 -0500
+title:  "Learning Hugo yo"
+date:   2022-02-16 16:08:22 -0500
 summary: So, I'm learning Hugo.
 description: A review of how I'm learning Hugo.
 tag: hugo
-image:
-  src: featured.jpg
-  alt: Me
 ---
 
 So, I'm learning Hugo.
@@ -42,5 +39,3 @@ image:
   alt: Me
 ---
 ```
-
-The featured image can also be set as a site-wide variable in the Config file. Tip: The image aspect ratio should be 1.91 : 1, with the usual size being 1200x627 pixels. Obviously, the site-wide featured image will be overwritten by local page bundles with featured images.

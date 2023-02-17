@@ -12,14 +12,14 @@ theme = "exampleTheme"
 
   # SEO
   description = 'Website and blog of Rick Wysocki.'
-  images = 'assets/images/bio-photo.png'
+  images = ['assets/images/bio-photo.png']
   # canonical_url = 'https://url.com'
 
   # Links / Socials
   email = 'rlwysockijr@gmail.com'
   github = 'rickwysocki'
   mastodon = 'https://mas.to/@rickwysocki'
-  # twitter = ''
+  # twitter = '' fix user name
   # instagram = ''
   # facebook = ''
 
