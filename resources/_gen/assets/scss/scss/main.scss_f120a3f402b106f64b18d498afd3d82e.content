@@ -1,0 +1,66 @@
+html {
+  font-size: 20px; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Bungee', sans-serif;
+  color: indigo-400;
+  text-transform: uppercase; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: indigo-400; }
+
+a {
+  color: red; }
+
+.jumbotron {
+  padding: 5em;
+  margin-bottom: 2em;
+  box-shadow: indigo-400 0 15px 0;
+  border: solid indigo-400 1px;
+  border-radius: 15px; }
+
+img {
+  max-width: 100%; }
+
+.navbar-brand {
+  font-family: 'Bungee', cursive;
+  color: indigo-400; }
+
+.loading {
+  font-family: 'Bungee', cursive;
+  color: indigo-400;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 1800ms infinite;
+  animation: ellipsis steps(4, end) 1800ms infinite;
+  content: "\2026";
+  /* ascii code for the ellipsis character */
+  width: 0px; }
+
+@keyframes ellipsis {
+  to {
+    width: 12em; } }
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.5em; } }
+
+.card p, .card-body a {
+  font-size: 0.75rem; }
+
+.post-list-title {
+  box-shadow: indigo-400 0 5px 0;
+  border: solid indigo-400 1px;
+  border-radius: 5px;
+  padding: 1.5rem; }

@@ -1,0 +1,49 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Output Error'
+theme = "exampleTheme"
+
+
+[params]
+
+  # Site info
+  author = 'Rick Wysocki'
+  author_bio = "Teacher and Zen Buddhist living in Muncie, IN."
+
+  # SEO
+  # description = 'test description'
+  # canonical_url = 'https://url.com'
+
+  # Links / Socials
+  email = 'rlwysockijr@gmail.com'
+  github = 'rickwysocki'
+  mastodon = 'https://mas.to/@rickwysocki'
+  # twitter = ''
+  # instagram = ''
+  # facebook = ''
+
+  # To-Do
+  # Analytics
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "fa fa-home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    pre = "fa fa-keyboard"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+      name = "Resources"
+      pre = "fa fa-book"
+      url = "/resources/"
+      weight = 3
+  [[menu.main]]
+    name = "Tags"
+    pre = "fa fa-tag"
+    url = "/tags/"
+    weight = 4

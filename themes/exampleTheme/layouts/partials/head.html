@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Is this necessary?-->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+
+    <!-- Load Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/68345f7fdb.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Get / Process SCSS -->
+    {{ $css := resources.Get "scss/custom.scss" }}
+    {{ $css = $css | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+
+
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+
+    {{- partial "seo.html" . -}}
+
+</head>
