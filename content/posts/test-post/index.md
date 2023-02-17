@@ -27,3 +27,5 @@ Ideas for the theme name? Here's a few off-the-top:
 {{< figure src="https://placeimg.com/640/350/any" alt="placeholder image" caption="Dumb placeholder image." >}}
 
 Here's an extra lil change made on the "test-commit" branch.
+
+Now we're going to merge these dumb changes back into the master.
