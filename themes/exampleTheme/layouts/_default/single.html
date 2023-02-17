@@ -2,5 +2,6 @@
 <h1>{{ .Title }}</h1>
 {{ partial "metadata.html" . }}
 <br><br>
+{{ if isset .Page.Params `image` }}<img src="{{ .Page.Params.image }}" />{{ end }}
 {{ .Content }}
 {{ end }}

@@ -11,7 +11,8 @@ theme = "exampleTheme"
   author_bio = "Teacher and Zen Buddhist living in Muncie, IN."
 
   # SEO
-  # description = 'test description'
+  description = 'Website and blog of Rick Wysocki.'
+  images = 'assets/images/bio-photo.png'
   # canonical_url = 'https://url.com'
 
   # Links / Socials

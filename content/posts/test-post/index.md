@@ -2,7 +2,9 @@
 title:  "Learning Hugo"
 date:   2022-02-15 16:08:22 -0500
 summary: So, I'm learning Hugo.
-
+description: A review of how I'm learning Hugo.
+tag: hugo
+image: https://placeimg.com/640/480/any
 ---
 
 So, I'm learning Hugo.
@@ -23,9 +25,3 @@ There's still a lot to do, though:
 Ideas for the theme name? Here's a few off-the-top:
 
 - Super Simple Hugo
-
-{{< figure src="https://placeimg.com/640/350/any" alt="placeholder image" caption="Dumb placeholder image." >}}
-
-Here's an extra lil change made on the "test-commit" branch.
-
-Now we're going to merge these dumb changes back into the master.
