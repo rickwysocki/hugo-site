@@ -1,6 +1,11 @@
+// Write custom variables.
 
-$primary: blue;
 
+
+// Import Boostrap SCSS.
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Custom CSS.
 html {
   font-size: 20px;
 }
@@ -22,9 +27,6 @@ h2, h3, h4, h5, h6 {
   color: $primary;
 }
 
-a {
-  color: $primary;
-}
 
 .jumbotron {
   padding: 5em;
