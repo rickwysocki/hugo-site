@@ -7,7 +7,7 @@
 
 {{ with $image }}
 <figure>
-<img src="{{ .RelPermalink }}" alt=" {{ $.Params.featured_alt }}"/>
+<img src="{{ ($image.Resize "800x").RelPermalink }}" alt=" {{ $.Params.featured_alt }}"/>
 </figure>
 
 {{end}}
