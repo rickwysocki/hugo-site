@@ -3,10 +3,13 @@
 {{ partial "metadata.html" . }}
 <br><br>
 
-{{ $image := .Resources.GetMatch .Params.featured_image}}
+{{ $image := .Resources.GetMatch .Params.featured_image }}
 
 {{ with $image }}
-<img src="{{ .RelPermalink }}" />
+<figure>
+<img src="{{ .RelPermalink }}" alt=" {{ $.Params.featured_alt }}"/>
+</figure>
+
 {{end}}
 
 <!--

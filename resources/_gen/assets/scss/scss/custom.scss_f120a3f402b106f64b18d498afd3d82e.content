@@ -9077,8 +9077,14 @@ img {
   box-shadow: #0d6efd 0 5px 0;
   border: solid #0d6efd 1px;
   border-radius: 5px;
-  padding: 1.5rem;
+  padding: 0;
   margin-bottom: 2em; }
+
+.post-section .post-text-content {
+  padding: 1.5rem; }
+
+.post-section-image {
+  max-width: 400px; }
 
 figcaption p {
   color: grey; }

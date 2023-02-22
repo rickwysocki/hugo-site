@@ -4,7 +4,9 @@ date:   2022-02-15 16:08:22 -0500
 summary: So, I'm learning Hugo.
 description: A review of how I'm learning Hugo.
 tags: [hugo]
-featured_image: featured.jpg
+featured_image: featured.jpeg
+featured_alt: Here is some alt text.
+
 
 ---
 
