@@ -9086,5 +9086,6 @@ img {
 .post-section-image {
   max-width: 400px; }
 
-figcaption p {
-  color: grey; }
+figcaption {
+  color: grey;
+  text-align: center; }
