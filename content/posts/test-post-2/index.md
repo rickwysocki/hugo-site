@@ -9,7 +9,7 @@ featured_alt: Here is some other alt text.
 ---
   So, I'm learning Hugo.
 
-{{< global-image source="images/bio-photo.png" alt="test" caption="Hey there!" >}}
+{{< global-image source="images/featured.jpg" alt="test" caption="Hey there!" >}}
 
 This is a really fun framework, and I've learned more in about a week designing this site than I may ever have in such a condensed period of time.
 
