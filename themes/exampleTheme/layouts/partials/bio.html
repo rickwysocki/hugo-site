@@ -4,11 +4,11 @@
     <h5 class="card-title">{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</h5>
     <p class="card-text text-muted">{{ .Site.Params.author_bio }}</p>
 
-  <div class="d-flex justify-content-between card-body card-social p-0">
-    {{ if isset .Site.Params `email` }}<a href="mailto:{{ .Site.Params.email }}"><i class="fa fa-envelope fa-lg"></i></a>{{ end }}
-    {{ if isset .Site.Params `github` }}<a href="https://github.com/{{ .Site.Params.github }}"><i class="fa fa-github fa-lg"></i></a>{{ end }}
-    {{ if isset .Site.Params `twitter` }}<a href="{{ .Site.Params.twitter }}"><i class="fab fa-twitter fa-lg"></i></a>{{ end }}
-    {{ if isset .Site.Params `mastodon` }}<a href="{{ .Site.Params.mastodon }}"><i class="fab fa-mastodon fa-lg"></i></a>{{ end }}
+  <div class="d-flex card-body card-social p-0">
+    {{ if isset .Site.Params `email` }}<a href="mailto:{{ .Site.Params.email }}"><i class="m-2 fa fa-envelope fa-lg"></i></a>{{ end }}
+    {{ if isset .Site.Params `github` }}<a href="https://github.com/{{ .Site.Params.github }}"><i class="m-2 fa fa-github fa-lg"></i></a>{{ end }}
+    {{ if isset .Site.Params `twitter` }}<a href="{{ .Site.Params.twitter }}"><i class="m-2 fab fa-twitter fa-lg"></i></a>{{ end }}
+    {{ if isset .Site.Params `mastodon` }}<a href="{{ .Site.Params.mastodon }}"><i class="m-2 fab fa-mastodon fa-lg"></i></a>{{ end }}
 
   </div>
   </div>

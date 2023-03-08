@@ -4,9 +4,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Custom CSS.
-html {
-  font-size: 20px;
-}
+/*
 
 body {
   display: flex;
@@ -26,7 +24,7 @@ h2, h3, h4, h5, h6 {
 }
 
 
-.jumbotron {
+/* .jumbotron {
   padding: 5em;
   margin-bottom: 2em;
   box-shadow: $primary 0 15px 0 ;
@@ -34,9 +32,7 @@ h2, h3, h4, h5, h6 {
   border-radius: 15px;
 }
 
-img {
-  width: 100%;
-}
+
 
 .navbar-brand {
   font-family: 'Bungee', cursive;
@@ -51,34 +47,18 @@ img {
 }
 
 
-.loading:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4,end) 1800ms infinite;
-  animation: ellipsis steps(4,end) 1800ms infinite;
-  content: "\2026"; /* ascii code for the ellipsis character */
-  width: 0px;
-}
 
-@keyframes ellipsis {
-  to {
-    width: 12em;
-  }
-}
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.5em;
-  }
-}
 
 .card p, .card-body a {
   font-size: 0.75rem;
 }
 
+*/
+img {
+  width: 100%;
+}
 .post-section {
-  box-shadow: $primary 0 5px 0 ;
+  //box-shadow: $primary 0 5px 0 ;
   border: solid $primary 1px;
   border-radius: 5px;
   padding: 0;
@@ -96,4 +76,35 @@ img {
 figcaption {
   color: grey;
   text-align: center;
+}
+
+footer {
+  background-color: $secondary;
+  color: white;
+}
+
+body > footer > div > div > div > a {
+  color: white;
+}
+
+.footer-info {
+  padding: 4rem;
+  gap: 1.5rem;
+}
+
+footer img {
+  border-radius: 100px;
+  width: 100px;
+  height: 100%;
+}
+
+@include media-breakpoint-down(sm) {
+  footer .footer-info {
+    flex-direction: column;
+  }
+
+  footer img {
+    align-self: center;
+  }
+
 }

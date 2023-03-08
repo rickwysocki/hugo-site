@@ -1,1 +1,22 @@
+<footer>
+
+<div class="container footer-info d-flex flex-direction-row">
+<img src="/images/bio-photo.png" alt="Card image cap">
+<div>
+  <h5>{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</h5>
+  <hr>
+  <p>{{ .Site.Params.author_bio }}</p>
+
+<div class="d-flex mr-4">
+  {{ if isset .Site.Params `email` }}<a href="mailto:{{ .Site.Params.email }}"><i class="m-2 fa fa-envelope fa-lg"></i></a>{{ end }}
+  {{ if isset .Site.Params `github` }}<a href="https://github.com/{{ .Site.Params.github }}"><i class="m-2 fa fa-github fa-lg"></i></a>{{ end }}
+  {{ if isset .Site.Params `twitter` }}<a href="{{ .Site.Params.twitter }}"><i class="m-2 fab fa-twitter fa-lg"></i></a>{{ end }}
+  {{ if isset .Site.Params `mastodon` }}<a href="{{ .Site.Params.mastodon }}"><i class="m-2 fab fa-mastodon fa-lg"></i></a>{{ end }}
+
+</div>
+</div>
+</div>
+
 {{ if isset .Site.Params `mastodon` }}<a rel="me" href="{{ .Site.Params.mastodon }}"></a>{{ end }}
+
+</footer>
