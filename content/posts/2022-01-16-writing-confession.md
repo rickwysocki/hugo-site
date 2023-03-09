@@ -1,7 +1,6 @@
 ---
 title: "Writing The Confession"
 date:  2022-01-16 13:54:22 -0500
-draft: true
 categories: random
 excerpt: I don’t write every day. In fact, during our first class for the semester this past week, I asked my research writing students to share one thing they liked about writing and one thing they disliked about it.
 header:

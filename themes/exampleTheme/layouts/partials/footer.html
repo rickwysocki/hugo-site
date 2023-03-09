@@ -1,7 +1,13 @@
 <footer>
 
 <div class="container footer-info d-flex flex-direction-row">
-<img src="/images/bio-photo.png" alt="Card image cap">
+
+
+{{ $image := resources.Get .Site.Params.site_image }}
+<img src="{{ ($image.Resize "200x").RelPermalink }}" />
+
+
+
 <div>
   <h5>{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</h5>
   <hr>

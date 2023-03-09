@@ -10,7 +10,7 @@ featured_alt: Here is some alt text.
 
 ---
 
-So, I'm learning Hugo.
+So, I'm learning Hugo. [www.test.com](test)
 
 This is a really fun framework, and I've learned more in about a week designing this site than I may ever have in such a condensed period of time.
 

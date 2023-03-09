@@ -1,5 +1,9 @@
-<aside class="card col-lg-2 p-0 me-2">
-  <img class="card-img" src="/images/bio-photo.png" alt="Card image cap">
+<aside class="card bio col-lg-3 p-0 me-2">
+
+  {{ $image := resources.Get .Site.Params.site_image }}
+  <img class="card-img" src="{{ ($image.Resize "600x").RelPermalink }}" alt="Card image cap">
+
+
   <div class="card-body">
     <h5 class="card-title">{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</h5>
     <p class="card-text text-muted">{{ .Site.Params.author_bio }}</p>

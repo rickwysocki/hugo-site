@@ -1,6 +1,4 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-
 {{ template "_internal/pagination.html" . }}
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
@@ -16,6 +14,7 @@
     </div>
 </div>
 
+{{ if isset .Params `featured_image` }}
 <div class="post-section-image">
     {{ $image := .Resources.GetMatch .Params.featured_image}}
 
@@ -25,9 +24,10 @@
     />
 
     </div>
+
+  {{end}}
     </article>
     {{ end }}
-
 
 
 {{ end }}

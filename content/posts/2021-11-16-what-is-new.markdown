@@ -1,7 +1,6 @@
 ---
 title:  "What is New About New Media?"
 date:   2021-11-16 11:34:22 -0500
-draft: true
 tags:
   - media
 

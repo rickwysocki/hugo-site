@@ -1,7 +1,13 @@
 // Write custom variables.
 
+
+
 // Import Boostrap SCSS.
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.nav-item a {
+  color: $primary;
+}
 
 // Custom CSS.
 /*
@@ -54,12 +60,17 @@ h2, h3, h4, h5, h6 {
 }
 
 */
+
+html {
+  font-size: 18px;
+}
+
 img {
   width: 100%;
 }
 .post-section {
   //box-shadow: $primary 0 5px 0 ;
-  border: solid $primary 1px;
+  border: solid $secondary 1px;
   border-radius: 5px;
   padding: 0;
   margin-bottom: 2em;
@@ -81,6 +92,7 @@ figcaption {
 footer {
   background-color: $secondary;
   color: white;
+  margin-top: 4rem;
 }
 
 body > footer > div > div > div > a {
@@ -98,6 +110,22 @@ footer img {
   height: 100%;
 }
 
+.bio img {
+  height: 100%;
+}
+
+@include media-breakpoint-down(lg) {
+
+  .bio {
+    display: none;
+    flex-direction: row;
+  }
+
+  .bio img {
+    max-width: 200px;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   footer .footer-info {
     flex-direction: column;
@@ -106,5 +134,7 @@ footer img {
   footer img {
     align-self: center;
   }
+
+
 
 }

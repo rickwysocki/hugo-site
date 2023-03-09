@@ -1,7 +1,6 @@
 ---
 title: "Two Films on Catastrophe"
 date:  2022-01-05 11:34:22 -0500
-draft: true
 categories:
   - film
 header:
