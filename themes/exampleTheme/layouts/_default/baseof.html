@@ -2,7 +2,8 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-      <div class="container">
+      <div class="d-flex flex-column content">
+      <div class="container content">
 
         {{- partial "nav.html" . -}}
 
@@ -10,13 +11,12 @@
 
         <div class="row align-items-start justify-content-between">
 
-        <div class="col-lg-8">
+        <dv class="col-lg-8">
+
 
           {{- block "main" . }}{{- end }}
 
         </div>
-
-        {{- partial "bio.html" . -}}
 
         </div>
 
@@ -24,6 +24,6 @@
 
       {{- partial "footer.html" . -}}
       {{- partial "script.html" . -}}
-
+    </div>
     </body>
 </html>

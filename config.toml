@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Output Error'
+title = 'Bit Reducer'
 theme = "exampleTheme"
 
 
@@ -48,3 +48,7 @@ theme = "exampleTheme"
     pre = "fa fa-tag"
     url = "/tags/"
     weight = 4
+
+[taxonomies]
+  tag = "tags"
+  class = 'classes'

@@ -1,6 +1,7 @@
 // Write custom variables.
 
-
+$primary: blue;
+$secondary: lightgrey;
 
 // Import Boostrap SCSS.
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -65,6 +66,18 @@ html {
   font-size: 18px;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+
+
 img {
   width: 100%;
 }
@@ -91,13 +104,9 @@ figcaption {
 
 footer {
   background-color: $secondary;
-  color: white;
-  margin-top: 4rem;
+  width: 100%;
 }
 
-body > footer > div > div > div > a {
-  color: white;
-}
 
 .footer-info {
   padding: 4rem;
@@ -108,6 +117,10 @@ footer img {
   border-radius: 100px;
   width: 100px;
   height: 100%;
+}
+
+.bio {
+  background-color: $secondary;
 }
 
 .bio img {
@@ -124,17 +137,4 @@ footer img {
   .bio img {
     max-width: 200px;
   }
-}
-
-@include media-breakpoint-down(sm) {
-  footer .footer-info {
-    flex-direction: column;
-  }
-
-  footer img {
-    align-self: center;
-  }
-
-
-
 }

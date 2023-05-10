@@ -18,10 +18,10 @@
 <div class="post-section-image">
     {{ $image := .Resources.GetMatch .Params.featured_image}}
 
-    <img
+    <a href="{{ .RelPermalink }}"><img
         src="{{ with $image }}{{ ($image.Fill "600x400").RelPermalink }}{{end}}"
         alt="{{ print (.Params.featured_alt) }}"
-    />
+    /></a>
 
     </div>
 
