@@ -1,14 +1,14 @@
 // Write custom variables.
 
-// $primary: blue;
-// $secondary: lightgrey;
+$primary: blue;
+$secondary: lightgrey;
 
 // Import Boostrap SCSS.
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
-/*
+
 
 .nav-item a {
   color: $primary;
@@ -88,5 +88,3 @@ footer img {
     max-width: 200px;
   }
 }
-
-*/
