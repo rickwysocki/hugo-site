@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/68345f7fdb.js" crossorigin="anonymous"></script>
+
+    
+    
+    
+    <link rel="stylesheet" href="http://example.org/scss/custom.css" integrity="">
+
+
+    
+    
+    <title>Rick Wysocki | Hugo</title>
+
+    
+    <meta property="og:title" content="Hugo" />
+<meta property="og:description" content="A review of how I&#39;m learning Hugo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/2022-03-09-hugo/" /><meta property="og:image" content="http://example.org/posts/2022-03-09-hugo/featured.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-09T16:08:22-05:00" />
+<meta property="article:modified_time" content="2022-03-09T16:08:22-05:00" />
+
+
+    <meta name="author" content="Rick Wysocki"/>
+
+
+
+
+</head>
+<body>
+      <div class="d-flex flex-column content">
+      <div class="container content">
+
+<nav class="navbar navbar-expand-lg navbar-custom ">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <a class="navbar-brand" href="/">Rick Wysocki</a>
+
+  
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+      
+      <li class="nav-item"><a class="nav-link" href="/">
+      
+      
+      <i class="fa fa-home"></i><!--<i data-feather="%!s(MISSING)"></i>--> 
+      
+      
+      Home
+      </a></li>
+      
+      <li class="nav-item"><a class="nav-link" href="/resume/">
+      
+      
+      <i class="fa fa-tag"></i><!--<i data-feather="%!s(MISSING)"></i>--> 
+      
+      
+      Résumé
+      </a></li>
+      
+      <li class="nav-item"><a class="nav-link" href="/posts/">
+      
+      
+      <i class="fa fa-keyboard"></i><!--<i data-feather="%!s(MISSING)"></i>--> 
+      
+      
+      Posts
+      </a></li>
+      
+      <li class="nav-item"><a class="nav-link" href="/teaching/">
+      
+      
+      <i class="fa fa-book"></i><!--<i data-feather="%!s(MISSING)"></i>--> 
+      
+      
+      Teaching
+      </a></li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+<header>
+  <h1>Hugo</h1>
+</header>
+<div class="row align-items-start justify-content-between">
+
+        <dv class="col-lg-8">
+
+
+<i class="fa fa-calendar"></i>
+<time datetime="2022-03-09">Mar 9, 2022</time>
+
+<i class="fa fa-tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="http://example.org/tags/hugo">hugo</a>
+
+
+
+<br><br>
+
+
+
+
+<figure>
+<img src="/posts/2022-03-09-hugo/featured_hu2f243ee2ceab0c6d30b239e18ff6058b_1162800_800x0_resize_box_3.png" alt=" Here is some alt text."/>
+</figure>
+
+
+
+<h2 id="intro">Intro</h2>
+<p>A few months ago, I got tired of dealing with my Jekyll site. That site was hosted on GitHub pages and used the Minimal Mistakes theme, which I continue to love. My issue, though, was that using a remote theme that I didn&rsquo;t quite understand led to ongoing difficulties with deployment. These, of course, all stemmed from user error.</p>
+<p>Frustrated again by a site that wouldn&rsquo;t build or deploy, I said: &ldquo;Screw it. I&rsquo;m going to readymade option.&rdquo; I chose Ghost.</p>
+<p>This platform seemed to have a lot of value:</p>
+<ul>
+<li>It seemed oriented toward writing and content over anything else.</li>
+<li>There are a lot of cool analytics features within the platform.</li>
+<li>It worked.</li>
+</ul>
+<p>I was unable to stick with Ghost.</p>
+<p>The site worked, for sure. But it didn&rsquo;t give me the kind of granular control over content that I wanted. Worse, it didn&rsquo;t let me me <em>tinker</em>, which is the most important feature of a technology, to me.</p>
+<p>So, I decided to learn how to create a Hugo site, from scratch.</p>
+<h2 id="prior-knowledge">Prior Knowledge</h2>
+<p>I went into this project knowing essentially nothing except about Hugo except its branded tagline: &ldquo;A content manager&rsquo;s dream.&rdquo; That was enough to hook me in. Sure, I&rsquo;ve had tons of experience with HTML, CSS/SCSS, and the relevant languages and markup syntax involved in Jekyll, like Liquid and Ruby. But I had no experience with Go, the language on which Hugo is based, or any of the other relevant aspects of the Hugo framework.</p>
+<h2 id="current-knowledge">Current Knowledge</h2>
+<p>I&rsquo;ve taught myself&hellip; a lot. Over the past several weeks, I&rsquo;ve gone from knowing nothing to having built a pretty much fully functional Hugo site. It may not look like much, currently being pretty &ldquo;Bootstrap-y,&rdquo; but there&rsquo;s plenty of time to figure that out on a rolling basis.</p>
+<p>Here is a list of things I&rsquo;ve learned and / or built into this site during this process:</p>
+<ul>
+<li>Pretty much all of the methods of image processing available in Hugo. I put this first because it was probably the most difficult aspect of the project, requiring the most head-scratching and figuring out how Go works as a language. All of the images across the site are sized automatically to increase page-load time. That&rsquo;s pretty cool.</li>
+<li>Lots (lots!) about SEO and what to include as far as metadata goes. I knew a fair amount about this, but Minimal Mistakes did a lot of things automatically that I didn&rsquo;t understand and had to learn.</li>
+<li>Foregrounding site and page parameters to follow DRY principles as much as I possibly could. My plan is to release the final version of this theme as a project on GitHub, so I&rsquo;ve designed this version to be as modular, customizable, and user-oriented as possible. More can and will be done here, but I&rsquo;m happy with it so far.</li>
+<li>Lots about Hugo shortcodes. One of my bugbears is writing accessible-first markup, as it should be for everyone. It was harder than I thought to create the ability to auto-resize image&ndash;which requires accessing them as as global or page resources&ndash;and also pass in thinks like alt-text and, as necessary, captions. So, I wrote some shortcodes that do just that. There are others that are less impressive but still useful. I&rsquo;ll detail those at a later time.</li>
+<li>While I&rsquo;ve used Bootstrap many times in the past, I&rsquo;ve never done so using NPM. I wanted a deeper level of customizability (you probably can&rsquo;t currently tell, to be fair), so I learned how to use the NPM version of Bootstrap.</li>
+<li>Finally, I&rsquo;ve just spent a lot of time messing around with the Hugo way of managing content. There&rsquo;s a lot more to come in that regard (see below), but I&rsquo;ve learned a lot and am loving it so far.</li>
+</ul>
+<h2 id="next-steps">Next Steps</h2>
+<p>While I&rsquo;m happy with all the work I&rsquo;ve done here, there are quite a few things I want to get squared away. Here&rsquo;s a list of what&rsquo;s to come.</p>
+<ul>
+<li><strong>The visual design.</strong> I know it, you know it; this site looks very boring. A next move will be focusing on a visual redesign of some of what I have here so far.</li>
+<li><strong>Bringing in more content.</strong> I&rsquo;m planning to bring in old posts and resources, but relatively slowly. The reason is that I want to be exactingly intentional about how I create the content structure for what I have here.</li>
+<li><strong>Release the theme.</strong> The nice thing is that I&rsquo;m really not all that far away from this. I&rsquo;ll probably send something up to GitHub once I figure out the visual redesign.</li>
+</ul>
+<p>Fun stuff! I&rsquo;ve learned so much building this site and developed a lot of useful new skills.</p>
+
+
+
+        </div>
+
+        </div>
+
+      </div><footer>
+
+<div class="align-self-end container footer-info d-flex flex-direction-row justify-space-between">
+
+
+
+<img src="/images/bio-photo_huf084c210050d3cc48af9a5de934ca2fe_301705_200x0_resize_box_3.png" />
+
+
+
+<div>
+  <h5>Rick Wysocki</h5>
+  <hr>
+  <p>Teacher and Zen Buddhist living in Muncie, IN.</p>
+
+<div>
+  <a href="mailto:rlwysockijr@gmail.com"><i class="m-2 fa fa-envelope fa-lg"></i></a>
+  <a href="https://github.com/rickwysocki"><i class="m-2 fa fa-github fa-lg"></i></a>
+  
+  <a href="https://mas.to/@rickwysocki"><i class="m-2 fab fa-mastodon fa-lg"></i></a>
+
+</div>
+</div>
+</div>
+
+<a rel="me" href="https://mas.to/@rickwysocki"></a>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/teaching/courses/</loc>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2022-03-09T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/hugo/</loc>
+    <lastmod>2022-03-09T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2022-03-09-hugo/</loc>
+    <lastmod>2022-03-09T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2022-03-09T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2022-03-09T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/courses/</loc>
+    <lastmod>2021-11-26T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/teaching/obsidian-as-a-teaching-tool/</loc>
+    <lastmod>2021-11-26T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/teaching/</loc>
+    <lastmod>2021-11-26T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/courses/writing-in-digital-environments/</loc>
+    <lastmod>2021-11-26T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/resume/</loc>
+  </url>
+</urlset>

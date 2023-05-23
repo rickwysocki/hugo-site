@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching on Rick Wysocki</title>
+    <link>http://example.org/teaching/</link>
+    <description>Recent content in Teaching on Rick Wysocki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Nov 2021 16:08:22 -0500</lastBuildDate><atom:link href="http://example.org/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Courses</title>
+      <link>http://example.org/teaching/courses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/teaching/courses/</guid>
+      <description>During my time as a college educator, I&amp;rsquo;ve designed and taught the following courses:
+Ball State University Writing in Digital Environments Introduction to Professional Writing Composing Research Writing Rhetoric and Writing University of Louisville Business Writing Scientific and Technical Writing American Literature (1850-Present) Intermediate College Writing Introduction to College Writing </description>
+    </item>
+    
+    <item>
+      <title>Obsidian As a Teaching Tool</title>
+      <link>http://example.org/teaching/obsidian-as-a-teaching-tool/</link>
+      <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
+      
+      <guid>http://example.org/teaching/obsidian-as-a-teaching-tool/</guid>
+      <description>Introduction This post details how I used the digital knowledge base and note-taking application Obsidian in a college course I taught last year, Writing in Digital Environments. I wanted students to engage in born-digital creative knowledge-making. Being a Zettelkasten fanatic and an Obsidian user, my first thought was Obsidian.
+My concern, though, was that Obsidian is not a collaborative tool: it&amp;rsquo;s designed for personal knowledge management. I brainstormed a number of different ideas and nearly decided to use Wiki.</description>
+    </item>
+    
+  </channel>
+</rss>
