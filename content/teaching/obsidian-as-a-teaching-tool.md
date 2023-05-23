@@ -1,7 +1,7 @@
 ---
 title: "Obsidian As a Teaching Tool"
 date:   2021-11-26 16:08:22 -0500
-classes: ['Digital Writing']
+courses: ['Writing in Digital Environments']
 ---
 
 

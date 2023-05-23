@@ -9018,58 +9018,8 @@ textarea.form-control-lg {
 .nav-item a {
   color: blue; }
 
-/*
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  font-family: 'Bungee', sans-serif;
-  color: $primary;
-  text-transform: uppercase;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-  color: $primary;
-}
-
-
-/* .jumbotron {
-  padding: 5em;
-  margin-bottom: 2em;
-  box-shadow: $primary 0 15px 0 ;
-  border: solid $primary 1px;
-  border-radius: 15px;
-}
-
-
-
-.navbar-brand {
-  font-family: 'Bungee', cursive;
-  color: $primary;
-}
-
-.loading {
-  font-family: 'Bungee', cursive;
-  color: $primary;
-  text-transform: uppercase;
-  font-style: normal;
-}
-
-
-
-
-.card p, .card-body a {
-  font-size: 0.75rem;
-}
-
-*/
 html {
-  font-size: 18px; }
+  font-size: 22px; }
 
 body {
   min-height: 100vh;

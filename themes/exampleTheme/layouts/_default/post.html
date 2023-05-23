@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ partial "metadata.html" . }}
+<br><br>
 
 {{ $image := .Resources.GetMatch .Params.featured_image }}
 

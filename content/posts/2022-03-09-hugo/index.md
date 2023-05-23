@@ -7,6 +7,7 @@ tags: [hugo]
 featured_image: featured.png
 featured_alt: Here is some alt text.
 classes: ["Digital Writing"]
+layout: post
 ---
 
 ## Intro

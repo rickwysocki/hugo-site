@@ -5,7 +5,7 @@
 <article class="post-section d-flex flex-row justify-content-between">
 <div class="post-text-content">
     <h3 class="post-list-title"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    {{ partial "metadata.html" . }}
+    {{ if isset .Params `date` }}{{ partial "metadata.html" . }}{{ end }}
     <div class="summary" href="{{ .RelPermalink }}">
 
         <p>{{ .Summary }}</p>
