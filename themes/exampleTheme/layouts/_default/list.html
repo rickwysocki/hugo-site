@@ -1,11 +1,30 @@
+
 {{ define "main" }}
+
 {{ template "_internal/pagination.html" . }}
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
-<article class="post-section d-flex flex-row justify-content-between">
+
+<article class="post-section d-flex flex-row">
+
+<!--
+  {{ if isset .Params `featured_image` }}
+  <div class="post-section-image">
+      {{ $image := .Resources.GetMatch .Params.featured_image}}
+
+      <a href="{{ .RelPermalink }}"><img
+          src="{{ with $image }}{{ ($image.Fill "600x400").RelPermalink }}{{end}}"
+          alt="{{ print (.Params.featured_alt) }}"
+      /></a>
+
+      </div>
+
+    {{end}}
+
+    -->
 <div class="post-text-content">
     <h3 class="post-list-title"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    {{ if isset .Params `date` }}{{ partial "metadata.html" . }}{{ end }}
+    {{ partial "metadata.html" . }}
     <div class="summary" href="{{ .RelPermalink }}">
 
         <p>{{ .Summary }}</p>
@@ -14,20 +33,14 @@
     </div>
 </div>
 
-{{ if isset .Params `featured_image` }}
-<div class="post-section-image">
-    {{ $image := .Resources.GetMatch .Params.featured_image}}
 
-    <a href="{{ .RelPermalink }}"><img
-        src="{{ with $image }}{{ ($image.Fill "600x400").RelPermalink }}{{end}}"
-        alt="{{ print (.Params.featured_alt) }}"
-    /></a>
-
-    </div>
-
-  {{end}}
     </article>
-    {{ end }}
 
+
+
+  {{ end }}
+</div>
+
+</div>
 
 {{ end }}

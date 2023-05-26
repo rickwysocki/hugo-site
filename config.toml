@@ -1,4 +1,4 @@
-# baseURL = 
+# baseURL =
 languageCode = 'en-us'
 title = 'Rick Wysocki'
 theme = "exampleTheme"
@@ -54,3 +54,4 @@ theme = "exampleTheme"
 [taxonomies]
   tag = "tags"
   course = 'courses'
+  category = 'categories'
