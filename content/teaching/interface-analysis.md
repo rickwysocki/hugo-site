@@ -1,6 +1,7 @@
 ---
 title: "Interface Analysis"
 courses: ['Writing in Digital Environments']
+summary: An assignment sheet for an interface analysis essays I created for my course, Writing in Digital Environments.
 ---
 
 ## Learning Outcomes

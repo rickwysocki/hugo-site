@@ -12,7 +12,9 @@ theme = "exampleTheme"
 
   # SEO
   description = 'Website and blog of Rick Wysocki.'
-  site_image = 'images/bio-photo.png' # Add site-wide featured image here.
+  site_image = 'images/ghost.png' # Add site-wide featured image here.
+  author_image = 'images/bio-photo.png'
+  nav_logo = 'images/ghost.png'
   # canonical_url = 'https://url.com'
 
   # Links / Socials

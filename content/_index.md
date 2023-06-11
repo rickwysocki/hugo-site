@@ -3,6 +3,8 @@ title: "Home"
 layout: single
 ---
 
+{{< class class="alert alert-primary" >}}If you happen to stumble on this site before I move it to my main domain, please note that this site is under construction. I'm moving a lot of content from different places, including blog posts, teaching materials, and professional documents. There will almost certainly be a few mistakes across the site for a bit. More will be available soon!{{< /class >}}
+
 I am a seasoned writing educator with ten years of experience teaching university courses. During this time I've taught a number of courses in the areas of technical communication, business and professional writing, and academic research writing. As a teacher I'm passionate about creating immersive learning environments that give students the tools necessary to effectively communicate information to audiences across diverse contexts.
 
 I hold a Ph.D in Rhetoric and Composition from the University of Louisville. [My dissertation](https://duckduckgo.com) explored the documentation practices involved in the creation of the Williams-Nichols Archive, a collection of LGBTQ history assembled by Louisville activist David Williams and now held by the University of Louisville. This research led to a publication in *Rhetoric Review*, a premiere peer-reviewed journal in the field of rhetoric studies. I've additionally published a number of other academic pieces in both print and born-digital modalities.

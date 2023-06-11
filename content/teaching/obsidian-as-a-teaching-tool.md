@@ -2,6 +2,8 @@
 title: "Obsidian As a Teaching Tool"
 date:   2021-11-26 16:08:22 -0500
 courses: ['Writing in Digital Environments']
+summary: A description of how I used the note-taking platform Obsidian in my course, Writing in Digital Environments.
+published: false
 ---
 
 

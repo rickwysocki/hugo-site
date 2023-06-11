@@ -2,6 +2,7 @@
 title: "My Courses"
 layout: single
 weight: 1
+summary: An overview of university-level courses I've designed and taught.
 ---
 
 During my time as a college educator, I've designed and taught the following courses:

@@ -1,29 +1,65 @@
 // Write custom variables.
 
-$primary: blue;
-$secondary: lightgrey;
+// color pallete: #FDE900, #623CEA, #F7996E, #232020, #230C33
+
+$primary: #232020;
+$secondary: blue;
+$footer-color: #F2EFEA;
+$footer-bg-color: blue;
+
+
+
 
 // Import Boostrap SCSS.
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
 
 .nav-container {
   background-color: $secondary;
 }
 
 .nav-item a {
-  color: $primary;
+  color: #F2EFEA;
+
+}
+
+.page-title {
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 html {
-  font-size: 22px;
+  font-size: 21px;
 }
 
+.top {
+  background-color: $secondary;
+  border-bottom: 1px solid $primary;
+
+}
+
+hr {
+  color: $secondary;
+}
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #F2EFEA;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h5 {
+  color: $primary;
+  font-family: 'Anton', sans-serif;
 }
 
 .content {
@@ -36,11 +72,11 @@ img {
 
 
 .post-section {
-  border-bottom: solid 1px;
+  border-top: solid 1px;
   border-color: $secondary;
 
 /*
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 0;
   margin-bottom: 2em;
   background-color: $secondary;
@@ -56,20 +92,35 @@ img {
   height: 100%;
 }
 
+.taxonomy-list {
+  list-style: none;
+}
+
 figcaption {
   color: grey;
   text-align: center;
 }
 
+ //   #FDE900, #623CEA, ##F7996E, #232020, #230C33
+
 footer {
-  background-color: $secondary;
+  background-color: $footer-bg-color;
   width: 100%;
+  color: $footer-color;
+  border-top: 1px solid $primary;
 }
 
-.footer a {
-  color: black;
+footer h5 {
+  color: $footer-color;
 }
 
+footer hr {
+  color: $footer-color;
+}
+
+footer a {
+  color: $footer-color;
+}
 
 .footer-info {
   padding: 4rem;
@@ -78,17 +129,40 @@ footer {
 
 footer img {
   border-radius: 100px;
+  border: solid 1px $footer-bg-color;
   width: 100px;
   height: 100%;
 }
 
 .bio {
+  color: $footer-color;
   background-color: $secondary;
+  margin-bottom: 1rem;
+}
+
+.bio a {
+  color: $footer-color;
 }
 
 .bio img {
   height: 100%;
 }
+
+.bio hr {
+  color: $footer-color;
+}
+
+@include media-breakpoint-down(lg) {
+
+
+
+  .bio {
+    flex-direction: row;
+    display: none;
+  }
+}
+
+
 
 @include media-breakpoint-down(sm) {
 
@@ -96,7 +170,5 @@ footer img {
     flex-direction: column;
   }
 
-  .bio img {
-    max-width: 200px;
-  }
+
 }

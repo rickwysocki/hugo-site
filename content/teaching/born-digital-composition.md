@@ -1,7 +1,7 @@
 ---
 title: "Born-Digital Composition"
 courses: ['Writing in Digital Environments']
-
+summary: An assignment sheet for a born-digital composition I created for my course, Writing in Digital Environments.
 ---
 
 ## Learning Outcomes
@@ -25,12 +25,14 @@ You will choose a social or public issue that matters to you and imagine you wor
 
 There will be two deliverables for this assignment, with nested requirements:
 
-#### A Google Sites website including:
+A Google Sites website including:
 
 - A minimum of ten pages, each page including one component of content that could be repurposed. At least half of the pages should be written content. Additionally, while the content itself can be any length, there must be an explanation on each page of how the content can be combined with other components for different situations, audiences, and document requirements. These explanations should be a minimum of 100 words.
 - The licensing information for any visual elements you include / repurpose / remix. This should be clear in terms of Creative Commons images (see the 10.1 Slides for a review), but even if you are using Unsplash or similarly “open” platforms, you should cite the license that the image is shared under.
 
-#### A ~1-page professional memo, single-spaced. This memo will reflection on how you composed your content components, the digital-rhetorical considerations that informed them, and a few different example documents that could be authored with the content you produced. To be clear, you just need to describe these example documents, not actually produce them.
+A ~1-page professional memo, single-spaced.
+
+This memo will reflection on how you composed your content components, the digital-rhetorical considerations that informed them, and a few different example documents that could be authored with the content you produced. To be clear, you just need to describe these example documents, not actually produce them.
 
 ### Option 2: Critical-Interface Design
 This semester, we have discussed how digital interfaces frame our engagement with information. You may remember Selfe and Selfe’s call from early in the semester for English and Humanities majors to become more involved with interface design.

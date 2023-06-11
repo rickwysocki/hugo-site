@@ -1,0 +1,49 @@
+---
+layout: single
+title:  "Men (2022)"
+date:   2022-06-05 16:08:22 -0500
+summary: A few weeks ago, I went to see Alex Garland's film *Men*. I really enjoyed it as a movie and even more in the context of my burgeoning interest in both film genre studies and the specific genre of horror.
+featured_image: featured.jpg
+featured_alt: An image from the film Men of Harper, looking scared, in a tunnel.
+featured_caption: Harper, played by Jessie Buckley.
+
+---
+
+A few weeks ago, I went to see Alex Garland's film *Men*. I really enjoyed it as a movie and even more in the context of my burgeoning interest in both film genre studies and the specific genre of horror.
+
+It needs to be said, first, that genre is notoriously tricky to pin down as a concept, not least so because it's often referred to in different ways in different conversations. I'll be writing another post soon on the concept of genre as it relates to film.
+
+For now, though, here are a few useful notes. First, I take genre to ultimately be a category that mediates the expectations of the producers and receivers of art. In other words and in the context of film, genre affects how film-makers structure their work and what audiences should expect from that work.
+
+Rick Altman wrote in *Film/Genre* that genres tend to be approached through four operative metaphors:
+
+- as a **blueprint** for industry practices,
+- as a **structure** expected by the audience,
+- as an industry **label** used to market and communicate the film,
+- and as a **contract** of expectations between film-makers and audiences (14).
+
+Too often, however, critics tend to approach genres in reductive ways. Altman devotes most of his book to identifying and correcting these errors (again, I'll be dedicated a blog post to discuss this soon). One of his central concerns, though, is that critics tend to make sweeping claims about entire genres based on a relatively small collection of films (24). Rather than saying anything about the genre of horror itself, then, I'll just make a few comments about how *Men* relies on and repurposes some existing *expectations* about horror films in interesting ways.
+
+*Men*'s "birthing scene" is, in my estimation, what will linger in most viewers' minds. To me, it feels clearly informed by *Alien,* which assumes a similar focus on the grotesque-maternal. But, whereas the latter film offers body-horror through the presence of an external threat within (the Alien), *Men* locates the terrifying presence as interior to human / social masculinity. To some degree, this is reflective of Barry Langford's argument that horror has largely shifted from an interior to an exterior focus, external terror having lost much of its fright value (178). And, it's worth noting, Langford wrote this *before* the invention of the "A24 Film," which seems to take this interiorization toward its potential limit.
+
+Regardless, *Men* is aware of the expectations viewers bring to a horror picture. It's a common observation that horror films narrate anxieties related to changing gender roles as well as social difference, more broadly. As Langford noted, horror traditionally reflects an ideological ambiguity, both allowing for the "unmasking" of repressed actions but also the eventual restoration of the "status quo" (159). Vivian Sobchack, similarly, argued that both horror and science fiction fictionalize the presence of Others and the breakdown of the white, patriarchal, capitalist fantasy of the home-as-castle (8). *Men* certainly seems invested in both of these genre elements.
+
+But where the film departs from genre expectations, and the feature of the film that I honestly find far more interesting than the shock of the birthing scene, is Harper's refusal carry out her contractual obligation with the audience to murder James with the axe. In horror, "normality" is often re-established through the re-integration of the monstrous (Langford 172). In other words, the protagonist usually needs to internalize some element of the monster in order to destroy it. Examples of this abound, but a perhaps too-obvious example of this is the most recent *Scream* installment, where Sam's relation to Billy Loomis is revealed and she becomes, herself, righteously murderous.
+
+{{< page-image source=`scream-sam.jpg` alt="test" caption="Scream's Sam Carpenter, played by Melissa Barrera.">}}
+
+
+Juxtapose this against Garland's film. *Men* sets up the expectation for this resolution for nearly the entire film. Then, it is swiftly refused. We see the axe in the first act of the movie and say: "Oh, I know where this will go: This is a horror movie, and somebody is going to get axed." Instead, at the end of the film Harper sits beside the monster / James, exhausted. Asking him what he wants, James responds, "Your love." The film cuts to the next day and Riley (Harper's friend who she has been communicating with via FaceTime during this whole...ordeal) arrives and is revealed to be, herself, pregnant. Harper smiles.
+
+This is what I took away as the central message of the film: not only is misogyny dangerous (it certainly is), but it's exhausting, embarrassing, and childish. The gender lines are blurred in *Men* to show that masculinity's danger ultimately lies in its ineffectiveness. Harper's ex-boyfriend and the monster are presented as masculinity in its final throes, oscillating between aggression and physical abuse, on one hand, and pathetic social impotence, on the other. Both characters (to the extent that they are separate) are shown crying (like spoiled children) when Harper does not acquiesce their sexual and "romantic" demands.
+
+Neither does *Men* acquiesce to the genre, to the audience's expectation for a violent, righteous resolution of the plot. Because, maybe, that itself is part of the film 's critique.
+
+It's true that subverting of expectations is a central feature of horror contributes to the difficulty of defining it as a genre (Langford 160). And it's also true that a more cynical viewer would likely have guessed that *Men,* by virtue of it being an A24 film, wouldn't follow the typical violent script for narrative resolution.
+
+Still, though, in the context of the movies central theme of misogyny's violent, generational reproduction, Harper's refusal--as well as the revelation of Riley's non-grotesque pregnancy--feels fitting. If Sobchack is correct that a central feature of horror is articulating the figure of the child with a radical, transformed, and horrific vision of the future (11), Harper's (and the film's) refusal seems to suggest an alternate future, yet to unfold.
+
+## Works Cited
+- Altman, Rick. Film/Genre. Palgrave Macmillan, 1999.
+- Langford, Barry. Film Genre: Hollywood and Beyond. Edinburgh UP, 2005.
+- Sobchack, Vivian. “Child/Alien/Father: Patriarchal Crisis and Generic Exchange.” Camera Obscura: Feminism, Culture, and Media Studies, vol. 5, no. 3 (15), Dec. 1986, pp. 6–35. Silverchair, https://doi.org/10.1215/02705346-5-3_15-6.

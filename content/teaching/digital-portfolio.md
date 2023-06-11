@@ -2,6 +2,7 @@
 title: "Digital Portfolio"
 courses: ['Writing in Digital Environments']
 categories: ['assignments']
+summary: An assignment sheet for a digital portfolio I created for my course, Writing in Digital Environments.
 ---
 
 ## Learning Outcomes

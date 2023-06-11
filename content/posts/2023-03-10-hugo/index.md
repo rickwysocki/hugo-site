@@ -1,13 +1,10 @@
 ---
 title:  "Hugo"
-date:   2022-03-10 16:08:22 -0500
+date:   2023-03-10 16:08:22 -0500
 summary: So, I'm learning Hugo.
 description: A review of how I'm learning Hugo.
-tags: [hugo]
-categories: ['assignments']
 featured_image: featured.png
 featured_alt: Here is some alt text.
-classes: ["Digital Writing"]
 layout: post
 ---
 
