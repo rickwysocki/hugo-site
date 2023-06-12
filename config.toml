@@ -9,13 +9,13 @@ theme = "littleGhost"
   # Site info
   author = 'Rick Wysocki'
   author_bio = "Assistant Teaching Professor at Ball State University."
-  long_bio = "I am a university professor at Ball State University. I'm passionate about effective communication, research, and information design. My free time is spent learning new technologies, watching movies, and exploring new music."
+  long_bio = "I am a professor at Ball State University. I'm passionate about effective communication, research, and information design. My free time is spent learning new technologies, watching movies, and exploring new music."
 
   # SEO
   description = 'Website and blog of Rick Wysocki.'
   site_image = 'images/ghost.png' # Add site-wide featured image here.
-  author_image = 'images/bio-photo.png'
-  nav_logo = 'images/ghost.png'
+  author_image = 'images/bio-photo.png' # Used for main author bio card.
+  nav_logo = 'images/ghost.png' # Icon included in nav-bar.
   # canonical_url = 'https://url.com'
 
   # Links / Socials
