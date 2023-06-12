@@ -1,7 +1,7 @@
 # baseURL =
 languageCode = 'en-us'
 title = 'Rick Wysocki'
-theme = "exampleTheme"
+theme = "littleGhost"
 
 
 [params]
