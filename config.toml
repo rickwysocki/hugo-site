@@ -8,7 +8,8 @@ theme = "exampleTheme"
 
   # Site info
   author = 'Rick Wysocki'
-  author_bio = "Teacher and Zen Buddhist living in Muncie, IN."
+  author_bio = "Assistant Teaching Professor at Ball State University."
+  long_bio = "I am a university professor at Ball State University. I'm passionate about effective communication, research, and information design. My free time is spent learning new technologies, watching movies, and exploring new music."
 
   # SEO
   description = 'Website and blog of Rick Wysocki.'
@@ -35,22 +36,16 @@ theme = "exampleTheme"
     pre = "fa fa-home"
     url = "/"
     weight = 1
-
-  [[menu.main]]
-    name = "Résumé"
-    pre = "fa fa-tag"
-    url = "/resume/"
-    weight = 2
   [[menu.main]]
     name = "Posts"
     pre = "fa fa-keyboard"
     url = "/posts/"
-    weight = 3
+    weight = 2
   [[menu.main]]
       name = "Teaching"
       pre = "fa fa-book"
       url = "/teaching/"
-      weight = 4
+      weight = 3
 
 
 [taxonomies]

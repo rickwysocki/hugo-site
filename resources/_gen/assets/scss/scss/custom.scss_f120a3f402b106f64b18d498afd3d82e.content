@@ -9078,6 +9078,9 @@ figcaption {
   color: grey;
   text-align: center; }
 
+a {
+  color: blue; }
+
 footer {
   background-color: blue;
   width: 100%;

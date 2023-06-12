@@ -3,7 +3,7 @@
 <div class="align-self-end container footer-info d-flex flex-direction-row justify-space-between">
 
 
-{{ $image := resources.Get .Site.Params.site_image }}
+{{ $image := resources.Get .Site.Params.author_image }}
 <img src="{{ ($image.Resize "200x").RelPermalink }}" />
 
 
@@ -11,7 +11,7 @@
 <div>
   <h5>{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</h5>
   <hr>
-  <p>{{ .Site.Params.author_bio }}</p>
+  <p>{{ .Site.Params.long_bio }}</p>
 
 <div>
   {{ if isset .Site.Params `email` }}<a href="mailto:{{ .Site.Params.email }}"><i class="m-2 fa fa-envelope fa-lg"></i></a>{{ end }}

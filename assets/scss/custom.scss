@@ -8,8 +8,6 @@ $footer-color: #F2EFEA;
 $footer-bg-color: blue;
 
 
-
-
 // Import Boostrap SCSS.
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -99,6 +97,10 @@ img {
 figcaption {
   color: grey;
   text-align: center;
+}
+
+a {
+  color: $secondary;
 }
 
  //   #FDE900, #623CEA, ##F7996E, #232020, #230C33

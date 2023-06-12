@@ -3,7 +3,7 @@ title: "Home"
 layout: single
 ---
 
-{{< class class="alert alert-primary" >}}If you happen to stumble on this site before I move it to my main domain, please note that this site is under construction. I'm moving a lot of content from different places, including blog posts, teaching materials, and professional documents. There will almost certainly be a few mistakes across the site for a bit. More will be available soon!{{< /class >}}
+{{< class class="alert alert-primary" >}}Please note that this site is under construction. I'm moving a lot of content from different places, including blog posts, teaching materials, and professional documents. There will almost certainly be a few mistakes across the site for a bit. More will be available soon!{{< /class >}}
 
 I am a seasoned writing educator with ten years of experience teaching university courses. During this time I've taught a number of courses in the areas of technical communication, business and professional writing, and academic research writing. As a teacher I'm passionate about creating immersive learning environments that give students the tools necessary to effectively communicate information to audiences across diverse contexts.
 
