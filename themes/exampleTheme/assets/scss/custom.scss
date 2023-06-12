@@ -3,14 +3,14 @@
 // color pallete: #FDE900, #623CEA, #F7996E, #232020, #230C33
 
 $primary: #232020;
-$secondary: red;
+$secondary: blue;
 $footer-color: #F2EFEA;
 $footer-bg-color: blue;
 
 
 // Import Boostrap SCSS.
 
-@import "exampleTheme/node_modules/bootstrap/scss/bootstrap";
+@import "themes/exampleTheme/node_modules/bootstrap/scss/bootstrap";
 
 
 
