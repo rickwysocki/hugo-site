@@ -6,6 +6,9 @@ description: A review of how I'm learning Hugo.
 featured_image: featured.png
 featured_alt: Here is some alt text.
 layout: post
+tags:
+  - Hugo
+  - Web Development
 ---
 
 ## Intro

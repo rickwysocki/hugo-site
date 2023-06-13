@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: post
 title: "Covid - Day Four"
 date:   2022-12-18 16:08:22 -0500
 Summary: Today will be a shorter post. Rather than write, I spent most of the day a) submitting grades and b) working on a new track.
-published: false
+published: true
+tags:
+  - Personal
 ---
-
-{% include figure image_path="/assets/images/covid-day-4.png" alt="An image of my desk, my computer monitor showing an Ableton Live project, and a variety of other synthesizer and electronic music-related items. Also, a lot of cold medicine and tissues." caption="Music stuff and Covid stuff." %}
 
 Today will be a shorter post. Rather than write, I spent most of the day a) submitting grades and b) working on a new track (see below). But here are a few quick notes.
 

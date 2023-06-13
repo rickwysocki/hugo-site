@@ -1,15 +1,22 @@
 ---
 layout: single
-title: "*Satoyama*, Modernity, and Tradition in Japanese Anime"
+title: "Satoyama, Modernity, and Tradition in Japanese Anime"
 date:   2021-06-13 16:08:22 -0500
-summary: I've been reading scholarship about anime, its history, and how it deviates from animation in the United States. It's frequently observed that tensions between tradition and modernity are often central to anime. In my recent viewing, I've noticed those tensions in works like "Attack on Titan," *My Neighbor Totoro,* and much of the Studio Ghibli's *oeuvre* more generally.
-published: false
+summary: I've been reading scholarship about anime, its history, and how it deviates from animation in the United States. It's frequently observed that tensions between tradition and modernity are often central to anime. In my recent viewing, I've noticed those tensions in works like *Attack on Titan*, *My Neighbor Totoro,* and much of the Studio Ghibli *oeuvre* more generally.
+published: true
+tags:
+  - Film and Television
+  - Genre
+movies:
+  - My Neighbor Totoro
+shows:
+  - Attack on Titan
 
 ## header:
 ##  teaser: /assets/images/anime.jpg
 ---
 
-{% include figure image_path="/assets/images/anime.jpg" alt="A photo of a hand holding cards on an anime storyboard." %}
+{{< page-image source="anime.jpg" alt="A photo of a hand holding cards on an anime storyboard." caption="">}}
 
 I've been watching some anime over the past few weeks. Anime has always been entertaining and interesting to me, but I've generally been hesitant to dive too deep into it. Without caricaturing some of the US fans of anime (you know the ones), I can broadly say that I've just been a bit uncomfortable about the extent to which white Americans... throw themselves at particular elements of Japanese culture, and in turn throw those representations around as though they were offering some sort of authoritative perspective on the nation because, well, they watch a lot of anime.
 

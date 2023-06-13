@@ -3,11 +3,13 @@ layout: single
 title: "What is Genre?"
 date: 2022-06-21 16:08:22 -0500
 summary: A concept that is has been popping up in recent posts is genre. It's not surprising, as genre is central not only to film--increasingly, the focus of this blog--but to rhetoric and writing studies, my academic home. But what *is* genre?
-published: false
-
+published: true
+featured_image: featured.jpg
+featured_alt: A photo of Spotify's genre playlist interface.
+tags:
+  - Genre
 ---
 
-{% include figure image_path="/assets/images/genre.jpg" alt="A photo of Spotify's genre playlist interface." %}
 
 
 A concept that is has been popping up in recent posts is genre. It's not surprising, as genre is central not only to film--increasingly, the focus of this blog--but to rhetoric and writing studies, my academic home. But what *is* genre?
@@ -22,8 +24,7 @@ We all have a sense of what classifications are. It's a nice word for sorting st
 
 Often, we take classifications at face value. It would be somewhat taxing, every time we put on a movie, to first go and research all of the different decisions, all of the work, that went into classifying it. Yet, it is only through this work that a classification emerges. As Geoffrey C. Bowker and Susan Leigh Star pointed out, usually classifications are invisible until they become people start arguing about them (Bowker and Star 2).
 
-**Contentious classification, a quick example:** It's easier to simply accept that we know what Hip-Hop is until Drake puts out *Honestly, Nevermind* and everyone notices that it's a House album. But it's on RapCaviar. And it's a central focus of Hip-Hop media. If you look online, there are a lot of arguments not only about whether the album is good, but what it *is.* The classification, the genre, has become contentious.
-{: .notice--primary}
+{{< class class="alert alert-primary" >}}Contentious classification, a quick example: It's easier to simply accept that we know what Hip-Hop is until Drake puts out <cite>Honestly, Nevermind</cite> and everyone notices that it's a House album. But it's on RapCaviar. And it's a central focus of Hip-Hop media. If you look online, there are a lot of arguments not only about whether the album is good, but what it <strong>is.</strong> The classification, the genre, has become contentious.{{< /class >}}
 
 But genres aren't *exactly* the same as classifications. They're different words, after all. That said, in a moment of transparency, I find it difficult to sort out the two terms. In popular use, genres are clearly used to parse classifications of art. Musical genres, film genres, and literary genres seem like the most familiar employments of the term--maybe in that order.
 
@@ -39,15 +40,13 @@ One on hand, critics will usually *begin with an awareness of an already existin
 
 By contrast, producers *begin with an already successful film.* They say to themselves: "Hey, I would like to make more of that sweet, sweet money." They start replicating aspects from the film that were well-received in new productions, gradually building up audience's expectations for repeated motifs, themes, and formulas across films. Eventually, a classification emerges in the form of a genre to market these films, usually branching out from an already-existing genre (Altman 38). The genre classification, then, is a result of both the work of industrial practices and the emerging audience expectations. The fantasy of taxonomy emerges at the end of this process a market for film industry.
 
-Obviously, genres are useful. They help us make decisions about films to see, about books to read, about music to listen to, etc. Yet, as much scholarship has tried to point out, looking at their histories forces us to consider just how "objective" a genre classification could ever be. Beyond academic discouse, why is this useful or interesting? I'll offer a few points in relation to film.
+Obviously, genres are useful. They help us make decisions about films to see, about books to read, about music to listen to, etc. Yet, as much scholarship has tried to point out, looking at their histories forces us to consider just how "objective" a genre classification could ever be. Beyond academic discourse, why is this useful or interesting? I'll offer a few points in relation to film.
 
-- Making genre classifications contentious can help us see when individual films are doing something interesting or different within their *own* marketed genres, as I discussed in [my recent post on *Men*.](/film/men/)
+- Making genre classifications contentious can help us see when individual films are doing something interesting or different within their *own* marketed genres, as I discussed in [my recent post on *Men*.](/posts/2022-06-05-men/)
 - We can better understand how our own perspectives on genres have been shaped by our film experiences and how we (often unconsciously) classify films based on those experiences. We can take this both in terms of how industries have shaped our ideological expectations AND as a way of pointing out just how rich and diverse the history of film truly is. [We don't have to choose.](/film/heroes-ritual-ideology/)
 - Finally, and this certainly deserves its own post in the future, the history of genre classifications is often, itself, the content of films, and better understanding genre can enrich our appreciation of those films.
 
 -----------
-
-That's all for now. I hope this has offered at least a useful summary of some key ideas about genres as a way of classifying.... stuff. I'll be back later this week with another post.
 
 ## Works Cited
 

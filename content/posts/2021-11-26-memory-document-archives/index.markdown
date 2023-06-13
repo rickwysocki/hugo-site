@@ -2,10 +2,10 @@
 layout: single
 title:  "Memory, Document, Archive"
 date:   2021-11-26 16:08:22 -0500
-published: false
+published: true
+tags:
+  - Media Studies
 
-## header:
-##  teaser: assets/images/bio-photo.png
 ---
 
 The role of memory is central to the humanities. The ability to recall

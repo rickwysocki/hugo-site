@@ -1,11 +1,12 @@
 ---
 
-layout: single
+layout: post
 title:  "Covid - Day Two"
 date:   2022-12-16 16:08:22 -0500
 summary: My second day of Covid. The good news&#58; A tested this morning and so far continues to come up negative. The bad news&#58; I feel like butt.
-published: false
-
+published: true
+tags:
+  - Personal
 ---
 
 My second day of Covid. The good news: I tested this morning and so far continues to come up negative. The bad news: I feel like butt.

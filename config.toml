@@ -53,3 +53,6 @@ theme = "littleGhost"
   tag = "tags"
   course = 'courses'
   category = 'categories'
+  project = 'projects'
+  movie = 'movies'
+  show = 'shows'

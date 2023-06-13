@@ -4,6 +4,10 @@ date:   2023-06-12
 summary: I've got a new site put together. And a quick review of the year.
 description: I've got a new site put together. And a quick review of the year.
 layout: post
+tags:
+  - Hugo
+  - Web Development
+  - Personal
 ---
 
 As you see, I've fully left Ghost and built out a Hugo site. [My previous post](/posts/2023-03-10-hugo/) (actually unpublished until now) detailed some of the thinking that went into building this site and the reasons for the switch. I'm still planning to release the final version as a little theme, but just need to finish getting things squared away on my actual site (here) first.
