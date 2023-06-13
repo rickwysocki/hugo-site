@@ -1,4 +1,4 @@
-baseURL = 'https://www.rickwysocki.com'
+baseURL = "www.rickwysocki.com"
 languageCode = 'en-us'
 title = 'Rick Wysocki'
 theme = "littleGhost"
