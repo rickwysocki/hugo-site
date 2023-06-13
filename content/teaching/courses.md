@@ -9,7 +9,7 @@ During my time as a college educator, I've designed and taught the following cou
 
 ## Ball State University
 
-- [Writing in Digital Environments](http://localhost:1313/courses/writing-in-digital-environments/)
+- [Writing in Digital Environments](/courses/writing-in-digital-environments/)
 - Introduction to Professional Writing
 - Composing Research
 - Writing Rhetoric and Writing
