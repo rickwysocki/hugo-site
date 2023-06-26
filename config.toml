@@ -1,8 +1,8 @@
 baseURL = "https://www.rickwysocki.com/"
 languageCode = 'en-us'
 title = 'Rick Wysocki'
-theme = "littleGhost"
-
+theme = ["hugo-embed-pdf-shortcode", "littleGhost"]
+enableInlineShortcodes = true
 # test comment
 
 [params]
