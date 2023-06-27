@@ -3,7 +3,7 @@ layout: post
 title: "Covid - Day Three"
 date:   2022-12-17 16:08:22 -0500
 summary: I do hope that these posts don't communicate&#58; "pity me!"
-published: true
+published: false
 tags:
   - Personal
 ---

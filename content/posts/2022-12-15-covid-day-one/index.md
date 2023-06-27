@@ -4,7 +4,7 @@ title:  "Covid - Day One"
 date:   2022-12-15 16:08:22 -0500
 summary: I made it several years into the Covid-19 pandemic without catching the virus. Unfortunately, my time has come.
 description: A review of how I'm learning Hugo.
-published: true
+published: false
 tags:
   - Personal
 ---

@@ -5,6 +5,8 @@ summary: So, I'm learning Hugo.
 description: A review of how I'm learning Hugo.
 featured_image: featured.png
 featured_alt: Here is some alt text.
+published: true
+
 layout: post
 tags:
   - Hugo

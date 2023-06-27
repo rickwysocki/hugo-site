@@ -1,7 +1,7 @@
 ---
 title: "Résumé"
 layout: single
-published: false
+published: true
 ---
 
 ## Experience

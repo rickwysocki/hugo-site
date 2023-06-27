@@ -1,3 +1,4 @@
+<div class="metadata">
 
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
@@ -17,21 +18,5 @@
 {{ end }}
 </div>
 {{ end }}
-{{ with .Params.categories }}
-<div>
-<i class="fa fa-tag"></i>
-{{ range . }}
-{{ $href := print (absURL "categories/") (urlize .) }}
-<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-{{ end }}
+
 </div>
-{{ end }}
-{{ with .Params.projects }}
-<div>
-<i class="fa fa-briefcase"></i>
-{{ range . }}
-{{ $href := print (absURL "projects/") (urlize .) }}
-<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-{{ end }}
-</div>
-{{ end }}

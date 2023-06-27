@@ -30,6 +30,7 @@ enableInlineShortcodes = true
   # To-Do
   # Analytics
 
+pluralizeListTitles = false
 
 [menu]
   [[menu.main]]
@@ -43,9 +44,9 @@ enableInlineShortcodes = true
     url = "/posts/"
     weight = 2
   [[menu.main]]
-      name = "Teaching"
+      name = "Portfolio"
       pre = "fa fa-book"
-      url = "/teaching/"
+      url = "/portfolio/"
       weight = 3
 
 
@@ -56,3 +57,8 @@ enableInlineShortcodes = true
   project = 'projects'
   movie = 'movies'
   show = 'shows'
+  skills = 'skills'
+
+[permalinks]
+  posts = '/posts/:year/:month/:title/'
+  categories = '/:title/'

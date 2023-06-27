@@ -3,7 +3,7 @@ layout: single
 title: "Satoyama, Modernity, and Tradition in Japanese Anime"
 date:   2021-06-13 16:08:22 -0500
 summary: I've been reading scholarship about anime, its history, and how it deviates from animation in the United States. It's frequently observed that tensions between tradition and modernity are often central to anime. In my recent viewing, I've noticed those tensions in works like *Attack on Titan*, *My Neighbor Totoro,* and much of the Studio Ghibli *oeuvre* more generally.
-published: true
+published: false
 tags:
   - Film and Television
   - Genre

@@ -12,6 +12,9 @@ $footer-bg-color: blue;
 
 @import "themes/littleGhost/node_modules/bootstrap/scss/bootstrap";
 
+li {
+  list-style-type: square;
+}
 
 .nav-container {
   background-color: $secondary;
@@ -19,7 +22,14 @@ $footer-bg-color: blue;
 
 .nav-item a {
   color: #F2EFEA;
+}
 
+.nav-item {
+  list-style: none;
+}
+
+.metadata {
+  margin-bottom: 1rem;
 }
 
 .page-title {
@@ -88,9 +98,6 @@ img {
   height: 100%;
 }
 
-.taxonomy-list {
-  list-style: none;
-}
 
 figcaption {
   color: grey;
@@ -99,6 +106,13 @@ figcaption {
 
 a {
   color: $secondary;
+}
+
+
+.taxonomy-aside {
+  background-color: lightgrey;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
  //   #FDE900, #623CEA, ##F7996E, #232020, #230C33
@@ -125,6 +139,10 @@ footer a {
 .footer-info {
   padding: 4rem;
   gap: 1.5rem;
+}
+
+.pdf-paginator {
+  margin: 1rem 0 1rem 0;
 }
 
 footer img {

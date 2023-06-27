@@ -1,6 +1,7 @@
 
 {{ define "main" }}
 
+
 {{ template "_internal/pagination.html" . }}
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
@@ -35,7 +36,6 @@
 
 
     </article>
-
 
 
   {{ end }}

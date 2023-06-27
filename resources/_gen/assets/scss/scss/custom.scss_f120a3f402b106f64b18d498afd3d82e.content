@@ -9015,11 +9015,20 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+li {
+  list-style-type: square; }
+
 .nav-container {
   background-color: blue; }
 
 .nav-item a {
   color: #F2EFEA; }
+
+.nav-item {
+  list-style: none; }
+
+.metadata {
+  margin-bottom: 1rem; }
 
 .page-title {
   margin-top: 1rem;
@@ -9071,15 +9080,17 @@ img {
 .post-section-image {
   height: 100%; }
 
-.taxonomy-list {
-  list-style: none; }
-
 figcaption {
   color: grey;
   text-align: center; }
 
 a {
   color: blue; }
+
+.taxonomy-aside {
+  background-color: lightgrey;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 footer {
   background-color: blue;
@@ -9099,6 +9110,9 @@ footer a {
 .footer-info {
   padding: 4rem;
   gap: 1.5rem; }
+
+.pdf-paginator {
+  margin: 1rem 0 1rem 0; }
 
 footer img {
   border-radius: 100px;

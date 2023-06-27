@@ -1,7 +1,7 @@
 <aside class="card bio col-lg-3 p-0 me-2">
 
   {{ $image := resources.Get .Site.Params.author_image }}
-  <img class="card-img" src="{{ ($image.Resize "400x").RelPermalink }}" alt="Card image cap">
+  <img class="card-img" src="{{ ($image.Resize "400x").RelPermalink }}" alt="Card image cap" />
 
 
   <div class="card-body">

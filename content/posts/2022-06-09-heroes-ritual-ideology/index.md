@@ -3,7 +3,7 @@ layout: single
 title: "Superheroes: Ritual or Ideology?"
 summary: I read something fascinating in Rick Altman's book that I discussed in [another recent post](/film/men/). He talked about two ways that critics tend to look at film's social dimension. These are as ritual or as ideology.
 description: I read something fascinating in Rick Altman's book that I discussed in [another recent post](/film/men/). He talked about two ways that critics tend to look at film's social dimension. These are as ritual or as ideology.
-published: true
+published: false
 date: 2022-06-09
 featured_image: featured.jpg
 featured_alt: Chris Evans as Captain America, running
