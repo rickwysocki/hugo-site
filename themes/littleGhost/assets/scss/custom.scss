@@ -2,8 +2,8 @@
 
 // color pallete: #FDE900, #623CEA, #F7996E, #232020, #230C33
 
-$primary: #232020;
-$secondary: blue;
+$brand-primary: #232020;
+$brand-secondary: blue;
 $footer-color: #F2EFEA;
 $footer-bg-color: blue;
 
@@ -17,7 +17,7 @@ li {
 }
 
 .nav-container {
-  background-color: $secondary;
+  background-color: $brand-secondary;
 }
 
 .nav-item a {
@@ -42,13 +42,13 @@ html {
 }
 
 .top {
-  background-color: $secondary;
-  border-bottom: 1px solid $primary;
+  background-color: $brand-secondary;
+  border-bottom: 1px solid $brand-primary;
 
 }
 
 hr {
-  color: $secondary;
+  color: $brand-secondary;
 }
 
 body {
@@ -64,7 +64,7 @@ h1 {
 }
 
 h1, h2, h3, h5 {
-  color: $primary;
+  color: $brand-primary;
   font-family: 'Anton', sans-serif;
 }
 
@@ -79,13 +79,13 @@ img {
 
 .post-section {
   border-top: solid 1px;
-  border-color: $secondary;
+  border-color: $brand-secondary;
 
 /*
   border-radius: 1px;
   padding: 0;
   margin-bottom: 2em;
-  background-color: $secondary;
+  background-color: $brand-secondary;
   */
 
 }
@@ -105,7 +105,7 @@ figcaption {
 }
 
 a {
-  color: $secondary;
+  color: $brand-secondary;
 }
 
 
@@ -121,7 +121,7 @@ footer {
   background-color: $footer-bg-color;
   width: 100%;
   color: $footer-color;
-  border-top: 1px solid $primary;
+  border-top: 1px solid $brand-primary;
 }
 
 footer h5 {
@@ -154,7 +154,7 @@ footer img {
 
 .bio {
   color: $footer-color;
-  background-color: $secondary;
+  background-color: $brand-secondary;
   margin-bottom: 1rem;
 }
 
