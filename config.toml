@@ -63,4 +63,6 @@ pluralizeListTitles = false
   posts = '/posts/:year/:month/:title/'
   categories = '/:title/'
 
-  test
+[module]
+[[module.imports]]
+path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
