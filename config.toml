@@ -62,3 +62,5 @@ pluralizeListTitles = false
 [permalinks]
   posts = '/posts/:year/:month/:title/'
   categories = '/:title/'
+
+  test
