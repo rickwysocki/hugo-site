@@ -1,6 +1,8 @@
 ---
 title: "Home"
 layout: single
+featured_grid: true
+site_header: true
 ---
 
 I am a seasoned writing educator with ten years of experience teaching university courses. During this time I've taught a number of courses in the areas of technical communication, business and professional writing, and academic research writing. As a teacher I'm passionate about creating immersive learning environments that give students the tools necessary to effectively communicate information to audiences across diverse contexts.
@@ -17,4 +19,7 @@ As indicated in the previous paragraph, I have a strong enthusiasm for technolog
 
 I'm always happy to chat, so if any of the above is interesting to you, don't hesitate to reach out!
 
-{{< class class="alert alert-primary" >}}Please note that this site is under construction. I'm moving a lot of content from different places, including blog posts, teaching materials, and professional documents. There will almost certainly be a few mistakes across the site for a bit. More will be available soon!{{< /class >}}
+
+
+
+Please note that this site is under construction. I'm moving a lot of content from different places, including blog posts, teaching materials, and professional documents. There will almost certainly be a few mistakes across the site for a bit. More will be available soon!

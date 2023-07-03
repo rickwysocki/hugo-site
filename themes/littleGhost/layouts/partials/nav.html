@@ -1,31 +1,63 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-brand-secondary">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="max-w-4xl mx-auto mt-4 text-xl">
+  <ul class="hidden md:flex flex-row items-center gap-4 mt-0">
 
-  <!-- BRAND ITEM -->
-  <!--<a class="navbar-brand" href="/">{{ .Site.Title }}</a>-->
+    {{ $image := resources.Get .Site.Params.nav_logo }}
+    <li><a href="/"><img class= "my-4 mx-auto h-7 rounded-full" src="{{ $image.RelPermalink }}" /></a></li>
 
-  <a class="navbar-brand" href="/">{{ $image := resources.Get .Site.Params.nav_logo }}
-  <img src="{{ ($image.Resize "40x").RelPermalink }}" /></a>
 
-  <!-- ITERATE THROUGH MAIN MENU IN CONFIG FILE -->
+    {{ range .Site.Menus.main }}
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li><a href="{{ .URL }}" class="group transition duration-300">
 
-      {{ range .Site.Menus.main }}
-      <li class="nav-item"><a class="nav-link" href="{{ .URL }}">
-      {{ if .Pre }}
-      {{ $icon := printf "<i class=\"%s\"></i><!--<i data-feather=\"%s\"></i>--> " .Pre | safeHTML }}
-      {{ $icon }}
-      {{ end }}
       {{ $text := print .Name | safeHTML }}
       {{ $text }}
-      </a></li>
-      {{ end }}
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
+    </a></li>
+    {{ end }}
 
-    </ul>
 
+  </ul>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden flex items-center self-end">
+  	<button class="outline-none mobile-menu-button">
+  		<svg
+  			class="w-6 h-6 text-gray-500"
+  			x-show="!showMenu"
+  			fill="none"
+  			stroke-linecap="round"
+  			stroke-linejoin="round"
+  			stroke-width="2"
+  			viewBox="0 0 24 24"
+  			stroke="currentColor"
+  		>
+  		<path d="M4 6h16M4 12h16M4 18h16"></path>
+  		</svg>
+  	</button>
   </div>
+
+  <!-- Mobile menu -->
+<div class="hidden mobile-menu">
+	<ul class="py-6">
+    {{ range .Site.Menus.main }}
+
+		<li><a href="{{ .URL }}" class="block text-md px-2 py-1 underline decoration-indigo-500">
+      {{ $text := print .Name | safeHTML }}
+      {{ $text }}
+    </a></li>
+
+    {{ end }}
+</ul>
+</div>
+
+<script>
+	// Grab HTML Elements
+	const btn = document.querySelector("button.mobile-menu-button");
+	const menu = document.querySelector(".mobile-menu");
+
+	// Add Event Listeners
+	btn.addEventListener("click", () => {
+	menu.classList.toggle("hidden");
+	});
+</script>
 </nav>

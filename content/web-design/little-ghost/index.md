@@ -1,7 +1,9 @@
 ---
 title: "Little Ghost (Hugo Theme)"
-layout: single
-summary: I am currently designing a theme for the static-site generator Hugo.
+permalink: /little-ghost
+layout: portfolio-page
+summary: I am designing a theme called Little Ghost for the static-site generator Hugo. I’m currently in the early stages of its development, but it works and can be installed using the instructions in its Github repository. The purpose of the theme is to give new users who want to use Hugo’s powerful content management features an easy and aesthetically pleasing kick-start to their websites.
+
 categories:
   - Portfolio
 skills:
@@ -11,6 +13,7 @@ skills:
   - HTML5 / CSS
 featured_image: featured.png
 featured_alt: Little Ghost logo.
+
 ---
 
 I am designing a theme called [Little Ghost](https://github.com/rickwysocki/littleGhost) for the static-site generator [Hugo](https://gohugo.io). I'm currently in the early stages of its development, but it works and can be installed using the instructions in its Github repository. The purpose of the theme is to give new users who want to use Hugo's powerful content management features an easy and aesthetically pleasing kick-start to their websites.

@@ -1,44 +1,36 @@
 
 {{ define "main" }}
 
+<section class="max-w-4xl mx-auto mt-8">
+  <h1 class="font-bold text-2xl">{{ .Title }}</h1>
 
-{{ template "_internal/pagination.html" . }}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
 
-<article class="post-section d-flex flex-row">
 
-<!--
-  {{ if isset .Params `featured_image` }}
-  <div class="post-section-image">
-      {{ $image := .Resources.GetMatch .Params.featured_image}}
 
-      <a href="{{ .RelPermalink }}"><img
-          src="{{ with $image }}{{ ($image.Fill "600x400").RelPermalink }}{{end}}"
-          alt="{{ print (.Params.featured_alt) }}"
-      /></a>
+      <article class="p-6 shadow-lg flex flex-col">
 
-      </div>
+        {{ $image := .Resources.GetMatch .Params.featured_image }}
+        <a href="{{ .Permalink }}">{{ with $image }}<img src="{{ ($image.Crop "1200x800").Permalink }}"/>{{ end }}</a>
+        <div class="grow">
 
-    {{end}}
+    <h3 class="font-bold text-xl mt-2"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p class="mb-4">{{ .Params.summary }}</p>
 
-    -->
-<div class="post-text-content">
-    <h3 class="post-list-title"><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    {{ partial "metadata.html" . }}
-    <div class="summary" href="{{ .RelPermalink }}">
-
-        <p>{{ .Summary }}</p>
-        <a class="btn btn-primary" href="{{ .RelPermalink }}">READ MORE</a>
-
-    </div>
 </div>
+<div>
+    <a href="{{ .Permalink }}" class="p-2 rounded-lg bg-indigo-600 text-white">Read More</a>
 
-
-    </article>
-
+</div>
+  </article>
 
   {{ end }}
+</div>
+{{ partial "pagination.html" . }}
 
+</section>
 
 {{ end }}

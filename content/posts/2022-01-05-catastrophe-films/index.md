@@ -2,7 +2,7 @@
 layout: single
 title: "Two Films on Catastrophe"
 date:  2022-01-05 11:34:22 -0500
-published: false
+published: true
 featured_image: featured.jpg
 featured_alt: Moira, one of the principal characters in The Wanting Mare.
 tags:
@@ -10,6 +10,7 @@ tags:
 movies:
   - The Wanting Mare
   - Don't Look Up
+featured_post: true
 
 ## header:
 ##   teaser: assets/images/wanting-mare-thumbnail.jpg

@@ -20,10 +20,9 @@
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/68345f7fdb.js" crossorigin="anonymous"></script>
 
-    <!-- Get / Process SCSS -->
-    {{ $css := resources.Get "scss/custom.scss" }}
-    {{ $css = $css | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $style := resources.Get "style.css" }}
+   <link rel="stylesheet" href="{{ $style.Permalink }}">
+
 
 
     {{ $title := print .Site.Title " | " .Title }}
