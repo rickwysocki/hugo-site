@@ -2,6 +2,8 @@
 title: "Disidentification and Documentation: LGBTQ Records as Emergent, Entangled Rhetoric"
 layout: single
 summary: My research on the Williams-Nichols Archive of LGBTQ materials, published in the academic peer-reviewed journal Rhetoric Review.
+featured_image: featured.png
+featured_alt: A screenshot of my article in Rhetoric Review.
 skills:
   - Research
   - Writing and Communication

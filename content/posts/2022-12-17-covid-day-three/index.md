@@ -2,8 +2,11 @@
 layout: post
 title: "Covid - Day Three"
 date:   2022-12-17 16:08:22 -0500
-summary: I do hope that these posts don't communicate&#58; "pity me!"
-published: false
+summary: Day three has been alright so far. Last night, again, my only issue sleeping was my wrecked throat. A bought me some chloraseptic today; I imagine that will help tonight.
+published: true
+featured_image: featured.jpg
+featured_alt: An image of Coronavirus.
+
 tags:
   - Personal
 ---
@@ -14,7 +17,7 @@ Day three has been alright so far. Last night, again, my only issue sleeping was
 
 The NyQuil I took last night gave me some very strange dreams. One of them included a visit to my Zen center that involved a buffet of beef brisket. (In the waking world, the Zen center only serves vegetarian food.) In the dream, I took too much food and robbed everyone else of a meal. (Hungry ghosts come to mind.) Then I somehow showed up late to the sitting portion of the retreat. When I got there, there were hundreds of unfamiliar people doing walking meditation and reciting an unfamiliar chant. Weird stuff.
 
-I finished responding to students' work today. Feeling a bit loopy from DayQuil, I decided to push the actual submitting of grades until tomorrow morning. After that, this semester will be a wrap.
+I finished responding to students' work today. Feeling a bit loopy from DayQuil, I decided to push the actual submission of grades until tomorrow morning. After that, this semester will be a wrap.
 
 Last night, I started reading William Gibson's *Neuromancer*, a novel I certainly should have already read. I'm enjoying it so far. I also watched *The Thirteenth Floor*, a remake of Fassbender's *World on a Wire.* It didn't have the same charm.
 

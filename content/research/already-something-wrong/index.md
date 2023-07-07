@@ -1,7 +1,9 @@
 ---
 title: "“There is Already Something Wrong”: Toward a Rhetorical Framework for Aging"
 layout: single
-summary:
+summary: One of my early scholarly interests involved how aging was represented in Western and US discourse. In 2017, I explored this topic in an article published by Present Tense-A Journal of Rhetoric in Society.
+featured_image: featured.jpeg
+featured_alt: The logo for Present Tense.
 skills:
   - Research
   - Writing and Communication
@@ -9,7 +11,7 @@ categories:
   - Portfolio
 ---
 
-One of my early scholarly interests involved how aging was represented in Western and US discourse. In 2017, I explored this topic in "'There is Already Something Wrong': Toward a Rhetorical Framework for Aging," published by *Present Tense: A Journal of Rhetoric in Society.* In this piece, I analyze the language of "transhumanists," such as Ray Kurzweil and Aubrey de Gray, who imagine how aging can be "solved" through technological advancements. I conclude that their rhetoric promotes ultimately misguided ideas about aging and the elderly.
+One of my early scholarly interests involved how aging is represented in Western and US discourse. In 2017, I explored this topic in "'There is Already Something Wrong': Toward a Rhetorical Framework for Aging," published by *Present Tense: A Journal of Rhetoric in Society.* In this piece, I analyze the language of "transhumanists," such as Ray Kurzweil and Aubrey de Gray, who imagine how aging can be "solved" through technological advancements. I conclude that their rhetoric promotes ultimately misguided ideas about aging and the elderly.
 
 This is a peer-reviewed, open-access piece that can be read using the link I have included here. I've also provided the opening paragraph below as a summary of the article.
 

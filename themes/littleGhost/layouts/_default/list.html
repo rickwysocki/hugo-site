@@ -13,22 +13,36 @@
 
       <article class="p-6 shadow-lg flex flex-col">
 
-        {{ $image := .Resources.GetMatch .Params.featured_image }}
-        <a href="{{ .Permalink }}">{{ with $image }}<img src="{{ ($image.Crop "1200x800").Permalink }}"/>{{ end }}</a>
+        {{ if isset .Params "featured_image" }}
+          {{ $image := .Resources.GetMatch .Params.featured_image }}
+          <a href="{{ .Permalink }}">
+            <img
+            {{ with $image }}src="{{ ($image.Crop "1200x800").Permalink }}"{{ end }}
+            alt="{{ .Params.featured_alt }}"/>
+          </a>
+
+        {{ else }}
+        {{ $image := resources.Get .Site.Params.post_image }}
+          <a href="{{ .Permalink }}">
+            <img {{ with $image }}src="{{ ($image.Crop "1200x800").RelPermalink }}" {{ end }} alt="{{ .Site.Params.post_image_alt }}"/></a>
+        {{ end }}
+
         <div class="grow">
+          <h3 class="font-bold text-xl mt-2"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 
-    <h3 class="font-bold text-xl mt-2"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-    <p class="mb-4">{{ .Params.summary }}</p>
 
-</div>
-<div>
-    <a href="{{ .Permalink }}" class="p-2 rounded-lg bg-indigo-600 text-white">Read More</a>
+          <p class="mb-4">{{ .Params.summary }}</p>
+        </div>
 
-</div>
-  </article>
+        <div>
+          <a href="{{ .Permalink }}" class="p-2 rounded-lg bg-indigo-600 text-white">Read More</a>
+        </div>
+
+      </article>
 
   {{ end }}
 </div>
+
 {{ partial "pagination.html" . }}
 
 </section>

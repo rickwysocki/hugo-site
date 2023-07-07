@@ -3,54 +3,34 @@ layout: single
 title:  "Memory, Document, Archive"
 date:   2021-11-26 16:08:22 -0500
 published: true
+summary: By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can't always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.
+featured_image: featured.jpg
+featured_alt: A shelf filled with labeled three-ring binders.
+featured_caption: Photo by Viktor Talashuk - https://unsplash.com/photos/05HLFQu8bFw
 tags:
   - Media Studies
+  - Rhetoric
+  - Archival Research
 
 ---
 
-The role of memory is central to the humanities. The ability to recall
-the past in the present points to something fundamental about human
-consciousness: a capability to weigh decisions in terms of the past. In
-this way, memory--especially *public* memory--is not only salient but
-fundamental to politics.
+The role of memory is central to the humanities. Being able to recall
+the past and weigh decisions in the present is fundamental to human
+consciousness. This is why memory--especially *public* memory--is central to our social worlds.
 
-The document, as a historical genre and media form, is mired in
-considerations related to memory. All documents, at their root, exist to
-externalize aspects of human memory and present it epistemically: what
-Lisa Gitelman refers to as their "know-show" function (Gitelman 2014).
-Documents, then, are:
+The document, as a historical genre and media form, is deeply related to memory. All documents, at their root, externalize the past and present it as knowledge. Lisa Gitleman calls this the "know-show" function.
 
-1.  Fundamentally social and publicly-oriented.
-2.  Largely concerned with the transmission of memory.
-3.  Epistemic, in that their primary aim is to not only store but
-    transmit knowledge. Crucially, this transmission is typically
-    *motivated and rhetorical.*
+Because of this, documents are:
 
-Regarding point three: one of the most global effects of documentation
-is their role in the establishment and maintenance of empires. Trouillot
-(2015), for example, has argued that archival erasures help to create
-history in favor of empires. Ann Laura Stoler (2009), additionally, has
-discussed the role in archival documents during King Leopold's genocide
-in the Congo. Memory, in these contexts, is materially constructed by
-way of archived documents in order to establish and maintain
-transnational oppression.
+1.  Social and publicly oriented.
+2.  Used to create and share the past.
+3.  Rhetorical and motivated in the knowledge they share.
 
-This realization has led to shifts within the archival sciences over the
-last several decades. Archives and archivists have often taken on an
-ethos of impartiality, but recent scholarship and developments in
-archival science have challenged that impartiality. Archivists have
-begun to critically examine their own roles in the production of history
-and their own social responsibilities toward knowledge, history, and
-power. (Blouin 1999; Wallace 2011; Light and Hyry 2002).
+Michel-Rolph Trouillot, for example, argued that what is _left out_ of archives can be as consequential as what is included in them. Similarly, Ann Laura Stoler discussed the role of archival documents during King Leopold's genocide in the Congo. Memory and archives often serve the powerful.
 
-By collecting and categorizing historical artifacts, which affects
-artifacts' reception by scholars and by the public, archives exert power
-over the historical record. Archivists, however, exist within
-complicated institutional and ideological settings, and therefore do not
-have full control over the way their archives present historical
-records. It is the role of the researcher, then, to consider the archive
-not as a stable site of historical "discovery" but rather as a motivated
-and rhetorical construction.
+This has shifted conversations in archival science. While archives and archivists have often been assumed to be impartial, recent scholarship has challenged that impartiality. Archivists today critically examine their roles in memory production, as well as their own responsibilities toward knowledge, history, and power. (Blouin 1999; Wallace 2011; Light and Hyry 2002).
+
+By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can't always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.
 
 ## References
 

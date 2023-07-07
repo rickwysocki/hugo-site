@@ -1,6 +1,8 @@
 ---
 title: Soup Kitchen of Muncie Volunteer Training Course
 layout: single
+featured_image: skm-1.jpg
+featured_alt: A screenshot of an Articulate Storyline course I designed.
 categories:
   - portfolio
 skills:

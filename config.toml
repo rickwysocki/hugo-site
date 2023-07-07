@@ -16,6 +16,9 @@ enableInlineShortcodes = true
   site_image = 'images/ghost.png' # Add site-wide featured image here.
   author_image = '/images/bio-photo.png' # Used for main author bio card.
   nav_logo = 'images/ghost.png' # Icon included in nav-bar.
+  post_image = 'images/ghost-post-image.png'
+  post_image_alt = 'Little Ghost logo.'
+
 
   # Links / Socials
   email = 'rlwysockijr@gmail.com'

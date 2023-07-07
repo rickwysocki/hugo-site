@@ -10,7 +10,7 @@ projects:
   - 'Little Ghost Hugo Theme'
 featured_post: true
 featured_image: featured.png
-featured_alt: Here is some alt text.
+featured_alt: Little Ghost logo.
 ---
 
-This is a quick post, but I just put posted a working version of my first Hugo theme to Github, titled [Little Ghost](https://github.com/rickwysocki/littleGhost). I've got a lot of updates to keep working on and push to the repository (including finishing the documentation), but I'm pretty proud of what's there so far. Give it a check, if you feel so inclined.
+This is a quick post, but I just posted a working version of my first Hugo theme to Github, titled [Little Ghost](https://github.com/rickwysocki/littleGhost). I've got a lot of updates to work on and push to the repository (including finishing the documentation), but I'm pretty proud of what's there so far. Give it a check, if you feel so inclined.

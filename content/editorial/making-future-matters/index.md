@@ -1,8 +1,10 @@
 ---
 title: "Making Future Matters"
-layout: single
+layout: portfolio-page
 summary: I co-edited and designed an experimental, born-digital edited collection of writing studies scholarship.
+project_info: true
 featured_image: featured.png
+featured_alt: Making Future Matters logo.
 skills:
   - Web Design
   - Adobe InDesign
