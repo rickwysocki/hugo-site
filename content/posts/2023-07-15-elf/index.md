@@ -11,8 +11,6 @@ featured_post: true
 tags:
   - Media Studies
 ---
-
-
 ## Introduction
 
 I'm obsessed with information management. From my research on the preservation of LGBTQ history in Louisville to my professional and technical communication teaching that emphasizes tools and technologies for increased knowledge management and efficiency, I've always been fascinated by how information management techniques can make life more, well, manageable. Even my love of Hugo, branded as "a content manager's dream," reflects this passion.
@@ -76,3 +74,6 @@ These tools and technologies include affordances for non-hierarchical informatio
 - [DEVONThink](https://www.devontechnologies.com/apps/devonthink?pk_campaign=google&pk_kwd=devonthink1&gclid=CjwKCAjwh8mlBhB_EiwAsztdBOvZ7Bx8feUUJoWkgIUrQaqBd9lCfM7wDZmdGaPdCaDQzKuCHH8NIhoCMNUQAvD_BwE)
 
 
+## Citation
+
+Nelson, Theodore H. “A File Structure for the Complex, the Changing, and the Indeterminate.” _The New Media Reader_, edited by Noah Wardrip-Fruin and Nick Montfort, MIT P, 2003, pp. 134–45.
