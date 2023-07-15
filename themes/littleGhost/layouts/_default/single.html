@@ -8,7 +8,7 @@
 
 {{ $image := .Resources.GetMatch .Params.featured_image }}
 <img
-    {{ with $image }}src="{{$image.Permalink }}"{{end}}
+    {{ with $image }}src="{{ ($image.Resize "1000x").Permalink }}"{{end}}
     alt="{{ .Params.featured_alt }}"
 />
 
