@@ -8,8 +8,6 @@ featured_post: true
 summary: In 1965, Ted Nelson theorized the Evolutionary List File and offered clear insights into the relationship between technology and creativity that are still relevant today.
 published: true
 featured_image: featured.jpg
-images: 
-    - featured.jpg
 featured_alt: A graphic of notebooks and folders arranged in a way that signals a file structure.
 featured_caption: Photo by Campina Grande - https://unsplash.com/photos/Z19vToWBDIc
 ---
