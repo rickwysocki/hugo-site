@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Ted Nelson's Evolutionary List File and Information Management"
-date:   2023-07-15
+date:   2023-07-15 14:41:22 -0500
 tags:
   - Media Studies
 featured_post: true
