@@ -9,7 +9,6 @@ published: true
 featured_image: featured.jpg
 featured_alt: A roll of camera film.
 featured_caption: Photo by Markus Spiske - https://unsplash.com/photos/1C202gyp2P0
-
 ---
 
 Does new media mean computers? It's easy to think so. Lev Manovich, for example, claimed in *The Language of New Media* that numerical representation, modularity, variability, automation, and transcoding are central to the affordances of new media.

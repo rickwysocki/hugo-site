@@ -8,7 +8,6 @@ tags:
   - Web Development
 projects:
   - 'Little Ghost Hugo Theme'
-featured_post: true
 featured_image: featured.png
 featured_alt: Little Ghost logo.
 ---
