@@ -7,6 +7,7 @@ skills:
   - Graphic Design
 categories:
   - Portfolio
+published: false
 ---
 
 In 2018, I was invited to offer a guest lecture on new materialism in Dr. Mary P. Sheridan's graduate course "Theories that Matter." New materialism--a scholarly area intersecting philosophy, [media studies](/tags/media-studies), and rhetoric--was a central focus of my [doctoral dissertation](/research/dissertation) and my article in [*Rhetoric Review*](/research/disidentification-and-documentation). My lecture focused on:

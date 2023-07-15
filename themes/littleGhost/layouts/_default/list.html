@@ -17,14 +17,14 @@
           {{ $image := .Resources.GetMatch .Params.featured_image }}
           <a href="{{ .Permalink }}">
             <img
-            {{ with $image }}src="{{ ($image.Crop "1200x800").Permalink }}"{{ end }}
+            {{ with $image }}src="{{ (($image.Crop "1200x800").Resize "600x").RelPermalink }}"{{ end }}
             alt="{{ .Params.featured_alt }}"/>
           </a>
 
         {{ else }}
         {{ $image := resources.Get .Site.Params.post_image }}
           <a href="{{ .Permalink }}">
-            <img {{ with $image }}src="{{ ($image.Crop "1200x800").RelPermalink }}" {{ end }} alt="{{ .Site.Params.post_image_alt }}"/></a>
+            <img {{ with $image }}src="{{ (($image.Crop "1200x800").Resize "60x").RelPermalink }}" {{ end }} alt="{{ .Site.Params.post_image_alt }}"/></a>
         {{ end }}
 
         <div class="grow">

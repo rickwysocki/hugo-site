@@ -5,6 +5,7 @@ categories:
   - portfolio
 skills:
   - Snagit
+published: false
 ---
 ## Removing Default Spacing from Microsoft Word
 
