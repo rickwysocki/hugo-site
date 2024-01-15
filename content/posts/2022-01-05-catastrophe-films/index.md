@@ -11,7 +11,6 @@ tags:
 movies:
   - The Wanting Mare
   - Don't Look Up
-featured_post: true
 
 ## header:
 ##   teaser: assets/images/wanting-mare-thumbnail.jpg

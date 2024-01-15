@@ -15,6 +15,8 @@ skills:
   - Adobe Premiere
 categories:
   - Portfolio
+published: false
+
 ---
 
 The University of Louisville's Watson Conference is a prestigous conference on rhetoric, composition, and writing studies. Beyond the conference itself, it is tradition that an edited book of scholarly work is published focusing on the conference's main themes. Dr. Mary P. Sheridan, the chair of the 2018 Watson Conference, asked me to co-edit the collection with a novel idea: a born-digital collection of experimental scholarship rather than a print-based book.

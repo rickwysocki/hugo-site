@@ -8,6 +8,8 @@ categories:
 skills:
   - Articulate Storyline
   - Instructional Design
+published: false
+
 ---
 
 I'm passionate about being engaged in my community, and one of the ways I spend my time is through volunteering and serving as a board member at the [Soup Kitchen of Muncie](https://soupkitchenofmuncie.org). Much of my work as a board member focuses on writing grants. In addition to this role, however, I have recently been using my skills in Instructional Design and the platform Articulate Storyline to design an onboarding course for new volunteers.
