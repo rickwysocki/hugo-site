@@ -13,7 +13,7 @@ skills:
   - HTML5 / CSS
 featured_image: featured.png
 featured_alt: Little Ghost logo.
-published: false
+published: true
 
 ---
 
