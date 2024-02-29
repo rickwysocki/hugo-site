@@ -16,7 +16,7 @@ tags:
 
 In this tutorial, I describe how to write conditional image layouts using [Go](https://go.dev/) and HTML for a [Hugo](https://gohugo.io) site.
 
-When I started designing [Little Ghost](https://github.com/rickwysocki/littleGhost), my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page's front matter and the site configuration file. Hugo's [figure shortcode](https://gohugo.io/content-management/shortcodes/#figure) was an option, but I wanted something more automatic. After a bit of learning, I learned how easy this can be in Hugo.
+When I started designing [Little Ghost](https://github.com/rickwysocki/littleGhost), my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page's front matter and the site configuration file. Hugo's [figure shortcode](https://gohugo.io/content-management/shortcodes/#figure) was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.
 
 ## Part 1: Featured Images for Pages (Basic)
 
