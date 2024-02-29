@@ -1,13 +1,12 @@
 ---
 layout: single
-title:  "Conditional Image Layouts in Hugo"
-date:   2023-07-20 08:40:22 -0500
+title:  "Conditional Image Layouts in Hugo (Technical Article)"
 summary: This post describes how to write conditional image layouts using Go and HTML for a Hugo site. 
 featured_image: featured.png
 featured_alt: A screenshot of some of the code from this tutorial.
 featured_caption: Photo by Campina Grande - https://unsplash.com/photos/Z19vToWBDIc
 published: true
-featured_post: true
+categories: portfolio
 tags:
   - Web Development
   - Hugo
@@ -34,7 +33,7 @@ Finally, I wanted this to be optional. If no front matter is declared, no HTML s
 
 Here is the entire HTML and Go markup / code for this feature. I'll explain each line below.
 
-```golang
+```go
 {{ if isset .Params "featured_image" }}
 
 {{ $image := .Resources.GetMatch .Params.featured_image }}
@@ -51,7 +50,7 @@ So what is each line doing here?
 
 First, we check whether a `featured_image` is set in the front matter. If there isn't everything else will be ignored:
 
-```
+```go
 {{ if isset .Params "featured_image" }}
 ```
 
@@ -65,7 +64,7 @@ So, what we want to do is:
 
 The next line accomplishes all three of these tasks:
 
-```
+```go
 {{ $image := .Resources.GetMatch .Params.featured_image }}
 ```
 
@@ -73,7 +72,7 @@ At this point, we have our image as a resource, but we haven't created its displ
 
 First, we'll open (and leave open) the image tag:
 
-```
+```html
 <img
 ```
 
@@ -81,7 +80,7 @@ Then, as with any image tag, we need to include the source for the file. This is
 
 The only slight twist is that we need to set the scope for the image's source permalink so that we can also declare the alt text using another front matter parameter. So we'll also include `{{ with }} ... {{ end }}` around _only_ the `src` line:
 
-```
+```go
 <img
     {{ with $image }}src="{{$image.RelPermalink }}"{{end}}
 />
@@ -89,13 +88,13 @@ The only slight twist is that we need to set the scope for the image's source pe
 
 Finally, we can also include alt text with our image using the `featured_alt` parameter in the front matter:
 
-```
+```go
 alt="{{ .Params.featured_alt }}"
 ```
 
 At the end, we just need to close the conditional statement we started at the beginning of the block with `{{ end }}`. Here's the whole block again:
 
-```
+```go
 {{ if isset .Params "featured_image" }}
 
 {{ $image := .Resources.GetMatch .Params.featured_image }}
@@ -109,7 +108,7 @@ At the end, we just need to close the conditional statement we started at the be
 
 Once you've written this into your page layout file, **all you'll ever have to do** is include the following two lines in your page front matter:
 
-```
+```yaml
 ---
 featured_image: image.jpg
 featured_alt: "Your alt text."
@@ -126,7 +125,7 @@ But there's more! We can expand our basic layout and front matter parameters to 
 
 First, let's look at the markup / code for a _full grid layout_ of blog posts. Ignore Tailwind CSS classes, which are irrelevant. 
 
-```
+```go
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
       <article class="p-6 shadow-lg flex flex-col">
@@ -179,7 +178,7 @@ To summarize what's going on here: we're creating a layout where Hugo will range
 
 The main thing you need to understand is that all of this is surrounded by:
 
-```
+```go
 {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
     ...
@@ -200,7 +199,7 @@ So, back to our focus: the featured image. We _could_ simply copy the image layo
 
 So how do we do all this? Let's take a closer look at the image-related part of the markup / code above:
 
-```
+```go
 {{ if isset .Params "featured_image" }}
 
     {{ $image := .Resources.GetMatch .Params.featured_image }}
@@ -235,7 +234,7 @@ Much of this should hopefully look familiar to you now. To summarize the first h
 
 Now let's look at the second half, which starts at the `{{ else }}` line:
 
-```
+```go
 {{ else }}
 
     {{ $image := resources.Get .Site.Params.post_image }}
@@ -251,7 +250,7 @@ Now let's look at the second half, which starts at the `{{ else }}` line:
 ```
 Note that we're getting something different in our variable here: `.Site.Params.post_image`. What this block is saying is that if a featured_image **hasn't** been called on a page, Hugo should go get a default image declared in your configuration file title `post_image`. Again, you can include also define the alt text there as `post_image_alt`. In your config file, it would look like this:
 
-```
+```toml
 post_image = 'images/image.png'
 post_image_alt = 'Alt text.'
 ```
@@ -262,7 +261,7 @@ Note that I'm using a config.toml file, so the specific syntax might vary since 
 
 We're in the home stretch now. There's one small piece of our markup / code that we haven't talked about, but it's doing some essential work. Note that we've added something to how we've called our image source:
 
-```
+```go
 {{ (($image.Crop "1200x800").Resize "600x").RelPermalink }}
 ```
 
