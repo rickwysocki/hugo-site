@@ -6,6 +6,8 @@ project_info: true
 featured_image: gpt1.jpg
 featured_alt: 
 skills:
+- Technical Writing
+- Snagit
 categories:
   - Portfolio
 published: true
@@ -14,7 +16,7 @@ published: true
 
 ## Description
 
-Writing courses will need to adapt to the prevalence of AI tools such as ChatGPT and their complex roles in the writing process. I created the brief tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments. I have adapted the tutorial as a webpage since the original version was created with Canvas (my university's learning management system) which for privacy and technical reasons can't be included on this site. I created and edited the screencaptured images using Snagit. 
+Writing courses will need to adapt to the prevalence of AI tools such as ChatGPT and their complex roles in the writing process. I created the brief tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments. I have recreated the tutorial as a webpage since I wrote the original version using Canvas (my university's learning management system) which for privacy and technical reasons can't be included on this site. I created and edited the screencaptured images using Snagit. 
 
 ## Tutorial
 
