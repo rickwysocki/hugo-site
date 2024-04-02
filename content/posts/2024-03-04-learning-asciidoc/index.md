@@ -3,7 +3,7 @@ layout: single
 title:  "Learning Asciidoc"
 date:   2024-03-04 08:40:22 -0500
 summary: I learned AsciiDoc.
-featured_image: featured.png
+featured_image: featured.jpg
 featured_alt: A photo of a stack of print documents.
 featured_caption: Photo by ron dyar - https://unsplash.com/photos/stack-of-papers-V29UWcALNko
 published: true
