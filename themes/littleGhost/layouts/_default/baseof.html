@@ -32,7 +32,9 @@
     {{- partial "featured-posts.html" . -}}
 
 
-
+    {{ if .Params.comments }}
+      {{- partial "disqus.html" . -}}
+    {{ end }}
 
     {{- partial "footer.html" . -}}
   </div>
