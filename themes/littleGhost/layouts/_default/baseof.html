@@ -16,31 +16,19 @@
 
 
   <div class="mx-auto">
-
-
-
-
-
-        {{ block "main" . }}
-          <!-- The part of the page that begins to differ between templates -->
-        {{ end }}
-
-
-
-
+    
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
 
     {{- partial "featured-posts.html" . -}}
 
-
-    {{ if .Params.comments }}
+    {{ if .Params.comments"a }}
       {{- partial "disqus.html" . -}}
     {{ end }}
 
     {{- partial "footer.html" . -}}
   </div>
-
-
-
 
 </body>
 </html>
