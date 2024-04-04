@@ -16,14 +16,14 @@
 
 
   <div class="mx-auto">
-    
+
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
 
     {{- partial "featured-posts.html" . -}}
 
-    {{ if .Params.comments"a }}
+    {{ if .Params.comments }}
       {{- partial "disqus.html" . -}}
     {{ end }}
 

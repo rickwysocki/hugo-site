@@ -8,7 +8,6 @@ featured_image: featured.jpg
 featured_alt: A photo of Spotify's genre playlist interface.
 tags:
   - Genre
-featured_post: true
 summary: A concept that is has been popping up in recent posts is genre. It's not surprising, as genre is central not only to film--increasingly, the focus of this blog--but to rhetoric and writing studies, my academic home. But what *is* genre?
 
 ---

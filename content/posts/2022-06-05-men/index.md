@@ -12,7 +12,6 @@ tags:
   - Genre
 movies:
   - Men
-featured_post: true
 ---
 
 A few weeks ago, I went to see Alex Garland's film *Men*. I really enjoyed, especially in the context of my growing interest in both film genre studies and the specific genre of horror.
