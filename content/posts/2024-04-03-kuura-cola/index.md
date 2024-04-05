@@ -3,7 +3,7 @@ layout: single
 title:  "Kuura Cola"
 date:   2024-04-03 08:40:22 -0500
 summary: Notes on a very tasty and very straightforward ripe puer tea. (When brewed using gongfu method.)
-featured_image: featured.jpg
+featured_image: featured.jpeg
 featured_alt: 
 featured_caption: 
 draft: true

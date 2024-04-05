@@ -3,7 +3,7 @@ layout: single
 title:  "Bulang Huang Chen Hao (2018)"
 date:   2024-04-03 08:40:22 -0500
 summary:
-featured_image: featured.jpg
+featured_image: featured.jpeg
 featured_alt: 
 featured_caption: 
 draft: true
