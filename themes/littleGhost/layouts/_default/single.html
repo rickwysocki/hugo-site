@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="prose text-xl prose-a:text-sky-600 leading-7 mx-auto mt-8">
+<div class="prose text-xl prose-a:text-indigo-600 leading-7 mx-auto mt-8">
 
 
 <h1>{{ .Title }}</h1>
@@ -14,10 +14,14 @@
 
 {{ end }}
 
+
+{{ if isset .Params "include_author" }}
 <div class="flex flex-row gap-4 items-center">
   <i class="fa fa-at"></i>
   <p class="my-0 text-gray-600">{{ .Site.Params.author}}</p>
 </div>
+{{ end }}
+
   {{ if isset .Params "date"}}
   <div class="flex flex-row gap-4 items-center">
     <i class="fa fa-calendar"></i>
