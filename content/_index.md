@@ -9,4 +9,4 @@ I am a writer and educator with a passion for technical documentation. As an aca
 
 This site serves as both my professional portfolio and my blog, where I write about topics such as web design, film, or tea. I'm always looking for interesting projects, so if you have one in mind, don't hesitate to [reach out!](mailto:rlwysockijr@gmail.com)
 
-{{< figure src="april.jpeg"  >}}
+{{< figure src="april.jpeg"  alt="A photo of me and my German Shepherd dog, April.">}}

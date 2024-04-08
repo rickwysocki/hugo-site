@@ -7,7 +7,6 @@ featured_image: featured.jpg
 featured_alt: A graphic of notebooks and folders arranged in a way that signals a file structure.
 featured_caption: Photo by Campina Grande - https://unsplash.com/photos/Z19vToWBDIc
 published: true
-featured_post: true
 tags:
   - Media Studies
 ---
