@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Rick Wysocki</title>
+    <link>http://localhost:53864/skills/hugo/</link>
+    <description>Recent content in Hugo on Rick Wysocki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:53864/skills/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Little Ghost (Technical Documentation and Hugo Theme)</title>
+      <link>http://localhost:53864/portfolio/little-ghost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:53864/portfolio/little-ghost/</guid>
+      <description>I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.</description>
+    </item>
+    
+  </channel>
+</rss>

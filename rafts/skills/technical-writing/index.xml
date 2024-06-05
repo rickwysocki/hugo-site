@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Writing on Rick Wysocki</title>
+    <link>http://localhost:53864/skills/technical-writing/</link>
+    <description>Recent content in Technical Writing on Rick Wysocki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://localhost:53864/skills/technical-writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditional Image Layouts in Hugo (Technical Article)</title>
+      <link>http://localhost:53864/portfolio/hugo-conditional-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:53864/portfolio/hugo-conditional-images/</guid>
+      <description>This post describes how to write conditional image layouts using Go and HTML for a Hugo site.</description>
+    </item>
+    
+    <item>
+      <title>Exporting ChatGPT Conversations (Tutorial)</title>
+      <link>http://localhost:53864/portfolio/sharing-chatgpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:53864/portfolio/sharing-chatgpt/</guid>
+      <description>I created this tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments.</description>
+    </item>
+    
+    <item>
+      <title>Little Ghost (Technical Documentation and Hugo Theme)</title>
+      <link>http://localhost:53864/portfolio/little-ghost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:53864/portfolio/little-ghost/</guid>
+      <description>I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.</description>
+    </item>
+    
+  </channel>
+</rss>
