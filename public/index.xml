@@ -2,171 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Rick Wysocki</title>
-    <link>http://localhost:52731/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jun 2024 05:44:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:52731/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jun 2024 03:55:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Roundup: June 10, 2024</title>
+      <link>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</link>
+      <pubDate>Mon, 10 Jun 2024 03:55:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</guid>
+      <description>A few links I found interesting this week.</description>
+    </item>
     <item>
       <title>Writing Feedback with TextExpander</title>
-      <link>http://localhost:52731/posts/2024/06/writing-feedback-with-textexpander/</link>
+      <link>http://localhost:1313/posts/2024/06/writing-feedback-with-textexpander/</link>
       <pubDate>Wed, 05 Jun 2024 05:44:00 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2024/06/writing-feedback-with-textexpander/</guid>
+      <guid>http://localhost:1313/posts/2024/06/writing-feedback-with-textexpander/</guid>
       <description>This post details how I use TextExpander to offer high-quality feedback to my students in an organized and efficient manner.</description>
     </item>
     <item>
       <title>Kuura Cola</title>
-      <link>http://localhost:52731/posts/2024/04/kuura-cola/</link>
+      <link>http://localhost:1313/posts/2024/04/kuura-cola/</link>
       <pubDate>Mon, 08 Apr 2024 04:09:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2024/04/kuura-cola/</guid>
+      <guid>http://localhost:1313/posts/2024/04/kuura-cola/</guid>
       <description>An introduction to my obsession and notes on a tasty and very straightforward ripe puer tea.</description>
     </item>
     <item>
       <title>Some Updates</title>
-      <link>http://localhost:52731/posts/2024/04/some-updates/</link>
+      <link>http://localhost:1313/posts/2024/04/some-updates/</link>
       <pubDate>Thu, 04 Apr 2024 12:00:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2024/04/some-updates/</guid>
+      <guid>http://localhost:1313/posts/2024/04/some-updates/</guid>
       <description>With a lot going on in my life (positively), I&amp;rsquo;ve been a bit slow on writing posts here. This week, though, I&amp;rsquo;ve been doing some work around the site and figured I&amp;rsquo;d note a few updates.</description>
     </item>
     <item>
       <title>Learning Asciidoc</title>
-      <link>http://localhost:52731/posts/2024/03/learning-asciidoc/</link>
+      <link>http://localhost:1313/posts/2024/03/learning-asciidoc/</link>
       <pubDate>Mon, 04 Mar 2024 08:40:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2024/03/learning-asciidoc/</guid>
+      <guid>http://localhost:1313/posts/2024/03/learning-asciidoc/</guid>
       <description>I learned AsciiDoc.</description>
     </item>
     <item>
       <title>Conditional Image Layouts in Hugo</title>
-      <link>http://localhost:52731/posts/2023/07/conditional-image-layouts-in-hugo/</link>
+      <link>http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/</link>
       <pubDate>Thu, 20 Jul 2023 08:40:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2023/07/conditional-image-layouts-in-hugo/</guid>
+      <guid>http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/</guid>
       <description>This post describes how to write conditional image layouts using Go and HTML for a Hugo site.</description>
     </item>
     <item>
       <title>Ted Nelson&#39;s Evolutionary List File and Information Management</title>
-      <link>http://localhost:52731/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</link>
+      <link>http://localhost:1313/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</link>
       <pubDate>Sat, 15 Jul 2023 12:41:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</guid>
+      <guid>http://localhost:1313/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</guid>
       <description>In 1965, Ted Nelson theorized the Evolutionary List File and offered clear insights into the relationship between technology and creativity that are still relevant today.</description>
     </item>
     <item>
       <title>Little Ghost Theme</title>
-      <link>http://localhost:52731/posts/2023/06/little-ghost-theme/</link>
+      <link>http://localhost:1313/posts/2023/06/little-ghost-theme/</link>
       <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/posts/2023/06/little-ghost-theme/</guid>
+      <guid>http://localhost:1313/posts/2023/06/little-ghost-theme/</guid>
       <description>I just put up a Hugo Theme on Github.</description>
     </item>
     <item>
       <title>New Site (and Birthday Post)</title>
-      <link>http://localhost:52731/posts/2023/06/new-site-and-birthday-post/</link>
+      <link>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/posts/2023/06/new-site-and-birthday-post/</guid>
+      <guid>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</guid>
       <description>I&amp;rsquo;ve got a new site put together. And a quick review of the year.</description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:52731/posts/2023/03/hugo/</link>
+      <link>http://localhost:1313/posts/2023/03/hugo/</link>
       <pubDate>Fri, 10 Mar 2023 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2023/03/hugo/</guid>
+      <guid>http://localhost:1313/posts/2023/03/hugo/</guid>
       <description>So, I&amp;rsquo;m learning Hugo.</description>
     </item>
     <item>
       <title>Covid - Day Three</title>
-      <link>http://localhost:52731/posts/2022/12/covid-day-three/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-three/</link>
       <pubDate>Sat, 17 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/12/covid-day-three/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-three/</guid>
       <description>Day three has been alright so far. Last night, again, my only issue sleeping was my wrecked throat. A bought me some chloraseptic today; I imagine that will help tonight.</description>
     </item>
     <item>
       <title>Covid - Day Two</title>
-      <link>http://localhost:52731/posts/2022/12/covid-day-two/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-two/</link>
       <pubDate>Fri, 16 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/12/covid-day-two/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-two/</guid>
       <description>My second day of Covid. The good news-A tested this morning and so far continues to come up negative. The bad news-I feel like butt.</description>
     </item>
     <item>
       <title>Covid - Day One</title>
-      <link>http://localhost:52731/posts/2022/12/covid-day-one/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-one/</link>
       <pubDate>Thu, 15 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/12/covid-day-one/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-one/</guid>
       <description>I made it several years into the Covid-19 pandemic without catching the virus. Unfortunately, my time has come.</description>
     </item>
     <item>
       <title>What is Genre?</title>
-      <link>http://localhost:52731/posts/2022/06/what-is-genre/</link>
+      <link>http://localhost:1313/posts/2022/06/what-is-genre/</link>
       <pubDate>Tue, 21 Jun 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/06/what-is-genre/</guid>
+      <guid>http://localhost:1313/posts/2022/06/what-is-genre/</guid>
       <description>A concept that is has been popping up in recent posts is genre. It&amp;rsquo;s not surprising, as genre is central not only to film&amp;ndash;increasingly, the focus of this blog&amp;ndash;but to rhetoric and writing studies, my academic home. But what &lt;em&gt;is&lt;/em&gt; genre?</description>
     </item>
     <item>
       <title>Superheroes: Ritual or Ideology?</title>
-      <link>http://localhost:52731/posts/2022/06/superheroes-ritual-or-ideology/</link>
+      <link>http://localhost:1313/posts/2022/06/superheroes-ritual-or-ideology/</link>
       <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/posts/2022/06/superheroes-ritual-or-ideology/</guid>
-      <description>I read something fascinating in Rick Altman&amp;rsquo;s book that I discussed in &lt;a href=&#34;http://localhost:52731/film/men/&#34;&gt;another recent post&lt;/a&gt;. He talked about two ways that critics tend to look at film&amp;rsquo;s social dimension. These are as ritual or as ideology.</description>
+      <guid>http://localhost:1313/posts/2022/06/superheroes-ritual-or-ideology/</guid>
+      <description>I read something fascinating in Rick Altman&amp;rsquo;s book that I discussed in &lt;a href=&#34;http://localhost:1313/film/men/&#34;&gt;another recent post&lt;/a&gt;. He talked about two ways that critics tend to look at film&amp;rsquo;s social dimension. These are as ritual or as ideology.</description>
     </item>
     <item>
       <title>Masculinity in Shane and Yojimbo</title>
-      <link>http://localhost:52731/posts/2022/06/masculinity-in-shane-and-yojimbo/</link>
+      <link>http://localhost:1313/posts/2022/06/masculinity-in-shane-and-yojimbo/</link>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/posts/2022/06/masculinity-in-shane-and-yojimbo/</guid>
+      <guid>http://localhost:1313/posts/2022/06/masculinity-in-shane-and-yojimbo/</guid>
       <description>I&amp;rsquo;ve been going through some of my notes from a film genre class I took in graduate school. One week, we watched &lt;em&gt;Shane&lt;/em&gt; and &lt;em&gt;Yojimbo&lt;/em&gt; as cross-cultural examples of the western, which historically commingled with the samurai film in Japan.</description>
     </item>
     <item>
       <title>Men (2022)</title>
-      <link>http://localhost:52731/posts/2022/06/men-2022/</link>
+      <link>http://localhost:1313/posts/2022/06/men-2022/</link>
       <pubDate>Sun, 05 Jun 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/06/men-2022/</guid>
+      <guid>http://localhost:1313/posts/2022/06/men-2022/</guid>
       <description>A few weeks ago, I went to see Alex Garland&amp;rsquo;s film Men. I really enjoyed, especially in the context of my growing interest in both film genre studies and the specific genre of horror.</description>
     </item>
     <item>
       <title>Two Films on Catastrophe</title>
-      <link>http://localhost:52731/posts/2022/01/two-films-on-catastrophe/</link>
+      <link>http://localhost:1313/posts/2022/01/two-films-on-catastrophe/</link>
       <pubDate>Wed, 05 Jan 2022 11:34:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2022/01/two-films-on-catastrophe/</guid>
+      <guid>http://localhost:1313/posts/2022/01/two-films-on-catastrophe/</guid>
       <description>Last night I watched Nicholas Ashe Bateman&amp;rsquo;s The Wanting Mare and Adam McKay&amp;rsquo;s Don&amp;rsquo;t Look Up. Each suggests a similar conclusion-in a senseless world, codependence is the only way to find meaning.</description>
     </item>
     <item>
       <title>Memory, Document, Archive</title>
-      <link>http://localhost:52731/posts/2021/11/memory-document-archive/</link>
+      <link>http://localhost:1313/posts/2021/11/memory-document-archive/</link>
       <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2021/11/memory-document-archive/</guid>
+      <guid>http://localhost:1313/posts/2021/11/memory-document-archive/</guid>
       <description>By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can&amp;rsquo;t always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.</description>
     </item>
     <item>
       <title>What is New About New Media?</title>
-      <link>http://localhost:52731/posts/2021/11/what-is-new-about-new-media/</link>
+      <link>http://localhost:1313/posts/2021/11/what-is-new-about-new-media/</link>
       <pubDate>Tue, 16 Nov 2021 11:34:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2021/11/what-is-new-about-new-media/</guid>
+      <guid>http://localhost:1313/posts/2021/11/what-is-new-about-new-media/</guid>
       <description>New media are better defined as media that challenge our existing conceptions of technology&amp;hellip; even if the new media in question might be old.</description>
     </item>
     <item>
       <title>Satoyama, Modernity, and Tradition in Japanese Anime</title>
-      <link>http://localhost:52731/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</link>
+      <link>http://localhost:1313/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</link>
       <pubDate>Sun, 13 Jun 2021 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</guid>
+      <guid>http://localhost:1313/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</guid>
       <description>I&amp;rsquo;ve been reading scholarship about anime, its history, and how it deviates from animation in the United States. It&amp;rsquo;s frequently observed that tensions between tradition and modernity are often central to anime.</description>
     </item>
     <item>
       <title>Conditional Image Layouts in Hugo (Technical Article)</title>
-      <link>http://localhost:52731/portfolio/hugo-conditional-images/</link>
+      <link>http://localhost:1313/portfolio/hugo-conditional-images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/portfolio/hugo-conditional-images/</guid>
+      <guid>http://localhost:1313/portfolio/hugo-conditional-images/</guid>
       <description>This post describes how to write conditional image layouts using Go and HTML for a Hugo site.</description>
     </item>
     <item>
       <title>Exporting ChatGPT Conversations (Tutorial)</title>
-      <link>http://localhost:52731/portfolio/sharing-chatgpt/</link>
+      <link>http://localhost:1313/portfolio/sharing-chatgpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/portfolio/sharing-chatgpt/</guid>
+      <guid>http://localhost:1313/portfolio/sharing-chatgpt/</guid>
       <description>I created this tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments.</description>
     </item>
     <item>
       <title>Little Ghost (Technical Documentation and Hugo Theme)</title>
-      <link>http://localhost:52731/portfolio/little-ghost/</link>
+      <link>http://localhost:1313/portfolio/little-ghost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52731/portfolio/little-ghost/</guid>
+      <guid>http://localhost:1313/portfolio/little-ghost/</guid>
       <description>I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.</description>
     </item>
   </channel>

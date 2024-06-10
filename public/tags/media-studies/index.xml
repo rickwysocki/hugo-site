@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Media Studies on Rick Wysocki</title>
-    <link>http://localhost:52731/tags/media-studies/</link>
+    <link>http://localhost:1313/tags/media-studies/</link>
     <description>Recent content in Media Studies on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jul 2023 12:41:22 -0500</lastBuildDate>
-    <atom:link href="http://localhost:52731/tags/media-studies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/media-studies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ted Nelson&#39;s Evolutionary List File and Information Management</title>
-      <link>http://localhost:52731/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</link>
+      <link>http://localhost:1313/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</link>
       <pubDate>Sat, 15 Jul 2023 12:41:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</guid>
+      <guid>http://localhost:1313/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</guid>
       <description>In 1965, Ted Nelson theorized the Evolutionary List File and offered clear insights into the relationship between technology and creativity that are still relevant today.</description>
     </item>
     <item>
       <title>Memory, Document, Archive</title>
-      <link>http://localhost:52731/posts/2021/11/memory-document-archive/</link>
+      <link>http://localhost:1313/posts/2021/11/memory-document-archive/</link>
       <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2021/11/memory-document-archive/</guid>
+      <guid>http://localhost:1313/posts/2021/11/memory-document-archive/</guid>
       <description>By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can&amp;rsquo;t always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.</description>
     </item>
     <item>
       <title>What is New About New Media?</title>
-      <link>http://localhost:52731/posts/2021/11/what-is-new-about-new-media/</link>
+      <link>http://localhost:1313/posts/2021/11/what-is-new-about-new-media/</link>
       <pubDate>Tue, 16 Nov 2021 11:34:22 -0500</pubDate>
-      <guid>http://localhost:52731/posts/2021/11/what-is-new-about-new-media/</guid>
+      <guid>http://localhost:1313/posts/2021/11/what-is-new-about-new-media/</guid>
       <description>New media are better defined as media that challenge our existing conceptions of technology&amp;hellip; even if the new media in question might be old.</description>
     </item>
   </channel>
