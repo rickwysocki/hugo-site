@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Look Up on Rick Wysocki</title>
-    <link>http://localhost:52548/movies/dont-look-up/</link>
+    <link>http://localhost:52731/movies/dont-look-up/</link>
     <description>Recent content in Don&#39;t Look Up on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Jan 2022 11:34:22 -0500</lastBuildDate>
-    <atom:link href="http://localhost:52548/movies/dont-look-up/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52731/movies/dont-look-up/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Films on Catastrophe</title>
-      <link>http://localhost:52548/posts/2022/01/two-films-on-catastrophe/</link>
+      <link>http://localhost:52731/posts/2022/01/two-films-on-catastrophe/</link>
       <pubDate>Wed, 05 Jan 2022 11:34:22 -0500</pubDate>
-      <guid>http://localhost:52548/posts/2022/01/two-films-on-catastrophe/</guid>
+      <guid>http://localhost:52731/posts/2022/01/two-films-on-catastrophe/</guid>
       <description>Last night I watched Nicholas Ashe Bateman&amp;rsquo;s The Wanting Mare and Adam McKay&amp;rsquo;s Don&amp;rsquo;t Look Up. Each suggests a similar conclusion-in a senseless world, codependence is the only way to find meaning.</description>
     </item>
   </channel>

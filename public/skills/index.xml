@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Skills on Rick Wysocki</title>
-    <link>http://localhost:52548/skills/</link>
+    <link>http://localhost:52731/skills/</link>
     <description>Recent content in Skills on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:52548/skills/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52731/skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AsciiDoc</title>
-      <link>http://localhost:52548/skills/asciidoc/</link>
+      <link>http://localhost:52731/skills/asciidoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/asciidoc/</guid>
+      <guid>http://localhost:52731/skills/asciidoc/</guid>
       <description></description>
     </item>
     <item>
       <title>Git / GitHub</title>
-      <link>http://localhost:52548/skills/git-/-github/</link>
+      <link>http://localhost:52731/skills/git-/-github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/git-/-github/</guid>
+      <guid>http://localhost:52731/skills/git-/-github/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:52548/skills/go/</link>
+      <link>http://localhost:52731/skills/go/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/go/</guid>
+      <guid>http://localhost:52731/skills/go/</guid>
       <description></description>
     </item>
     <item>
       <title>HTML5 / CSS</title>
-      <link>http://localhost:52548/skills/html5-/-css/</link>
+      <link>http://localhost:52731/skills/html5-/-css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/html5-/-css/</guid>
+      <guid>http://localhost:52731/skills/html5-/-css/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:52548/skills/hugo/</link>
+      <link>http://localhost:52731/skills/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/hugo/</guid>
+      <guid>http://localhost:52731/skills/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Snagit</title>
-      <link>http://localhost:52548/skills/snagit/</link>
+      <link>http://localhost:52731/skills/snagit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/snagit/</guid>
+      <guid>http://localhost:52731/skills/snagit/</guid>
       <description></description>
     </item>
     <item>
       <title>Tailwind CSS</title>
-      <link>http://localhost:52548/skills/tailwind-css/</link>
+      <link>http://localhost:52731/skills/tailwind-css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/tailwind-css/</guid>
+      <guid>http://localhost:52731/skills/tailwind-css/</guid>
       <description></description>
     </item>
     <item>
       <title>Technical Writing</title>
-      <link>http://localhost:52548/skills/technical-writing/</link>
+      <link>http://localhost:52731/skills/technical-writing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/technical-writing/</guid>
+      <guid>http://localhost:52731/skills/technical-writing/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Design</title>
-      <link>http://localhost:52548/skills/web-design/</link>
+      <link>http://localhost:52731/skills/web-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/skills/web-design/</guid>
+      <guid>http://localhost:52731/skills/web-design/</guid>
       <description></description>
     </item>
   </channel>

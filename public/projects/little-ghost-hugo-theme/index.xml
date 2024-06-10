@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Little Ghost Hugo Theme on Rick Wysocki</title>
-    <link>http://localhost:52548/projects/little-ghost-hugo-theme/</link>
+    <link>http://localhost:52731/projects/little-ghost-hugo-theme/</link>
     <description>Recent content in Little Ghost Hugo Theme on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52548/projects/little-ghost-hugo-theme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52731/projects/little-ghost-hugo-theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Little Ghost Theme</title>
-      <link>http://localhost:52548/posts/2023/06/little-ghost-theme/</link>
+      <link>http://localhost:52731/posts/2023/06/little-ghost-theme/</link>
       <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52548/posts/2023/06/little-ghost-theme/</guid>
+      <guid>http://localhost:52731/posts/2023/06/little-ghost-theme/</guid>
       <description>I just put up a Hugo Theme on Github.</description>
     </item>
   </channel>

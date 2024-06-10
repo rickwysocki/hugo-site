@@ -14,7 +14,7 @@ enableInlineShortcodes = true
   # SEO
   description = 'Website and blog of Rick Wysocki.'
   site_image = 'images/ghost.png' # Add site-wide featured image here.
-  author_image = '/images/bio-photo.png' # Used for main author bio card.
+  author_image = '/images/bio-photo.jpg' # Used for main author bio card.
   nav_logo = 'images/ghost.png' # Icon included in nav-bar.
   post_image = 'images/ghost-post-image.png'
   post_image_alt = 'Little Ghost logo.'

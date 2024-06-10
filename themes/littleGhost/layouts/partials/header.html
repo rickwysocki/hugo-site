@@ -4,7 +4,7 @@
   <h1 class="text-2xl font-bold text-indigo-600">Rick Wysocki</h1>
   {{ $image := resources.Get .Site.Params.author_image }}
   <img class= "my-4 mx-auto h-40 rounded-full" src="{{ $image.RelPermalink }}" />
-  <p class="text-lg text-neutral-600 mx-md text-center font-serif">Writing and Technology</p>
+  <p class="text-lg text-neutral-600 mx-md text-center font-serif">Writing Expert | Educator | Technical Communicator</p>
   <hr class="w-16 mx-auto my-5 border-neutral-600">
   <div class="flex gap-4 justify-center mt-2 text-xl text-neutral-600">
     {{ if isset .Site.Params `email` }}<a href="mailto:{{ .Site.Params.email }}"><i class="fa fa-envelope"></i></a>{{ end }}
