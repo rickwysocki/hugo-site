@@ -62,7 +62,7 @@ pluralizeListTitles = false
   categories = '/:title/'
 
 [security]
-enableInlineShortcodes = false
+enableInlineShortcodes = true
 
 [security.exec]
 allow = ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]

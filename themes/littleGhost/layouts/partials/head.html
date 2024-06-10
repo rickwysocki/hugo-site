@@ -18,8 +18,6 @@
     {{ $style := resources.Get "style.css" }}
    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-
-
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
