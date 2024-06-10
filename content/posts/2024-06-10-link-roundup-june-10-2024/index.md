@@ -18,7 +18,7 @@ Here are a few links I found interesting this week. Following a technique I noti
 
 Apple is introducing a new personal intelligence system called Apple Intelligence that will be integrated across iPhone, iPad, and Mac devices. Some key features of Apple Intelligence include:
 
-- New systemwide Writing Tools
+- New systemwide Writing Tools.
 -  Improved photo and video search capabilities.
 - Integration of ChatGPT across Apple platforms.
 - New email features like Priority Messages and smart summaries in the Mail app.
