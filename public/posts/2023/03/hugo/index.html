@@ -1,0 +1,247 @@
+<!doctype html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZRK4KWSBR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3ZRK4KWSBR');
+    </script>
+
+    
+    <script src="https://kit.fontawesome.com/68345f7fdb.js" crossorigin="anonymous"></script>
+
+    
+   <link rel="stylesheet" href="http://localhost:1313/style.css">
+
+
+
+    
+    
+    <title>Rick Wysocki | Hugo</title>
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/2023/03/hugo/">
+  <meta property="og:site_name" content="Rick Wysocki">
+  <meta property="og:title" content="Hugo">
+  <meta property="og:description" content="A review of how I&#39;m learning Hugo.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-03-10T16:08:22-05:00">
+    <meta property="article:modified_time" content="2023-03-10T16:08:22-05:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Web Development">
+    <meta property="og:image" content="http://localhost:1313/posts/2023/03/hugo/featured.png">
+
+
+    <meta name="author" content="Rick Wysocki"/>
+
+
+
+
+</head>
+<body class="p-4"><nav class="prose mt-4 text-xl max-w-4xl mx-auto mt-8">
+  <ul class="hidden md:flex flex-row pl-0 justify-start items-center gap-4 mt-0">
+
+    
+    <li class="list-none"><a href="/"><img class= "my-4 mx-auto h-7 rounded-full" src="/images/ghost.png" /></a></li>
+
+
+    
+
+    <li class="list-none "><a href="/" class="no-underline group transition duration-300">
+
+      
+      Home
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
+    </a></li>
+    
+
+    <li class="list-none "><a href="/posts/" class="no-underline group transition duration-300">
+
+      
+      Posts
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
+    </a></li>
+    
+
+    <li class="list-none "><a href="/portfolio/" class="no-underline group transition duration-300">
+
+      
+      Portfolio
+    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
+    </a></li>
+    
+
+
+  </ul>
+
+  
+  <div class="md:hidden flex justify-between">
+  	<button class="outline-none mobile-menu-button">
+  		<svg
+  			class="w-6 h-6 text-gray-500"
+  			x-show="!showMenu"
+  			fill="none"
+  			stroke-linecap="round"
+  			stroke-linejoin="round"
+  			stroke-width="2"
+  			viewBox="0 0 24 24"
+  			stroke="currentColor"
+  		>
+  		<path d="M4 6h16M4 12h16M4 18h16"></path>
+  		</svg>
+  	</button>
+    <div>
+    <li class="list-none"><a href="/"><img class= "my-4 mx-auto h-7 rounded-full" src="/images/ghost.png" /></a></li>
+    </div>
+  </div>
+
+  
+<div class="hidden mobile-menu">
+	<ul class="py-6">
+    
+
+		<li class="list-none"><a href="/" class="block text-md py-1 underline decoration-indigo-500">
+      
+      Home
+    </a></li>
+
+    
+
+		<li class="list-none"><a href="/posts/" class="block text-md py-1 underline decoration-indigo-500">
+      
+      Posts
+    </a></li>
+
+    
+
+		<li class="list-none"><a href="/portfolio/" class="block text-md py-1 underline decoration-indigo-500">
+      
+      Portfolio
+    </a></li>
+
+    
+</ul>
+</div>
+
+<script>
+	
+	const btn = document.querySelector("button.mobile-menu-button");
+	const menu = document.querySelector(".mobile-menu");
+
+	
+	btn.addEventListener("click", () => {
+	menu.classList.toggle("hidden");
+	});
+</script>
+</nav>
+
+
+
+  <div class="mx-auto">
+
+    
+<div class="prose text-xl prose-a:text-indigo-600 leading-7 mx-auto mt-8">
+
+
+<h1>Hugo</h1>
+
+
+
+
+<img
+    src="/posts/2023/03/hugo/featured_hu2f243ee2ceab0c6d30b239e18ff6058b_1162800_1000x0_resize_box_3.png"
+    alt="Here is some alt text."
+/>
+
+
+
+
+
+
+  
+  <div class="flex flex-row gap-4 items-center">
+    <i class="fa fa-calendar"></i>
+    <p class="my-0 text-gray-600">March 10, 2023</p>
+  </div>
+  
+  
+  
+<div class="flex flex-row gap-4 items-center">
+  <i class="fa fa-tag"></i>
+  
+  
+    <a class="my-0 text-gray-600" href="/tags/hugo">Hugo</a>
+  
+    <a class="my-0 text-gray-600" href="/tags/web-development">Web Development</a>
+  
+</div>
+
+
+<h2 id="intro">Intro</h2>
+<p>A few months ago, I got tired of dealing with my Jekyll site. That site was hosted on GitHub pages and used the Minimal Mistakes theme, which I continue to love. My issue, though, was that using a remote theme that I didn&rsquo;t quite understand led to ongoing difficulties with deployment. These, of course, all stemmed from user error.</p>
+<p>Frustrated again by a site that wouldn&rsquo;t build or deploy, I said: &ldquo;Screw it. I&rsquo;m going to a readymade option.&rdquo; I chose Ghost.</p>
+<p>This platform seemed to have a lot of value:</p>
+<ul>
+<li>It seemed oriented toward writing and content over anything else.</li>
+<li>There are a lot of cool analytics features within the platform.</li>
+<li>It worked.</li>
+</ul>
+<p>I was unable to stick with Ghost.</p>
+<p>The site worked, for sure. But it didn&rsquo;t give me the kind of granular control over content that I wanted. Worse, it didn&rsquo;t let me <em>tinker</em>, which is the most important feature of technology, to me.</p>
+<p>So, I decided to learn how to create a Hugo site, from scratch.</p>
+<h2 id="prior-knowledge">Prior Knowledge</h2>
+<p>I went into this project knowing essentially nothing about Hugo except its branded tagline: &ldquo;A content manager&rsquo;s dream.&rdquo; That was enough to hook me in. Sure, I&rsquo;ve had tons of experience with HTML, CSS/SCSS, and the relevant languages and markup syntax involved in Jekyll, like Liquid and Ruby. But I had no experience with Go, the language on which Hugo is based, or any of the other relevant aspects of the Hugo framework.</p>
+<h2 id="current-knowledge">Current Knowledge</h2>
+<p>I&rsquo;ve taught myself&hellip; a lot. Over the past several weeks, I&rsquo;ve gone from knowing nothing to having built a pretty much fully functional Hugo site. It may not look like much, currently being pretty &ldquo;Bootstrap-y,&rdquo; but there&rsquo;s plenty of time to figure that out on a rolling basis.</p>
+<p>Here is a list of things I&rsquo;ve learned and / or built into this site during this process:</p>
+<ul>
+<li>Pretty much all of the methods of image processing available in Hugo. I put this first because it was probably the most difficult aspect of the project, requiring the most head-scratching and figuring out how Go works as a language. All of the images across the site are sized automatically to increase the page-load time. That&rsquo;s pretty cool.</li>
+<li>Lots (lots!) about SEO and what to include as far as metadata goes. I knew a fair amount about this, but Minimal Mistakes did a lot of things automatically that I didn&rsquo;t understand and had to learn.</li>
+<li>Foregrounding site and page parameters to follow DRY principles as much as I possibly could. I plan to release the final version of this theme as a project on GitHub, so I&rsquo;ve designed this version to be as modular, customizable, and user-oriented as possible. More can and will be done here, but I&rsquo;m happy with it so far.</li>
+<li>Lots about Hugo shortcodes. One of my bugbears is writing accessible-first markup, as it should be for everyone. It was harder than I thought to create the ability to auto-resize images&ndash;which requires accessing them as global or page resources&ndash;and also pass in things like alt-text and, as necessary, captions. So, I wrote some shortcodes that do just that. Others are less impressive but still useful. I&rsquo;ll detail those at a later time.</li>
+<li>While I&rsquo;ve used Bootstrap many times in the past, I&rsquo;ve never done so using NPM. I wanted a deeper level of customizability (you probably can&rsquo;t currently tell, to be fair), so I learned how to use the NPM version of Bootstrap.</li>
+<li>Finally, I&rsquo;ve just spent a lot of time messing around with the Hugo way of managing content. There&rsquo;s a lot more to come in that regard (see below), but I&rsquo;ve learned a lot and am loving it so far.</li>
+</ul>
+<h2 id="next-steps">Next Steps</h2>
+<p>While I&rsquo;m happy with all the work I&rsquo;ve done here, there are quite a few things I want to get squared away. Here&rsquo;s a list of what&rsquo;s to come.</p>
+<ul>
+<li><strong>The visual design.</strong> I know it, you know it; this site looks very boring. My next move will be focusing on a visual redesign of some of what I have here so far.</li>
+<li><strong>Bringing in more content.</strong> I&rsquo;m planning to bring in old posts and resources, but relatively slowly. The reason is that I want to be exactingly intentional about how I create the content structure for what I have here.</li>
+<li><strong>Release the theme.</strong> The nice thing is that I&rsquo;m not all that far away from this. I&rsquo;ll probably send something up to GitHub once I figure out the visual redesign.</li>
+</ul>
+<p>Fun stuff! I&rsquo;ve learned so much by building this site and developed a lot of useful new skills.</p>
+
+
+</div>
+
+
+<footer class="mx-auto shadow-lg max-w-lg p-6 text-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-16 mb-4">
+    
+    <img class= "sm:mx-0 sm:shrink-0 mx-auto h-24 rounded-full" src="/images/bio-photo.png" />
+    <div class="text-left">
+      <h6 class="font-bold text-indigo-600">Rick Wysocki</h6>
+      <p class="text-gray-600">Assistant Teaching Professor</p>
+      <p>I am a professor at Ball State University. I&#39;m passionate about effective communication, research, and information design. My free time is spent learning new technologies, watching movies, and exploring new music.</p>
+      <div class="flex gap-4 mt-2 text-xl text-indigo-600">
+        <a href="mailto:rlwysockijr@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/rickwysocki"><i class="fa fa-github"></i></a>
+        
+        <a href="https://mas.to/@rickwysocki"><i class="fab fa-mastodon"></i></a>
+
+
+    </div>
+    </div>
+
+</footer>
+</div>
+
+</body>
+</html>
