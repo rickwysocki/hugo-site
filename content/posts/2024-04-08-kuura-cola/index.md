@@ -7,7 +7,6 @@ featured_image: featured.jpeg
 featured_alt: An image of a Kuura Cola cake in its packaging.
 published: true
 comments: true
-featured_post: true
 ---
 
 ## A Brief Introduction

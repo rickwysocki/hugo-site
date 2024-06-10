@@ -7,7 +7,6 @@ featured_image: featured.png
 featured_alt: A screenshot of some of the code from this tutorial.
 featured_caption: Photo by Campina Grande - https://unsplash.com/photos/Z19vToWBDIc
 published: true
-featured_post: true
 tags:
   - Web Development
   - Hugo
