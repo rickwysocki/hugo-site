@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image a of a computer screen reading Documentation.
 published: true
 comments: true
-featured_post: true
 ---
 
 Here's some more interesting content I found this week. As with my last
