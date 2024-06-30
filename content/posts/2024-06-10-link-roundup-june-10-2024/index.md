@@ -1,10 +1,12 @@
 ---
 title:  "Link Roundup: June 10, 2024"
 date:   2024-06-10 3:55:00 -0500
-summary: An image of a man using a markup editor on a computer. 
+summary: A link roundup on AI development. 
 featured_image: featured.png
 featured_alt: The OpenAI logo.
 comments: true
+tags:
+    - link roundup
 ---
 
 Here are a few links I found interesting this week. Following a technique I noticed on [Tom Johnson's blog](https://idratherbewriting.com/blog/links-around-web-june-10-2024) (as well as the theme of the articles), I use AI tools to help provide summaries and then offer some thoughts of my own. 
