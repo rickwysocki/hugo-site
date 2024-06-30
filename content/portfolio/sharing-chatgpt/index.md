@@ -1,13 +1,8 @@
 ---
 title: "Exporting ChatGPT Conversations (Tutorial)"
-layout: portfolio-page
 summary: I created this tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments.
-project_info: true
 featured_image: gpt1.jpg
 featured_alt: 
-skills:
-- Technical Writing
-- Snagit
 categories:
   - Portfolio
 published: true
