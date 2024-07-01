@@ -35,7 +35,7 @@ searching for meaning with the fleeting happiness of abandoning the
 quest. Wysocki notes parallels to Sartre\'s *No Exit* and a *Twilight
 Zone* episode.
 
-## Generated Summary (ChatGPT)
+## My Thoughts
 
 It seems silly to offer more thoughts, given that the post is full of
 them. I can at least add a brief postscript.
