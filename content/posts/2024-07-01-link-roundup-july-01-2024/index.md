@@ -4,7 +4,7 @@ date:   2024-07-01 9:00:00 -0500
 summary: A link roundup including my thoughts on Steven Peck's A Short Stay in Hell, storytelling for UX design, and the importance of document version control.
 featured_image: featured.jpg
 featured_alt: A neon sign reading “What is Your Story"
-published: false
+published: true
 comments: true
 featured_post: true
 tags:
@@ -70,8 +70,8 @@ of design work.
 
 ## My Thoughts
 
-This article picks up a theme present in the links I shared from Vicky
-Zhao/Ian Daniel Stewart a few weeks ago: the importance of
+This article picks up a theme present in the links I shared from [Vicky
+Zhao/Ian Daniel Stewart a few weeks ago](/posts/2024/06/link-roundup-june-17-2024/): the importance of
 **storytelling**. As a writer, storytelling is, of course, near and dear
 to me. As a teacher, it is something that I try to instill in each of my
 students, whether they are professional/technical writers or students in a
@@ -86,11 +86,9 @@ can't help noting how they nearly exactly map onto rhetorical concepts.
 Why Stories?
 
 -   To understand and empathize with users. (Research.)
-
 -   To present design ideas.
     ([Genre](/tags/genre/), invention, and
     delivery.)
-
 -   To share insights in a memorable format. (Circulation and
     mnemonics.)
 
@@ -120,6 +118,6 @@ succinct definition of version control ("tracking and managing different
 versions of a document to ensure users can identify the current
 version") and doesn't assume high-tech solutions like Git. This
 simplicity makes the argument persuasive for multiple audiences,
-regardless of technical knowledge. I could see this as a valuable
+regardless of technical knowledge. I could see this being a valuable
 resource for teaching or even for persuading co-workers to adopt a
 version control protocol.

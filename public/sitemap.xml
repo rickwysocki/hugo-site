@@ -5,16 +5,19 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/link-roundup/</loc>
+    <lastmod>2024-07-01T09:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/07/link-roundup-july-1-2024/</loc>
+    <lastmod>2024-07-01T09:00:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/link-roundup/</loc>
-    <lastmod>2024-06-24T01:05:00-05:00</lastmod>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</loc>
-    <lastmod>2024-06-24T01:05:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-06-24T01:05:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/06/text-and-meaning-in-a-short-stay-in-hell/</loc>

@@ -6,14 +6,21 @@
     <description>Recent content in Home on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2024 01:05:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2024 09:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Roundup: July 1, 2024</title>
+      <link>http://localhost:1313/posts/2024/07/link-roundup-july-1-2024/</link>
+      <pubDate>Mon, 01 Jul 2024 09:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/07/link-roundup-july-1-2024/</guid>
+      <description>A link roundup including my thoughts on Steven Peck&amp;rsquo;s A Short Stay in Hell, storytelling for UX design, and the importance of document version control.</description>
+    </item>
     <item>
       <title>Link Roundup: June 24, 2024</title>
       <link>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</link>
       <pubDate>Mon, 24 Jun 2024 01:05:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</guid>
-      <description>Some links and thoughts on the relationsip between AI and environmental concerns and on action titles as a tool for slide design.</description>
+      <description>Some links and thoughts on the relationship between AI and environmental concerns and on action titles as a tool for slide design.</description>
     </item>
     <item>
       <title>Text and Meaning in A Short Stay in Hell</title>
@@ -34,7 +41,7 @@
       <link>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</link>
       <pubDate>Mon, 10 Jun 2024 03:55:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</guid>
-      <description>An image of a man using a markup editor on a computer.</description>
+      <description>A link roundup on AI development.</description>
     </item>
     <item>
       <title>Writing Feedback with TextExpander</title>
