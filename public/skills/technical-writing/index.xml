@@ -14,19 +14,5 @@
       <guid>http://localhost:1313/portfolio/hugo-conditional-images/</guid>
       <description>This post describes how to write conditional image layouts using Go and HTML for a Hugo site.</description>
     </item>
-    <item>
-      <title>Exporting ChatGPT Conversations (Tutorial)</title>
-      <link>http://localhost:1313/portfolio/sharing-chatgpt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/sharing-chatgpt/</guid>
-      <description>I created this tutorial below for students to acknowledge their use of ChatGPT in writing, specifically by sharing relevant conversations when submitting assignments.</description>
-    </item>
-    <item>
-      <title>Little Ghost (Technical Documentation and Hugo Theme)</title>
-      <link>http://localhost:1313/portfolio/little-ghost/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/little-ghost/</guid>
-      <description>I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.</description>
-    </item>
   </channel>
 </rss>

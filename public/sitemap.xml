@@ -143,8 +143,6 @@
     <loc>http://localhost:1313/shows/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/skills/asciidoc/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/hugo-conditional-images/</loc>
@@ -159,8 +157,6 @@
   </url><url>
     <loc>http://localhost:1313/skills/html5-/-css/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/hugo/</loc>
-  </url><url>
     <loc>http://localhost:1313/portfolio/little-ghost/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
@@ -168,10 +164,6 @@
     <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
     <loc>http://localhost:1313/skills/</loc>
-  </url><url>
-    <loc>http://localhost:1313/skills/snagit/</loc>
-  </url><url>
-    <loc>http://localhost:1313/skills/tailwind-css/</loc>
   </url><url>
     <loc>http://localhost:1313/skills/technical-writing/</loc>
   </url><url>
