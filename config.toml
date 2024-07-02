@@ -46,6 +46,10 @@ pluralizeListTitles = false
       name = "Portfolio"
       url = "/portfolio/"
       weight = 3
+  [[menu.main]]
+      name = "Tags"
+      url = "/tags/"
+      weight = 4
 
 
 [taxonomies]
