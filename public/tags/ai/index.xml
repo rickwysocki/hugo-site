@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Rick Wysocki</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in Ai on Rick Wysocki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jul 2024 06:58:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article Review: Trust in Artificial Intelligence</title>
+      <link>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</link>
+      <pubDate>Tue, 02 Jul 2024 06:58:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</guid>
+      <description>This post discusses a meta-analysis of studies related to trust in AI systems. I consider its implications for how AI might continue to be taken up in work contexts.</description>
+    </item>
+  </channel>
+</rss>

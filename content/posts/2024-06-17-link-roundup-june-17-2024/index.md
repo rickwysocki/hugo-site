@@ -8,6 +8,7 @@ published: true
 comments: true
 tags:
     - link roundup
+    - artificial intelligence
 ---
 
 Here's some more interesting content I found this week. As with my last
@@ -15,14 +16,14 @@ link roundup, I generate summaries using AI tools (here I employ both
 Chat-GPT and Claude) and edit those summaries for accuracy and
 usefulness. Then, I offer some thoughts of my own.
 
-# Vicky Zhao, "3 Simple Ways to Make Clear & Concise Points \| Stop Rambling!" AND Ian Daniel Stewart, "Engage your audience by getting to the point, using story structure, and forcing specificity"
+## Vicky Zhao, "3 Simple Ways to Make Clear & Concise Points \| Stop Rambling!" AND Ian Daniel Stewart, "Engage your audience by getting to the point, using story structure, and forcing specificity"
 
 [Link to Video](https://www.youtube.com/watch?v=vVvcK74h1Mg)
 
 [Link to
 Article](https://iandanielstewart.com/2024/06/09/engage-your-audience-by-getting-to-the-point-using-story-structure-and-forcing-specificity/)
 
-## Summary (Chat-GPT)
+### Summary (Chat-GPT)
 
 *Note: This is a generated summary of Vicky Zhao's video, not Ian Daniel
 Stewart's article about it.*
@@ -42,7 +43,7 @@ avoiding rambling. The three main tips discussed are:
 These tips help in delivering messages more efficiently and avoiding
 unnecessary rambling.
 
-## My Thoughts
+### My Thoughts
 
 I came across Ian Daniel Stewart's article online, which led me to Vicky
 Zhao's video. As someone with a lot of thoughts and not always the best
@@ -53,12 +54,12 @@ from Stewart are helpful. I can see these resources as being especially
 useful for college students and may share Zhao's video the next time I
 teach professional writing.
 
-# Daniel Allington, "The LaTeX fetish (Or: Don't write in LaTeX! It's just for typesetting)"
+## Daniel Allington, "The LaTeX fetish (Or: Don't write in LaTeX! It's just for typesetting)"
 
 [Link to
 Article](http://www.danielallington.net/2016/09/the-latex-fetish/)
 
-## Summary (Claude)
+### Summary (Claude)
 
 Allington discusses the merits and drawbacks of using LaTeX, a document
 markup language and typesetting system popular among scientists and
@@ -85,7 +86,7 @@ In summary, the essay debunks common claims that LaTeX is better for
 writing and argues it should be used solely as a typesetting tool, not a
 writing environment for prose.
 
-## My Thoughts
+### My Thoughts
 
 This is one of my favorite articles I've stumbled across in quite a
 while. Truthfully, the generated summary included above does a
@@ -108,7 +109,7 @@ the history of writing media, or academic writing, there is so much to
 chew on in this article. It gave me a lot of ideas about my own writing
 workflows, and I don't even use LaTeX. I highly recommend the article.
 
-# References
+## References
 
 - Clark, D. (2007). Content Management and the Separation of Presentation
 and Content. *Technical Communication Quarterly*, *17*(1), 35--60.

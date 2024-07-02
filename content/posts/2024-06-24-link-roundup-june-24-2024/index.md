@@ -8,6 +8,7 @@ published: true
 comments: true
 tags:
     - link roundup
+    - artificial intelligence
 ---
 
 
@@ -19,9 +20,9 @@ In these link roundups, I generate summaries using AI and edit those
 summaries for accuracy and usefulness. Then, I offer some thoughts of my
 own.
 
-# Jude Coleman, AI's Climate Impact Goes beyond Its Emissions
+## Jude Coleman, AI's Climate Impact Goes beyond Its Emissions
 
-## Generated Summary (ChatGPT)
+### Generated Summary (ChatGPT)
 
 [Link to
 Article](https://www.scientificamerican.com/article/ais-climate-impact-goes-beyond-its-emissions/)
@@ -38,7 +39,7 @@ Effective climate action requires addressing AI\'s emissions and
 applications, with ethical guidelines and policies to minimize harm and
 maximize benefits.
 
-## My Thoughts
+### My Thoughts
 
 I found this to be a really interesting take on the relationship between
 AI technologies and environmental impacts. I have a lot of qualms about
@@ -49,12 +50,12 @@ argue that a more engaged humanities would be especially
 well-suited to help guide technological development toward these
 applications.
 
-# Alexandra Hazard Kampmann, Matz Stigzelius, "How to Write Slide Action Titles Like McKinsey (With Examples)"
+## Alexandra Hazard Kampmann, Matz Stigzelius, "How to Write Slide Action Titles Like McKinsey (With Examples)"
 
 [Link to
 Article](https://slideworks.io/resources/how-to-write-action-titles-like-mckinsey)
 
-## Generated Summary (ChatGPT)
+### Generated Summary (ChatGPT)
 
 The Slideworks.io article on writing action titles like McKinsey
 explains the importance of action titles in PowerPoint presentations. An
@@ -65,7 +66,7 @@ such as being specific, concise, and using an active voice. These titles
 help to structure the presentation\'s storyline and ensure that each
 slide\'s message is clear and compelling.
 
-## My Thoughts
+### My Thoughts
 
 I typically teach slide design using Edward Tufte's principles for
 information-rich visual content. I came across this link, and I'm

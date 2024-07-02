@@ -5,7 +5,6 @@ summary: This post details how I use TextExpander to offer high-quality feedback
 featured_image: te-email.jpg
 featured_alt: A screenshot of a TextExpander snippet.
 comments: true
-featured_post: true
 ---
 
 This post details how I use [TextExpander]([link](https://textexpander.com/)) to offer high-quality feedback to my students in an organized and efficient manner. 

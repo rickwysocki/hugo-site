@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2024 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2024 09:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article Review: Trust in Artificial Intelligence</title>
+      <link>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</link>
+      <pubDate>Tue, 02 Jul 2024 09:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</guid>
+      <description>This post discusses a meta-analysis of studies related to trust in AI systems. I consider its implications for how AI might continue to be taken up in work contexts.</description>
+    </item>
     <item>
       <title>Link Roundup: July 1, 2024</title>
       <link>http://localhost:1313/posts/2024/07/link-roundup-july-1-2024/</link>
