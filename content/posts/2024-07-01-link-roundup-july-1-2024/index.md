@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: A neon sign reading “What is Your Story"
 published: true
 comments: true
-featured_post: true
 tags:
     - link roundup
 ---

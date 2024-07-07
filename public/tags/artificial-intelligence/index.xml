@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial Intelligence on Rick Wysocki</title>
-    <link>http://localhost:1313/tags/artificial-intelligence/</link>
+    <link>http://localhost:58730/tags/artificial-intelligence/</link>
     <description>Recent content in Artificial Intelligence on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Jul 2024 09:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58730/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article Review: Trust in Artificial Intelligence</title>
-      <link>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</link>
+      <link>http://localhost:58730/posts/2024/07/article-review-trust-in-artificial-intelligence/</link>
       <pubDate>Tue, 02 Jul 2024 09:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</guid>
+      <guid>http://localhost:58730/posts/2024/07/article-review-trust-in-artificial-intelligence/</guid>
       <description>This post discusses a meta-analysis of studies related to trust in AI systems. I consider its implications for how AI might continue to be taken up in work contexts.</description>
     </item>
     <item>
       <title>Link Roundup: June 24, 2024</title>
-      <link>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</link>
+      <link>http://localhost:58730/posts/2024/06/link-roundup-june-24-2024/</link>
       <pubDate>Mon, 24 Jun 2024 01:05:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</guid>
+      <guid>http://localhost:58730/posts/2024/06/link-roundup-june-24-2024/</guid>
       <description>Some links and thoughts on the relationship between AI and environmental concerns and on action titles as a tool for slide design.</description>
     </item>
     <item>
       <title>Link Roundup: June 17, 2024</title>
-      <link>http://localhost:1313/posts/2024/06/link-roundup-june-17-2024/</link>
+      <link>http://localhost:58730/posts/2024/06/link-roundup-june-17-2024/</link>
       <pubDate>Mon, 17 Jun 2024 01:22:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/link-roundup-june-17-2024/</guid>
+      <guid>http://localhost:58730/posts/2024/06/link-roundup-june-17-2024/</guid>
       <description>Some interesting content I read this week.</description>
     </item>
     <item>
       <title>Link Roundup: June 10, 2024</title>
-      <link>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</link>
+      <link>http://localhost:58730/posts/2024/06/link-roundup-june-10-2024/</link>
       <pubDate>Mon, 10 Jun 2024 03:55:00 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</guid>
+      <guid>http://localhost:58730/posts/2024/06/link-roundup-june-10-2024/</guid>
       <description>A link roundup on AI development.</description>
     </item>
   </channel>

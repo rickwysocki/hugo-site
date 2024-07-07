@@ -2,191 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-04T01:25:00-05:00</lastmod>
+    <loc>http://localhost:58730/</loc>
+    <lastmod>2024-07-07T10:19:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/07/link-roundup-july-7-2024/</loc>
-    <lastmod>2024-07-04T01:25:00-05:00</lastmod>
+    <loc>http://localhost:58730/posts/</loc>
+    <lastmod>2024-07-07T10:19:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-04T01:25:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024/07/article-review-trust-in-artificial-intelligence/</loc>
+    <loc>http://localhost:58730/posts/2024/07/article-review-trust-in-artificial-intelligence/</loc>
     <lastmod>2024-07-02T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:58730/tags/artificial-intelligence/</loc>
     <lastmod>2024-07-02T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:58730/tags/</loc>
     <lastmod>2024-07-02T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/link-roundup/</loc>
+    <loc>http://localhost:58730/tags/link-roundup/</loc>
     <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/07/link-roundup-july-1-2024/</loc>
+    <loc>http://localhost:58730/posts/2024/07/link-roundup-july-1-2024/</loc>
     <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/link-roundup-june-24-2024/</loc>
+    <loc>http://localhost:58730/posts/2024/06/link-roundup-june-24-2024/</loc>
     <lastmod>2024-06-24T01:05:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/text-and-meaning-in-a-short-stay-in-hell/</loc>
+    <loc>http://localhost:58730/posts/2024/06/text-and-meaning-in-a-short-stay-in-hell/</loc>
     <lastmod>2024-06-18T03:16:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/link-roundup-june-17-2024/</loc>
+    <loc>http://localhost:58730/posts/2024/06/link-roundup-june-17-2024/</loc>
     <lastmod>2024-06-17T01:22:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/link-roundup-june-10-2024/</loc>
+    <loc>http://localhost:58730/posts/2024/06/link-roundup-june-10-2024/</loc>
     <lastmod>2024-06-10T03:55:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/writing-feedback-with-textexpander/</loc>
+    <loc>http://localhost:58730/posts/2024/06/writing-feedback-with-textexpander/</loc>
     <lastmod>2024-06-05T05:44:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/04/kuura-cola/</loc>
+    <loc>http://localhost:58730/posts/2024/04/kuura-cola/</loc>
     <lastmod>2024-04-08T04:09:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/04/some-updates/</loc>
+    <loc>http://localhost:58730/posts/2024/04/some-updates/</loc>
     <lastmod>2024-04-04T12:00:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/03/learning-asciidoc/</loc>
+    <loc>http://localhost:58730/posts/2024/04/bulang-huang-chen-hao-2018/</loc>
+    <lastmod>2024-04-03T08:40:22-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:58730/posts/2024/03/learning-asciidoc/</loc>
     <lastmod>2024-03-04T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/</loc>
+    <loc>http://localhost:58730/posts/2023/07/conditional-image-layouts-in-hugo/</loc>
     <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>http://localhost:58730/tags/hugo/</loc>
     <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-development/</loc>
+    <loc>http://localhost:58730/tags/web-development/</loc>
     <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/media-studies/</loc>
+    <loc>http://localhost:58730/tags/media-studies/</loc>
     <lastmod>2023-07-15T12:41:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</loc>
+    <loc>http://localhost:58730/posts/2023/07/ted-nelsons-evolutionary-list-file-and-information-management/</loc>
     <lastmod>2023-07-15T12:41:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/little-ghost-hugo-theme/</loc>
+    <loc>http://localhost:58730/projects/little-ghost-hugo-theme/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/06/little-ghost-theme/</loc>
+    <loc>http://localhost:58730/posts/2023/06/little-ghost-theme/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:58730/projects/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</loc>
+    <loc>http://localhost:58730/posts/2023/06/new-site-and-birthday-post/</loc>
     <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/personal/</loc>
+    <loc>http://localhost:58730/tags/personal/</loc>
     <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023/03/hugo/</loc>
+    <loc>http://localhost:58730/posts/2023/03/hugo/</loc>
     <lastmod>2023-03-10T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/12/covid-day-three/</loc>
+    <loc>http://localhost:58730/posts/2022/12/covid-day-four/</loc>
+    <lastmod>2022-12-18T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:58730/posts/2022/12/covid-day-three/</loc>
     <lastmod>2022-12-17T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/12/covid-day-two/</loc>
+    <loc>http://localhost:58730/posts/2022/12/covid-day-two/</loc>
     <lastmod>2022-12-16T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/12/covid-day-one/</loc>
+    <loc>http://localhost:58730/posts/2022/12/covid-day-one/</loc>
     <lastmod>2022-12-15T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/genre/</loc>
+    <loc>http://localhost:58730/tags/genre/</loc>
     <lastmod>2022-06-21T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/06/what-is-genre/</loc>
+    <loc>http://localhost:58730/posts/2022/06/what-is-genre/</loc>
     <lastmod>2022-06-21T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/06/superheroes-ritual-or-ideology/</loc>
+    <loc>http://localhost:58730/posts/2022/06/superheroes-ritual-or-ideology/</loc>
     <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/film-and-television/</loc>
+    <loc>http://localhost:58730/tags/film-and-television/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/06/masculinity-in-shane-and-yojimbo/</loc>
+    <loc>http://localhost:58730/posts/2022/06/masculinity-in-shane-and-yojimbo/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/</loc>
+    <loc>http://localhost:58730/movies/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/shane/</loc>
+    <loc>http://localhost:58730/movies/shane/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/yojimbo/</loc>
+    <loc>http://localhost:58730/movies/yojimbo/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/men/</loc>
+    <loc>http://localhost:58730/movies/men/</loc>
     <lastmod>2022-06-05T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/06/men-2022/</loc>
+    <loc>http://localhost:58730/posts/2022/06/men-2022/</loc>
     <lastmod>2022-06-05T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/dont-look-up/</loc>
+    <loc>http://localhost:58730/movies/dont-look-up/</loc>
     <lastmod>2022-01-05T11:34:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/the-wanting-mare/</loc>
+    <loc>http://localhost:58730/movies/the-wanting-mare/</loc>
     <lastmod>2022-01-05T11:34:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2022/01/two-films-on-catastrophe/</loc>
+    <loc>http://localhost:58730/posts/2022/01/two-films-on-catastrophe/</loc>
     <lastmod>2022-01-05T11:34:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/archival-research/</loc>
+    <loc>http://localhost:58730/tags/archival-research/</loc>
     <lastmod>2021-11-26T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2021/11/memory-document-archive/</loc>
+    <loc>http://localhost:58730/posts/2021/11/memory-document-archive/</loc>
     <lastmod>2021-11-26T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rhetoric/</loc>
+    <loc>http://localhost:58730/tags/rhetoric/</loc>
     <lastmod>2021-11-26T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2021/11/what-is-new-about-new-media/</loc>
+    <loc>http://localhost:58730/posts/2021/11/what-is-new-about-new-media/</loc>
     <lastmod>2021-11-16T11:34:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/shows/attack-on-titan/</loc>
+    <loc>http://localhost:58730/shows/attack-on-titan/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/movies/my-neighbor-totoro/</loc>
+    <loc>http://localhost:58730/movies/my-neighbor-totoro/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</loc>
+    <loc>http://localhost:58730/posts/2021/06/satoyama-modernity-and-tradition-in-japanese-anime/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/shows/</loc>
+    <loc>http://localhost:58730/shows/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/skills/asciidoc/</loc>
+    <loc>http://localhost:58730/skills/asciidoc/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:58730/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/hugo-conditional-images/</loc>
+    <loc>http://localhost:58730/portfolio/hugo-conditional-images/</loc>
   </url><url>
-    <loc>http://localhost:1313/courses/</loc>
+    <loc>http://localhost:58730/courses/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/sharing-chatgpt/</loc>
+    <loc>http://localhost:58730/portfolio/sharing-chatgpt/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/git-/-github/</loc>
+    <loc>http://localhost:58730/skills/git-/-github/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/go/</loc>
+    <loc>http://localhost:58730/skills/go/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/html5-/-css/</loc>
+    <loc>http://localhost:58730/skills/html5-/-css/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/hugo/</loc>
+    <loc>http://localhost:58730/skills/hugo/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/little-ghost/</loc>
+    <loc>http://localhost:58730/portfolio/little-ghost/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://localhost:58730/portfolio/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://localhost:58730/portfolio/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/</loc>
+    <loc>http://localhost:58730/skills/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/snagit/</loc>
+    <loc>http://localhost:58730/skills/snagit/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/tailwind-css/</loc>
+    <loc>http://localhost:58730/skills/tailwind-css/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/technical-writing/</loc>
+    <loc>http://localhost:58730/skills/technical-writing/</loc>
   </url><url>
-    <loc>http://localhost:1313/skills/web-design/</loc>
+    <loc>http://localhost:58730/skills/web-design/</loc>
   </url>
 </urlset>
