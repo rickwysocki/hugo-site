@@ -2,80 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rick Wysocki</title>
-    <link>http://localhost:58730/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jul 2024 09:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:58730/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jul 2024 01:25:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Artificial Intelligence</title>
-      <link>http://localhost:58730/tags/artificial-intelligence/</link>
+      <link>http://localhost:1313/tags/artificial-intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/artificial-intelligence/</guid>
+      <guid>http://localhost:1313/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     <item>
       <title>Link Roundup</title>
-      <link>http://localhost:58730/tags/link-roundup/</link>
+      <link>http://localhost:1313/tags/link-roundup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/link-roundup/</guid>
+      <guid>http://localhost:1313/tags/link-roundup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical Writing</title>
+      <link>http://localhost:1313/tags/technical-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technical-writing/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:58730/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>http://localhost:58730/tags/web-development/</link>
+      <link>http://localhost:1313/tags/web-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/web-development/</guid>
+      <guid>http://localhost:1313/tags/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Media Studies</title>
-      <link>http://localhost:58730/tags/media-studies/</link>
+      <link>http://localhost:1313/tags/media-studies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/media-studies/</guid>
+      <guid>http://localhost:1313/tags/media-studies/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>http://localhost:58730/tags/personal/</link>
+      <link>http://localhost:1313/tags/personal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/personal/</guid>
+      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Genre</title>
-      <link>http://localhost:58730/tags/genre/</link>
+      <link>http://localhost:1313/tags/genre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/genre/</guid>
+      <guid>http://localhost:1313/tags/genre/</guid>
       <description></description>
     </item>
     <item>
       <title>Film and Television</title>
-      <link>http://localhost:58730/tags/film-and-television/</link>
+      <link>http://localhost:1313/tags/film-and-television/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/film-and-television/</guid>
+      <guid>http://localhost:1313/tags/film-and-television/</guid>
       <description></description>
     </item>
     <item>
       <title>Archival Research</title>
-      <link>http://localhost:58730/tags/archival-research/</link>
+      <link>http://localhost:1313/tags/archival-research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/archival-research/</guid>
+      <guid>http://localhost:1313/tags/archival-research/</guid>
       <description></description>
     </item>
     <item>
       <title>Rhetoric</title>
-      <link>http://localhost:58730/tags/rhetoric/</link>
+      <link>http://localhost:1313/tags/rhetoric/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/tags/rhetoric/</guid>
+      <guid>http://localhost:1313/tags/rhetoric/</guid>
       <description></description>
     </item>
   </channel>

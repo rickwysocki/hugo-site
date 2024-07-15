@@ -2,45 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on Rick Wysocki</title>
-    <link>http://localhost:58730/tags/personal/</link>
+    <link>http://localhost:1313/tags/personal/</link>
     <description>Recent content in Personal on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58730/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Site (and Birthday Post)</title>
-      <link>http://localhost:58730/posts/2023/06/new-site-and-birthday-post/</link>
+      <link>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/posts/2023/06/new-site-and-birthday-post/</guid>
+      <guid>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</guid>
       <description>I&amp;rsquo;ve got a new site put together. And a quick review of the year.</description>
     </item>
     <item>
-      <title>Covid - Day Four</title>
-      <link>http://localhost:58730/posts/2022/12/covid-day-four/</link>
-      <pubDate>Sun, 18 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:58730/posts/2022/12/covid-day-four/</guid>
-      <description>Today will be a shorter post. Rather than write, I spent most of the day a) submitting grades and b) working on a new track.</description>
-    </item>
-    <item>
       <title>Covid - Day Three</title>
-      <link>http://localhost:58730/posts/2022/12/covid-day-three/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-three/</link>
       <pubDate>Sat, 17 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:58730/posts/2022/12/covid-day-three/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-three/</guid>
       <description>Day three has been alright so far. Last night, again, my only issue sleeping was my wrecked throat. A bought me some chloraseptic today; I imagine that will help tonight.</description>
     </item>
     <item>
       <title>Covid - Day Two</title>
-      <link>http://localhost:58730/posts/2022/12/covid-day-two/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-two/</link>
       <pubDate>Fri, 16 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:58730/posts/2022/12/covid-day-two/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-two/</guid>
       <description>My second day of Covid. The good news-A tested this morning and so far continues to come up negative. The bad news-I feel like butt.</description>
     </item>
     <item>
       <title>Covid - Day One</title>
-      <link>http://localhost:58730/posts/2022/12/covid-day-one/</link>
+      <link>http://localhost:1313/posts/2022/12/covid-day-one/</link>
       <pubDate>Thu, 15 Dec 2022 16:08:22 -0500</pubDate>
-      <guid>http://localhost:58730/posts/2022/12/covid-day-one/</guid>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-one/</guid>
       <description>I made it several years into the Covid-19 pandemic without catching the virus. Unfortunately, my time has come.</description>
     </item>
   </channel>

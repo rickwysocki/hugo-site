@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Movies on Rick Wysocki</title>
-    <link>http://localhost:58730/movies/</link>
+    <link>http://localhost:1313/movies/</link>
     <description>Recent content in Movies on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58730/movies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/movies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shane</title>
-      <link>http://localhost:58730/movies/shane/</link>
+      <link>http://localhost:1313/movies/shane/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/shane/</guid>
+      <guid>http://localhost:1313/movies/shane/</guid>
       <description></description>
     </item>
     <item>
       <title>Yojimbo</title>
-      <link>http://localhost:58730/movies/yojimbo/</link>
+      <link>http://localhost:1313/movies/yojimbo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/yojimbo/</guid>
+      <guid>http://localhost:1313/movies/yojimbo/</guid>
       <description></description>
     </item>
     <item>
       <title>Men</title>
-      <link>http://localhost:58730/movies/men/</link>
+      <link>http://localhost:1313/movies/men/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/men/</guid>
+      <guid>http://localhost:1313/movies/men/</guid>
       <description></description>
     </item>
     <item>
       <title>Don&#39;t Look Up</title>
-      <link>http://localhost:58730/movies/dont-look-up/</link>
+      <link>http://localhost:1313/movies/dont-look-up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/dont-look-up/</guid>
+      <guid>http://localhost:1313/movies/dont-look-up/</guid>
       <description></description>
     </item>
     <item>
       <title>The Wanting Mare</title>
-      <link>http://localhost:58730/movies/the-wanting-mare/</link>
+      <link>http://localhost:1313/movies/the-wanting-mare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/the-wanting-mare/</guid>
+      <guid>http://localhost:1313/movies/the-wanting-mare/</guid>
       <description></description>
     </item>
     <item>
       <title>My Neighbor Totoro</title>
-      <link>http://localhost:58730/movies/my-neighbor-totoro/</link>
+      <link>http://localhost:1313/movies/my-neighbor-totoro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58730/movies/my-neighbor-totoro/</guid>
+      <guid>http://localhost:1313/movies/my-neighbor-totoro/</guid>
       <description></description>
     </item>
   </channel>

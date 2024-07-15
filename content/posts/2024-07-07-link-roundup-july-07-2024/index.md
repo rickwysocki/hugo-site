@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image a ripple created by a drop of water.
 published: true
 comments: true
-featured_post: true
 tags:
     - link roundup
     - artificial intelligence
