@@ -11,7 +11,7 @@ enableRobotsTXT = true
   # Site info
   author = 'Rick Wysocki'
   author_bio = "Assistant Teaching Professor at Ball State University."
-  long_bio = "I am a professor at Ball State University. I'm passionate about effective communication, research, and information design. My free time is spent learning new technologies, watching movies, and exploring new music."
+  long_bio = "I am a professor at Ball State University. I'm passionate about effective communication, research, and information design. My free time is spent practicing Zen, reading, learning new technologies, and lifting weights."
 
   # SEO
   description = 'Website and blog of Rick Wysocki.'
@@ -45,6 +45,10 @@ pluralizeListTitles = false
       name = "Portfolio"
       url = "/portfolio/"
       weight = 3
+  [[menu.main]]
+      name = "Tags"
+      url = "/tags/"
+      weight = 4
 
 
 [taxonomies]

@@ -1,20 +1,9 @@
 ---
 title: "Little Ghost (Technical Documentation and Hugo Theme)"
 permalink: /little-ghost
-layout: portfolio-page
 summary: I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.
-project_info: true
 categories:
   - Portfolio
-skills:
-  - Technical Writing
-  - AsciiDoc
-  - Web Design
-  - Hugo
-  - Go
-  - HTML5 / CSS
-  - Tailwind CSS
-  - Git / GitHub
 featured_image: featured.png
 featured_alt: Little Ghost logo.
 published: true

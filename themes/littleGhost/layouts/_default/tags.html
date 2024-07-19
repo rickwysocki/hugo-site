@@ -1,0 +1,17 @@
+
+
+
+{{ define "main" }}
+
+
+<div class="prose font-serif text-xl prose-a:text-indigo-600 leading-7 mx-auto mt-8">
+  <h1>{{ .Title }}</h1>
+
+  <ul id="all-tags">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }} ({{ $taxonomy.Count }})</a></li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}
