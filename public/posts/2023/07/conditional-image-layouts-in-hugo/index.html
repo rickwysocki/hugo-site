@@ -22,8 +22,14 @@
     
     
     <title>Rick Wysocki | Conditional Image Layouts in Hugo</title>
-
     
+    <meta name="author" content="Rick Wysocki"/>
+
+    <meta name="description" content="This post describes how to write conditional image layouts using Go and HTML for a Hugo site." />
+
+
+    <link rel="canonical" href="http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/" />
+
     <meta property="og:url" content="http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/">
   <meta property="og:site_name" content="Rick Wysocki">
   <meta property="og:title" content="Conditional Image Layouts in Hugo">
@@ -38,12 +44,9 @@
     <meta property="og:image" content="http://localhost:1313/posts/2023/07/conditional-image-layouts-in-hugo/featured.png">
 
 
-    <meta name="author" content="Rick Wysocki"/>
 
 
-
-
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -189,8 +192,8 @@
 
 
 <h2 id="introduction">Introduction</h2>
-<p>In this tutorial, I describe how to write conditional image layouts using <a href="https://go.dev/">Go</a> and HTML for a <a href="https://gohugo.io">Hugo</a> site.</p>
-<p>When I started designing <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>, my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page&rsquo;s front matter and the site configuration file. Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/#figure">figure shortcode</a> was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.</p>
+<p>In this tutorial, I describe how to write conditional image layouts using <a href="https://go.dev/" target="_blank" rel="nofollow noopener noreferrer">Go</a> and HTML for a <a href="https://gohugo.io" target="_blank" rel="nofollow noopener noreferrer">Hugo</a> site.</p>
+<p>When I started designing <a href="https://github.com/rickwysocki/littleGhost" target="_blank" rel="nofollow noopener noreferrer">Little Ghost</a>, my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page&rsquo;s front matter and the site configuration file. Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/#figure" target="_blank" rel="nofollow noopener noreferrer">figure shortcode</a> was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.</p>
 <h2 id="part-1-featured-images-for-pages-basic">Part 1: Featured Images for Pages (Basic)</h2>
 <p>There were several criteria I wanted in to implement for featured image layouts. I wanted Hugo to:</p>
 <ul>
@@ -214,7 +217,7 @@
 </span></span></code></pre></div><p>So, what is each line doing here?</p>
 <p>First, we ask Hugo to check whether a <code>featured_image</code> is set in the front matter. If not, everything else will be ignored:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">isset</span> .<span style="color:#a6e22e">Params</span> <span style="color:#e6db74">&#34;featured_image&#34;</span> }}
-</span></span></code></pre></div><p>Assuming we have declared a featured image, we then want to access it as a page resource. This is important because, as described in <a href="https://gohugo.io/content-management/page-resources/">the Hugo documentation</a>, page resource files get a page-relative URL, which simplifies the front matter we need to write. We will also see that getting our image as a page resource will let us make creative use of Hugo&rsquo;s image-processing methods.</p>
+</span></span></code></pre></div><p>Assuming we have declared a featured image, we then want to access it as a page resource. This is important because, as described in <a href="https://gohugo.io/content-management/page-resources/" target="_blank" rel="nofollow noopener noreferrer">the Hugo documentation</a>, page resource files get a page-relative URL, which simplifies the front matter we need to write. We will also see that getting our image as a page resource will let us make creative use of Hugo&rsquo;s image-processing methods.</p>
 <p>So, what we want to do is:</p>
 <ol>
 <li>Get <code>featured_image</code>.</li>
@@ -368,7 +371,7 @@
 <h3 id="processing-our-images">Processing Our Images</h3>
 <p>We&rsquo;re in the home stretch now. There&rsquo;s one small piece that we haven&rsquo;t talked about, but it&rsquo;s doing some essential work. Note the methods we&rsquo;ve added when calling our image:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ ((<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">Crop</span> <span style="color:#e6db74">&#34;1200x800&#34;</span>).<span style="color:#a6e22e">Resize</span> <span style="color:#e6db74">&#34;600x&#34;</span>).<span style="color:#a6e22e">RelPermalink</span> }}
-</span></span></code></pre></div><p>We&rsquo;re using some of <a href="https://gohugo.io/content-management/image-processing/">Hugo&rsquo;s image-processing methods</a> here.</p>
+</span></span></code></pre></div><p>We&rsquo;re using some of <a href="https://gohugo.io/content-management/image-processing/" target="_blank" rel="nofollow noopener noreferrer">Hugo&rsquo;s image-processing methods</a> here.</p>
 <ol>
 <li>Because we wanted equally sized images, we employ the <code>.Crop</code> method to first take our image and crop it to 1200x800.</li>
 <li>Because the image will be used in a grid layout where it will be smaller, we then resize our cropped image to half size using the <code>Resize</code> method. This will help with page load time.</li>
@@ -385,16 +388,18 @@
 <p>If you&rsquo;ve got this down and want to do more with what you&rsquo;ve learned, here are two small project ideas:</p>
 <ul>
 <li>Rewrite the <code>&lt;img&gt;&lt;/img&gt;</code> layouts using <code>&lt;figure&gt;&lt;/figure&gt;</code> tags. See if you can add an optional parameter for <code>figcaptions</code>.</li>
-<li>Look over some of the other <a href="https://gohugo.io/content-management/image-processing/">image processing</a> methods that Hugo ships with. What other ones might you include?</li>
+<li>Look over some of the other <a href="https://gohugo.io/content-management/image-processing/" target="_blank" rel="nofollow noopener noreferrer">image processing</a> methods that Hugo ships with. What other ones might you include?</li>
 </ul>
 <h3 id="an-easier-solution">An Easier Solution</h3>
-<p>Finally, if you just want a simple and flexible Hugo theme that does all of this for you, check out <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>.</p>
+<p>Finally, if you just want a simple and flexible Hugo theme that does all of this for you, check out <a href="https://github.com/rickwysocki/littleGhost" target="_blank" rel="nofollow noopener noreferrer">Little Ghost</a>.</p>
 
 
 </div>
 
 
-<footer class="mx-auto shadow-lg max-w-lg p-6 text-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-16 mb-4">
+
+    
+    <footer class="mx-auto shadow-lg max-w-lg p-6 text-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-16 mb-4">
     
     <img class= "sm:mx-0 sm:shrink-0 mx-auto h-24 rounded-full" src="/images/bio-photo.jpg" />
     <div class="text-left">

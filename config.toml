@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Rick Wysocki'
 theme = ["littleGhost"]
 enableInlineShortcodes = true
+enableRobotsTXT = true
+
 
 [params]
 
@@ -27,9 +29,6 @@ enableInlineShortcodes = true
   # twitter = '' fix user name
   # instagram = ''
   # facebook = ''
-
-  # To-Do
-  # Analytics
 
 pluralizeListTitles = false
 

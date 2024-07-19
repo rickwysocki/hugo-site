@@ -20,8 +20,9 @@
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
 
-    {{- partial "featured-posts.html" . -}}
-
+    {{ if .Params.featured_grid }}
+      {{- partial "featured-posts.html" . -}}
+    {{ end }}
     {{ if .Params.comments }}
       {{- partial "disqus.html" . -}}
     {{ end }}

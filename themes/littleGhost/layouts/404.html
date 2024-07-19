@@ -1,4 +1,11 @@
 {{ define "main" }}
-  <h1 class="title">{{ .Site.Title }}</h1>
-  <p>Oops!</p>
+<div class="prose font-serif text-xl prose-a:text-indigo-600 leading-7 mx-auto mt-8">
+  <h1>Whoops!</h1>
+  <p>The page you were looking for doesn't exist. You could <a href="/">go home</a>. But these posts might be cool, too?</p>
+
+  
+</div>
+
+{{ partial "featured-posts.html" . }}
+
 {{ end }}
