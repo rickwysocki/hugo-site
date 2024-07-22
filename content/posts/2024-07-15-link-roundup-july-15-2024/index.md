@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image of a hand touching itself in its reflection on a mirror.
 published: true
 comments: true
-featured_post: true
 tags:
     - link roundup
     - artificial intelligence
