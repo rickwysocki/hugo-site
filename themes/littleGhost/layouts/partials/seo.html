@@ -1,10 +1,10 @@
-{{ if isset .Site.Params `author`}}<meta name="author" content="{{ if isset .Params `author` }}{{.Params.author}}{{ else }}{{ .Site.Params.author }}{{ end }}"/>{{end}}
+{{ if isset .Site.Params `author`}}<meta name="author" content="{{ if isset .Params `author` }}{{.Params.author}}{{ else }}{{ .Site.Params.author }}{{ end }}">{{end}}
 {{ if .IsHome -}}<meta name="description" content="{{ site.Params.Description }}" />
 {{ else }}
-    <meta name="description" content="{{ .Params.Summary }}" />
+    <meta name="description" content="{{ .Params.Summary }}">
 {{ end }}
 {{ if isset .Params "canonical" }}
-    <link rel="canonical" href="{{ .Params.canonical }}" />
+    <link rel="canonical" href="{{ .Params.canonical }}">
 {{ else }}
-    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink }}">
 {{ end }}
