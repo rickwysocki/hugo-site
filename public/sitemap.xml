@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
-    <lastmod>2024-07-15T02:18:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-22T10:55:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/07/link-roundup-july-22-2024/</loc>
+    <lastmod>2024-07-22T10:55:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-22T10:55:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
     <lastmod>2024-07-15T02:18:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/link-roundup/</loc>
     <lastmod>2024-07-15T02:18:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/07/link-roundup-july-15-2024/</loc>
-    <lastmod>2024-07-15T02:18:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-07-15T02:18:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

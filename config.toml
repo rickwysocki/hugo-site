@@ -4,6 +4,7 @@ title = 'Rick Wysocki'
 theme = ["littleGhost"]
 enableInlineShortcodes = true
 enableRobotsTXT = true
+enableEmoji = true
 
 
 [params]
