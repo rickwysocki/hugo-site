@@ -9,6 +9,7 @@ comments: true
 featured_post: true
 tags:
     - technical writing
+    - link roundup
 ---
 
 ## Robert Wright, "Ode to a world-saving idea"
