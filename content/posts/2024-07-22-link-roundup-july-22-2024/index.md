@@ -6,11 +6,14 @@ featured_image: featured.jpg
 featured_alt: Kimchi
 published: true
 comments: true
-featured_post: true
 tags:
     - technical writing
     - link roundup
 ---
+
+This week's roundup has articles on cognitive empathy, kimchi, and technical writing workflows.
+
+As always, I generate summaries using AI and edit those summaries for accuracy and usefulness. Then, I offer some thoughts of my own.
 
 ## Robert Wright, "Ode to a world-saving idea"
 
