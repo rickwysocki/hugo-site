@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: A branching tree reflected in water.
 published: true
 comments: true
-featured_post: true
 tags:
     - artificial intelligence
     - link roundup
