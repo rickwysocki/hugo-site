@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image of storage lockers
 published: true
 comments: true
-featured_post: true
 tags:
     - artificial intelligence
     - link roundup
