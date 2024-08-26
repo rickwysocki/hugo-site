@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image of cables running into computer server.
 published: true
 comments: true
-featured_post: true
 tags:
 - link roundup
 - media studies
