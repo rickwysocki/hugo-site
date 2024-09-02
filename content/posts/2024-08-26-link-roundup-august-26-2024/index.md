@@ -6,7 +6,10 @@ featured_image: featured.jpg
 featured_alt: An image of a timeline graph on a computer.
 published: true
 comments: true
-featured_post: true
+tags:
+    - link roundup
+    - artificial intelligence
+    - media studies
 ---
 
 This week, I write about some articles full of (smart, correct) technical skepticism and the benefits of removing, rather than adding, components to systems.
