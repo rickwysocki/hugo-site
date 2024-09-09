@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image of a burned out bus.
 published: true
 comments: true
-featured_post: true
 tags:
     - media studies
     - artificial intelligence
