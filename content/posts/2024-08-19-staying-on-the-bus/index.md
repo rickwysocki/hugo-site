@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An overhead image of a highway.
 published: true
 comments: true
-featured_post: true
 ---
 
 ## Optimal, Optimize, Optimization: Definitions and Parts of Speech
