@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/09/cannon-shot-epistemology/</loc>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-23T12:28:00-05:00</lastmod>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-23T12:28:00-05:00</lastmod>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/09/i-dont-know-what-to-do-about-ai-and-neither-do-you/</loc>
+    <lastmod>2024-09-23T11:28:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/09/bookish-thoughts/</loc>
     <lastmod>2024-09-16T11:28:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
-    <lastmod>2024-09-09T01:10:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/link-roundup/</loc>
     <lastmod>2024-09-09T01:10:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/09/link-roundup-september-9-2024/</loc>
-    <lastmod>2024-09-09T01:10:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-09-09T01:10:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/09/link-roundup-september-2-2024/</loc>

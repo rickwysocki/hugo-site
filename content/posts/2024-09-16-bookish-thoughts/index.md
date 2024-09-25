@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: An image of a bookshelf.
 published: true
 comments: true
-featured_post: true
 ---
 
 Sadly, I have been too busy this past week to read much for the link
