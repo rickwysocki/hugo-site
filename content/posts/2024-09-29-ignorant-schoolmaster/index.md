@@ -3,7 +3,7 @@ title:  "The Ignorant Schoolmaster: Five Lessons in Intellectual Emancipation (A
 date:   2024-09-29 3:13:00 -0500
 summary: A review of Jacques Rancière's The Ignorant Schoolmaster and a reflection on his critique of rhetoric.
 featured_image: featured.jpg
-featured_alt: 
+featured_alt: A photo of Jacques Rancière.
 published: true
 comments: true
 featured_post: true
