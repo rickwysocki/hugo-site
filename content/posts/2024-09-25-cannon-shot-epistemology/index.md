@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: A cannon.
 published: true
 comments: true
-featured_post: true
 tags:
     - artificial intelligence
 ---

@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: Two spidermen pointing at each other.
 published: true
 comments: true
-featured_post: true
 tags:
     - artificial intelligence
 ---
