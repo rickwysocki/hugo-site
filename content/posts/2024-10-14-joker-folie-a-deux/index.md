@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: The Apple clown emoji.
 published: true
 comments: true
-featured_post: true
 ---
 
 I have to assume that *Joker 2: Folie à Deux* lacked what audiences

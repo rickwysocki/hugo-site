@@ -6,6 +6,8 @@ featured_image: featured.jpg
 featured_alt: A photo of Jacques Rancière.
 published: true
 comments: true
+tags: 
+    - teaching
 ---
 
 ## Introduction
