@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: The cover of Anna Kornbluh’s book, Immediacy.
 published: true
 comments: true
-featured_post: true
 tags:
     - artificial intelligence
 ---

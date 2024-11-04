@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-28T12:51:00-05:00</lastmod>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/11/link-roundup-november-4-2024/</loc>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-28T12:51:00-05:00</lastmod>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/10/content-management-pedagogy/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/teaching/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/technical-writing/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/joker-folie-%C3%A0-deux/</loc>
     <lastmod>2024-10-14T01:11:00-05:00</lastmod>
@@ -15,9 +30,6 @@
     <lastmod>2024-10-08T02:58:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/link-roundup-october-8-2024/</loc>
-    <lastmod>2024-10-08T02:58:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-08T02:58:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/09/the-ignorant-schoolmaster-five-lessons-in-intellectual-emancipation-a-review/</loc>
@@ -66,9 +78,6 @@
     <lastmod>2024-07-29T01:45:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/07/link-roundup-july-22-2024/</loc>
-    <lastmod>2024-07-22T10:55:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/technical-writing/</loc>
     <lastmod>2024-07-22T10:55:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/07/link-roundup-july-15-2024/</loc>
