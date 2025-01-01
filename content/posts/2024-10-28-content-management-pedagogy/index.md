@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: A stack of digital tablets.
 published: true
 comments: true
-featured_post: true
 tags:
     - teaching
     - technical writing

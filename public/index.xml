@@ -6,8 +6,15 @@
     <description>Recent content in Home on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Nov 2024 02:44:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 03:15:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Review: The Books</title>
+      <link>http://localhost:1313/posts/2025/01/2024-review-the-books/</link>
+      <pubDate>Wed, 01 Jan 2025 03:15:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025/01/2024-review-the-books/</guid>
+      <description>A collection of thoughts on the books I read  this year.</description>
+    </item>
     <item>
       <title>Link Roundup: November 4, 2024</title>
       <link>http://localhost:1313/posts/2024/11/link-roundup-november-4-2024/</link>
@@ -343,6 +350,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/little-ghost/</guid>
       <description>I developed Little Ghost, a simple theme for static site generator and content management framework Hugo. This project showcases my skills in both technical writing and web design.</description>
+    </item>
+    <item>
+      <title>University Service</title>
+      <link>http://localhost:1313/university-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/university-service/</guid>
+      <description>Ball State University 2022 Practical Criticism Midwest Faculty Chair Faculty Mentor (Spring 2022, Fall 2022) Promotions Committee Chair 2021 Writing Program TA Professional Development Program—Faculty Mentor (Spring 2021) Non-Tenure Faculty Working Group (Organized by the Writing Program)—Participant English Department Workshop on Grading Contracts (September 23, 2021) – Organizer / Leader 2020 Ball State Writing Program Committee – Committee Member Ball State English Department Contract Faculty Steering Committee – Committee Member Ball State English Department Contract Faculty Working Group – Working Group Participant English Department Workshop on Grading Contracts (February 10, 2020) – Organizer / Leader University of Louisville Writing Center Consultant for the Dissertation Writing Retreat (May 2018 / May 2017) Consulted with doctoral students across disciplines during an intensive, week-long writing retreat Chair of University of Louisville’s Rhetoric Society of America Student Chapter Ph.</description>
     </item>
   </channel>
 </rss>

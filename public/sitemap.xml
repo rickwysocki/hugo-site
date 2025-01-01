@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/2024/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/01/2024-review-the-books/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/genre/</loc>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/link-roundup/</loc>
     <lastmod>2024-11-04T02:44:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/11/link-roundup-november-4-2024/</loc>
     <lastmod>2024-11-04T02:44:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/tags/media-studies/</loc>
     <lastmod>2024-11-04T02:44:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/content-management-pedagogy/</loc>
-    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-28T11:51:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/teaching/</loc>
@@ -44,16 +59,10 @@
     <loc>http://localhost:1313/posts/2024/09/bookish-thoughts/</loc>
     <lastmod>2024-09-16T11:28:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/link-roundup/</loc>
-    <lastmod>2024-09-09T01:10:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2024/09/link-roundup-september-9-2024/</loc>
     <lastmod>2024-09-09T01:10:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/09/link-roundup-september-2-2024/</loc>
-    <lastmod>2024-09-02T01:58:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/media-studies/</loc>
     <lastmod>2024-09-02T01:58:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/08/link-roundup-august-26-2024/</loc>
@@ -155,9 +164,6 @@
     <loc>http://localhost:1313/posts/2022/12/covid-day-one/</loc>
     <lastmod>2022-12-15T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/genre/</loc>
-    <lastmod>2022-06-21T16:08:22-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2022/06/what-is-genre/</loc>
     <lastmod>2022-06-21T16:08:22-05:00</lastmod>
   </url><url>
@@ -238,6 +244,8 @@
     <loc>http://localhost:1313/skills/</loc>
   </url><url>
     <loc>http://localhost:1313/skills/technical-writing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/university-service/</loc>
   </url><url>
     <loc>http://localhost:1313/skills/web-design/</loc>
   </url>
