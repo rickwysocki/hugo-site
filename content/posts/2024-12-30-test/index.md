@@ -5,8 +5,10 @@ summary: Test
 featured_image: featured.jpeg
 featured_alt: 
 comments: true
-published: false
+published: true
 ---
+
+{{< csv-to-table "films.csv" >}}
 
 ## Movies Per Year
 {{< observable link="https://observablehq.com/embed/db5fd112e84408fa@338?cells=chart" >}}

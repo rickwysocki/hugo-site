@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Personal</title>
+      <link>http://localhost:1313/tags/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/personal/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Genre</title>
       <link>http://localhost:1313/tags/genre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -76,13 +83,6 @@
       <link>http://localhost:1313/tags/web-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/web-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Personal</title>
-      <link>http://localhost:1313/tags/personal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/personal/</guid>
       <description></description>
     </item>
     <item>
