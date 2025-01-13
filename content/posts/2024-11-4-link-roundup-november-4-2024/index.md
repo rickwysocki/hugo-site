@@ -6,7 +6,6 @@ featured_image: featured.png
 featured_alt: A still from Fritz Lang’s film, M.
 published: true
 comments: true
-featured_post: true
 tags:
     - link roundup
     - genre

@@ -6,6 +6,9 @@ enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
 
+# Enable rendering of HTML in Markdown files.
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
 
