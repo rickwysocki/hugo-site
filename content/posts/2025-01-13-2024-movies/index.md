@@ -7,6 +7,9 @@ featured_alt: An image of a movie screen.
 featured_post: true
 comments: true
 published: true
+tags:
+    - 2024
+    - personal
 ---
 
 I've been a bit slow on the blog here at the start of the year. A lot of my attention has been dedicated to getting my Spring classes off the ground. I redesigned both my professional writing and research writing courses pretty extensively this semester. What I didn't account for was a mysterious missing week in our break this year...
