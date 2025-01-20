@@ -1,5 +1,5 @@
 ---
-title: Link Roundup: January 20, 2025
+title: "Link Roundup: January 20, 2025"
 published: true
 date:   2025-01-20 10:00:00 -0500
 summary: The old Internet was good. Or, at least, less bad.
