@@ -6,7 +6,6 @@ featured_image: featured.jpg
 featured_alt: Books.
 published: true
 comments: true
-featured_post: true
 tags:
     - 2024
     - personal

@@ -6,8 +6,15 @@
     <description>Recent content in Personal on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2025 03:15:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2025 10:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Review: The Movies</title>
+      <link>http://localhost:1313/posts/2025/01/2024-review-the-movies/</link>
+      <pubDate>Mon, 13 Jan 2025 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025/01/2024-review-the-movies/</guid>
+      <description>Visualizations of, and thoughts on, my year watching movies.</description>
+    </item>
     <item>
       <title>2024 Review: The Books</title>
       <link>http://localhost:1313/posts/2025/01/2024-review-the-books/</link>

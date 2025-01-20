@@ -2,31 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/link-roundup/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/01/link-roundup/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/2024/</loc>
+    <lastmod>2025-01-13T10:00:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2025/01/2024-review-the-movies/</loc>
     <lastmod>2025-01-13T10:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/tags/personal/</loc>
     <lastmod>2025-01-13T10:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-13T10:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/2024/</loc>
-    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/01/2024-review-the-books/</loc>
     <lastmod>2025-01-01T03:15:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/personal/</loc>
-    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/genre/</loc>
-    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/link-roundup/</loc>
     <lastmod>2024-11-04T02:44:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/11/link-roundup-november-4-2024/</loc>
@@ -46,9 +52,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/joker-folie-%C3%A0-deux/</loc>
     <lastmod>2024-10-14T01:11:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
-    <lastmod>2024-10-08T02:58:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/link-roundup-october-8-2024/</loc>
     <lastmod>2024-10-08T02:58:00-05:00</lastmod>
