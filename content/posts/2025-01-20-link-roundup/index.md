@@ -5,7 +5,6 @@ date:   2025-01-20 10:00:00 -0500
 summary: The old Internet was good. Or, at least, less bad.
 featured_image: featured.jpg
 featured_alt: An image of a computer displaying HTML markup.
-featured_post: true
 comments: true
 tags:
 - link roundup
