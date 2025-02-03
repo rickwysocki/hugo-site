@@ -4,7 +4,6 @@ date:   2025-01-13 10:00:00 -0500
 summary: Visualizations of, and thoughts on, my year watching movies.
 featured_image: featured.jpg
 featured_alt: An image of a movie screen.
-featured_post: true
 comments: true
 published: true
 tags:
