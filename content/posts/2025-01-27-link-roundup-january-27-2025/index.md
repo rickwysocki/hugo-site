@@ -5,7 +5,6 @@ date: 2025-01-27 10:00:00 -0500
 summary: Two articles on how we hide unethical behavior as "apps" and the need to dependencize everything.
 featured_image: featured.jpg
 featured_alt: A phone with apps.
-featured_post: true
 comments: true
 tags:
     - emacs
