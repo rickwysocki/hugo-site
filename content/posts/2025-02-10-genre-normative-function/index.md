@@ -1,6 +1,6 @@
 ---
 title:  "Genre’s Normative Function"
-date:   2025-02-10 11:20:00 -0500
+date:   2025-02-10 09:20:00 -0500
 summary: Brief and wandering thoughts on genre. 
 featured_image: featured.jpg
 featured_alt: A screenshot of Spotify's genre page.
