@@ -6,6 +6,10 @@ featured_image: featured.jpg
 featured_alt: A screenshot of Spotify's genre page.
 comments: true
 featured-post: true
+tags:
+- genre
+- rhetoric
+- film
 ---
 
 I haven't read anything particulary link-roundup-worthy this week. But I have been working in my zettelkasten system a bit. So, instead of links, I'll post some thoughts I've been writing notes about.
