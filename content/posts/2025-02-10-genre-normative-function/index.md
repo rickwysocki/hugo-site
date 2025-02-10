@@ -6,6 +6,7 @@ featured_image: featured.jpg
 featured_alt: A screenshot of Spotify's genre page.
 comments: true
 featured-post: true
+published: true
 tags:
 - genre
 - rhetoric
