@@ -10,3 +10,7 @@ tags:
 ---
 
 A fun note: this is the very first post I've written and published _entirely_ within Emacs! I'm leaning in so hard guys it's wild.
+
+Tools involved in writing this post:
+- Dired
+- Magit
