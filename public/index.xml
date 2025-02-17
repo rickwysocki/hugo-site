@@ -6,12 +6,19 @@
     <description>Recent content in Home on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2025 11:20:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 10:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Less Nerd, More Punk</title>
+      <link>http://localhost:1313/posts/2025/02/less-nerd-more-punk/</link>
+      <pubDate>Mon, 17 Feb 2025 10:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025/02/less-nerd-more-punk/</guid>
+      <description>We&amp;rsquo;ve ceded too much ground to nerds. We need to bring back a digital-punk ethos.</description>
+    </item>
     <item>
       <title>Genre’s Normative Function</title>
       <link>http://localhost:1313/posts/2025/02/genres-normative-function/</link>
-      <pubDate>Mon, 10 Feb 2025 11:20:00 -0500</pubDate>
+      <pubDate>Mon, 10 Feb 2025 09:20:00 -0500</pubDate>
       <guid>http://localhost:1313/posts/2025/02/genres-normative-function/</guid>
       <description>Brief and wandering thoughts on genre.</description>
     </item>
