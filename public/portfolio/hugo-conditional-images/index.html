@@ -1,206 +1,52 @@
-<!doctype html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conditional Image Layouts in Hugo (Technical Article) | Rick Wysocki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
 
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZRK4KWSBR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-3ZRK4KWSBR');
-    </script>
-
-    
-    <script src="https://kit.fontawesome.com/68345f7fdb.js" crossorigin="anonymous"></script>
-
-    
-   <link rel="stylesheet" href="http://localhost:1313/style.css">
-
-    
-    
-    <title>Rick Wysocki | Conditional Image Layouts in Hugo (Technical Article)</title>
-    
-    <meta name="author" content="Rick Wysocki">
-
-    <meta name="description" content="This post describes how to write conditional image layouts using Go and HTML for a Hugo site.">
+      <script src="/js/main.js"></script>
 
 
-    <link rel="canonical" href="http://localhost:1313/portfolio/hugo-conditional-images/">
-
-    <meta property="og:url" content="http://localhost:1313/portfolio/hugo-conditional-images/">
-  <meta property="og:site_name" content="Rick Wysocki">
-  <meta property="og:title" content="Conditional Image Layouts in Hugo (Technical Article)">
-  <meta property="og:description" content="This post describes how to write conditional image layouts using Go and HTML for a Hugo site.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="portfolio">
-    <meta property="article:tag" content="Web Development">
-    <meta property="article:tag" content="Hugo">
-    <meta property="og:image" content="http://localhost:1313/portfolio/hugo-conditional-images/featured.png">
-
-
-
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    
 </head>
-<body class="p-4"><nav class="prose mt-4 text-xl max-w-4xl mx-auto mt-8 font-serif">
-  <ul class="hidden md:flex flex-row pl-0 justify-start items-center gap-4 mt-0">
+<body>
+  <header>
+    <h1>Rick Wysocki</h1>
 
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/portfolio/">Portfolio</a>
+    </li>
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
     
-    <li class="list-none"><a href="/"><img class= "my-4 mx-auto h-7 rounded-full" src="/images/ghost.png" /></a></li>
-
-
-    
-
-    <li class="list-none "><a href="/" class="no-underline group transition duration-300">
-
-      
-      Home
-    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
-    </a></li>
-    
-
-    <li class="list-none "><a href="/posts/" class="no-underline group transition duration-300">
-
-      
-      Posts
-    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
-    </a></li>
-    
-
-    <li class="list-none "><a href="/portfolio/" class="no-underline group transition duration-300">
-
-      
-      Portfolio
-    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
-    </a></li>
-    
-
-    <li class="list-none "><a href="/tags/" class="no-underline group transition duration-300">
-
-      
-      Tags
-    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-indigo-600"></span>
-    </a></li>
-    
-
-
-  </ul>
-
-  
-  <div class="md:hidden flex justify-between">
-  	<button class="outline-none mobile-menu-button">
-  		<svg
-  			class="w-6 h-6 text-gray-500"
-  			x-show="!showMenu"
-  			fill="none"
-  			stroke-linecap="round"
-  			stroke-linejoin="round"
-  			stroke-width="2"
-  			viewBox="0 0 24 24"
-  			stroke="currentColor"
-  		>
-  		<path d="M4 6h16M4 12h16M4 18h16"></path>
-  		</svg>
-  	</button>
-    <div>
-    <li class="list-none"><a href="/"><img class= "my-4 mx-auto h-7 rounded-full" src="/images/ghost.png" /></a></li>
-    </div>
-  </div>
-
-  
-<div class="hidden mobile-menu">
-	<ul class="py-6">
-    
-
-		<li class="list-none"><a href="/" class="block text-md py-1 underline decoration-indigo-500">
-      
-      Home
-    </a></li>
-
-    
-
-		<li class="list-none"><a href="/posts/" class="block text-md py-1 underline decoration-indigo-500">
-      
-      Posts
-    </a></li>
-
-    
-
-		<li class="list-none"><a href="/portfolio/" class="block text-md py-1 underline decoration-indigo-500">
-      
-      Portfolio
-    </a></li>
-
-    
-
-		<li class="list-none"><a href="/tags/" class="block text-md py-1 underline decoration-indigo-500">
-      
-      Tags
-    </a></li>
-
-    
-</ul>
-</div>
-
-<script>
-	
-	const btn = document.querySelector("button.mobile-menu-button");
-	const menu = document.querySelector(".mobile-menu");
-
-	
-	btn.addEventListener("click", () => {
-	menu.classList.toggle("hidden");
-	});
-</script>
-</nav>
-
-
-
-  <div class="mx-auto">
-
-    
-<div class="prose font-serif text-xl prose-a:text-indigo-600 leading-7 mx-auto mt-8">
-
-
-<h1>Conditional Image Layouts in Hugo (Technical Article)</h1>
-
-
-
-
-<img
-    src="/portfolio/hugo-conditional-images/featured_hub82f42fb95f1d64bca0c36257b4b31ab_148728_1000x0_resize_box_3.png"
-    alt="A screenshot of some of the code from this tutorial."
-/>
-
-
-
-
-
+  <h1>Conditional Image Layouts in Hugo (Technical Article)</h1>
 
   
   
-  
-<div class="flex flex-row gap-4 items-center">
-  <i class="fa fa-tag"></i>
-  
-  
-    <a class="my-0 text-gray-600" href="/tags/web-development">Web Development</a>
-  
-    <a class="my-0 text-gray-600" href="/tags/hugo">Hugo</a>
-  
-</div>
+  <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
 
-
-<h2 id="description">Description</h2>
-<p>This project is a technical article/tutorial I wrote for my blog. I explain to readers how to create conditional image layouts using using <a href="https://go.dev/" target="_blank" rel="nofollow noopener noreferrer">Go</a> and HTML for a <a href="https://gohugo.io" target="_blank" rel="nofollow noopener noreferrer">Hugo</a> site. The article involved extensive research on Hugo as a content management platform and showcases several of my skills, including:</p>
+  <h2 id="description">Description</h2>
+<p>This project is a technical article/tutorial I wrote for my blog. I explain to readers how to create conditional image layouts using using <a href="https://go.dev/">Go</a> and HTML for a <a href="https://gohugo.io">Hugo</a> site. The article involved extensive research on Hugo as a content management platform and showcases several of my skills, including:</p>
 <ul>
 <li>Detailed, audience-aware technical writing.</li>
 <li>Web-design skills (HTML).</li>
@@ -208,8 +54,8 @@
 </ul>
 <h2 id="conditional-image-layouts-in-hugo">Conditional Image Layouts in Hugo</h2>
 <h3 id="introduction">Introduction</h3>
-<p>In this tutorial, I describe how to write conditional image layouts using <a href="https://go.dev/" target="_blank" rel="nofollow noopener noreferrer">Go</a> and HTML for a <a href="https://gohugo.io" target="_blank" rel="nofollow noopener noreferrer">Hugo</a> site.</p>
-<p>When I started designing <a href="https://github.com/rickwysocki/littleGhost" target="_blank" rel="nofollow noopener noreferrer">Little Ghost</a>, my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page&rsquo;s front matter and the site configuration file. Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/#figure" target="_blank" rel="nofollow noopener noreferrer">figure shortcode</a> was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.</p>
+<p>In this tutorial, I describe how to write conditional image layouts using <a href="https://go.dev/">Go</a> and HTML for a <a href="https://gohugo.io">Hugo</a> site.</p>
+<p>When I started designing <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>, my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page&rsquo;s front matter and the site configuration file. Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/#figure">figure shortcode</a> was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.</p>
 <h3 id="part-1-featured-images-for-pages-basic">Part 1: Featured Images for Pages (Basic)</h3>
 <p>There were several criteria I wanted in to implement for featured image layouts. I wanted Hugo to:</p>
 <ul>
@@ -233,7 +79,7 @@
 </span></span></code></pre></div><p>So, what is each line doing here?</p>
 <p>First, we ask Hugo to check whether a <code>featured_image</code> is set in the front matter. If not, everything else will be ignored:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">isset</span> .<span style="color:#a6e22e">Params</span> <span style="color:#e6db74">&#34;featured_image&#34;</span> }}
-</span></span></code></pre></div><p>Assuming we have declared a featured image, we then want to access it as a page resource. This is important because, as described in <a href="https://gohugo.io/content-management/page-resources/" target="_blank" rel="nofollow noopener noreferrer">the Hugo documentation</a>, page resource files get a page-relative URL, which simplifies the front matter we need to write. We will also see that getting our image as a page resource will let us make creative use of Hugo&rsquo;s image-processing methods.</p>
+</span></span></code></pre></div><p>Assuming we have declared a featured image, we then want to access it as a page resource. This is important because, as described in <a href="https://gohugo.io/content-management/page-resources/">the Hugo documentation</a>, page resource files get a page-relative URL, which simplifies the front matter we need to write. We will also see that getting our image as a page resource will let us make creative use of Hugo&rsquo;s image-processing methods.</p>
 <p>So, what we want to do is:</p>
 <ol>
 <li>Get <code>featured_image</code>.</li>
@@ -387,7 +233,7 @@
 <h4 id="processing-our-images">Processing Our Images</h4>
 <p>We&rsquo;re in the home stretch now. There&rsquo;s one small piece that we haven&rsquo;t talked about, but it&rsquo;s doing some essential work. Note the methods we&rsquo;ve added when calling our image:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ ((<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">Crop</span> <span style="color:#e6db74">&#34;1200x800&#34;</span>).<span style="color:#a6e22e">Resize</span> <span style="color:#e6db74">&#34;600x&#34;</span>).<span style="color:#a6e22e">RelPermalink</span> }}
-</span></span></code></pre></div><p>We&rsquo;re using some of <a href="https://gohugo.io/content-management/image-processing/" target="_blank" rel="nofollow noopener noreferrer">Hugo&rsquo;s image-processing methods</a> here.</p>
+</span></span></code></pre></div><p>We&rsquo;re using some of <a href="https://gohugo.io/content-management/image-processing/">Hugo&rsquo;s image-processing methods</a> here.</p>
 <ol>
 <li>Because we wanted equally sized images, we employ the <code>.Crop</code> method to first take our image and crop it to 1200x800.</li>
 <li>Because the image will be used in a grid layout where it will be smaller, we then resize our cropped image to half size using the <code>Resize</code> method. This will help with page load time.</li>
@@ -404,36 +250,25 @@
 <p>If you&rsquo;ve got this down and want to do more with what you&rsquo;ve learned, here are two small project ideas:</p>
 <ul>
 <li>Rewrite the <code>&lt;img&gt;&lt;/img&gt;</code> layouts using <code>&lt;figure&gt;&lt;/figure&gt;</code> tags. See if you can add an optional parameter for <code>figcaptions</code>.</li>
-<li>Look over some of the other <a href="https://gohugo.io/content-management/image-processing/" target="_blank" rel="nofollow noopener noreferrer">image processing</a> methods that Hugo ships with. What other ones might you include?</li>
+<li>Look over some of the other <a href="https://gohugo.io/content-management/image-processing/">image processing</a> methods that Hugo ships with. What other ones might you include?</li>
 </ul>
 <h4 id="an-easier-solution">An Easier Solution</h4>
-<p>Finally, if you just want a simple and flexible Hugo theme that does all of this for you, check out <a href="https://github.com/rickwysocki/littleGhost" target="_blank" rel="nofollow noopener noreferrer">Little Ghost</a>.</p>
+<p>Finally, if you just want a simple and flexible Hugo theme that does all of this for you, check out <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>.</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/web-development/">Web Development</a></li>
+        <li><a href="/tags/hugo/">Hugo</a></li>
+    </ul>
+  </div>
 
 
-</div>
+  </main>
+  <footer>
+    <p>Copyright 2025. All rights reserved.</p>
 
-
-
-    
-    <footer class="mx-auto shadow-lg max-w-lg p-6 text-center sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-16 mb-4">
-    
-    <img class= "sm:mx-0 sm:shrink-0 mx-auto h-24 rounded-full" src="/images/bio-photo.jpg" />
-    <div class="text-left">
-      <h6 class="font-bold text-indigo-600">Rick Wysocki</h6>
-      <p class="text-gray-600 font-serif">Writing Expert | Educator | Technical Communicator</p>
-      <p class="font-serif">I am a professor at Ball State University. I&#39;m passionate about effective communication, research, and information design. My free time is spent practicing Zen, reading, learning new technologies, and lifting weights.</p>
-      <div class="flex gap-4 mt-2 text-xl text-indigo-600">
-        <a href="mailto:rlwysockijr@gmail.com"><i class="fa fa-envelope"></i></a>
-        <a href="https://github.com/rickwysocki"><i class="fa fa-github"></i></a>
-        
-        <a href="https://mas.to/@rickwysocki"><i class="fab fa-mastodon"></i></a>
-
-
-    </div>
-    </div>
-
-</footer>
-</div>
-
+  </footer>
 </body>
 </html>
