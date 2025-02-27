@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Rick Wysocki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Feb 2025 10:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2025 12:08:18 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Summary Tags</title>
+      <link>http://localhost:1313/posts/2025/02/test-summary-tags/</link>
+      <pubDate>Thu, 27 Feb 2025 12:08:18 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025/02/test-summary-tags/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test Summary</title>
+      <link>http://localhost:1313/posts/2025/02/test-summary/</link>
+      <pubDate>Thu, 27 Feb 2025 11:50:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2025/02/test-summary/</guid>
+      <description>&lt;p&gt;Here is a little bit of text.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Less Nerd, More Punk</title>
       <link>http://localhost:1313/posts/2025/02/less-nerd-more-punk/</link>
@@ -254,6 +268,13 @@
       <description>With a lot going on in my life (positively), I&amp;rsquo;ve been a bit slow on writing posts here. This week, though, I&amp;rsquo;ve been doing some work around the site and figured I&amp;rsquo;d note a few updates.</description>
     </item>
     <item>
+      <title>Bulang Huang Chen Hao (2018)</title>
+      <link>http://localhost:1313/posts/2024/04/bulang-huang-chen-hao-2018/</link>
+      <pubDate>Wed, 03 Apr 2024 08:40:22 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2024/04/bulang-huang-chen-hao-2018/</guid>
+      <description>Liquid Proust&#xA;Drank on April 3, rainy day evening session.&#xA;The leaves broke up really nice.&#xA;I used 10 grams in 100 ml gaiwan to use up some remaining leaves in the sample. Flash steeps.&#xA;Young puer sour smell on the wet leaves.&#xA;Tasted somewhere between a slightly aged and young puer. Could taste the &amp;ldquo;grandma&amp;rsquo;s house&amp;rdquo; notes behind the astringency, similar to Love Forever.&#xA;Not too think and not too light of a mouthfeel.</description>
+    </item>
+    <item>
       <title>Learning Asciidoc</title>
       <link>http://localhost:1313/posts/2024/03/learning-asciidoc/</link>
       <pubDate>Mon, 04 Mar 2024 08:40:22 -0500</pubDate>
@@ -315,6 +336,13 @@
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/2023/01/post-1/</guid>
       <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
+    </item>
+    <item>
+      <title>Covid - Day Four</title>
+      <link>http://localhost:1313/posts/2022/12/covid-day-four/</link>
+      <pubDate>Sun, 18 Dec 2022 16:08:22 -0500</pubDate>
+      <guid>http://localhost:1313/posts/2022/12/covid-day-four/</guid>
+      <description>Today will be a shorter post. Rather than write, I spent most of the day a) submitting grades and b) working on a new track.</description>
     </item>
     <item>
       <title>Covid - Day Three</title>
