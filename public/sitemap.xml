@@ -3,15 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-27T12:08:18-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/02/test-summary-tags/</loc>
-    <lastmod>2025-02-27T12:08:18-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/02/test-summary/</loc>
-    <lastmod>2025-02-27T11:50:16-05:00</lastmod>
+    <lastmod>2025-02-17T10:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/02/less-nerd-more-punk/</loc>
+    <lastmod>2025-02-17T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-17T10:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/film/</loc>
@@ -155,9 +152,6 @@
     <loc>http://localhost:1313/posts/2024/04/some-updates/</loc>
     <lastmod>2024-04-04T12:00:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024/04/bulang-huang-chen-hao-2018/</loc>
-    <lastmod>2024-04-03T08:40:22-05:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2024/03/learning-asciidoc/</loc>
     <lastmod>2024-03-04T08:40:22-05:00</lastmod>
   </url><url>
@@ -185,32 +179,8 @@
     <loc>http://localhost:1313/posts/2023/06/new-site-and-birthday-post/</loc>
     <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blue/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/green/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023/03/post-3/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/red/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2023/03/hugo/</loc>
     <lastmod>2023-03-10T16:08:22-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023/02/post-2/</loc>
-    <lastmod>2023-02-15T10:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023/01/post-1/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2023-01-01T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2022/12/covid-day-four/</loc>
-    <lastmod>2022-12-18T16:08:22-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2022/12/covid-day-three/</loc>
     <lastmod>2022-12-17T16:08:22-05:00</lastmod>
@@ -275,19 +245,11 @@
     <loc>http://localhost:1313/shows/</loc>
     <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
-  </url><url>
-    <loc>http://localhost:1313/awards/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/community-service/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/hugo-conditional-images/</loc>
   </url><url>
     <loc>http://localhost:1313/courses/</loc>
-  </url><url>
-    <loc>http://localhost:1313/editorial/</loc>
   </url><url>
     <loc>http://localhost:1313/portfolio/sharing-chatgpt/</loc>
   </url><url>
@@ -303,11 +265,7 @@
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
-    <loc>http://localhost:1313/resume/</loc>
-  </url><url>
     <loc>http://localhost:1313/skills/</loc>
-  </url><url>
-    <loc>http://localhost:1313/teaching/</loc>
   </url><url>
     <loc>http://localhost:1313/skills/technical-writing/</loc>
   </url><url>
