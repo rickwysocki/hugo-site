@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genre on output error</title>
+    <link>//localhost:1313/tags/genre/</link>
+    <description>Recent content in Genre on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/genre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Genre’s Normative Function</title>
+      <link>//localhost:1313/posts/genre-normative-function/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/genre-normative-function/</guid>
+      <description>Brief and wandering thoughts on genre.</description>
+    </item>
+    <item>
+      <title>What is Genre?</title>
+      <link>//localhost:1313/posts/genre-classification/</link>
+      <pubDate>Tue, 21 Jun 2022 16:25:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/genre-classification/</guid>
+      <description>Here is my post summary.</description>
+    </item>
+    <item>
+      <title>Superheroes: Ritual or Ideology?</title>
+      <link>//localhost:1313/posts/heroes-ritual-ideology/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/heroes-ritual-ideology/</guid>
+      <description>I read something fascinating in Rick Altman&amp;rsquo;s book that I discussed in another recent post. He talked about two ways that critics tend to look at film&amp;rsquo;s social dimension. These are as ritual or as ideology.</description>
+    </item>
+  </channel>
+</rss>

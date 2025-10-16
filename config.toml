@@ -1,0 +1,83 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'output error'
+theme = 'typo'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "A blog on technology, media theory, and philosophy."
+showFooter = true
+footerContent = "Rick Wysocki is an English professor and PhD in rhetoric and writing studies. He is passionate about technologies and their social effects, new media, and philosophy."
+
+# Lists parameters
+paginationSize = 20
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'base16-eighties'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Home'
+homeIntroContent = """
+
+I (Rick Wysocki) am an English professor and PhD in rhetoric and writing studies. My broad interests include technologies and their social effects, new media, and philosophy. On this blog, I write about a wide range of subjects that interest me at the time. These areas might include:
+
+- Rhetorics of state sovereignty, especially as they intersect with maritime policy
+- Artificial intelligence, begrudgingly
+- Research rhetoric and professional and technical writing (my course)
+- Philosophy and media theory.
+- GNU/Linux, Emacs, and free and open-source software more broadly.
+- Chinese and Taiwanese tea. (Especially pu'er.)
+
+### Site Notes
+
+**A note on the site title:** *output error*, as the title of the blog, has at least two meanings:
+- An indication of my sense that culture, intersecting and increasingly subsumed by technology, has gone haywire and increasingly presents perverse social outputs.
+- A recognition that my writing here often emerges from other projects and thinking or, frankly, when I should be working on something else.
+
+**A note on the site itself:** I've been transitoning to a new Emacs Org-mode based workflow for my blog. Currently, a lot of posts from February 2025 and before have broken elements. Fixing those is in my backlog, but the text should be readable. If there is one that you're interested specifically, let me know and I'll add it to the top of my queue.
+
+
+"""
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "tags"
+url = "/tags"
+
+[[params.social]]
+name = "mastodon"
+url = "https://mas.to/@rickwysocki"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+

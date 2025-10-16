@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tea on output error</title>
+    <link>//localhost:1313/tags/tea/</link>
+    <description>Recent content in Tea on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Apr 2024 20:13:00 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/tea/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kuura Cola</title>
+      <link>//localhost:1313/posts/kuura-cola/</link>
+      <pubDate>Mon, 08 Apr 2024 20:13:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/kuura-cola/</guid>
+      <description>Here is my post summary.</description>
+    </item>
+    <item>
+      <title>Bulang Huang Chen Hao (2018)</title>
+      <link>//localhost:1313/posts/bulang-chen-hao/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/bulang-chen-hao/</guid>
+      <description>Here is my post summary.</description>
+    </item>
+  </channel>
+</rss>

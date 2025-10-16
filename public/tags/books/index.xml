@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on output error</title>
+    <link>//localhost:1313/tags/books/</link>
+    <description>Recent content in Books on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Feb 2025 00:00:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two Books (and Bookwyrm)</title>
+      <link>//localhost:1313/posts/two-books-and-bookwyrm/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/two-books-and-bookwyrm/</guid>
+      <description>Here is my post summary.</description>
+    </item>
+    <item>
+      <title>2024 Review: The Books</title>
+      <link>//localhost:1313/posts/2024-books/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-books/</guid>
+      <description>A collection of thoughts on the books I read this year.</description>
+    </item>
+    <item>
+      <title>The Ignorant Schoolmaster: Five Lessons in Intellectual Emancipation (A Review)</title>
+      <link>//localhost:1313/posts/ignorant-schoolmaster/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/ignorant-schoolmaster/</guid>
+      <description>A review of Jacques Rancière&amp;rsquo;s The Ignorant Schoolmaster and a reflection on his critique of rhetoric.</description>
+    </item>
+    <item>
+      <title>Bookish Thoughts</title>
+      <link>//localhost:1313/posts/bookish-thoughts/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/bookish-thoughts/</guid>
+      <description>Brief notes on good books I’ve read this year.</description>
+    </item>
+    <item>
+      <title>Text and Meaning in a Short Stay in Hell</title>
+      <link>//localhost:1313/posts/short-stay-in-hell/</link>
+      <pubDate>Tue, 18 Jun 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/short-stay-in-hell/</guid>
+      <description>Here is my post summary.</description>
+    </item>
+  </channel>
+</rss>

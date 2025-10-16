@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theory on output error</title>
+    <link>//localhost:1313/tags/theory/</link>
+    <description>Recent content in Theory on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Sep 2024 00:00:00 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ignorant Schoolmaster: Five Lessons in Intellectual Emancipation (A Review)</title>
+      <link>//localhost:1313/posts/ignorant-schoolmaster/</link>
+      <pubDate>Sun, 29 Sep 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/ignorant-schoolmaster/</guid>
+      <description>A review of Jacques Rancière&amp;rsquo;s The Ignorant Schoolmaster and a reflection on his critique of rhetoric.</description>
+    </item>
+    <item>
+      <title>Cannon Shot Epistemology</title>
+      <link>//localhost:1313/posts/cannon-shot-epistemology/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/cannon-shot-epistemology/</guid>
+      <description>Maybe we shouldn&amp;rsquo;t base our thinking on what AI is now. Maybe we should think harder about what it could become.</description>
+    </item>
+  </channel>
+</rss>
