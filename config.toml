@@ -80,3 +80,7 @@ style = 'algol'
   unsafe = true
 
 
+# GitHub Pages Config
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
