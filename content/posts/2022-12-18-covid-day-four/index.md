@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Covid - Day Four"
 date:   2022-12-18 16:08:22 -0500
 Summary: Today will be a shorter post. Rather than write, I spent most of the day a) submitting grades and b) working on a new track.
-published: false
 tags:
   - Personal
 ---

@@ -1,10 +1,7 @@
 ---
-layout: single
 title:  "Some Updates"
 date:   2024-04-04 12:00:22 -0500
 summary: With a lot going on in my life (positively), I've been a bit slow on writing posts here. This week, though, I've been doing some work around the site and figured I'd note a few updates.
-published: true
-comments: true
 ---
 
 With a lot going on in my life (positively), I've been a bit slow on writing posts here. This week, though, I've been doing some work around the site and figured I'd note a few updates.

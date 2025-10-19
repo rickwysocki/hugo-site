@@ -2,10 +2,6 @@
 title:  "New Site (and Birthday Post)"
 date:   2023-06-12
 summary: I've got a new site put together. And a quick review of the year.
-description: I've got a new site put together. And a quick review of the year.
-layout: post
-featured_image: featured.png
-featured_alt: The Hugo logo.
 tags:
   - Hugo
   - Web Development

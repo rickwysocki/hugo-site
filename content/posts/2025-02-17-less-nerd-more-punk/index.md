@@ -1,12 +1,7 @@
 ---
 title: Less Nerd, More Punk
-published: true
 date: 2025-02-17 10:00:00 -0500
-featured_post: true
 summary: We've ceded too much ground to nerds. We need to bring back a digital-punk ethos.
-featured_image: featured.jpg
-featured_alt: An image reading "revenge of the nerds."
-comments: true
 ---
 During times of global crisis (looks out on the world), I respond in a few predictable ways:
 

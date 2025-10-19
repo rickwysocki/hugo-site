@@ -3,11 +3,6 @@ title:  "Hugo"
 date:   2023-03-10 16:08:22 -0500
 summary: So, I'm learning Hugo.
 description: A review of how I'm learning Hugo.
-featured_image: featured.png
-featured_alt: Here is some alt text.
-published: true
-
-layout: post
 tags:
   - Hugo
   - Web Development

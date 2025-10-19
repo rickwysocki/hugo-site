@@ -2,9 +2,6 @@
 title: "Writing Feedback with TextExpander"
 date: 2024-06-05 5:44:00 -0500
 summary: This post details how I use TextExpander to offer high-quality feedback to my students in an organized and efficient manner. 
-featured_image: te-email.jpg
-featured_alt: A screenshot of a TextExpander snippet.
-comments: true
 ---
 
 This post details how I use [TextExpander]([link](https://textexpander.com/)) to offer high-quality feedback to my students in an organized and efficient manner. 

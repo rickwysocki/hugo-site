@@ -2,10 +2,6 @@
 title:  "Joker: Folie à Deux"
 date:   2024-10-14 1:11:00 -0500
 summary: Genre bending is played out. It just is.
-featured_image: featured.jpg
-featured_alt: The Apple clown emoji.
-published: true
-comments: true
 ---
 
 I have to assume that *Joker 2: Folie à Deux* lacked what audiences

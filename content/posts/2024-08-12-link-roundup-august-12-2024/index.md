@@ -2,10 +2,6 @@
 title:  "Link Roundup: August 12, 2024"
 date:   2024-08-12 11:57:00 -0500
 summary: This week's link roundup includes the unique combination of an article on the most-cited authors in the Stanford Encyclopedia of Philosophy and advice on non-scalable activities for startups. 
-featured_image: featured.jpg
-featured_alt: An image of a network
-published: true
-comments: true
 tags:
     - link roundup
 ---

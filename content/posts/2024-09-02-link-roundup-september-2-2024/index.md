@@ -2,10 +2,6 @@
 title:  "Link Roundup: September 2, 2024"
 date:   2024-09-02 1:58:00 -0500
 summary: A strange combination of a 1998 interview with Paul Virilio and a blog post about ways to make better decisions. 
-featured_image: featured.jpg
-featured_alt: An image of a burned out bus.
-published: true
-comments: true
 tags:
     - media studies
     - artificial intelligence

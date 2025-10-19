@@ -1,12 +1,7 @@
 ---
-layout: post
 title: "Covid - Day Three"
 date:   2022-12-17 16:08:22 -0500
 summary: Day three has been alright so far. Last night, again, my only issue sleeping was my wrecked throat. A bought me some chloraseptic today; I imagine that will help tonight.
-published: true
-featured_image: featured.jpg
-featured_alt: An image of Coronavirus.
-
 tags:
   - Personal
 ---

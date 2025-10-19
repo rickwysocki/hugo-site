@@ -6,28 +6,49 @@
     <description>Recent content in Genre on output error</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 09:20:00 -0500</lastBuildDate>
     <atom:link href="//localhost:1313/tags/genre/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Genre’s Normative Function</title>
-      <link>//localhost:1313/posts/genre-normative-function/</link>
-      <pubDate>Mon, 10 Feb 2025 00:00:00 -0500</pubDate>
-      <guid>//localhost:1313/posts/genre-normative-function/</guid>
+      <link>//localhost:1313/posts/2025-02-10-genre-normative-function/</link>
+      <pubDate>Mon, 10 Feb 2025 09:20:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-02-10-genre-normative-function/</guid>
       <description>Brief and wandering thoughts on genre.</description>
     </item>
     <item>
-      <title>What is Genre?</title>
-      <link>//localhost:1313/posts/genre-classification/</link>
-      <pubDate>Tue, 21 Jun 2022 16:25:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/genre-classification/</guid>
-      <description>Here is my post summary.</description>
+      <title>Link Roundup: November 4, 2024</title>
+      <link>//localhost:1313/posts/2024-11-4-link-roundup-november-4-2024/</link>
+      <pubDate>Mon, 04 Nov 2024 02:44:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-11-4-link-roundup-november-4-2024/</guid>
+      <description>Fritz Lang on his film M and a tutorial for HTML-based resumes.</description>
     </item>
     <item>
-      <title>Superheroes: Ritual or Ideology?</title>
-      <link>//localhost:1313/posts/heroes-ritual-ideology/</link>
-      <pubDate>Thu, 09 Jun 2022 00:00:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/heroes-ritual-ideology/</guid>
-      <description>I read something fascinating in Rick Altman&amp;rsquo;s book that I discussed in another recent post. He talked about two ways that critics tend to look at film&amp;rsquo;s social dimension. These are as ritual or as ideology.</description>
+      <title>What is Genre?</title>
+      <link>//localhost:1313/posts/2022-06-21-genre-classification/</link>
+      <pubDate>Tue, 21 Jun 2022 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2022-06-21-genre-classification/</guid>
+      <description>A concept that is has been popping up in recent posts is genre. It&amp;rsquo;s not surprising, as genre is central not only to film&amp;ndash;increasingly, the focus of this blog&amp;ndash;but to rhetoric and writing studies, my academic home. But what &lt;em&gt;is&lt;/em&gt; genre?</description>
+    </item>
+    <item>
+      <title>Masculinity in Shane and Yojimbo</title>
+      <link>//localhost:1313/posts/2022-06-07-masculinity-shane-and-yojimbo/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2022-06-07-masculinity-shane-and-yojimbo/</guid>
+      <description>I&amp;rsquo;ve been going through some of my notes from a film genre class I took in graduate school. One week, we watched &lt;em&gt;Shane&lt;/em&gt; and &lt;em&gt;Yojimbo&lt;/em&gt; as cross-cultural examples of the western, which historically commingled with the samurai film in Japan.</description>
+    </item>
+    <item>
+      <title>Men (2022)</title>
+      <link>//localhost:1313/posts/2022-06-05-men/</link>
+      <pubDate>Sun, 05 Jun 2022 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2022-06-05-men/</guid>
+      <description>A few weeks ago, I went to see Alex Garland&amp;rsquo;s film Men. I really enjoyed, especially in the context of my growing interest in both film genre studies and the specific genre of horror.</description>
+    </item>
+    <item>
+      <title>Satoyama, Modernity, and Tradition in Japanese Anime</title>
+      <link>//localhost:1313/posts/2021-06-13-satoyama/</link>
+      <pubDate>Sun, 13 Jun 2021 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2021-06-13-satoyama/</guid>
+      <description>I&amp;rsquo;ve been reading scholarship about anime, its history, and how it deviates from animation in the United States. It&amp;rsquo;s frequently observed that tensions between tradition and modernity are often central to anime.</description>
     </item>
   </channel>
 </rss>

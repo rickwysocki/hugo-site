@@ -1,12 +1,7 @@
 ---
-layout: single
 title:  "Learning Asciidoc"
 date:   2024-03-04 08:40:22 -0500
 summary: I learned AsciiDoc.
-featured_image: featured.jpg
-featured_alt: A photo of a stack of print documents.
-featured_caption: Photo by ron dyar - https://unsplash.com/photos/stack-of-papers-V29UWcALNko
-published: true
 ---
 
 I’ve been spending time boning up on technical writing skills over the past few months. As a teacher of professional and technical writing it’s important for me to be able to explain not just the role of language but also of technology in technical writing. Beyond that, readers of my blog are aware of my obsession with learning, technology, and learning about technology.

@@ -2,10 +2,6 @@
 title:  "Stay on the Bus: or, Optimization is a Dirty Word"
 date:   2024-08-19 12:00:00 -0500
 summary: A grammar-based argument about why seeking optimizations might just be a big waste of time. 
-featured_image: featured.jpg
-featured_alt: An overhead image of a highway.
-published: true
-comments: true
 ---
 
 ## Optimal, Optimize, Optimization: Definitions and Parts of Speech

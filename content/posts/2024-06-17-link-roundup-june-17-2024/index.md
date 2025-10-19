@@ -2,10 +2,6 @@
 title:  "Link Roundup: June 17, 2024"
 date:   2024-06-17 1:22:00 -0500
 summary: Some interesting content I read this week.
-featured_image: featured.jpg
-featured_alt: An image a of a computer screen reading Documentation.
-published: true
-comments: true
 tags:
     - link roundup
     - artificial intelligence

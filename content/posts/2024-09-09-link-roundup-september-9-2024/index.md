@@ -2,10 +2,6 @@
 title:  "Link Roundup: September 9, 2024"
 date:   2024-09-09 1:10:00 -0500
 summary: A link roundup of articles and thoughts on practices of reading, why ChatGPT is still extraordinarily limited at writing, and the "missing questions" in our conversations about the future. 
-featured_image: featured.jpg
-featured_alt: A photograph of a shelf of books.
-published: true
-comments: true
 tags:
     - artificial intelligence
     - link roundup

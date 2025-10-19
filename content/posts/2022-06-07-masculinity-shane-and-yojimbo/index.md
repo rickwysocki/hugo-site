@@ -1,15 +1,7 @@
 ---
-layout: single
 title: "Masculinity in Shane and Yojimbo"
 summary: I've been going through some of my notes from a film genre class I took in graduate school. One week, we watched *Shane* and *Yojimbo* as cross-cultural examples of the western, which historically commingled with the samurai film in Japan.
-description: I've been going through some of my notes from a film genre class I took in graduate school. One week, we watched Shane and Yojimbo as cross-cultural examples of the Western, which is historically connected to the samurai film in Japan.
-published: true
 date: 2022-06-07
-featured_image: featured.jpg
-featured_alt: An image from the film Yojimbo of Toshiro Mifune stroking his beard, looking away, as a villager tries to speak to him.
-movies:
-  - Yojimbo
-  - Shane
 tags:
   - Film and Television
   - Genre

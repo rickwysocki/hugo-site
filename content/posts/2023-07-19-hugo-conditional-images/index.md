@@ -1,12 +1,7 @@
 ---
-layout: single
 title:  "Conditional Image Layouts in Hugo"
 date:   2023-07-20 08:40:22 -0500
 summary: This post describes how to write conditional image layouts using Go and HTML for a Hugo site. 
-featured_image: featured.png
-featured_alt: A screenshot of some of the code from this tutorial.
-featured_caption: Photo by Campina Grande - https://unsplash.com/photos/Z19vToWBDIc
-published: true
 tags:
   - Web Development
   - Hugo

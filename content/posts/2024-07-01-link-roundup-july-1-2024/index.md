@@ -2,10 +2,6 @@
 title:  "Link Roundup: July 1, 2024"
 date:   2024-07-01 9:00:00 -0500
 summary: A link roundup including my thoughts on Steven Peck's A Short Stay in Hell, storytelling for UX design, and the importance of document version control.
-featured_image: featured.jpg
-featured_alt: A neon sign reading “What is Your Story"
-published: true
-comments: true
 tags:
     - link roundup
 ---

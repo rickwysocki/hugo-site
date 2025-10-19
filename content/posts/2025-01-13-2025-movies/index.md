@@ -2,10 +2,6 @@
 title:  "2024 Review: The Movies"
 date:   2025-01-13 10:00:00 -0500
 summary: Visualizations of, and thoughts on, my year watching movies.
-featured_image: featured.jpg
-featured_alt: An image of a movie screen.
-comments: true
-published: true
 tags:
     - 2024
     - personal

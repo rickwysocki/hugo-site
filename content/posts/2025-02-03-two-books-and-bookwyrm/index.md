@@ -2,11 +2,6 @@
 title:  "Two Books (and Bookwyrm)"
 date:   2025-02-03 2:31:00 -0500
 summary: Thoughts on books I've read so far this year.
-featured_image: featured.jpg
-featured_alt: A bookshelf. 
-published: true
-comments: true
-featured_post: true
 ---
 
 The semester continues, the news rages on, and the world gets worse. The latter two items aren't related to the first, except that they all are reasons I won't have a fully featured link roundup this week. I've just been swamped with teaching, feelings, and also with continuing to work on a research project that's been on my mind... forever. More on that if I ever get to a full manuscript.

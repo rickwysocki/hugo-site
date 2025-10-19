@@ -2,10 +2,6 @@
 title:  "I Don't Know What to Do About AI, and Neither Do You"
 date:   2024-09-23 11:28:00 -0500
 summary: This is a rant.
-featured_image: featured.jpg
-featured_alt: Two spidermen pointing at each other.
-published: true
-comments: true
 tags:
     - artificial intelligence
 ---

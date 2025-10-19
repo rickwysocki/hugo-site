@@ -1,12 +1,7 @@
 ---
-layout: single
 title:  "Kuura Cola"
 date:   2024-04-08 4:09:22 -0500
 summary: An introduction to my obsession and notes on a tasty and very straightforward ripe puer tea.
-featured_image: featured.jpeg
-featured_alt: An image of a Kuura Cola cake in its packaging.
-published: true
-comments: true
 ---
 
 ## A Brief Introduction

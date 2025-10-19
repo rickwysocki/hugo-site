@@ -2,10 +2,6 @@
 title:  "Cannon Shot Epistemology"
 date:   2024-09-25 9:21:00 -0500
 summary: Maybe we can't shouldn't base our thinking on what AI is now. Maybe we should think harder about what it could become.
-featured_image: featured.jpg
-featured_alt: A cannon.
-published: true
-comments: true
 tags:
     - artificial intelligence
 ---

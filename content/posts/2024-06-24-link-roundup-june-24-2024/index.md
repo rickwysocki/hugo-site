@@ -2,10 +2,6 @@
 title:  "Link Roundup: June 24, 2024"
 date:   2024-06-24 1:05:00 -0500
 summary: Some links and thoughts on the relationship between AI and environmental concerns and on action titles as a tool for slide design.
-featured_image: featured.jpg
-featured_alt: An image of environmental pollution.
-published: true
-comments: true
 tags:
     - link roundup
     - artificial intelligence

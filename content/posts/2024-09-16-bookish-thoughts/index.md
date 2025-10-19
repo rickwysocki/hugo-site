@@ -2,10 +2,6 @@
 title:  "Bookish Thoughts"
 date:   2024-09-16 11:28:00 -0500
 summary: Brief notes on good books I’ve read this year.
-featured_image: featured.jpg
-featured_alt: An image of a bookshelf.
-published: true
-comments: true
 ---
 
 Sadly, I have been too busy this past week to read much for the link

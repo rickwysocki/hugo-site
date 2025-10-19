@@ -2,10 +2,6 @@
 title:  "Link Roundup: August 19, 2024"
 date:   2024-08-19 1:33:00 -0500
 summary: An article on the (lack of) regulation of solar power.
-featured_image: featured.jpg
-featured_alt: An image of cables running into computer server.
-published: true
-comments: true
 tags:
 - link roundup
 - media studies

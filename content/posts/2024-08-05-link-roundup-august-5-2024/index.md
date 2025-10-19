@@ -2,10 +2,6 @@
 title:  "Link Roundup: August 5, 2024"
 date:   2024-08-05 1:48:00 -0500
 summary: This week's articles emphasize the importance of archival work and offer an interesting writing-process heuristic.
-featured_image: featured.jpg
-featured_alt: An image of storage lockers
-published: true
-comments: true
 tags:
     - artificial intelligence
     - link roundup

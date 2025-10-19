@@ -1,17 +1,10 @@
 ---
-layout: single
 title:  "Men (2022)"
 date:   2022-06-05 16:08:22 -0500
 summary: A few weeks ago, I went to see Alex Garland's film Men. I really enjoyed, especially in the context of my growing interest in both film genre studies and the specific genre of horror.
-featured_image: featured.jpg
-featured_alt: An image from the film Men of Harper, looking scared, in a tunnel.
-featured_caption: Harper, played by Jessie Buckley.
-published: true
 tags:
   - Film and Television
   - Genre
-movies:
-  - Men
 ---
 
 A few weeks ago, I went to see Alex Garland's film *Men*. I really enjoyed, especially in the context of my growing interest in both film genre studies and the specific genre of horror.

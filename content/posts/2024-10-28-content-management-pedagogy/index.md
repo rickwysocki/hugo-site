@@ -2,10 +2,6 @@
 title:  "Content Management Pedagogy"
 date:   2024-10-28 11:51:00 -0500
 summary: Learning management systems have turned teachers into content managers. That’s bad. 
-featured_image: featured.jpg
-featured_alt: A stack of digital tablets.
-published: true
-comments: true
 tags:
     - teaching
     - technical writing

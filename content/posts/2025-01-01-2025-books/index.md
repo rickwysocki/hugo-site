@@ -2,10 +2,6 @@
 title:  "2024 Review: The Books"
 date:   2025-01-01 3:15:00 -0500
 summary: A collection of thoughts on the books I read  this year.
-featured_image: featured.jpg
-featured_alt: Books.
-published: true
-comments: true
 tags:
     - 2024
     - personal

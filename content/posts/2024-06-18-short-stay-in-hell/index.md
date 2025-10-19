@@ -2,10 +2,6 @@
 title:  "Text and Meaning in A Short Stay in Hell"
 date:   2024-06-18 3:16:00 -0500
 summary: Some thoughts on text and meaning in Steven Peck’s Novella, A Short Stay in Hell.
-featured_image: featured.jpg
-featured_alt: The cover for Steven Peck’s *A Short Stay in Hell*
-published: true
-comments: true
 ---
 
 {{< warning >}}

@@ -2,10 +2,6 @@
 title:  "Link Roundup: July 22, 2024"
 date:   2024-07-22 10:55:00 -0500
 summary: This week's roundup has articles on cognitive empathy, kimchi, and technical writing workflows. All the best things!
-featured_image: featured.jpg
-featured_alt: Kimchi
-published: true
-comments: true
 tags:
     - technical writing
     - link roundup

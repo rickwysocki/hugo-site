@@ -2,10 +2,6 @@
 title:  "Link Roundup: July 15, 2024"
 date:   2024-07-15 2:18:00 -0500
 summary: A link roundup including an article on ways that organizations can set up technical writers to be successful and another offering a waterfall of advice for reflective self-management over a career. 
-featured_image: featured.jpg
-featured_alt: An image of a hand touching itself in its reflection on a mirror.
-published: true
-comments: true
 tags:
     - link roundup
     - artificial intelligence

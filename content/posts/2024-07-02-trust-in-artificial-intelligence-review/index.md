@@ -2,10 +2,6 @@
 title:  "Article Review: Trust in Artificial Intelligence"
 date:   2024-07-02 9:00:00 -0500
 summary: This post discusses a meta-analysis of studies related to trust in AI systems. I consider its implications for how AI might continue to be taken up in work contexts.
-featured_image: featured.jpg
-featured_alt: 
-published: true
-comments: true
 tags:
     - artificial intelligence
 ---

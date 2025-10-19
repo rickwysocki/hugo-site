@@ -2,10 +2,6 @@
 title:  "Link Roundup: October 8, 2024"
 date:   2024-10-08 2:58:00 -0500
 summary: Book reviews and article writeups for the week. 
-featured_image: featured.jpg
-featured_alt: The cover of Anna Kornbluh’s book, Immediacy.
-published: true
-comments: true
 tags:
     - artificial intelligence
 ---

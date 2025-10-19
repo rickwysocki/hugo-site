@@ -2,10 +2,6 @@
 title:  "Link Roundup: August 26, 2024"
 date:   2024-08-26 9:29:00 -0500
 summary: A link roundup up full of technical skepticism and the benefits of cutting back.
-featured_image: featured.jpg
-featured_alt: An image of a timeline graph on a computer.
-published: true
-comments: true
 tags:
     - link roundup
     - artificial intelligence

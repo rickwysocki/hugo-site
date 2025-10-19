@@ -3,183 +3,216 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-12-18T00:00:00-05:00</lastmod>
+    <lastmod>2025-02-17T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-02-17-less-nerd-more-punk/</loc>
+    <lastmod>2025-02-17T10:00:00-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2025-12-18T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/less-nerd-more-punk/</loc>
-    <lastmod>2025-02-17T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/genre/</loc>
-    <lastmod>2025-02-10T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/genre-normative-function/</loc>
-    <lastmod>2025-02-10T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2025-02-10T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/books/</loc>
-    <lastmod>2025-02-03T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/two-books-and-bookwyrm/</loc>
-    <lastmod>2025-02-03T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/link-roundup-january-27-2025/</loc>
-    <lastmod>2025-01-27T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/link-roundup-january-20-2025/</loc>
-    <lastmod>2025-01-20T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2025-movies/</loc>
-    <lastmod>2025-01-13T00:00:00-05:00</lastmod>
+    <lastmod>2025-02-17T10:00:00-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/film/</loc>
-    <lastmod>2025-01-13T00:00:00-05:00</lastmod>
+    <lastmod>2025-02-10T09:20:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2024-books/</loc>
-    <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/tags/genre/</loc>
+    <lastmod>2025-02-10T09:20:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-november-4-2024/</loc>
-    <lastmod>2024-11-04T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/posts/2025-02-10-genre-normative-function/</loc>
+    <lastmod>2025-02-10T09:20:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/content-management-pedagogy/</loc>
-    <lastmod>2024-10-28T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/tags/rhetoric/</loc>
+    <lastmod>2025-02-10T09:20:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-02-10T09:20:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-02-03-two-books-and-bookwyrm/</loc>
+    <lastmod>2025-02-03T02:31:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2025-01-27T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/emacs/</loc>
+    <lastmod>2025-01-27T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-01-27-link-roundup-january-27-2025/</loc>
+    <lastmod>2025-01-27T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/link-roundup/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-01-20-link-roundup/</loc>
+    <lastmod>2025-01-20T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/2024/</loc>
+    <lastmod>2025-01-13T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-01-13-2025-movies/</loc>
+    <lastmod>2025-01-13T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/personal/</loc>
+    <lastmod>2025-01-13T10:00:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2025-01-01-2025-books/</loc>
+    <lastmod>2025-01-01T03:15:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2024-11-4-link-roundup-november-4-2024/</loc>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/media-studies/</loc>
+    <lastmod>2024-11-04T02:44:00-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2024-10-28-content-management-pedagogy/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/teaching/</loc>
-    <lastmod>2024-10-28T00:00:00-04:00</lastmod>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/joker-folie-a-deux/</loc>
-    <lastmod>2024-10-14T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/tags/technical-writing/</loc>
+    <lastmod>2024-10-28T11:51:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-october-8-2024/</loc>
-    <lastmod>2024-10-08T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-10-14-joker-folie-a-deux/</loc>
+    <lastmod>2024-10-14T01:11:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/ignorant-schoolmaster/</loc>
-    <lastmod>2024-09-29T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-10-08-link-roundup-october-8-2024/</loc>
+    <lastmod>2024-10-08T02:58:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/theory/</loc>
-    <lastmod>2024-09-29T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-29-ignorant-schoolmaster/</loc>
+    <lastmod>2024-09-29T03:13:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ai/</loc>
-    <lastmod>2024-09-25T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-25-cannon-shot-epistemology/</loc>
+    <lastmod>2024-09-25T09:21:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/cannon-shot-epistemology/</loc>
-    <lastmod>2024-09-25T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-23-what-to-do-about-ai/</loc>
+    <lastmod>2024-09-23T11:28:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/what-to-do-about-ai/</loc>
-    <lastmod>2024-09-23T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-16-bookish-thoughts/</loc>
+    <lastmod>2024-09-16T11:28:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/bookish-thoughts/</loc>
-    <lastmod>2024-09-16T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-09-link-roundup-september-9-2024/</loc>
+    <lastmod>2024-09-09T01:10:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-september-9-2024/</loc>
-    <lastmod>2024-09-09T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-09-02-link-roundup-september-2-2024/</loc>
+    <lastmod>2024-09-02T01:58:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-september-2-2024/</loc>
-    <lastmod>2024-09-02T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-08-26-link-roundup-august-26-2024/</loc>
+    <lastmod>2024-08-26T09:29:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-08-26-2024/</loc>
-    <lastmod>2024-08-26T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-08-19-staying-on-the-bus/</loc>
+    <lastmod>2024-08-19T12:00:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-08-19-2024/</loc>
-    <lastmod>2024-08-19T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-08-19-link-roundup-august-19-2024/</loc>
+    <lastmod>2024-08-19T01:33:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/staying-on-the-bus/</loc>
-    <lastmod>2024-08-19T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-08-12-link-roundup-august-12-2024/</loc>
+    <lastmod>2024-08-12T11:57:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-08-12-2024/</loc>
-    <lastmod>2024-08-12T19:15:00-04:00</lastmod>
+    <loc>//localhost:1313/tags/archival-research/</loc>
+    <lastmod>2024-08-05T01:48:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-august-5-2024/</loc>
-    <lastmod>2024-08-05T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-08-05-link-roundup-august-5-2024/</loc>
+    <lastmod>2024-08-05T01:48:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-july-29-2024/</loc>
-    <lastmod>2024-07-29T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-29-link-roundup-july-29-2024/</loc>
+    <lastmod>2024-07-29T01:45:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-july-22-2024/</loc>
-    <lastmod>2024-07-22T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-22-link-roundup-july-22-2024/</loc>
+    <lastmod>2024-07-22T10:55:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-july-15-2024/</loc>
-    <lastmod>2024-07-15T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-15-link-roundup-july-15-2024/</loc>
+    <lastmod>2024-07-15T02:18:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-july-07-2024/</loc>
-    <lastmod>2024-07-07T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-07-link-roundup-july-07-2024/</loc>
+    <lastmod>2024-07-07T01:25:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/trust-in-artificial-intelligence-review/</loc>
-    <lastmod>2024-07-02T20:19:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-02-trust-in-artificial-intelligence-review/</loc>
+    <lastmod>2024-07-02T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-july-1-2024/</loc>
-    <lastmod>2024-07-01T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-07-01-link-roundup-july-1-2024/</loc>
+    <lastmod>2024-07-01T09:00:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-june-24-2024/</loc>
-    <lastmod>2024-06-24T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-06-24-link-roundup-june-24-2024/</loc>
+    <lastmod>2024-06-24T01:05:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/short-stay-in-hell/</loc>
-    <lastmod>2024-06-18T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-06-18-short-stay-in-hell/</loc>
+    <lastmod>2024-06-18T03:16:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-june-17-2024/</loc>
-    <lastmod>2024-06-17T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-06-17-link-roundup-june-17-2024/</loc>
+    <lastmod>2024-06-17T01:22:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/link-roundup-june-10-2024/</loc>
-    <lastmod>2024-06-10T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-06-10-link-roundup-june-10-2024/</loc>
+    <lastmod>2024-06-10T03:55:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/writing-feedback-textexpander/</loc>
-    <lastmod>2024-06-05T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-06-05-writing-feedback-textexpander/</loc>
+    <lastmod>2024-06-05T05:44:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/kuura-cola/</loc>
-    <lastmod>2024-04-08T20:13:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-04-08-kuura-cola/</loc>
+    <lastmod>2024-04-08T04:09:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/tea/</loc>
-    <lastmod>2024-04-08T20:13:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-04-04-some-updates/</loc>
+    <lastmod>2024-04-04T12:00:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/bulang-chen-hao/</loc>
-    <lastmod>2024-04-04T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2024-03-04-learning-asciidoc/</loc>
+    <lastmod>2024-03-04T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/some-updates/</loc>
-    <lastmod>2024-04-04T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2023-07-19-hugo-conditional-images/</loc>
+    <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/learning-asciidoc/</loc>
-    <lastmod>2024-03-04T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/tags/hugo/</loc>
+    <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/hugo-conditional-images/</loc>
-    <lastmod>2023-07-19T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/tags/web-development/</loc>
+    <lastmod>2023-07-20T08:40:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/elf/</loc>
-    <lastmod>2023-07-15T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2023-07-15-elf/</loc>
+    <lastmod>2023-07-15T12:41:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/little-ghost-theme/</loc>
-    <lastmod>2023-06-13T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2023-06-13-little-ghost-theme/</loc>
+    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/new-site/</loc>
-    <lastmod>2023-06-12T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2023-06-12-new-site/</loc>
+    <lastmod>2023-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/hugo/</loc>
-    <lastmod>2023-03-10T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/posts/2023-03-10-hugo/</loc>
+    <lastmod>2023-03-10T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/covid-day-two/</loc>
-    <lastmod>2022-12-16T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/posts/2022-12-18-covid-day-four/</loc>
+    <lastmod>2022-12-18T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/covid-day-one/</loc>
-    <lastmod>2022-12-15T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/posts/2022-12-17-covid-day-three/</loc>
+    <lastmod>2022-12-17T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/genre-classification/</loc>
-    <lastmod>2022-06-21T16:25:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2022-12-16-covid-day-two/</loc>
+    <lastmod>2022-12-16T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/heroes-ritual-ideology/</loc>
-    <lastmod>2022-06-09T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2022-12-15-covid-day-one/</loc>
+    <lastmod>2022-12-15T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/masculinity-shane-and-yojimbo/</loc>
-    <lastmod>2022-06-07T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2022-06-21-genre-classification/</loc>
+    <lastmod>2022-06-21T16:08:22-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/catastrophe-films/</loc>
-    <lastmod>2022-01-05T00:00:00-05:00</lastmod>
+    <loc>//localhost:1313/posts/2022-06-09-heroes-ritual-ideology/</loc>
+    <lastmod>2022-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/satoyama/</loc>
-    <lastmod>2021-06-13T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/tags/film-and-television/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/men/</loc>
-    <lastmod>2021-06-05T00:00:00-04:00</lastmod>
+    <loc>//localhost:1313/posts/2022-06-07-masculinity-shane-and-yojimbo/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2022-06-05-men/</loc>
+    <lastmod>2022-06-05T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2022-01-05-catastrophe-films/</loc>
+    <lastmod>2022-01-05T11:34:22-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2021-11-26-memory-document-archives/</loc>
+    <lastmod>2021-11-26T16:08:22-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2021-11-16-new-media/</loc>
+    <lastmod>2021-11-16T11:34:22-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/2021-06-13-satoyama/</loc>
+    <lastmod>2021-06-13T16:08:22-05:00</lastmod>
   </url>
 </urlset>

@@ -2,10 +2,6 @@
 title:  "Link Roundup: November 4, 2024"
 date:   2024-11-04 2:44:00 -0500
 summary: Fritz Lang on his film M and a tutorial for HTML-based resumes.
-featured_image: featured.png
-featured_alt: A still from Fritz Lang’s film, M.
-published: true
-comments: true
 tags:
     - link roundup
     - genre

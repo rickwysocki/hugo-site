@@ -2,10 +2,6 @@
 title:  "Link Roundup: July 29, 2024"
 date:   2024-07-29 1:45:00 -0500
 summary: This week's articles touch on how complexity emerges from simple systems.
-featured_image: featured.jpg
-featured_alt: A branching tree reflected in water.
-published: true
-comments: true
 tags:
     - artificial intelligence
     - link roundup

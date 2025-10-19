@@ -2,10 +2,6 @@
 title:  "Link Roundup: July 7, 2024"
 date:   2024-07-07 1:25:00 -0500
 summary: This week I've included articles on mindfulness in technical writing, friction in software development, and the concerning environmental implications of Hurricane Beryl.
-featured_image: featured.jpg
-featured_alt: An image a ripple created by a drop of water.
-published: true
-comments: true
 tags:
     - link roundup
     - artificial intelligence

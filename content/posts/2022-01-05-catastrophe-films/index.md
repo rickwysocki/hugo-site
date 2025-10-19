@@ -1,9 +1,6 @@
 ---
-layout: single
 title: "Two Films on Catastrophe"
 date:  2022-01-05 11:34:22 -0500
-featured_image: featured.jpg
-featured_alt: Moira, one of the principal characters in The Wanting Mare.
 summary: Last night I watched Nicholas Ashe Bateman's The Wanting Mare and Adam McKay's Don't Look Up. Each suggests a similar conclusion-in a senseless world, codependence is the only way to find meaning.
 tags:
   - Film and Television
