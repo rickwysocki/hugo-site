@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rhetoric on output error</title>
+    <link>//localhost:1313/tags/rhetoric/</link>
+    <description>Recent content in Rhetoric on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2025 09:20:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/rhetoric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Genre’s Normative Function</title>
+      <link>//localhost:1313/posts/2025-02-10-genre-normative-function/</link>
+      <pubDate>Mon, 10 Feb 2025 09:20:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-02-10-genre-normative-function/</guid>
+      <description>Brief and wandering thoughts on genre.</description>
+    </item>
+    <item>
+      <title>Memory, Document, Archive</title>
+      <link>//localhost:1313/posts/2021-11-26-memory-document-archives/</link>
+      <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2021-11-26-memory-document-archives/</guid>
+      <description>By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can&amp;rsquo;t always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.</description>
+    </item>
+  </channel>
+</rss>

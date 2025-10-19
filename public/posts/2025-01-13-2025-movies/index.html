@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="//localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    2024 Review: The Movies | output error
+    
+</title>
+
+<link rel="canonical" href="//localhost:1313/posts/2025-01-13-2025-movies/"/>
+
+<meta property="og:url" content="//localhost:1313/posts/2025-01-13-2025-movies/">
+  <meta property="og:site_name" content="output error">
+  <meta property="og:title" content="2024 Review: The Movies">
+  <meta property="og:description" content="Visualizations of, and thoughts on, my year watching movies.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-13T10:00:00-05:00">
+    <meta property="article:modified_time" content="2025-01-13T10:00:00-05:00">
+    <meta property="article:tag" content="2024">
+    <meta property="article:tag" content="Personal">
+    <meta property="og:image" content="//localhost:1313/posts/2025-01-13-2025-movies/featured.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.403fefeb55ad9a9e72af41abf4538457b584695b1fdcef661626b87d8b07dec9.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="//localhost:1313/">output error</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/tags" >
+                /tags
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/2025-01-13-2025-movies/">2024 Review: The Movies</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">2024 Review: The Movies</h1>
+        <p class="single-summary">Visualizations of, and thoughts on, my year watching movies.</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-01-13T10:00:00-05:00">January 13, 2025</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>I&rsquo;ve been a bit slow on the blog here at the start of the year. A lot of my attention has been dedicated to getting my Spring classes off the ground. I redesigned both my professional writing and research writing courses pretty extensively this semester. What I didn&rsquo;t account for was a mysterious missing week in our break this year&hellip;</p>
+<p>Excuses aside, I am committing to resuming my <a href="/tags/link-roundup">link roundups</a> next week. Actually, I would have one this week, but I decided to finish a 2024 film post instead.</p>
+<p>Like everyone with too much free time and an interest in movies, I love Letterboxd. In fact, before I get into the post, go ahead and follow me on <a href="https://letterboxd.com/rickwysocki/">Letterboxd</a>. Come on, let&rsquo;s be friends.</p>
+<p>Toward the end of the year, I realized that Letterboxd allows you to export your data as a .csv file. Immediately, I knew what I would be doing: data visualizations with <a href="https://d3js.org/">d3.js</a>.</p>
+<p>Did I know how to use d3.js? No. But I know enough JavaScript to be dangerous and am a generally obsessive person. I actually <em>was</em> able to generate a variety of visualizations of my 2024 cinematic experience. The problem came when I tried to move these visualizations out of <a href="https://observablehq.com/platform/notebooks">Observable</a>. I realized I needed a bit more learning time than I wanted to spend before actually&hellip; writing this post. No matter: I&rsquo;ll learn it later.</p>
+<p>What you&rsquo;ll see below:</p>
+<ol>
+<li>A set of handsome and spunky visualizations of my 2024 Letterboxd data. Just kidding: they&rsquo;re very straightforward Google Sheets charts. But, hey, they work.</li>
+<li>A table of most of my raw data for the year. I&rsquo;ve omitted my actual, often embarrassing reviews, but I&rsquo;ve included the URI links to them in case you really are interested.</li>
+</ol>
+<p><strong>A quick note:</strong> These are pretty bare bones insights, and this post was really about the journey more than the end product. The most exciting part of learning I could export my data was visualizing genres but, sadly, genre doesn&rsquo;t seem to be included in the data set. I looked into whether Letterboxd has a public API, and it doesn&rsquo;t. Web scraping is a possibility, but I don&rsquo;t currently have that kind of time. If ANYONE has ideas or recommendations for exporting a user&rsquo;s film data, including genre, I <strong>beg</strong> you to let me know in the comments or send me an email.</p>
+<p>Okay, onto the visuals.</p>
+<h2 class="heading" id="films-by-rating">
+  Films by Rating
+  <a class="anchor" href="#films-by-rating">#</a>
+</h2>
+<p>I try to maintain a simple ethos on Letterboxd: only you (I) can fight rating inflation. Looking at the data, I feel like I&rsquo;ve failed at that goal. On the other hand, my statician friend reminded me once that people tend to seek out movies that are good and not ones that are bad, so it makes sense for their to be a bit of a curve upward. So maybe I am holding my position better than I think.</p>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ9b9uE5N6k1tRKhx4RA2baBO2cwSqE9yoS9NpMNxSRhsTeJXR7vxAoj771Tg8EJ-imfgZfdG4IvSg/pubchart?oid=871881655&amp;format=interactive"></iframe>
+<h2 class="heading" id="films-by-release-year">
+  Films By Release Year
+  <a class="anchor" href="#films-by-release-year">#</a>
+</h2>
+<p>At first, I was surprised here. I&rsquo;m not pretentious when it comes to movies (at least, I don&rsquo;t think I am). If asked whether I tend toward watch older or contemporary films, though, I&rsquo;d say older ones.</p>
+<p>This visualization, though, shows a clear spike in 2024 and more relatively films than I&rsquo;d expect in the 2020s. Thinking about it more, I first realized that my buddy Ari and I (I told him I&rsquo;d give him a shout-out) go see a lot of new films in the theater, so the 2024 bump made sense.</p>
+<iframe width="600" height="1293" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ9b9uE5N6k1tRKhx4RA2baBO2cwSqE9yoS9NpMNxSRhsTeJXR7vxAoj771Tg8EJ-imfgZfdG4IvSg/pubchart?oid=891124448&amp;format=interactive"></iframe>
+<p>I was still surprised by the distribution. But as I always tell my students, the subjective decisions involved in representing data tell <em>particular</em> stories, not absolute ones. And I felt stupid, having clearly forgot that, when I parsed the data another way.</p>
+<h2 class="heading" id="films-by-release-decade">
+  Films By Release Decade
+  <a class="anchor" href="#films-by-release-decade">#</a>
+</h2>
+<p>Here, I visualize the data by release decade, and everything makes more sense.</p>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ9b9uE5N6k1tRKhx4RA2baBO2cwSqE9yoS9NpMNxSRhsTeJXR7vxAoj771Tg8EJ-imfgZfdG4IvSg/pubchart?oid=1291011069&amp;format=interactive"></iframe>
+<p>Now, we&rsquo;ve got a much more visually-even distribution across several decades. I am slightly embarrassed that I watched no movies from the 1950s, however, since that&rsquo;s ostensibly my favorite decade in film.</p>
+<h2 class="heading" id="wrapping-up">
+  Wrapping Up
+  <a class="anchor" href="#wrapping-up">#</a>
+</h2>
+<p>So&hellip; there you go. Again, this was more about the journey than the end product. If you want to see the raw data, take a look at the table below. And, PLEASE, if you know a way to export genre-based viewing data from Letterboxd, let me know.</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/2025-01-01-2025-books/">
+                        2024 Review: The Books
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/2025-01-20-link-roundup/">
+                        Link Roundup: January 20, 2025
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <p>Rick Wysocki is an English professor and PhD in rhetoric and writing studies. He is passionate about technologies and their social effects, new media, and philosophy.</p>
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

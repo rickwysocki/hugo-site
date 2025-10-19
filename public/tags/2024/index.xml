@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024 on output error</title>
+    <link>//localhost:1313/tags/2024/</link>
+    <description>Recent content in 2024 on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jan 2025 10:00:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Review: The Movies</title>
+      <link>//localhost:1313/posts/2025-01-13-2025-movies/</link>
+      <pubDate>Mon, 13 Jan 2025 10:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-01-13-2025-movies/</guid>
+      <description>Visualizations of, and thoughts on, my year watching movies.</description>
+    </item>
+    <item>
+      <title>2024 Review: The Books</title>
+      <link>//localhost:1313/posts/2025-01-01-2025-books/</link>
+      <pubDate>Wed, 01 Jan 2025 03:15:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-01-01-2025-books/</guid>
+      <description>A collection of thoughts on the books I read  this year.</description>
+    </item>
+  </channel>
+</rss>

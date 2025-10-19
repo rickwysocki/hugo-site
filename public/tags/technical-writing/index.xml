@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Writing on output error</title>
+    <link>//localhost:1313/tags/technical-writing/</link>
+    <description>Recent content in Technical Writing on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Oct 2024 11:51:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/technical-writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Management Pedagogy</title>
+      <link>//localhost:1313/posts/2024-10-28-content-management-pedagogy/</link>
+      <pubDate>Mon, 28 Oct 2024 11:51:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-10-28-content-management-pedagogy/</guid>
+      <description>Learning management systems have turned teachers into content managers. That’s bad.</description>
+    </item>
+    <item>
+      <title>Link Roundup: July 22, 2024</title>
+      <link>//localhost:1313/posts/2024-07-22-link-roundup-july-22-2024/</link>
+      <pubDate>Mon, 22 Jul 2024 10:55:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-07-22-link-roundup-july-22-2024/</guid>
+      <description>This week&amp;rsquo;s roundup has articles on cognitive empathy, kimchi, and technical writing workflows. All the best things!</description>
+    </item>
+    <item>
+      <title>Link Roundup: July 15, 2024</title>
+      <link>//localhost:1313/posts/2024-07-15-link-roundup-july-15-2024/</link>
+      <pubDate>Mon, 15 Jul 2024 02:18:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-07-15-link-roundup-july-15-2024/</guid>
+      <description>A link roundup including an article on ways that organizations can set up technical writers to be successful and another offering a waterfall of advice for reflective self-management over a career.</description>
+    </item>
+    <item>
+      <title>Link Roundup: July 7, 2024</title>
+      <link>//localhost:1313/posts/2024-07-07-link-roundup-july-07-2024/</link>
+      <pubDate>Sun, 07 Jul 2024 01:25:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-07-07-link-roundup-july-07-2024/</guid>
+      <description>This week I&amp;rsquo;ve included articles on mindfulness in technical writing, friction in software development, and the concerning environmental implications of Hurricane Beryl.</description>
+    </item>
+  </channel>
+</rss>

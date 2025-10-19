@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media Studies on output error</title>
+    <link>//localhost:1313/tags/media-studies/</link>
+    <description>Recent content in Media Studies on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Nov 2024 02:44:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/media-studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Roundup: November 4, 2024</title>
+      <link>//localhost:1313/posts/2024-11-4-link-roundup-november-4-2024/</link>
+      <pubDate>Mon, 04 Nov 2024 02:44:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-11-4-link-roundup-november-4-2024/</guid>
+      <description>Fritz Lang on his film M and a tutorial for HTML-based resumes.</description>
+    </item>
+    <item>
+      <title>Link Roundup: September 2, 2024</title>
+      <link>//localhost:1313/posts/2024-09-02-link-roundup-september-2-2024/</link>
+      <pubDate>Mon, 02 Sep 2024 01:58:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-09-02-link-roundup-september-2-2024/</guid>
+      <description>A strange combination of a 1998 interview with Paul Virilio and a blog post about ways to make better decisions.</description>
+    </item>
+    <item>
+      <title>Link Roundup: August 26, 2024</title>
+      <link>//localhost:1313/posts/2024-08-26-link-roundup-august-26-2024/</link>
+      <pubDate>Mon, 26 Aug 2024 09:29:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-08-26-link-roundup-august-26-2024/</guid>
+      <description>A link roundup up full of technical skepticism and the benefits of cutting back.</description>
+    </item>
+    <item>
+      <title>Link Roundup: August 19, 2024</title>
+      <link>//localhost:1313/posts/2024-08-19-link-roundup-august-19-2024/</link>
+      <pubDate>Mon, 19 Aug 2024 01:33:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-08-19-link-roundup-august-19-2024/</guid>
+      <description>An article on the (lack of) regulation of solar power.</description>
+    </item>
+    <item>
+      <title>Ted Nelson&#39;s Evolutionary List File and Information Management</title>
+      <link>//localhost:1313/posts/2023-07-15-elf/</link>
+      <pubDate>Sat, 15 Jul 2023 12:41:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2023-07-15-elf/</guid>
+      <description>In 1965, Ted Nelson theorized the Evolutionary List File and offered clear insights into the relationship between technology and creativity that are still relevant today.</description>
+    </item>
+    <item>
+      <title>Memory, Document, Archive</title>
+      <link>//localhost:1313/posts/2021-11-26-memory-document-archives/</link>
+      <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2021-11-26-memory-document-archives/</guid>
+      <description>By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can&amp;rsquo;t always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.</description>
+    </item>
+    <item>
+      <title>What is New About New Media?</title>
+      <link>//localhost:1313/posts/2021-11-16-new-media/</link>
+      <pubDate>Tue, 16 Nov 2021 11:34:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2021-11-16-new-media/</guid>
+      <description>New media are better defined as media that challenge our existing conceptions of technology&amp;hellip; even if the new media in question might be old.</description>
+    </item>
+  </channel>
+</rss>

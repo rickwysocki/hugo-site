@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archival Research on output error</title>
+    <link>//localhost:1313/tags/archival-research/</link>
+    <description>Recent content in Archival Research on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Aug 2024 01:48:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/archival-research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link Roundup: August 5, 2024</title>
+      <link>//localhost:1313/posts/2024-08-05-link-roundup-august-5-2024/</link>
+      <pubDate>Mon, 05 Aug 2024 01:48:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-08-05-link-roundup-august-5-2024/</guid>
+      <description>This week&amp;rsquo;s articles emphasize the importance of archival work and offer an interesting writing-process heuristic.</description>
+    </item>
+    <item>
+      <title>Link Roundup: July 29, 2024</title>
+      <link>//localhost:1313/posts/2024-07-29-link-roundup-july-29-2024/</link>
+      <pubDate>Mon, 29 Jul 2024 01:45:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-07-29-link-roundup-july-29-2024/</guid>
+      <description>This week&amp;rsquo;s articles touch on how complexity emerges from simple systems.</description>
+    </item>
+    <item>
+      <title>Memory, Document, Archive</title>
+      <link>//localhost:1313/posts/2021-11-26-memory-document-archives/</link>
+      <pubDate>Fri, 26 Nov 2021 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2021-11-26-memory-document-archives/</guid>
+      <description>By collecting and categorizing historical artifacts, archives deeply influence the historical record. But they exist in complicated institutional settings, and archivists can&amp;rsquo;t always have full control over how their archives present history. Researchers have to consider the archive less as a neutral place and more as a  motivated and rhetorical construction.</description>
+    </item>
+  </channel>
+</rss>

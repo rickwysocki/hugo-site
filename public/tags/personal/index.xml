@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on output error</title>
+    <link>//localhost:1313/tags/personal/</link>
+    <description>Recent content in Personal on output error</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jan 2025 10:00:00 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Review: The Movies</title>
+      <link>//localhost:1313/posts/2025-01-13-2025-movies/</link>
+      <pubDate>Mon, 13 Jan 2025 10:00:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-01-13-2025-movies/</guid>
+      <description>Visualizations of, and thoughts on, my year watching movies.</description>
+    </item>
+    <item>
+      <title>2024 Review: The Books</title>
+      <link>//localhost:1313/posts/2025-01-01-2025-books/</link>
+      <pubDate>Wed, 01 Jan 2025 03:15:00 -0500</pubDate>
+      <guid>//localhost:1313/posts/2025-01-01-2025-books/</guid>
+      <description>A collection of thoughts on the books I read  this year.</description>
+    </item>
+    <item>
+      <title>New Site (and Birthday Post)</title>
+      <link>//localhost:1313/posts/2023-06-12-new-site/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/2023-06-12-new-site/</guid>
+      <description>I&amp;rsquo;ve got a new site put together. And a quick review of the year.</description>
+    </item>
+    <item>
+      <title>Covid - Day Three</title>
+      <link>//localhost:1313/posts/2022-12-17-covid-day-three/</link>
+      <pubDate>Sat, 17 Dec 2022 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2022-12-17-covid-day-three/</guid>
+      <description>Day three has been alright so far. Last night, again, my only issue sleeping was my wrecked throat. A bought me some chloraseptic today; I imagine that will help tonight.</description>
+    </item>
+    <item>
+      <title>Covid - Day Two</title>
+      <link>//localhost:1313/posts/2022-12-16-covid-day-two/</link>
+      <pubDate>Fri, 16 Dec 2022 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2022-12-16-covid-day-two/</guid>
+      <description>My second day of Covid. The good news-A tested this morning and so far continues to come up negative. The bad news-I feel like butt.</description>
+    </item>
+    <item>
+      <title>Covid - Day One</title>
+      <link>//localhost:1313/posts/2022-12-15-covid-day-one/</link>
+      <pubDate>Thu, 15 Dec 2022 16:08:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2022-12-15-covid-day-one/</guid>
+      <description>I made it several years into the Covid-19 pandemic without catching the virus. Unfortunately, my time has come.</description>
+    </item>
+  </channel>
+</rss>

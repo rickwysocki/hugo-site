@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="//localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    Conditional Image Layouts in Hugo | output error
+    
+</title>
+
+<link rel="canonical" href="//localhost:1313/posts/2023-07-19-hugo-conditional-images/"/>
+
+<meta property="og:url" content="//localhost:1313/posts/2023-07-19-hugo-conditional-images/">
+  <meta property="og:site_name" content="output error">
+  <meta property="og:title" content="Conditional Image Layouts in Hugo">
+  <meta property="og:description" content="This post describes how to write conditional image layouts using Go and HTML for a Hugo site.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-07-20T08:40:22-05:00">
+    <meta property="article:modified_time" content="2023-07-20T08:40:22-05:00">
+    <meta property="article:tag" content="Web Development">
+    <meta property="article:tag" content="Hugo">
+    <meta property="og:image" content="//localhost:1313/posts/2023-07-19-hugo-conditional-images/featured.png">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.403fefeb55ad9a9e72af41abf4538457b584695b1fdcef661626b87d8b07dec9.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="//localhost:1313/">output error</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/tags" >
+                /tags
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/2023-07-19-hugo-conditional-images/">Conditional Image Layouts in Hugo</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Conditional Image Layouts in Hugo</h1>
+        <p class="single-summary">This post describes how to write conditional image layouts using Go and HTML for a Hugo site.</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2023-07-20T08:40:22-05:00">July 20, 2023</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <h2 class="heading" id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<p>In this tutorial, I describe how to write conditional image layouts using <a href="https://go.dev/">Go</a> and HTML for a <a href="https://gohugo.io">Hugo</a> site.</p>
+<p>When I started designing <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>, my Hugo theme, I wanted to conditionally insert featured images based on parameters called in a page&rsquo;s front matter and the site configuration file. Hugo&rsquo;s <a href="https://gohugo.io/content-management/shortcodes/#figure">figure shortcode</a> was an option, but I wanted something more automatic. I learned how easy this can be in Hugo.</p>
+<h2 class="heading" id="part-1-featured-images-for-pages-basic">
+  Part 1: Featured Images for Pages (Basic)
+  <a class="anchor" href="#part-1-featured-images-for-pages-basic">#</a>
+</h2>
+<p>There were several criteria I wanted in to implement for featured image layouts. I wanted Hugo to:</p>
+<ul>
+<li>Check the page&rsquo;s front matter for a featured image.</li>
+<li>Pull a declared featured image into the layout as a resource.</li>
+<li>Allow the user to include alt text for the image within the front matter.</li>
+</ul>
+<p>Finally, I wanted this to be <strong>optional</strong>. If no front matter is declared, no HTML should be rendered for the image layout.</p>
+<h3 class="heading" id="building-the-featured-image-layout">
+  Building the Featured Image Layout
+  <a class="anchor" href="#building-the-featured-image-layout">#</a>
+</h3>
+<p>First, let&rsquo;s look at the code/markup. I&rsquo;ll explain each line below.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">if</span> isset .Params <span style="color:#666;font-style:italic">&#34;featured_image&#34;</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="">$</span>image := .Resources.GetMatch .Params.featured_image }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;img
+</span></span><span style="display:flex;"><span>    {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{$image.RelPermalink }}&#34;</span>{{end}}
+</span></span><span style="display:flex;"><span>    alt=<span style="color:#666;font-style:italic">&#34;{{ .Params.featured_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>/&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>So, what is each line doing here?</p>
+<p>First, we ask Hugo to check whether a <code>featured_image</code> is set in the front matter. If not, everything else will be ignored:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">if</span> isset .Params <span style="color:#666;font-style:italic">&#34;featured_image&#34;</span> }}
+</span></span></code></pre></div><p>Assuming we have declared a featured image, we then want to access it as a page resource. This is important because, as described in <a href="https://gohugo.io/content-management/page-resources/">the Hugo documentation</a>, page resource files get a page-relative URL, which simplifies the front matter we need to write. We will also see that getting our image as a page resource will let us make creative use of Hugo&rsquo;s image-processing methods.</p>
+<p>So, what we want to do is:</p>
+<ol>
+<li>Get <code>featured_image</code>.</li>
+<li>Ensure that we are acessing it as a <em>page resource</em>.</li>
+<li>Store the image as a variable that we can use in our page layout.</li>
+</ol>
+<p>The next line accomplishes all three of these tasks:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="">$</span>image := .Resources.GetMatch .Params.featured_image }}
+</span></span></code></pre></div><p>We now have our image as a resource, but we haven&rsquo;t created its display. Let&rsquo;s create create an <code>&lt;img&gt;</code> layout that calls in the resource.</p>
+<p>First, we&rsquo;ll open (and leave open) the image tag:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;img
+</span></span></code></pre></div><p>Then, like any image tag, we need to include the source for the file. This is easy, since we&rsquo;ve called the image as a resource and assigned it to a variable: we just need to add <code>.RelPermalink</code> to get the URL.</p>
+<p>The only slight twist is that we need to set the scope for the image&rsquo;s source permalink carefully so that we can also declare the alt text using a separate front matter parameter. We will include <code>{{ with }} ... {{ end }}</code> around <em>only</em> the <code>src</code> line and close the image tag afterward:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>&lt;img
+</span></span><span style="display:flex;"><span>    {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{$image.RelPermalink }}&#34;</span>{{end}}
+</span></span><span style="display:flex;"><span>/&gt;
+</span></span></code></pre></div><p>Now, let&rsquo;s also include set up alt text for our image, which can be declared using the <code>featured_alt</code> parameter in the front matter:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>alt=<span style="color:#666;font-style:italic">&#34;{{ .Params.featured_alt }}&#34;</span>
+</span></span></code></pre></div><p>Finally, we just need to close the conditional statement we started at the beginning of the block with <code>{{ end }}</code>. Here&rsquo;s the whole block again:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">if</span> isset .Params <span style="color:#666;font-style:italic">&#34;featured_image&#34;</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="">$</span>image := .Resources.GetMatch .Params.featured_image }}
+</span></span><span style="display:flex;"><span>&lt;img
+</span></span><span style="display:flex;"><span>    {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{$image.RelPermalink }}&#34;</span>{{end}}
+</span></span><span style="display:flex;"><span>    alt=<span style="color:#666;font-style:italic">&#34;{{ .Params.featured_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>/&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>Once you&rsquo;ve written this into your page layout file, <strong>all you&rsquo;ll ever have to do</strong> is include the following two lines in your page front matter:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">---</span>
+</span></span><span style="display:flex;"><span>featured_image: image.jpg
+</span></span><span style="display:flex;"><span>featured_alt: <span style="color:#666;font-style:italic">&#34;Your alt text.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">---</span>
+</span></span></code></pre></div><p>It&rsquo;s that easy!</p>
+<h2 class="heading" id="conditional-images-and-image-processing-in-list-pages">
+  Conditional Images and Image Processing in List Pages
+  <a class="anchor" href="#conditional-images-and-image-processing-in-list-pages">#</a>
+</h2>
+<p>We can also expand the basic layout and front matter parameters we created to write a dynamic and intelligent image layout for a list page. This page will range over relevant content and return an optimized featured image. A good example of (actually the best example, since we&rsquo;ll be recreating a small part of it) is the <a href="/posts/">Posts page</a> for this website.</p>
+<h3 class="heading" id="the-full-markup--code">
+  The Full Markup / Code
+  <a class="anchor" href="#the-full-markup--code">#</a>
+</h3>
+<p>First, let&rsquo;s look at the markup / code for a <em>full grid layout</em> of blog posts. Ignore the Tailwind CSS classes, which are irrelevant.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">range</span> (.<span style="color:#666;font-weight:bold;font-style:italic">Paginate</span> ( .Pages.ByDate.Reverse )).Pages }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      &lt;article class=<span style="color:#666;font-style:italic">&#34;p-6 shadow-lg flex flex-col&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        {{ <span style="font-weight:bold;text-decoration:underline">if</span> isset .Params <span style="color:#666;font-style:italic">&#34;featured_image&#34;</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          {{ <span style="">$</span>image := .Resources.GetMatch .Params.featured_image }}
+</span></span><span style="display:flex;"><span>          &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;img
+</span></span><span style="display:flex;"><span>                {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{ (($image.Crop &#34;</span>1200x800<span style="color:#666;font-style:italic">&#34;).Resize &#34;</span>600x<span style="color:#666;font-style:italic">&#34;).RelPermalink }}&#34;</span>{{ end }}
+</span></span><span style="display:flex;"><span>                alt=<span style="color:#666;font-style:italic">&#34;{{ .Params.featured_alt }}&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>          &lt;/a&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        {{ <span style="font-weight:bold;text-decoration:underline">else</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        {{ <span style="">$</span>image := resources.Get .Site.Params.post_image }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;img 
+</span></span><span style="display:flex;"><span>                {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{ (($image.Crop &#34;</span>1200x800<span style="color:#666;font-style:italic">&#34;).Resize &#34;</span>60x<span style="color:#666;font-style:italic">&#34;).RelPermalink }}&#34;</span> {{ end }} 
+</span></span><span style="display:flex;"><span>                alt=<span style="color:#666;font-style:italic">&#34;{{ .Site.Params.post_image_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>            /&gt;
+</span></span><span style="display:flex;"><span>        &lt;/a&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;div class=<span style="color:#666;font-style:italic">&#34;grow&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          &lt;h3 class=<span style="color:#666;font-style:italic">&#34;font-bold text-xl mt-2&#34;</span>&gt;&lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title }}&lt;/a&gt;&lt;/h3&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          &lt;p class=<span style="color:#666;font-style:italic">&#34;mb-4&#34;</span>&gt;{{ .Params.summary }}&lt;/p&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span> class=<span style="color:#666;font-style:italic">&#34;p-2 rounded-lg bg-indigo-600 text-white&#34;</span>&gt;Read More&lt;/a&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      &lt;/article&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  {{ end }}
+</span></span></code></pre></div><p>To summarize: this code block creates a layout where Hugo will range over every relevant page and, for each one, produce a grid item containing:</p>
+<ul>
+<li>a featured image,</li>
+<li>a summary,</li>
+<li>and a &ldquo;Read More&rdquo; button.</li>
+</ul>
+<p>The main thing you need to understand is that all of this is surrounded by:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">range</span> (.<span style="color:#666;font-weight:bold;font-style:italic">Paginate</span> ( .Pages.ByDate.Reverse )).Pages }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{{ end }}}
+</span></span></code></pre></div><p>What this code broadly states (beyond some pagination information) is that Hugo is going to range over every relevant page and create whatever is included between the tags.</p>
+<h3 class="heading" id="back-to-the-images">
+  Back to the Images
+  <a class="anchor" href="#back-to-the-images">#</a>
+</h3>
+<p>So, back to our focus: the featured image. We <em>could</em> simply copy the image layout we created above. But we want something beyond the basics. Specifically:</p>
+<ol>
+<li>We want all these images to be the same size, automatically, so that they look nice together.</li>
+<li>We want a way to increase page load time. This is going to be a lot of images loading on a single list page.</li>
+<li>We want a backup image even if a page <em>doesn&rsquo;t</em> have a featured image assigned. A single page without a featured image is fine, but inconsistency on a list page never looks great.</li>
+<li>We don&rsquo;t want to write any extra front matter beyond what we&rsquo;ve included for the single layout above.</li>
+</ol>
+<p>This is all surprisingly simple. Let&rsquo;s take a closer look at the image-related part of the markup / code above:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">if</span> isset .Params <span style="color:#666;font-style:italic">&#34;featured_image&#34;</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    {{ <span style="">$</span>image := .Resources.GetMatch .Params.featured_image }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;img
+</span></span><span style="display:flex;"><span>            {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{ (($image.Crop &#34;</span>1200x800<span style="color:#666;font-style:italic">&#34;).Resize &#34;</span>600x<span style="color:#666;font-style:italic">&#34;).RelPermalink }}&#34;</span>{{ end }}
+</span></span><span style="display:flex;"><span>            alt=<span style="color:#666;font-style:italic">&#34;{{ .Params.featured_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/a&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">else</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    {{ <span style="">$</span>image := resources.Get .Site.Params.post_image }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;img 
+</span></span><span style="display:flex;"><span>            {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{ (($image.Crop &#34;</span>1200x800<span style="color:#666;font-style:italic">&#34;).Resize &#34;</span>600x<span style="color:#666;font-style:italic">&#34;).RelPermalink }}&#34;</span> {{ end }}
+</span></span><span style="display:flex;"><span>            alt=<span style="color:#666;font-style:italic">&#34;{{ .Site.Params.post_image_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/a&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>Much of this should hopefully look familiar to you now. To summarize the first half of the block:</p>
+<ol>
+<li>We&rsquo;re checking to see if a featured image has been set. If it has, we call it as a resource into a variable.</li>
+<li>We&rsquo;re now surrounding the image with an <code>&lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;&lt;/a&gt;</code> tag so that clicking the image takes us to the page itself. Note that how we are still in the page scope, so <code>.RelPermalink</code> is returning the link to the page, not the image.</li>
+<li>We&rsquo;re including the image source and the correct scope using <code>{{ with $image }}{{ end }}</code>.</li>
+<li>We&rsquo;re getting the alt text from the front matter and inserting it into the HTML.</li>
+</ol>
+<p>Now let&rsquo;s look at the second half, which starts at the <code>{{ else }}</code> line:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="font-weight:bold;text-decoration:underline">else</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    {{ <span style="">$</span>image := resources.Get .Site.Params.post_image }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;a href=<span style="color:#666;font-style:italic">&#34;{{ .RelPermalink }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;img 
+</span></span><span style="display:flex;"><span>            {{ with <span style="">$</span>image }}src=<span style="color:#666;font-style:italic">&#34;{{ (($image.Crop &#34;</span>1200x800<span style="color:#666;font-style:italic">&#34;).Resize &#34;</span>60x<span style="color:#666;font-style:italic">&#34;).RelPermalink }}&#34;</span> {{ end }}
+</span></span><span style="display:flex;"><span>            alt=<span style="color:#666;font-style:italic">&#34;{{ .Site.Params.post_image_alt }}&#34;</span>
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/a&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>Note that we&rsquo;re calling something different into our variable here: <code>.Site.Params.post_image</code>. What this block is saying is that if a featured_image <strong>hasn&rsquo;t</strong> been called on a page, Hugo should go get a default image declared in your configuration file title <code>post_image</code>. Again, you can include also define the alt text there as <code>post_image_alt</code>. In your config file, it would look like this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>post_image = <span style="color:#666;font-style:italic">&#39;images/image.png&#39;</span>
+</span></span><span style="display:flex;"><span>post_image_alt = <span style="color:#666;font-style:italic">&#39;Alt text.&#39;</span>
+</span></span></code></pre></div><p>Note that I&rsquo;m using a config.toml file, so the specific syntax might vary since Hugo allows for YAML, TOML, or JSON. This won&rsquo;t have any effect on the layouts we&rsquo;ve created.</p>
+<h3 class="heading" id="processing-our-images">
+  Processing Our Images
+  <a class="anchor" href="#processing-our-images">#</a>
+</h3>
+<p>We&rsquo;re in the home stretch now. There&rsquo;s one small piece that we haven&rsquo;t talked about, but it&rsquo;s doing some essential work. Note the methods we&rsquo;ve added when calling our image:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ ((<span style="">$</span>image.Crop <span style="color:#666;font-style:italic">&#34;1200x800&#34;</span>).Resize <span style="color:#666;font-style:italic">&#34;600x&#34;</span>).RelPermalink }}
+</span></span></code></pre></div><p>We&rsquo;re using some of <a href="https://gohugo.io/content-management/image-processing/">Hugo&rsquo;s image-processing methods</a> here.</p>
+<ol>
+<li>Because we wanted equally sized images, we employ the <code>.Crop</code> method to first take our image and crop it to 1200x800.</li>
+<li>Because the image will be used in a grid layout where it will be smaller, we then resize our cropped image to half size using the <code>Resize</code> method. This will help with page load time.</li>
+<li>Finally, we&rsquo;re returning the permalink for the now-processed image. You can and should tweak the crop size and the resize to your liking.</li>
+</ol>
+<h2 class="heading" id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
+</h2>
+<p>Once you&rsquo;ve set up these layouts, the only thing you will <em>ever</em> have to write is:</p>
+<ul>
+<li>The <code>featured_image</code> and <code>featured_alt</code> parameters in your page front matter.</li>
+<li>The default <code>post_image</code> and <code>post_image_alt</code> in your config file as a fallback.</li>
+</ul>
+<p>Hopefully, this helped you learn something about using creating image layouts in Hugo. You can focus entirely on your content and let Hugo and your layouts do the work for you.</p>
+<h3 class="heading" id="next-steps">
+  Next Steps
+  <a class="anchor" href="#next-steps">#</a>
+</h3>
+<p>If you&rsquo;ve got this down and want to do more with what you&rsquo;ve learned, here are two small project ideas:</p>
+<ul>
+<li>Rewrite the <code>&lt;img&gt;&lt;/img&gt;</code> layouts using <code>&lt;figure&gt;&lt;/figure&gt;</code> tags. See if you can add an optional parameter for <code>figcaptions</code>.</li>
+<li>Look over some of the other <a href="https://gohugo.io/content-management/image-processing/">image processing</a> methods that Hugo ships with. What other ones might you include?</li>
+</ul>
+<h3 class="heading" id="an-easier-solution">
+  An Easier Solution
+  <a class="anchor" href="#an-easier-solution">#</a>
+</h3>
+<p>Finally, if you just want a simple and flexible Hugo theme that does all of this for you, check out <a href="https://github.com/rickwysocki/littleGhost">Little Ghost</a>.</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/2023-07-15-elf/">
+                        Ted Nelson&#39;s Evolutionary List File and Information Management
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/2024-03-04-learning-asciidoc/">
+                        Learning Asciidoc
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    <p>Rick Wysocki is an English professor and PhD in rhetoric and writing studies. He is passionate about technologies and their social effects, new media, and philosophy.</p>
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>
