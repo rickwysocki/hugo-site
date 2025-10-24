@@ -6,8 +6,15 @@
     <description>Recent content in Posts on output error</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Oct 2025 14:25:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 24 Oct 2025 15:51:00 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hypernormalized AI</title>
+      <link>//localhost:1313/posts/hypernormalized-ai/</link>
+      <pubDate>Fri, 24 Oct 2025 15:51:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/hypernormalized-ai/</guid>
+      <description>The push for normalizing AI is getting frantic.</description>
+    </item>
     <item>
       <title>AWS and the Enshittification of Educational Workflows</title>
       <link>//localhost:1313/posts/aws-and-the-enshittification-of-educational-workflows/</link>
@@ -259,6 +266,13 @@
       <pubDate>Thu, 04 Apr 2024 12:00:22 -0500</pubDate>
       <guid>//localhost:1313/posts/2024-04-04-some-updates/</guid>
       <description>With a lot going on in my life (positively), I&amp;rsquo;ve been a bit slow on writing posts here. This week, though, I&amp;rsquo;ve been doing some work around the site and figured I&amp;rsquo;d note a few updates.</description>
+    </item>
+    <item>
+      <title>Bulang Huang Chen Hao (2018)</title>
+      <link>//localhost:1313/posts/2024-04-04-bulang-huang-chen-hao/</link>
+      <pubDate>Wed, 03 Apr 2024 08:40:22 -0500</pubDate>
+      <guid>//localhost:1313/posts/2024-04-04-bulang-huang-chen-hao/</guid>
+      <description>&lt;p&gt;Liquid Proust&lt;/p&gt;&#xA;&lt;p&gt;Drank on April 3, rainy day evening session.&lt;/p&gt;&#xA;&lt;p&gt;The leaves broke up really nice.&lt;/p&gt;&#xA;&lt;p&gt;I used 10 grams in 100 ml gaiwan to use up some remaining leaves in the sample. Flash steeps.&lt;/p&gt;&#xA;&lt;p&gt;Young puer sour smell on the wet leaves.&lt;/p&gt;&#xA;&lt;p&gt;Tasted somewhere between a slightly aged and young puer. Could taste the &amp;ldquo;grandma&amp;rsquo;s house&amp;rdquo; notes behind the astringency, similar to Love Forever.&lt;/p&gt;&#xA;&lt;p&gt;Not too think and not too light of a mouthfeel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learning Asciidoc</title>

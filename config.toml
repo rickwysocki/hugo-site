@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'output error'
 theme = 'typo'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 # Google analytics code
 googleAnalytics = "G-xxxxxxxxx"
 
@@ -75,10 +78,6 @@ url = "https://mas.to/@rickwysocki"
 [markup]
 [markup.highlight]
 style = 'algol'
-
-[markup.goldmark.renderer]
-  unsafe = true
-
 
 # GitHub Pages Config
 [caches]

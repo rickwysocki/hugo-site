@@ -6,28 +6,14 @@
     <description>Recent content in AI on output error</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 Oct 2025 14:25:00 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cannon Shot Epistemology</title>
-      <link>//localhost:1313/posts/cannon-shot-epistemology/</link>
-      <pubDate>Wed, 25 Sep 2024 00:00:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/cannon-shot-epistemology/</guid>
-      <description>Maybe we shouldn&amp;rsquo;t base our thinking on what AI is now. Maybe we should think harder about what it could become.</description>
-    </item>
-    <item>
-      <title>I Don&#39;t Know What to Do About AI, and Neither Do You</title>
-      <link>//localhost:1313/posts/what-to-do-about-ai/</link>
-      <pubDate>Mon, 23 Sep 2024 00:00:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/what-to-do-about-ai/</guid>
-      <description>A rant.</description>
-    </item>
-    <item>
-      <title>Article Review: Trust in Artificial Intelligence</title>
-      <link>//localhost:1313/posts/trust-in-artificial-intelligence-review/</link>
-      <pubDate>Tue, 02 Jul 2024 20:19:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/trust-in-artificial-intelligence-review/</guid>
-      <description>Here is my post summary.</description>
+      <title>AWS and the Enshittification of Educational Workflows</title>
+      <link>//localhost:1313/posts/aws-and-the-enshittification-of-educational-workflows/</link>
+      <pubDate>Mon, 20 Oct 2025 14:25:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/aws-and-the-enshittification-of-educational-workflows/</guid>
+      <description>Canvas is down.</description>
     </item>
   </channel>
 </rss>
