@@ -1,86 +1,108 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'output error'
-theme = 'typo'
+baseurl = "/"
+languageCode = "en-us"
 
-# Google analytics code
-googleAnalytics = "G-xxxxxxxxx"
+pagination.pagerSize = 5
 
-[taxonomies]
-tag = 'tags'
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
 
 [params]
-# Meta description
-description = "A blog on technology, media theory, and philosophy."
-showFooter = true
-footerContent = "Rick Wysocki is an English professor and PhD in rhetoric and writing studies. He is passionate about technologies and their social effects, new media, and philosophy."
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
 
-# Lists parameters
-paginationSize = 20
-listSummaries = true
-listDateFormat = '2 Jan 2006'
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
 
-# Appearance settings
-theme = 'auto'
-colorPalette = 'base16-eighties'
-hideHeader = false
+  # show selector to switch language
+  showLanguageSelector = false
 
-# Intro on main page, content is markdown
-homeIntroTitle = 'Home'
-homeIntroContent = """
+  # set theme to full screen width
+  fullWidthTheme = false
 
-I (Rick Wysocki) am an English professor and PhD in rhetoric and writing studies. My broad interests include technologies and their social effects, new media, and philosophy. On this blog, I write about a wide range of subjects that interest me at the time. These areas might include:
+  # center theme with default width
+  centerTheme = false
 
-- Rhetorics of state sovereignty, especially as they intersect with maritime policy.
-- Artificial intelligence, begrudgingly.
-- Research rhetoric and professional and technical writing (my courses).
-- Philosophy and media theory.
-- GNU/Linux, Emacs, and free and open-source software more broadly.
-- Chinese and Taiwanese tea. (Especially pu'er.)
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
 
-### Site Notes
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
 
-**A note on the site title:** *output error*, as the title of the blog, has at least two meanings:
-- An indication of my sense that culture, intersecting and subsumed by technology, has gone haywire and increasingly presents perverse social outputs.
-- A recognition that my writing here often emerges from other projects and thinking or, frankly, when I should be working on something else.
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
 
-**A note on the site itself:** I've been transitoning to a new Emacs Org Mode-based workflow for my blog. Currently, a lot of posts from February 2025 and before have broken elements. Fixing those is in my backlog, but the text should be readable. If there is one that you're interested specifically, let me know and I'll add it to the top of my queue.
+  # whether to show a page's estimated reading time
+  # readingTime = false # default
 
-"""
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  # Toc = false # default
 
-# Breadcrumbs
-[params.breadcrumbs]
-enabled = true
-showCurrentPage = true
-home = "Home"
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  # TocTitle = "Table of Contents" # default
 
-# Main menu pages
-[[params.menu]]
-name = "home"
-url = "/"
-
-[[params.menu]]
-name = "posts"
-url = "/posts"
-
-[[params.menu]]
-name = "tags"
-url = "/tags"
-
-[[params.social]]
-name = "mastodon"
-url = "https://mas.to/@rickwysocki"
-
-# Syntax highlight on code blocks
-[markup]
-[markup.highlight]
-style = 'algol'
-
-[markup.goldmark.renderer]
-  unsafe = true
+  # Set date/time format for posts
+  # This will impact the date/time displayed on
+  # index.html, the posts list page, and on posts themselves
+  # This value can also be configured per-post on front matter
+  # If you have any issues with the timezone rendering differently
+  # than you expected, please ensure your timezone is correctly set
+  # on your server.
+  # This value can be customized according to Hugo documentation:
+  # https://gohugo.io/functions/time/format/
+  # Default value (no changes needed):
+  # dateFormat = "2006-01-02"
+  # Example format, with date, time, and timezone abbreviation:
+  # dateFormat = "2006-01-02 3:04:06 PM MST"
 
 
-# GitHub Pages Config
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Output Error"
+
+    [languages.en.params]
+      subtitle = "A place on the Internet."
+      owner = "Rick Wysocki"
+      keywords = ""
+      copyright = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.en.params.logo]
+        logoText = "Output Error"
+        logoHomeLink = "/"
+
+      [languages.en.menu]
+        [[languages.en.menu.main]]
+          identifier = "about"
+          name = "About"
+          url = "/about"
+
+[module]
+  # In case you would like to make changes to the theme and keep it locally in you repository,
+  # uncomment the line below (and correct the local path if necessary).
+  # --
+  # replacements = "github.com/panr/hugo-theme-terminal/v4 -> themes/terminal"
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal/v4'
