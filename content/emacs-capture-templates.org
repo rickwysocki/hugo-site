@@ -1,0 +1,36 @@
+# Created 2026-07-11 Sat 13:42
+#+title: Capture Templates
+#+author: Rick Wysocki
+#+property: :tangle yes
+#+export_file_name: ~/Blog/content/emacs-capture-templates.org
+* Preamble
+
+This document includes the templates I use for capturing material in my [[/emacs-config][Emacs configuration]]. Please see the preamble on that page and note that my documentation of the emacs-lisp blocks on both pages is ongoing.
+* Task capture template
+This template prompts the user for a todo-item. It automatically tags the entry with =Inbox= and includes the date it was added. I manage a single tasks file that I navigate exlusively with the agenda view, beyond basic maintenance of the org file. Automatically adding an "Inbox" tag lets me quickly capture thoughts without worrying about sorting them. Whenever I start working, I query my =Inbox= tag, sort the item in there with the relevant tags I use, and remove the =Inbox= tag.
+
+#+begin_src org
+  ,* TODO %^{Description} :INBOX:
+  %?
+  :LOGBOOK:
+  - Added: %U
+  :END:
+#+end_src
+* Journal capture template
+This simple template allows me to add an entry to a running journal. See the capture templates section of my Emacs configuration documentation for its context.
+
+#+begin_src org
+  ,**** Journal Entry: %T
+  %?
+#+end_src
+* Book capture template
+This template queries me for a book I want to read and adds it to my =books.org= file. More documentation to follow in the future.
+
+#+begin_src org
+    ,* TO-READ %^{Title}
+  :PROPERTIES:
+  :Title: %\1
+  :Author: %^{Author}
+  :RATING:
+  :END:
+#+end_src

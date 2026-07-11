@@ -2,6 +2,7 @@
 title = "A Fresh Start"
 author = ["Rick Wysocki"]
 date = 2026-07-10T16:57:00-04:00
+tags = ["emacs"]
 draft = false
 summary = "I decided to wipe my blog."
 +++
