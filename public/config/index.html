@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Config :: Output Error</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Table of Contents Preamble Setup and load custom.el Declare package archives Load default theme Configure org-log-done Customize fonts Configure completion packages. Configure Magit Configure Elfeed Declare agenda file Set up capture templates Configure custom keybindings Install and configure ox-hugo Configure function for blog post capture Configure export backends Ensure and enable spacious-padding Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/config/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="//localhost:1313/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Config">
+<meta property="og:description" content="Table of Contents Preamble Setup and load custom.el Declare package archives Load default theme Configure org-log-done Customize fonts Configure completion packages. Configure Magit Configure Elfeed Declare agenda file Set up capture templates Configure custom keybindings Install and configure ox-hugo Configure function for blog post capture Configure export backends Ensure and enable spacious-padding Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+" />
+<meta property="og:url" content="//localhost:1313/config/" />
+<meta property="og:site_name" content="Output Error" />
+
+  <meta property="og:image" content="//localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Output Error
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/config/">Config</a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ol>
+<li><a href="/config/#org140a420">Preamble</a></li>
+<li><a href="/config/#orgd726877">Setup and load custom.el</a></li>
+<li><a href="/config/#org1328051">Declare package archives</a></li>
+<li><a href="/config/#orgaa0689c">Load default theme</a></li>
+<li><a href="/config/#orgaf644ca">Configure <code>org-log-done</code></a></li>
+<li><a href="/config/#org4358066">Customize fonts</a></li>
+<li><a href="/config/#org97ab4db">Configure completion packages.</a></li>
+<li><a href="/config/#org07c4d22">Configure Magit</a></li>
+<li><a href="/config/#org7743e14">Configure Elfeed</a></li>
+<li><a href="/config/#org5c73397">Declare agenda file</a></li>
+<li><a href="/config/#orgce57810">Set up capture templates</a></li>
+<li><a href="/config/#orge451f40">Configure custom keybindings</a></li>
+<li><a href="/config/#orgceaab4c">Install and configure ox-hugo</a></li>
+<li><a href="/config/#org5044ff5">Configure function for blog post capture</a></li>
+<li><a href="/config/#org79a7b46">Configure export backends</a></li>
+<li><a href="/config/#orgbbef813">Ensure and enable <code>spacious-padding</code></a></li>
+</ol>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="preamble">Preamble<a href="#preamble" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:</p>
+<ul>
+<li>Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.</li>
+<li>Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&rsquo;s a north star.</li>
+<li>Config your own config. Now that I&rsquo;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&rsquo;m very aware of why the documentation suggests not copying others&rsquo; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way.</li>
+</ul>
+<p>Both the configuration and the documentation is a work in progress.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="setup-and-load-customel">Setup and load custom.el<a href="#setup-and-load-customel" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block puts any customization options created by Emacs into a <code>custom.el</code> file. This is helpful, as it keeps the <code>init.el</code> file clean.</p>
+<pre><code>;; Setup and load custom.el.
+(setq custom-file (locate-user-emacs-file &quot;custom.el&quot;))
+(load custom-file t)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="declare-package-archives">Declare package archives<a href="#declare-package-archives" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block declares the package archives for my Emacs configuration.</p>
+<pre><code>;; Add Melpa package archives
+(require 'package)
+(add-to-list 'package-archives '(&quot;melpa&quot; . &quot;https://melpa.org/packages/&quot;) t)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="load-default-theme">Load default theme<a href="#load-default-theme" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block loads my preferred default theme.</p>
+<pre><code>;; Load theme.
+(load-theme 'modus-vivendi-tritanopia)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-org-log-done">Configure <code>org-log-done</code><a href="#configure-org-log-done" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on <code>ox-hugo</code> below).</p>
+<pre><code>(setq org-log-done 'time)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="customize-fonts">Customize fonts<a href="#customize-fonts" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block maintains the fonts I use in Emacs.</p>
+<pre><code>;; Setup fonts.
+(set-face-attribute 'default nil
+                    :family &quot;JetBrains Mono&quot;)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-completion-packages">Configure completion packages.<a href="#configure-completion-packages" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block ensures and configures the various packages I employ related to completion. These include:</p>
+<ul>
+<li>Vertico</li>
+<li>Marginalia</li>
+<li>Orderless</li>
+<li>Corfu</li>
+</ul>
+<p><strong><strong>NOTE: Corfu is currently not working. Fix needed.</strong></strong></p>
+<pre><code>;; Ensure and enable vertico on startup.
+(use-package vertico
+  :ensure t
+  :config
+  (vertico-mode 1))
+
+;; Ensure and enable marginalia on startup.
+(use-package marginalia
+  :ensure t
+  :config
+  (marginalia-mode 1))
+
+;; Ensure and enable orderless on startup. Set completion styles to basic orderless.
+(use-package orderless
+  :ensure t
+  :custom
+  (completion-styles '(orderless basic)))
+
+;; Ensure corfu.
+(use-package corfu
+  :ensure t)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-magit">Configure Magit<a href="#configure-magit" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block ensures that the Magit package is installed.</p>
+<pre><code>;; Ensure Magit.
+(use-package magit
+  :ensure t)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-elfeed">Configure Elfeed<a href="#configure-elfeed" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed.</p>
+<p><strong><strong>NOTE: Need to update list of feeds.</strong></strong></p>
+<pre><code>;; Ensure elfeed.
+(use-package elfeed
+  :ensure t
+  :config
+  (setq elfeed-feeds
+        '(&quot;theintercept.com/feed&quot;))
+  (setq-default elfeed-search-filter &quot;@1-day-ago +unread&quot;))
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="declare-agenda-file">Declare agenda file<a href="#declare-agenda-file" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.</p>
+<pre><code>;; Declare agenda file.
+(setq org-agenda-files '(&quot;~/Org/tasks.org&quot;))
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="set-up-capture-templates">Set up capture templates<a href="#set-up-capture-templates" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block (the most important in my configuration) creates a few simple but useful capture templates:</p>
+<ul>
+<li>
+<p><strong><strong>Task capture</strong></strong>: This captures items into my tasks.org file.</p>
+</li>
+<li>
+<p><strong><strong>Journal capture</strong></strong>: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dicates, everything goes into one file that can be sorted as necessary.</p>
+</li>
+<li>
+<p><strong><strong>Blog capture:</strong></strong> This capture blog posts drafts. It relies on the <code>org-hugo-new-subtree-capture-template</code> function. (See below.)</p>
+</li>
+<li>
+<p><strong><strong>Book capture:</strong></strong> This captures books into my reading list file.</p>
+<p>;; Setup capture templates.
+(setq org-capture-templates
+&lsquo;((&ldquo;t&rdquo; &ldquo;Task&rdquo; entry
+(file &ldquo;<del>/Org/tasks.org&rdquo;)
+(file &ldquo;</del>/Org/templates/tpl-todo.org&rdquo;) :empty-lines-before 1)
+(&ldquo;j&rdquo; &ldquo;Journal entry&rdquo; entry
+(file+olp+datetree &ldquo;<del>/Org/journal.org&rdquo;)
+(file &ldquo;</del>/Org/templates/tpl-journal.org&rdquo;))
+(&ldquo;h&rdquo;                ;<code>org-capture' binding + h &quot;Hugo post&quot; entry ;; It is assumed that below file is present in </code>org-directory&rsquo;
+;; and that it has a &ldquo;Blog Ideas&rdquo; heading. It can even be a
+;; symlink pointing to the actual location of all-posts.org!
+(file &ldquo;<del>/Blog/content-org/all-posts.org&rdquo;)
+(function org-hugo-new-subtree-post-capture-template))
+(&ldquo;b&rdquo; &ldquo;Book to read&rdquo; entry    <br>
+(file &ldquo;</del>/Org/books.org&rdquo;)
+(file &ldquo;~/Org/templates/tpl-book.org&rdquo;) :empty-lines-before 1)))</p>
+</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-custom-keybindings">Configure custom keybindings<a href="#configure-custom-keybindings" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block declares my custom keybindings. I haven&rsquo;t yet updated my literate configuration with the <code>org-roam</code> package, but I will soon.</p>
+<pre><code>;; Custom keybindings.
+(global-set-key (kbd &quot;C-c v&quot;) 'visual-line-mode)
+(global-set-key (kbd &quot;C-c i&quot;) 'ibuffer)
+(global-set-key (kbd &quot;C-c f&quot;) 'toggle-frame-fullscreen)
+(global-set-key &quot;\C-ca&quot; 'org-agenda)
+(global-set-key &quot;\C-cc&quot; 'org-capture)
+(global-set-key (kbd &quot;C-x e&quot;) 'elfeed)
+(global-set-key (kbd &quot;C-c r i&quot;) 'org-roam-node-insert)
+(global-set-key (kbd &quot;C-c r f&quot;) 'org-roam-node-find)
+(global-set-key (kbd &quot;C-c r t&quot;) 'org-roam-tag-add)
+(global-set-key (kbd &quot;C-c r e&quot;) 'org-roam-extract-subtree)
+(global-set-key (kbd &quot;C-c r r&quot;) 'org-roam-node-random)
+(global-set-key (kbd &quot;C-c r n&quot;) 'org-roam-dailies-capture-today)
+(global-set-key (kbd &quot;C-c r .&quot;) 'org-roam-dailies-goto-today)
+(global-set-key (kbd &quot;C-c r p&quot;) 'org-roam-dailies-goto-previous-note)
+(global-set-key (kbd &quot;C-c r b&quot;) 'org-roam-buffer-toggle)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="install-and-configure-ox-hugo">Install and configure ox-hugo<a href="#install-and-configure-ox-hugo" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block ensures that ox-hugo is installed and cofigured, as described in the <a href="https://ox-hugo.scripter.co/doc/installation/">ox-hugo documentation</a>.</p>
+<p><strong><strong>NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of <code>ox-hugo</code> is compromised, but everything is working fine so far.</strong></strong></p>
+<pre><code>;; Install and configure ox-hugo.
+(use-package ox-hugo
+:ensure t   ;Auto-install the package from Melpa
+:pin melpa  ;`package-archives' should already have (&quot;melpa&quot; . &quot;https://melpa.org/packages/&quot;)
+:after ox)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-function-for-blog-post-capture">Configure function for blog post capture<a href="#configure-function-for-blog-post-capture" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The following is a function created by the author of <code>ox-hugo</code> for capturing blog posts.</p>
+<pre><code>;; Hugo capture
+
+;; Populates only the EXPORT_FILE_NAME property in the inserted heading.
+(with-eval-after-load 'org-capture
+  (defun org-hugo-new-subtree-post-capture-template ()
+    &quot;Returns `org-capture' template string for new Hugo post.
+      See `org-capture-templates' for more information.&quot;
+
+    (let* ((title (read-from-minibuffer &quot;Post Title: &quot;)) ;Prompt to enter the post title
+           (fname (org-hugo-slug title)))
+      (mapconcat #'identity
+                 `(
+                   ,(concat &quot;* TODO &quot; title)
+                   &quot;:PROPERTIES:&quot;
+                   ,(concat &quot;:EXPORT_FILE_NAME: &quot; fname&quot;\n:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary \&quot;\&quot;&quot;)		
+                   &quot;:END:&quot;
+                   &quot;%?\n&quot;)          ;Place the cursor here finally
+                 &quot;\n&quot;))))
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="configure-export-backends">Configure export backends<a href="#configure-export-backends" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website to share my configuration file.</p>
+<pre><code>(require 'ox-org)
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h1 id="ensure-and-enable-spacious-padding">Ensure and enable <code>spacious-padding</code><a href="#ensure-and-enable-spacious-padding" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>This ensures a simple package from Prot that adds padding to buffers.</p>
+<pre><code>(use-package spacious-padding
+  :ensure t
+  :config
+  (spacious-padding-mode 1))
+</code></pre>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

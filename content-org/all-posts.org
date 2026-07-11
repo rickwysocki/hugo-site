@@ -1,5 +1,5 @@
 #+hugo_base_dir: ~/Blog
-* DONE A Fresh Start
+* DONE A Fresh Start                                                  :emacs:
 CLOSED: [2026-07-10 Fri 16:57]
 :PROPERTIES:
 :EXPORT_FILE_NAME: a-fresh-start
@@ -12,3 +12,18 @@ Second, there was a (thankfully short) period where I was shamefully experimenti
 Finally, much of attention is really dominated these days by [[https://outputerror.bandcamp.com/][making techno/electronic music]], which I've gotten back into over the past year, and my love affair with Emacs and GNU/Linux. If I were to guess, the site will likely focus on those two things going forward. To the extent that I keep up with it at all, of course.
 
 Anyway: just noting and recording the update here. 
+* DONE Publishing My Emacs Config
+CLOSED: [2026-07-11 Sat 14:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: publishing-my-emacs-config
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary "I decided to publish my Emacs configuration."
+:END:
+After some interest from folks online, I decided to publish my [[/emacs-config][Emacs configuration]]. As you'll see, it's all incredibly basic, 
+but maybe folks will find it useful. There are a few things missing, as I'm in a yearly-ish process of cleaning out and refreshing the cruft in my configuration. I'll add my configuration related to academic writing and research soon (funny because I don't do much of either these days), if that's something you're interested in and wondering about.
+
+The documentation, too, needs a bit of work. The nice thing is that I've set this up to be served out of my own literate config files, so things will update publicly as I update them for myself. I'm still working on how to organize things on my site, but note that there are currently two fies:
+
+- [[/emacs-config][The literate configuration file itself.]] This is what is linked to in the menu.
+- [[/emacs-capture-templates][My template files.]] These are linked to in the capture template section of the config, but I'm just noting that in case it gets missed.
+
+Again, this is both very simple and (necessarily?) incomplete. If you want more info or run into issues with anything you try to use, feel free to let me know on [[https://mas.to/@rickwysocki][Mastodon]].

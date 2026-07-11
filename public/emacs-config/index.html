@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title> :: Output Error</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/emacs-config/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="//localhost:1313/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
+<meta property="og:description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+" />
+<meta property="og:url" content="//localhost:1313/emacs-config/" />
+<meta property="og:site_name" content="Output Error" />
+
+  <meta property="og:image" content="//localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Output Error
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/">Blog</a></li>
+        
+      
+        
+          <li><a href="/emacs-config">Emacs Config</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/" >Blog</a></li>
+        
+      
+        
+          <li><a href="/emacs-config" >Emacs Config</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/emacs-config/"></a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 class="title">Emacs: Literate Config</h1>
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Preamble
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:</p>
+<ul>
+<li>Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.</li>
+<li>Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star.</li>
+<li>Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.</li>
+</ul>
+<p>Both the configuration and the documentation is a work in progress.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Setup and load custom.el
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+This block puts any customization options created by Emacs into a <code class="verbatim">custom.el</code> file. This is helpful, as it keeps the <code class="verbatim">init.el</code> file clean.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Setup and load custom.el.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">custom-file</span> <span class="p">(</span><span class="nv">locate-user-emacs-file</span> <span class="s">&#34;custom.el&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nf">load</span> <span class="nv">custom-file</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+Declare package archives
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>
+This block declares the package archives for my Emacs configuration.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Add Melpa package archives</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;package</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;package-archives</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;melpa&#34;</span> <span class="o">.</span> <span class="s">&#34;https://melpa.org/packages/&#34;</span><span class="p">)</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+Install Fontaine package and configure fonts
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<p>
+This block installs and configures the Fontaine package and sets up my fonts. Currently, everything here is shamelessly ripped from Prot&#39;s suggested config and needs to be edited for my own purposes. I am also unsure whether the final block is necessary, and need to test it when removed.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">use-package</span> <span class="nv">fontaine</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;fontaine</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">fontaine-latest-state-file</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">locate-user-emacs-file</span> <span class="s">&#34;fontaine-latest-state.eld&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Aporetic is my highly customised build of Iosevka:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; &lt;https://github.com/protesilaos/aporetic&gt;.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">fontaine-presets</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="nv">small</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-family</span> <span class="s">&#34;Aporetic Serif Mono&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-height</span> <span class="mi">80</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:variable-pitch-family</span> <span class="s">&#34;Aporetic Sans&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">regular</span><span class="p">)</span> <span class="c1">; like this it uses all the fallback values and is named `regular&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">medium</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-weight</span> <span class="nv">semilight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-height</span> <span class="mi">115</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:bold-weight</span> <span class="nv">extrabold</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">large</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:inherit</span> <span class="nv">medium</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-height</span> <span class="mi">150</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">presentation</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-height</span> <span class="mi">180</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="no">t</span>
+</span></span><span class="line"><span class="cl">           <span class="c1">;; I keep all properties for didactic purposes, but most can be</span>
+</span></span><span class="line"><span class="cl">           <span class="c1">;; omitted.  See the fontaine manual for the technicalities:</span>
+</span></span><span class="line"><span class="cl">           <span class="c1">;; &lt;https://protesilaos.com/emacs/fontaine&gt;.</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-family</span> <span class="s">&#34;Aporetic Sans Mono&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-weight</span> <span class="nv">regular</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:default-height</span> <span class="mi">100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-serif-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-serif-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:fixed-pitch-serif-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:variable-pitch-family</span> <span class="s">&#34;Aporetic Serif&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:variable-pitch-weight</span> <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:variable-pitch-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-active-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-active-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-active-height</span> <span class="mf">0.9</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-inactive-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-inactive-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:mode-line-inactive-height</span> <span class="mf">0.9</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:header-line-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:header-line-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:header-line-height</span> <span class="mf">0.9</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:line-number-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:line-number-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:line-number-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-bar-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-bar-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-bar-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-line-family</span> <span class="no">nil</span> <span class="c1">; falls back to :default-family</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-line-weight</span> <span class="no">nil</span> <span class="c1">; falls back to :default-weight</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:tab-line-height</span> <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:bold-family</span> <span class="no">nil</span> <span class="c1">; use whatever the underlying face has</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:bold-weight</span> <span class="nv">bold</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:italic-family</span> <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:italic-slant</span> <span class="nv">italic</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">           <span class="nb">:line-spacing</span> <span class="no">nil</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Set the last preset or fall back to desired style from `fontaine-presets&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; (the `regular&#39; in this case).</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">fontaine-set-preset</span> <span class="p">(</span><span class="nb">or</span> <span class="p">(</span><span class="nv">fontaine-restore-latest-preset</span><span class="p">)</span> <span class="ss">&#39;regular</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Persist the latest font preset when closing/starting Emacs and</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; while switching between themes.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">fontaine-mode</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; fontaine does not define any key bindings.  This is just a sample that</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; respects the key binding conventions.  Evaluate:</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;;     (info &#34;(elisp) Key Binding Conventions&#34;)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nf">define-key</span> <span class="nv">global-map</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c f&#34;</span><span class="p">)</span> <span class="nf">#&#39;</span><span class="nv">fontaine-set-preset</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-variable-pitch</span> <span class="no">nil</span><span class="p">)</span> <span class="c1">; Set to nil for fixed pitch in code blocks</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">variable-pitch-mode</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">; Enable variable pitch for Org text</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-block</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+Load default theme
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<p>
+This block loads my preferred default theme.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Load theme.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;modus-operandi</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-2">
+<h2 id="headline-6">
+Disable scroll-bar-mode, menu-bar-mode, and tool-bar-mode
+</h2>
+<div id="outline-text-headline-6" class="outline-text-2">
+<p>
+This block disables the scroll bar, menu bar, and tool bar in Emacs, making the Emacs cleaner and removing elements I don&#39;t use.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Disable scroll-bar-mode</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">scroll-bar-mode</span> <span class="mi">-1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">tool-bar-mode</span> <span class="mi">-1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">menu-bar-mode</span> <span class="mi">-1</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Ensure and configure Emacs dashboard
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<p>This block installs and configures my Emacs dashboard that launches at startup.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and configure Emacs dashboard.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">dashboard</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">dashboard-setup-startup-hook</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-banner-logo-title</span> <span class="s">&#34;Welcome!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-startup-banner</span> <span class="ss">&#39;official</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-center-content</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-vertically-center-content</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-items</span> <span class="o">&#39;</span><span class="p">((</span><span class="nv">recents</span>   <span class="o">.</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">(</span><span class="nv">bookmarks</span> <span class="o">.</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">(</span><span class="nv">agenda</span>    <span class="o">.</span> <span class="mi">5</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-display-icons-p</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-icon-type</span> <span class="ss">&#39;nerd-icons</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-set-heading-icons</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-set-file-icons</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">dashboard-set-file-icons</span> <span class="no">t</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Configure Nerd Font Icons
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>This block installs and configures the <code class="verbatim">nerd-icons</code> package, which is used in other elements of my configuration.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">nerd-icons</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:custom</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; The Nerd Font you want to use in GUI</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; &#34;Symbols Nerd Font Mono&#34; is the default and is recommended</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; but you can use any other Nerd Font if you want</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">nerd-icons-font-family</span> <span class="s">&#34;Symbols Nerd Font Mono&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-2">
+<h2 id="headline-9">
+Ensure and Configure <code class="verbatim">nerd-icons-dired</code>
+</h2>
+<div id="outline-text-headline-9" class="outline-text-2">
+<p>This block installs and configures <code class="verbatim">nerd-icons-dired</code> to apply icons when in dired-mode.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">nerd-icons-dired</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:hook</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">dired-mode</span> <span class="o">.</span> <span class="nv">nerd-icons-dired-mode</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+Enable savehist-mode
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<p>This block enables history to be saved across Emacs sessions.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Enable savehist-mode.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">savehist-mode</span> <span class="mi">1</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-2">
+<h2 id="headline-11">
+Configure <code class="verbatim">org-log-done</code>
+</h2>
+<div id="outline-text-headline-11" class="outline-text-2">
+<p>This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on <code class="verbatim">ox-hugo</code> below). It is also necessary for the lo-fi book tracking system I use within Emacs.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-log-done</span> <span class="ss">&#39;time</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-2">
+<h2 id="headline-12">
+Install and configure <code class="verbatim">yasnippet</code>
+</h2>
+<div id="outline-text-headline-12" class="outline-text-2">
+<p>This block ensures and configures yasnippet. While I tried (briefly) to write some simple document templating functions in basic Elisp, it became too annoying, and I reverted back to <code class="verbatim">yasnippet</code>.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">yasnippet</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">yas-global-mode</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">yas-snippet-dirs</span>
+</span></span><span class="line"><span class="cl">            <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;~/.emacs.d/snippets&#34;</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-2">
+<h2 id="headline-13">
+Install Dokuwiki backend
+</h2>
+<div id="outline-text-headline-13" class="outline-text-2">
+<p>This block installs a backend for Dokuwiki. While I am not a fan of the DokuWiki syntax, I nevertheless have to use it for certain work requirements. This backend allows me to write in Emacs org-mode and simply export that content into DokuWiki syntax.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-wk</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
+Configure completion packages.
+</h2>
+<div id="outline-text-headline-14" class="outline-text-2">
+<p>This block ensures and configures the various packages I employ related to completion. These include:</p>
+<ul>
+<li>Vertico</li>
+<li>Marginalia</li>
+<li>Orderless</li>
+<li>Corfu</li>
+<li>Consult</li>
+</ul>
+<p>I am currently using the recommended configuration from Corfu (comments and all). I will eventually need to spend some time with the documentation to configure things a bit more specifically for my purposes. </p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">    <span class="c1">;; Ensure and enable vertico on startup.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">use-package</span> <span class="nv">vertico</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">vertico-mode</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Ensure and enable marginalia on startup.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">use-package</span> <span class="nv">marginalia</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">marginalia-mode</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Ensure and enable orderless on startup. Set completion styles to basic orderless.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">use-package</span> <span class="nv">orderless</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:custom</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">completion-styles</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">orderless</span> <span class="nv">basic</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Ensure corfu.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">corfu</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Optional customizations</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; :custom</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-preview-current nil)    ;; Disable current candidate preview</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-preselect &#39;prompt)      ;; Preselect the prompt</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-on-exact-match &#39;insert) ;; Configure handling of exact matches</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Enable Corfu only for certain modes. See also `global-corfu-modes&#39;.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; :hook ((prog-mode . corfu-mode)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;;        (shell-mode . corfu-mode)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;;        (eshell-mode . corfu-mode))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">:init</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Recommended: Enable Corfu globally.  Recommended since many modes provide</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Capfs and Dabbrev can be used globally (M-/).  See also the customization</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; variable `global-corfu-modes&#39; to exclude certain modes.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">global-corfu-mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Enable optional extension modes:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-history-mode)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-mouse-mode)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (corfu-popupinfo-mode)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; A few more useful configurations...</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">emacs</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:custom</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; TAB cycle if there are only few candidates</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; (completion-cycle-threshold 3)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Enable indentation+completion using the TAB key.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; `completion-at-point&#39; is often bound to M-TAB.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">tab-always-indent</span> <span class="ss">&#39;complete</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Emacs 30 and newer: Disable Ispell completion function.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Try `cape-dict&#39; as an alternative.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">text-mode-ispell-word-completion</span> <span class="no">nil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Hide commands in M-x which do not apply to the current mode.  Corfu</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; commands are hidden, since they are not used via M-x. This setting is</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">;; useful beyond Corfu.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">read-extended-command-predicate</span> <span class="nf">#&#39;</span><span class="nv">command-completion-default-include-p</span><span class="p">))</span>  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">corfu</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; Ensure Consult</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">use-package</span> <span class="nv">consult</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">:bind</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;C-x b&#34;</span> <span class="o">.</span> <span class="nv">consult-buffer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;C-x r b&#34;</span> <span class="o">.</span> <span class="nv">consult-bookmark</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;M-g o&#34;</span> <span class="o">.</span> <span class="nv">consult-outline</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Configure Magit
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>
+This block ensures that the Magit package is installed.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure Magit.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">magit</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+Configure Elfeed
+</h2>
+<div id="outline-text-headline-16" class="outline-text-2">
+<p>This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure elfeed.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">elfeed</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">elfeed-feeds</span>
+</span></span><span class="line"><span class="cl">          <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;theintercept.com/feed&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;https://9to5linux.com/feed&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="s">&#34;pluralistic.net/feed&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">elfeed-search-filter</span> <span class="s">&#34;@1-week-ago +unread&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-2">
+<h2 id="headline-17">
+Declare agenda file
+</h2>
+<div id="outline-text-headline-17" class="outline-text-2">
+<p>This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Declare agenda file.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-agenda-files</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;~/Org/tasks.org&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-2">
+<h2 id="headline-18">
+Set up capture templates
+</h2>
+<div id="outline-text-headline-18" class="outline-text-2">
+<p>This block (the most important in my configuration) creates a few simple but useful capture templates:</p>
+<ul>
+<li><strong><strong>Task capture</strong></strong>: This captures items into my tasks.org file.</li>
+<li><strong><strong>Journal capture</strong></strong>: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dictates, everything goes into one file that can be sorted as necessary.</li>
+<li><strong><strong>Blog capture:</strong></strong> This capture blog posts drafts. It relies on the <code class="verbatim">org-hugo-new-subtree-capture-template</code> function. (See below.)</li>
+<li><strong><strong>Book capture:</strong></strong> This captures books into my reading list file.</li>
+</ul>
+<p>Readers may also be interested in the <a href="/emacs-capture-templates">template files</a> that each of these rely on.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Setup capture templates.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-capture-templates</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="s">&#34;t&#34;</span> <span class="s">&#34;Task&#34;</span> <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/tasks.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-todo.org&#34;</span><span class="p">)</span> <span class="nb">:empty-lines-before</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;j&#34;</span> <span class="s">&#34;Journal entry&#34;</span> <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="s">&#34;~/Org/journal.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-journal.org&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;h&#34;</span>                <span class="c1">;`org-capture&#39; binding + h</span>
+</span></span><span class="line"><span class="cl">         <span class="s">&#34;Hugo post&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">;; It is assumed that below file is present in `org-directory&#39;</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">;; and that it has a &#34;Blog Ideas&#34; heading. It can even be a</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">;; symlink pointing to the actual location of all-posts.org!</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Blog/content-org/all-posts.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;b&#34;</span> <span class="s">&#34;Book to read&#34;</span> <span class="nv">entry</span>       
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/books.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-book.org&#34;</span><span class="p">)</span> <span class="nb">:empty-lines-before</span> <span class="mi">1</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-2">
+<h2 id="headline-19">
+Configure custom keybindings
+</h2>
+<div id="outline-text-headline-19" class="outline-text-2">
+<p>This block declares my custom keybindings.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Custom keybindings.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c v&#34;</span><span class="p">)</span> <span class="ss">&#39;visual-line-mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c i&#34;</span><span class="p">)</span> <span class="ss">&#39;ibuffer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;f12&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;modus-themes-toggle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="s">&#34;\C-ca&#34;</span> <span class="ss">&#39;org-agenda</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="s">&#34;\C-cc&#34;</span> <span class="ss">&#39;org-capture</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-x e&#34;</span><span class="p">)</span> <span class="ss">&#39;elfeed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r i&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-node-insert</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r f&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-node-find</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r t&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-tag-add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r e&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-extract-subtree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r r&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-node-random</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r n&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-capture-today</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r .&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-goto-today</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r p&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-goto-previous-note</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r b&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-buffer-toggle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c C-x C-m&#34;</span><span class="p">)</span> <span class="ss">&#39;emms-browser</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
+Install and configure <code class="verbatim">ox-hugo</code>
+</h2>
+<div id="outline-text-headline-20" class="outline-text-2">
+<p>This block ensures that ox-hugo is installed and cofigured, as described in the <a href="https://ox-hugo.scripter.co/doc/installation/">ox-hugo documentation</a>.</p>
+<p>
+<strong><strong>NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of <code class="verbatim">ox-hugo</code> is compromised, but everything is working fine so far.</strong></strong></p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Install and configure ox-hugo.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:ensure</span> <span class="no">t</span>   <span class="c1">;Auto-install the package from Melpa</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:pin</span> <span class="nv">melpa</span>  <span class="c1">;`package-archives&#39; should already have (&#34;melpa&#34; . &#34;https://melpa.org/packages/&#34;)</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:after</span> <span class="nv">ox</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-2">
+<h2 id="headline-21">
+Configure function for blog post capture
+</h2>
+<div id="outline-text-headline-21" class="outline-text-2">
+<p>The following is a function created by the author of <code class="verbatim">ox-hugo</code> for capturing blog posts.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Hugo capture</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Populates only the EXPORT_FILE_NAME property in the inserted heading.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;org-capture</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">defun</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Returns </span><span class="ss">`org-capture&#39;</span><span class="s"> template string for new Hugo post.
+</span></span></span><span class="line"><span class="cl"><span class="s">        See </span><span class="ss">`org-capture-templates&#39;</span><span class="s"> for more information.&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">let*</span> <span class="p">((</span><span class="nv">title</span> <span class="p">(</span><span class="nf">read-from-minibuffer</span> <span class="s">&#34;Post Title: &#34;</span><span class="p">))</span> <span class="c1">;Prompt to enter the post title</span>
+</span></span><span class="line"><span class="cl">             <span class="p">(</span><span class="nv">fname</span> <span class="p">(</span><span class="nv">org-hugo-slug</span> <span class="nv">title</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">mapconcat</span> <span class="nf">#&#39;identity</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">`</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                     <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;* TODO &#34;</span> <span class="nv">title</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                     <span class="s">&#34;:PROPERTIES:&#34;</span>
+</span></span><span class="line"><span class="cl">                     <span class="o">,</span><span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;:EXPORT_FILE_NAME: &#34;</span> <span class="nv">fname</span><span class="s">&#34;\n:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary \&#34;\&#34;&#34;</span><span class="p">)</span>		
+</span></span><span class="line"><span class="cl">                     <span class="s">&#34;:END:&#34;</span>
+</span></span><span class="line"><span class="cl">                     <span class="s">&#34;%?\n&#34;</span><span class="p">)</span>          <span class="c1">;Place the cursor here finally</span>
+</span></span><span class="line"><span class="cl">                   <span class="s">&#34;\n&#34;</span><span class="p">))))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-2">
+<h2 id="headline-22">
+Configure export backends
+</h2>
+<div id="outline-text-headline-22" class="outline-text-2">
+<p>This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website directory to share my configuration file.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;ox-org</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-23" class="outline-2">
+<h2 id="headline-23">
+Ensure and enable <code class="verbatim">spacious-padding</code>
+</h2>
+<div id="outline-text-headline-23" class="outline-text-2">
+<p>This ensures a simple package from Prot that adds padding to buffers.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable spacious-padding.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">spacious-padding</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">spacious-padding-mode</span> <span class="mi">1</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-2">
+<h2 id="headline-24">
+Ensure <code class="verbatim">org-roam</code>
+</h2>
+<div id="outline-text-headline-24" class="outline-text-2">
+<p>This block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to <a href="https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/">System Crafters</a> for the fix for warnings and functionality issues post-install. (See the comment in the source block.)</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and configure org-roam.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-roam</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:init</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-roam-v2-ack</span> <span class="no">t</span><span class="p">)</span> <span class="c1">;; This line fixed my warnings and the functionality after install.</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:custom</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">org-roam-directory</span> <span class="s">&#34;~/Org/Org-roam/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">find-file-visit-truename</span> <span class="no">t</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-2">
+<h2 id="headline-25">
+Setup <code class="verbatim">abbrev-mode</code>
+</h2>
+<div id="outline-text-headline-25" class="outline-text-2">
+<p>I use <code class="verbatim">abbrev-mode</code> for short-form text expansion that doesn&#39;t warrant a more complex <code class="verbatim">yasnippet</code> template.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">define-abbrev-table</span> <span class="ss">&#39;org-mode-abbrev-table</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&#39;</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;krtp&#34;</span> <span class="s">&#34;/Kairos: A Journal of Rhetoric, Technology, and Pedagogy/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;disp&#34;</span> <span class="s">&#34;/Disputatio/&#34;</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-2">
+<h2 id="headline-26">
+Configure org-mode citation system
+</h2>
+<div id="outline-text-headline-26" class="outline-text-2">
+<p>This block configures the citation system I used for writing in Emacs. I will eventually explain this system in more detail, but the brief explanation is that I manage my academic sources and citations in Zotero, which is configured to automatically updated the .bib file declared in the source block. This allows me to use <code class="verbatim">org-cite</code> within Emacs to select citations from my citation database.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-cite-global-bibliography</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;~/Org/Ref/bibliography.bib&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-2">
+<h2 id="headline-27">
+Enable <code class="verbatim">org-indent-mode</code>
+</h2>
+<div id="outline-text-headline-27" class="outline-text-2">
+<p>The following block indents subheadings in Org files to enhance readability.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-startup-indented</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-28" class="outline-2">
+<h2 id="headline-28">
+Ensure and configure <code class="verbatim">emms</code>
+</h2>
+<div id="outline-text-headline-28" class="outline-text-2">
+<p>This block installs and configures <code class="verbatim">emms</code>, which allows me to play my music library within Emacs.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">emms</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">emms-all</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">emms-player-list</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">emms-player-vlc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">emms-info-functions</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">emms-info-native</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-29" class="outline-2">
+<h2 id="headline-29">
+Ensure <code class="verbatim">pdf-tools</code>
+</h2>
+<div id="outline-text-headline-29" class="outline-text-2">
+<p>This block installs <code class="verbatim">pdf-tools</code>, which allows me to use Emacs as my primary PDF reader.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">pdf-tools</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-2">
+<h2 id="headline-30">
+Set <code class="verbatim">org-enforce-todo-checkbox-dependencies</code> to t
+</h2>
+<div id="outline-text-headline-30" class="outline-text-2">
+<p>This block enables a behavior that blocks the user from completing a task with unchecked checkboxes.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-enforce-todo-checkbox-dependencies</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

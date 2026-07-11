@@ -1,0 +1,281 @@
++++
+title: Config
++++
+
+# Table of Contents
+
+1.  [Preamble](#org7e7d009)
+2.  [Setup and load custom.el](#org1598c39)
+3.  [Declare package archives](#orga435a32)
+4.  [Load default theme](#org535d5ae)
+5.  [Configure `org-log-done`](#org2332ff8)
+6.  [Customize fonts](#orga7c5d6b)
+7.  [Configure completion packages.](#org6909a93)
+8.  [Configure Magit](#org62110db)
+9.  [Configure Elfeed](#org120c2b1)
+10. [Declare agenda file](#org088bf7b)
+11. [Set up capture templates](#orgef256ec)
+12. [Configure custom keybindings](#org1c7464e)
+13. [Install and configure ox-hugo](#orga9ee4c2)
+14. [Configure function for blog post capture](#org095d5c0)
+15. [Configure export backends](#org58dc167)
+16. [Ensure and enable `spacious-padding`](#org072f8b9)
+
+
+
+<a id="org7e7d009"></a>
+
+# Preamble
+
+This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+
+-   Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.
+-   Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it's a north star.
+-   Config your own config. Now that I'm a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I'm very aware of why the documentation suggests not copying others' config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way.
+
+Both the configuration and the documentation is a work in progress.
+
+
+<a id="org1598c39"></a>
+
+# Setup and load custom.el
+
+This block puts any customization options created by Emacs into a `custom.el` file. This is helpful, as it keeps the `init.el` file clean.
+
+    ;; Setup and load custom.el.
+    (setq custom-file (locate-user-emacs-file "custom.el"))
+    (load custom-file t)
+
+
+<a id="orga435a32"></a>
+
+# Declare package archives
+
+This block declares the package archives for my Emacs configuration.
+
+    ;; Add Melpa package archives
+    (require 'package)
+    (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+
+<a id="org535d5ae"></a>
+
+# Load default theme
+
+This block loads my preferred default theme.
+
+    ;; Load theme.
+    (load-theme 'modus-vivendi-tritanopia)
+
+
+<a id="org2332ff8"></a>
+
+# Configure `org-log-done`
+
+This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on `ox-hugo` below).
+
+    (setq org-log-done 'time)
+
+
+<a id="orga7c5d6b"></a>
+
+# Customize fonts
+
+This block maintains the fonts I use in Emacs.
+
+    ;; Setup fonts.
+    (set-face-attribute 'default nil
+                        :family "JetBrains Mono")
+
+
+<a id="org6909a93"></a>
+
+# Configure completion packages.
+
+This block ensures and configures the various packages I employ related to completion. These include:
+
+-   Vertico
+-   Marginalia
+-   Orderless
+-   Corfu
+
+****NOTE: Corfu is currently not working. Fix needed.****
+
+    ;; Ensure and enable vertico on startup.
+    (use-package vertico
+      :ensure t
+      :config
+      (vertico-mode 1))
+    
+    ;; Ensure and enable marginalia on startup.
+    (use-package marginalia
+      :ensure t
+      :config
+      (marginalia-mode 1))
+    
+    ;; Ensure and enable orderless on startup. Set completion styles to basic orderless.
+    (use-package orderless
+      :ensure t
+      :custom
+      (completion-styles '(orderless basic)))
+    
+    ;; Ensure corfu.
+    (use-package corfu
+      :ensure t)
+
+
+<a id="org62110db"></a>
+
+# Configure Magit
+
+This block ensures that the Magit package is installed.
+
+    ;; Ensure Magit.
+    (use-package magit
+      :ensure t)
+
+
+<a id="org120c2b1"></a>
+
+# Configure Elfeed
+
+This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed.
+
+****NOTE: Need to update list of feeds.****
+
+    ;; Ensure elfeed.
+    (use-package elfeed
+      :ensure t
+      :config
+      (setq elfeed-feeds
+            '("theintercept.com/feed"))
+      (setq-default elfeed-search-filter "@1-day-ago +unread"))
+
+
+<a id="org088bf7b"></a>
+
+# Declare agenda file
+
+This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.
+
+    ;; Declare agenda file.
+    (setq org-agenda-files '("~/Org/tasks.org"))
+
+
+<a id="orgef256ec"></a>
+
+# Set up capture templates
+
+This block (the most important in my configuration) creates a few simple but useful capture templates:
+
+-   ****Task capture****: This captures items into my tasks.org file.
+-   ****Journal capture****: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dicates, everything goes into one file that can be sorted as necessary.
+-   ****Blog capture:**** This capture blog posts drafts. It relies on the `org-hugo-new-subtree-capture-template` function. (See below.)
+-   ****Book capture:**** This captures books into my reading list file.
+
+    ;; Setup capture templates.
+    (setq org-capture-templates
+          '(("t" "Task" entry
+              (file "~/Org/tasks.org")
+              (file "~/Org/templates/tpl-todo.org") :empty-lines-before 1)
+          ("j" "Journal entry" entry
+             (file+olp+datetree "~/Org/journal.org")
+             (file "~/Org/templates/tpl-journal.org"))
+          ("h"                ;`org-capture' binding + h
+           "Hugo post"
+           entry
+           ;; It is assumed that below file is present in `org-directory'
+           ;; and that it has a "Blog Ideas" heading. It can even be a
+           ;; symlink pointing to the actual location of all-posts.org!
+           (file "~/Blog/content-org/all-posts.org")
+           (function org-hugo-new-subtree-post-capture-template))
+          ("b" "Book to read" entry       
+           (file "~/Org/books.org")
+           (file "~/Org/templates/tpl-book.org") :empty-lines-before 1)))
+
+
+<a id="org1c7464e"></a>
+
+# Configure custom keybindings
+
+This block declares my custom keybindings. I haven't yet updated my literate configuration with the `org-roam` package, but I will soon.
+
+    ;; Custom keybindings.
+    (global-set-key (kbd "C-c v") 'visual-line-mode)
+    (global-set-key (kbd "C-c i") 'ibuffer)
+    (global-set-key (kbd "C-c f") 'toggle-frame-fullscreen)
+    (global-set-key "\C-ca" 'org-agenda)
+    (global-set-key "\C-cc" 'org-capture)
+    (global-set-key (kbd "C-x e") 'elfeed)
+    (global-set-key (kbd "C-c r i") 'org-roam-node-insert)
+    (global-set-key (kbd "C-c r f") 'org-roam-node-find)
+    (global-set-key (kbd "C-c r t") 'org-roam-tag-add)
+    (global-set-key (kbd "C-c r e") 'org-roam-extract-subtree)
+    (global-set-key (kbd "C-c r r") 'org-roam-node-random)
+    (global-set-key (kbd "C-c r n") 'org-roam-dailies-capture-today)
+    (global-set-key (kbd "C-c r .") 'org-roam-dailies-goto-today)
+    (global-set-key (kbd "C-c r p") 'org-roam-dailies-goto-previous-note)
+    (global-set-key (kbd "C-c r b") 'org-roam-buffer-toggle)
+
+
+<a id="orga9ee4c2"></a>
+
+# Install and configure ox-hugo
+
+This block ensures that ox-hugo is installed and cofigured, as described in the [ox-hugo documentation](https://ox-hugo.scripter.co/doc/installation/).
+
+****NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of `ox-hugo` is compromised, but everything is working fine so far.****
+
+    ;; Install and configure ox-hugo.
+    (use-package ox-hugo
+    :ensure t   ;Auto-install the package from Melpa
+    :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
+    :after ox)
+
+
+<a id="org095d5c0"></a>
+
+# Configure function for blog post capture
+
+The following is a function created by the author of `ox-hugo` for capturing blog posts.
+
+    ;; Hugo capture
+    
+    ;; Populates only the EXPORT_FILE_NAME property in the inserted heading.
+    (with-eval-after-load 'org-capture
+      (defun org-hugo-new-subtree-post-capture-template ()
+        "Returns `org-capture' template string for new Hugo post.
+          See `org-capture-templates' for more information."
+    
+        (let* ((title (read-from-minibuffer "Post Title: ")) ;Prompt to enter the post title
+               (fname (org-hugo-slug title)))
+          (mapconcat #'identity
+                     `(
+                       ,(concat "* TODO " title)
+                       ":PROPERTIES:"
+                       ,(concat ":EXPORT_FILE_NAME: " fname"\n:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary \"\"")		
+                       ":END:"
+                       "%?\n")          ;Place the cursor here finally
+                     "\n"))))
+
+
+<a id="org58dc167"></a>
+
+# Configure export backends
+
+This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website to share my configuration file.
+
+    (require 'ox-org)
+
+
+<a id="org072f8b9"></a>
+
+# Ensure and enable `spacious-padding`
+
+This ensures a simple package from Prot that adds padding to buffers.
+
+    (use-package spacious-padding
+      :ensure t
+      :config
+      (spacious-padding-mode 1))
+

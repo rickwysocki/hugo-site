@@ -1,0 +1,487 @@
+# Created 2026-07-22 Wed 15:11
+#+title: Emacs: Literate Config
+#+author: Rick Wysocki
+#+property: header-args :tangle "~/.emacs.d/init.el"
+#+export_file_name: ~/Blog/content/emacs-config.org
+#+tags: emacs
+* Preamble
+This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+
+- Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.
+- Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it's a north star.
+- Config your own config. Now that I'm a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I'm very aware of why the documentation suggests not copying others' config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.
+
+Both the configuration and the documentation is a work in progress.
+* Setup and load custom.el
+
+This block puts any customization options created by Emacs into a =custom.el= file. This is helpful, as it keeps the =init.el= file clean.
+
+#+begin_src emacs-lisp
+  ;; Setup and load custom.el.
+  (setq custom-file (locate-user-emacs-file "custom.el"))
+  (load custom-file t)
+#+end_src
+* Declare package archives
+
+This block declares the package archives for my Emacs configuration.
+
+#+begin_src emacs-lisp
+  ;; Add Melpa package archives
+  (require 'package)
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+#+end_src
+* Install Fontaine package and configure fonts
+
+This block installs and configures the Fontaine package and sets up my fonts. Currently, everything here is shamelessly ripped from Prot's suggested config and needs to be edited for my own purposes. I am also unsure whether the final block is necessary, and need to test it when removed.
+
+#+begin_src emacs-lisp
+    (use-package fontaine
+      :ensure t)
+
+  (require 'fontaine)
+
+  (setq fontaine-latest-state-file
+        (locate-user-emacs-file "fontaine-latest-state.eld"))
+
+  ;; Aporetic is my highly customised build of Iosevka:
+  ;; <https://github.com/protesilaos/aporetic>.
+  (setq fontaine-presets
+        '((small
+           :default-family "Aporetic Serif Mono"
+           :default-height 80
+           :variable-pitch-family "Aporetic Sans")
+          (regular) ; like this it uses all the fallback values and is named `regular'
+          (medium
+           :default-weight semilight
+           :default-height 115
+           :bold-weight extrabold)
+          (large
+           :inherit medium
+           :default-height 150)
+          (presentation
+           :default-height 180)
+          (t
+           ;; I keep all properties for didactic purposes, but most can be
+           ;; omitted.  See the fontaine manual for the technicalities:
+           ;; <https://protesilaos.com/emacs/fontaine>.
+           :default-family "Aporetic Sans Mono"
+           :default-weight regular
+           :default-height 100
+
+           :fixed-pitch-family nil ; falls back to :default-family
+           :fixed-pitch-weight nil ; falls back to :default-weight
+           :fixed-pitch-height 1.0
+
+           :fixed-pitch-serif-family nil ; falls back to :default-family
+           :fixed-pitch-serif-weight nil ; falls back to :default-weight
+           :fixed-pitch-serif-height 1.0
+
+           :variable-pitch-family "Aporetic Serif"
+           :variable-pitch-weight nil
+           :variable-pitch-height 1.0
+
+           :mode-line-active-family nil ; falls back to :default-family
+           :mode-line-active-weight nil ; falls back to :default-weight
+           :mode-line-active-height 0.9
+
+           :mode-line-inactive-family nil ; falls back to :default-family
+           :mode-line-inactive-weight nil ; falls back to :default-weight
+           :mode-line-inactive-height 0.9
+
+           :header-line-family nil ; falls back to :default-family
+           :header-line-weight nil ; falls back to :default-weight
+           :header-line-height 0.9
+
+           :line-number-family nil ; falls back to :default-family
+           :line-number-weight nil ; falls back to :default-weight
+           :line-number-height 1.0
+
+           :tab-bar-family nil ; falls back to :default-family
+           :tab-bar-weight nil ; falls back to :default-weight
+           :tab-bar-height 1.0
+
+           :tab-line-family nil ; falls back to :default-family
+           :tab-line-weight nil ; falls back to :default-weight
+           :tab-line-height 1.0
+
+           :bold-family nil ; use whatever the underlying face has
+           :bold-weight bold
+
+           :italic-family nil
+           :italic-slant italic
+
+           :line-spacing nil)))
+
+  ;; Set the last preset or fall back to desired style from `fontaine-presets'
+  ;; (the `regular' in this case).
+  (fontaine-set-preset (or (fontaine-restore-latest-preset) 'regular))
+
+  ;; Persist the latest font preset when closing/starting Emacs and
+  ;; while switching between themes.
+  (fontaine-mode 1)
+
+  ;; fontaine does not define any key bindings.  This is just a sample that
+  ;; respects the key binding conventions.  Evaluate:
+  ;;
+  ;;     (info "(elisp) Key Binding Conventions")
+  (define-key global-map (kbd "C-c f") #'fontaine-set-preset)
+
+  (setq org-variable-pitch nil) ; Set to nil for fixed pitch in code blocks
+  (add-hook 'org-mode-hook
+            (lambda ()
+              (variable-pitch-mode 1) ; Enable variable pitch for Org text
+              (set-face-attribute 'org-block nil :inherit 'fixed-pitch)))
+#+end_src
+* Load default theme
+
+This block loads my preferred default theme.
+
+#+begin_src emacs-lisp
+  ;; Load theme.
+  (load-theme 'modus-operandi)
+#+end_src
+* Disable scroll-bar-mode, menu-bar-mode, and tool-bar-mode
+
+This block disables the scroll bar, menu bar, and tool bar in Emacs, making the Emacs cleaner and removing elements I don't use.
+
+#+begin_src emacs-lisp
+  ;; Disable scroll-bar-mode
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+#+end_src
+* Ensure and configure Emacs dashboard
+This block installs and configures my Emacs dashboard that launches at startup.
+#+begin_src emacs-lisp
+  ;; Ensure and configure Emacs dashboard.
+  (use-package dashboard
+    :ensure t
+    :config
+    (dashboard-setup-startup-hook)
+    (setq dashboard-banner-logo-title "Welcome!")
+    (setq dashboard-startup-banner 'official)
+    (setq dashboard-center-content t)
+    (setq dashboard-vertically-center-content t)
+    (setq dashboard-items '((recents   . 5)
+                        (bookmarks . 5)
+                        (agenda    . 5)))
+    (setq dashboard-display-icons-p t)
+    (setq dashboard-icon-type 'nerd-icons)
+    (setq dashboard-set-heading-icons t)
+    (setq dashboard-set-file-icons t)
+    (setq dashboard-set-file-icons t))
+#+end_src
+* Configure Nerd Font Icons
+This block installs and configures the =nerd-icons= package, which is used in other elements of my configuration.
+#+begin_src emacs-lisp
+  (use-package nerd-icons
+  :ensure t
+  :custom
+  ;; The Nerd Font you want to use in GUI
+  ;; "Symbols Nerd Font Mono" is the default and is recommended
+  ;; but you can use any other Nerd Font if you want
+  (nerd-icons-font-family "Symbols Nerd Font Mono"))
+#+end_src
+* Ensure and Configure =nerd-icons-dired=
+This block installs and configures =nerd-icons-dired= to apply icons when in dired-mode.
+#+begin_src emacs-lisp
+  (use-package nerd-icons-dired
+  :ensure t
+  :hook
+  (dired-mode . nerd-icons-dired-mode))
+#+end_src
+* Enable savehist-mode
+This block enables history to be saved across Emacs sessions.
+#+begin_src emacs-lisp
+  ;; Enable savehist-mode.
+  (savehist-mode 1)
+#+end_src
+* Configure =org-log-done=
+This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on =ox-hugo= below). It is also necessary for the lo-fi book tracking system I use within Emacs.
+#+begin_src emacs-lisp
+  (setq org-log-done 'time)
+#+end_src
+* Install and configure =yasnippet=
+This block ensures and configures yasnippet. While I tried (briefly) to write some simple document templating functions in basic Elisp, it became too annoying, and I reverted back to =yasnippet=.
+#+begin_src emacs-lisp
+  (use-package yasnippet
+    :ensure t
+    :config
+    (yas-global-mode 1)
+    (setq yas-snippet-dirs
+            '("~/.emacs.d/snippets")))
+#+end_src
+* Install Dokuwiki backend
+This block installs a backend for Dokuwiki. While I am not a fan of the DokuWiki syntax, I nevertheless have to use it for certain work requirements. This backend allows me to write in Emacs org-mode and simply export that content into DokuWiki syntax.
+#+begin_src emacs-lisp
+  (use-package ox-wk
+    :ensure t)
+#+end_src
+* Configure completion packages.
+This block ensures and configures the various packages I employ related to completion. These include:
+
+- Vertico
+- Marginalia
+- Orderless
+- Corfu
+- Consult
+
+I am currently using the recommended configuration from Corfu (comments and all). I will eventually need to spend some time with the documentation to configure things a bit more specifically for my purposes. 
+#+begin_src emacs-lisp
+    ;; Ensure and enable vertico on startup.
+    (use-package vertico
+      :ensure t
+      :config
+      (vertico-mode 1))
+
+    ;; Ensure and enable marginalia on startup.
+    (use-package marginalia
+      :ensure t
+      :config
+      (marginalia-mode 1))
+
+    ;; Ensure and enable orderless on startup. Set completion styles to basic orderless.
+    (use-package orderless
+      :ensure t
+      :custom
+      (completion-styles '(orderless basic)))
+
+    ;; Ensure corfu.
+  (use-package corfu
+    ;; Optional customizations
+    ;; :custom
+    ;; (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
+    ;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary
+    ;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match
+    ;; (corfu-preview-current nil)    ;; Disable current candidate preview
+    ;; (corfu-preselect 'prompt)      ;; Preselect the prompt
+    ;; (corfu-on-exact-match 'insert) ;; Configure handling of exact matches
+
+    ;; Enable Corfu only for certain modes. See also `global-corfu-modes'.
+    ;; :hook ((prog-mode . corfu-mode)
+    ;;        (shell-mode . corfu-mode)
+    ;;        (eshell-mode . corfu-mode))
+
+    :init
+
+    ;; Recommended: Enable Corfu globally.  Recommended since many modes provide
+    ;; Capfs and Dabbrev can be used globally (M-/).  See also the customization
+    ;; variable `global-corfu-modes' to exclude certain modes.
+    (global-corfu-mode)
+
+    ;; Enable optional extension modes:
+    ;; (corfu-history-mode)
+    ;; (corfu-mouse-mode)
+    ;; (corfu-popupinfo-mode)
+    )
+
+  ;; A few more useful configurations...
+  (use-package emacs
+    :custom
+    ;; TAB cycle if there are only few candidates
+    ;; (completion-cycle-threshold 3)
+
+    ;; Enable indentation+completion using the TAB key.
+    ;; `completion-at-point' is often bound to M-TAB.
+    (tab-always-indent 'complete)
+
+    ;; Emacs 30 and newer: Disable Ispell completion function.
+    ;; Try `cape-dict' as an alternative.
+    (text-mode-ispell-word-completion nil)
+
+    ;; Hide commands in M-x which do not apply to the current mode.  Corfu
+    ;; commands are hidden, since they are not used via M-x. This setting is
+    ;; useful beyond Corfu.
+    (read-extended-command-predicate #'command-completion-default-include-p))  (use-package corfu
+      :ensure t)
+
+    ;; Ensure Consult
+    (use-package consult
+      :ensure t
+      :bind
+      ("C-x b" . consult-buffer)
+      ("C-x r b" . consult-bookmark)
+      ("M-g o" . consult-outline))
+#+end_src
+* Configure Magit
+
+This block ensures that the Magit package is installed.
+
+#+begin_src emacs-lisp
+  ;; Ensure Magit.
+  (use-package magit
+    :ensure t)
+#+end_src
+* Configure Elfeed
+This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.
+#+begin_src emacs-lisp
+  ;; Ensure elfeed.
+  (use-package elfeed
+    :ensure t
+    :config
+    (setq elfeed-feeds
+          '("theintercept.com/feed"
+            "https://9to5linux.com/feed"
+            "pluralistic.net/feed"))
+    (setq-default elfeed-search-filter "@1-week-ago +unread"))
+#+end_src
+* Declare agenda file
+This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.
+#+begin_src emacs-lisp
+  ;; Declare agenda file.
+  (setq org-agenda-files '("~/Org/tasks.org"))
+#+end_src
+* Set up capture templates
+This block (the most important in my configuration) creates a few simple but useful capture templates:
+
+- **Task capture**: This captures items into my tasks.org file.
+- **Journal capture**: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dictates, everything goes into one file that can be sorted as necessary.
+- **Blog capture:** This capture blog posts drafts. It relies on the =org-hugo-new-subtree-capture-template= function. (See below.)
+- **Book capture:** This captures books into my reading list file.
+
+Readers may also be interested in the [[/emacs-capture-templates][template files]] that each of these rely on.
+
+#+begin_src emacs-lisp
+
+  ;; Setup capture templates.
+  (setq org-capture-templates
+        '(("t" "Task" entry
+            (file "~/Org/tasks.org")
+            (file "~/Org/templates/tpl-todo.org") :empty-lines-before 1)
+        ("j" "Journal entry" entry
+           (file+olp+datetree "~/Org/journal.org")
+           (file "~/Org/templates/tpl-journal.org"))
+        ("h"                ;`org-capture' binding + h
+         "Hugo post"
+         entry
+         ;; It is assumed that below file is present in `org-directory'
+         ;; and that it has a "Blog Ideas" heading. It can even be a
+         ;; symlink pointing to the actual location of all-posts.org!
+         (file "~/Blog/content-org/all-posts.org")
+         (function org-hugo-new-subtree-post-capture-template))
+        ("b" "Book to read" entry       
+         (file "~/Org/books.org")
+         (file "~/Org/templates/tpl-book.org") :empty-lines-before 1)))
+#+end_src
+* Configure custom keybindings
+This block declares my custom keybindings.
+
+#+begin_src emacs-lisp
+  ;; Custom keybindings.
+  (global-set-key (kbd "C-c v") 'visual-line-mode)
+  (global-set-key (kbd "C-c i") 'ibuffer)
+  (global-set-key (kbd "<f12>") 'modus-themes-toggle)
+  (global-set-key "\C-ca" 'org-agenda)
+  (global-set-key "\C-cc" 'org-capture)
+  (global-set-key (kbd "C-x e") 'elfeed)
+  (global-set-key (kbd "C-c r i") 'org-roam-node-insert)
+  (global-set-key (kbd "C-c r f") 'org-roam-node-find)
+  (global-set-key (kbd "C-c r t") 'org-roam-tag-add)
+  (global-set-key (kbd "C-c r e") 'org-roam-extract-subtree)
+  (global-set-key (kbd "C-c r r") 'org-roam-node-random)
+  (global-set-key (kbd "C-c r n") 'org-roam-dailies-capture-today)
+  (global-set-key (kbd "C-c r .") 'org-roam-dailies-goto-today)
+  (global-set-key (kbd "C-c r p") 'org-roam-dailies-goto-previous-note)
+  (global-set-key (kbd "C-c r b") 'org-roam-buffer-toggle)
+  (global-set-key (kbd "C-c C-x C-m") 'emms-browser)
+#+end_src
+* Install and configure =ox-hugo=
+This block ensures that ox-hugo is installed and cofigured, as described in the [[https://ox-hugo.scripter.co/doc/installation/][ox-hugo documentation]].
+
+**NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of =ox-hugo= is compromised, but everything is working fine so far.**
+#+begin_src emacs-lisp
+  ;; Install and configure ox-hugo.
+  (use-package ox-hugo
+  :ensure t   ;Auto-install the package from Melpa
+  :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
+  :after ox)
+#+end_src
+* Configure function for blog post capture
+The following is a function created by the author of =ox-hugo= for capturing blog posts.
+
+#+begin_src emacs-lisp
+  ;; Hugo capture
+
+  ;; Populates only the EXPORT_FILE_NAME property in the inserted heading.
+  (with-eval-after-load 'org-capture
+    (defun org-hugo-new-subtree-post-capture-template ()
+      "Returns `org-capture' template string for new Hugo post.
+        See `org-capture-templates' for more information."
+
+      (let* ((title (read-from-minibuffer "Post Title: ")) ;Prompt to enter the post title
+             (fname (org-hugo-slug title)))
+        (mapconcat #'identity
+                   `(
+                     ,(concat "* TODO " title)
+                     ":PROPERTIES:"
+                     ,(concat ":EXPORT_FILE_NAME: " fname"\n:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary \"\"")		
+                     ":END:"
+                     "%?\n")          ;Place the cursor here finally
+                   "\n"))))
+#+end_src
+* Configure export backends
+This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website directory to share my configuration file.
+#+begin_src emacs-lisp
+  (require 'ox-org)
+#+end_src
+* Ensure and enable =spacious-padding=
+This ensures a simple package from Prot that adds padding to buffers.
+#+begin_src emacs-lisp
+  ;; Ensure and enable spacious-padding.
+  (use-package spacious-padding
+    :ensure t
+    :config
+    (spacious-padding-mode 1))
+#+end_src
+* Ensure =org-roam=
+This block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to [[https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/][System Crafters]] for the fix for warnings and functionality issues post-install. (See the comment in the source block.)
+
+#+begin_src emacs-lisp
+  ;; Ensure and configure org-roam.
+  (use-package org-roam
+    :init
+    (setq org-roam-v2-ack t) ;; This line fixed my warnings and the functionality after install.
+    :ensure t
+    :custom
+    (org-roam-directory "~/Org/Org-roam/")
+    (setq find-file-visit-truename t))
+#+end_src
+* Setup =abbrev-mode=
+I use =abbrev-mode= for short-form text expansion that doesn't warrant a more complex =yasnippet= template.
+#+begin_src emacs-lisp
+  (define-abbrev-table 'org-mode-abbrev-table
+    '(
+      ("krtp" "/Kairos: A Journal of Rhetoric, Technology, and Pedagogy/")
+          ("disp" "/Disputatio/")))
+#+end_src
+* Configure org-mode citation system
+This block configures the citation system I used for writing in Emacs. I will eventually explain this system in more detail, but the brief explanation is that I manage my academic sources and citations in Zotero, which is configured to automatically updated the .bib file declared in the source block. This allows me to use =org-cite= within Emacs to select citations from my citation database.
+#+begin_src emacs-lisp
+  (setq org-cite-global-bibliography '("~/Org/Ref/bibliography.bib"))
+#+end_src
+* Enable =org-indent-mode=
+The following block indents subheadings in Org files to enhance readability.
+#+begin_src emacs-lisp
+  (setq org-startup-indented t)
+#+end_src
+* Ensure and configure =emms=
+This block installs and configures =emms=, which allows me to play my music library within Emacs.
+#+begin_src emacs-lisp
+  (use-package emms
+    :ensure t
+    :config
+    (emms-all)
+    (setq emms-player-list '(emms-player-vlc)
+          emms-info-functions '(emms-info-native)))
+#+end_src
+* Ensure =pdf-tools=
+This block installs =pdf-tools=, which allows me to use Emacs as my primary PDF reader.
+#+begin_src emacs-lisp
+  (use-package pdf-tools
+    :ensure t)
+#+end_src
+* Set =org-enforce-todo-checkbox-dependencies= to t
+This block enables a behavior that blocks the user from completing a task with unchecked checkboxes.
+#+begin_src emacs-lisp
+  (setq org-enforce-todo-checkbox-dependencies t)
+#+end_src
