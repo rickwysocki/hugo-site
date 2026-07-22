@@ -7,7 +7,11 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+<<<<<<< HEAD
 Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+=======
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+>>>>>>> origin/main
 " />
 <meta name="keywords" content="" />
 
@@ -81,7 +85,11 @@ Stay minimal. I generally try to reduce digital claustrophobia by, whenever poss
 <meta property="og:type" content="article" />
 <meta property="og:title" content="">
 <meta property="og:description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+<<<<<<< HEAD
 Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+=======
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
+>>>>>>> origin/main
 " />
 <meta property="og:url" content="//localhost:1313/emacs-config/" />
 <meta property="og:site_name" content="Output Error" />
@@ -197,7 +205,11 @@ Preamble
 <ul>
 <li>Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.</li>
 <li>Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star.</li>
+<<<<<<< HEAD
 <li>Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.</li>
+=======
+<li>Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way.</li>
+>>>>>>> origin/main
 </ul>
 <p>Both the configuration and the documentation is a work in progress.</p>
 </div>
@@ -232,6 +244,7 @@ This block declares the package archives for my Emacs configuration.</p>
 </div>
 <div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
+<<<<<<< HEAD
 Install Fontaine package and configure fonts
 </h2>
 <div id="outline-text-headline-4" class="outline-text-2">
@@ -334,11 +347,22 @@ This block installs and configures the Fontaine package and sets up my fonts. Cu
 </span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
 </span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">variable-pitch-mode</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">; Enable variable pitch for Org text</span>
 </span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;org-block</span> <span class="no">nil</span> <span class="nb">:inherit</span> <span class="ss">&#39;fixed-pitch</span><span class="p">)))</span></span></span></code></pre></div>
+=======
+Load default theme
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<p>
+This block loads my preferred default theme.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Load theme.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;modus-vivendi-tritanopia</span><span class="p">)</span></span></span></code></pre></div>
+>>>>>>> origin/main
 </div>
 </div>
 </div>
 <div id="outline-container-headline-5" class="outline-2">
 <h2 id="headline-5">
+<<<<<<< HEAD
 Load default theme
 </h2>
 <div id="outline-text-headline-5" class="outline-text-2">
@@ -441,11 +465,19 @@ Configure <code class="verbatim">org-log-done</code>
 </h2>
 <div id="outline-text-headline-11" class="outline-text-2">
 <p>This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on <code class="verbatim">ox-hugo</code> below). It is also necessary for the lo-fi book tracking system I use within Emacs.</p>
+=======
+Configure <code class="verbatim">org-log-done</code>
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<p>
+This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on <code class="verbatim">ox-hugo</code> below).</p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-log-done</span> <span class="ss">&#39;time</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-12" class="outline-2">
 <h2 id="headline-12">
 Install and configure <code class="verbatim">yasnippet</code>
@@ -480,11 +512,35 @@ Configure completion packages.
 </h2>
 <div id="outline-text-headline-14" class="outline-text-2">
 <p>This block ensures and configures the various packages I employ related to completion. These include:</p>
+=======
+<div id="outline-container-headline-6" class="outline-2">
+<h2 id="headline-6">
+Customize fonts
+</h2>
+<div id="outline-text-headline-6" class="outline-text-2">
+<p>
+This block maintains the fonts I use in Emacs.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Setup fonts.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span>
+</span></span><span class="line"><span class="cl">                      <span class="nb">:family</span> <span class="s">&#34;JetBrains Mono&#34;</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Configure completion packages.
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<p>
+This block ensures and configures the various packages I employ related to completion. These include:</p>
+>>>>>>> origin/main
 <ul>
 <li>Vertico</li>
 <li>Marginalia</li>
 <li>Orderless</li>
 <li>Corfu</li>
+<<<<<<< HEAD
 <li>Consult</li>
 </ul>
 <p>I am currently using the recommended configuration from Corfu (comments and all). I will eventually need to spend some time with the documentation to configure things a bit more specifically for my purposes. </p>
@@ -571,6 +627,40 @@ Configure completion packages.
 Configure Magit
 </h2>
 <div id="outline-text-headline-15" class="outline-text-2">
+=======
+</ul>
+<p><strong><strong>NOTE: Corfu is currently not working. Fix needed.</strong></strong></p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable vertico on startup.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">vertico</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">vertico-mode</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable marginalia on startup.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">marginalia</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">marginalia-mode</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable orderless on startup. Set completion styles to basic orderless.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">orderless</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:custom</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">completion-styles</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">orderless</span> <span class="nv">basic</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Ensure corfu.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">corfu</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Configure Magit
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+>>>>>>> origin/main
 <p>
 This block ensures that the Magit package is installed.</p>
 <div class="src src-emacs-lisp">
@@ -580,18 +670,31 @@ This block ensures that the Magit package is installed.</p>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-16" class="outline-2">
 <h2 id="headline-16">
 Configure Elfeed
 </h2>
 <div id="outline-text-headline-16" class="outline-text-2">
 <p>This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.</p>
+=======
+<div id="outline-container-headline-9" class="outline-2">
+<h2 id="headline-9">
+Configure Elfeed
+</h2>
+<div id="outline-text-headline-9" class="outline-text-2">
+<p>
+This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed.</p>
+<p>
+<strong><strong>NOTE: Need to update list of feeds.</strong></strong></p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure elfeed.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">elfeed</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">elfeed-feeds</span>
+<<<<<<< HEAD
 </span></span><span class="line"><span class="cl">          <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;theintercept.com/feed&#34;</span>
 </span></span><span class="line"><span class="cl">            <span class="s">&#34;https://9to5linux.com/feed&#34;</span>
 </span></span><span class="line"><span class="cl">            <span class="s">&#34;pluralistic.net/feed&#34;</span><span class="p">))</span>
@@ -605,12 +708,27 @@ Declare agenda file
 </h2>
 <div id="outline-text-headline-17" class="outline-text-2">
 <p>This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.</p>
+=======
+</span></span><span class="line"><span class="cl">          <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;theintercept.com/feed&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">elfeed-search-filter</span> <span class="s">&#34;@1-day-ago +unread&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+Declare agenda file
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<p>
+This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.</p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Declare agenda file.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-agenda-files</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;~/Org/tasks.org&#34;</span><span class="p">))</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-18" class="outline-2">
 <h2 id="headline-18">
 Set up capture templates
@@ -620,6 +738,18 @@ Set up capture templates
 <ul>
 <li><strong><strong>Task capture</strong></strong>: This captures items into my tasks.org file.</li>
 <li><strong><strong>Journal capture</strong></strong>: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dictates, everything goes into one file that can be sorted as necessary.</li>
+=======
+<div id="outline-container-headline-11" class="outline-2">
+<h2 id="headline-11">
+Set up capture templates
+</h2>
+<div id="outline-text-headline-11" class="outline-text-2">
+<p>
+This block (the most important in my configuration) creates a few simple but useful capture templates:</p>
+<ul>
+<li><strong><strong>Task capture</strong></strong>: This captures items into my tasks.org file.</li>
+<li><strong><strong>Journal capture</strong></strong>: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dicates, everything goes into one file that can be sorted as necessary.</li>
+>>>>>>> origin/main
 <li><strong><strong>Blog capture:</strong></strong> This capture blog posts drafts. It relies on the <code class="verbatim">org-hugo-new-subtree-capture-template</code> function. (See below.)</li>
 <li><strong><strong>Book capture:</strong></strong> This captures books into my reading list file.</li>
 </ul>
@@ -647,17 +777,31 @@ Set up capture templates
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-19" class="outline-2">
 <h2 id="headline-19">
 Configure custom keybindings
 </h2>
 <div id="outline-text-headline-19" class="outline-text-2">
 <p>This block declares my custom keybindings.</p>
+=======
+<div id="outline-container-headline-12" class="outline-2">
+<h2 id="headline-12">
+Configure custom keybindings
+</h2>
+<div id="outline-text-headline-12" class="outline-text-2">
+<p>
+This block declares my custom keybindings. I haven&#39;t yet updated my literate configuration with the <code class="verbatim">org-roam</code> package, but I will soon.</p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Custom keybindings.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c v&#34;</span><span class="p">)</span> <span class="ss">&#39;visual-line-mode</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c i&#34;</span><span class="p">)</span> <span class="ss">&#39;ibuffer</span><span class="p">)</span>
+<<<<<<< HEAD
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;&lt;f12&gt;&#34;</span><span class="p">)</span> <span class="ss">&#39;modus-themes-toggle</span><span class="p">)</span>
+=======
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c f&#34;</span><span class="p">)</span> <span class="ss">&#39;toggle-frame-fullscreen</span><span class="p">)</span>
+>>>>>>> origin/main
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="s">&#34;\C-ca&#34;</span> <span class="ss">&#39;org-agenda</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="s">&#34;\C-cc&#34;</span> <span class="ss">&#39;org-capture</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-x e&#34;</span><span class="p">)</span> <span class="ss">&#39;elfeed</span><span class="p">)</span>
@@ -669,6 +813,7 @@ Configure custom keybindings
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r n&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-capture-today</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r .&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-goto-today</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r p&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-dailies-goto-previous-note</span><span class="p">)</span>
+<<<<<<< HEAD
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r b&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-buffer-toggle</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c C-x C-m&#34;</span><span class="p">)</span> <span class="ss">&#39;emms-browser</span><span class="p">)</span></span></span></code></pre></div>
 </div>
@@ -679,6 +824,17 @@ Configure custom keybindings
 Install and configure <code class="verbatim">ox-hugo</code>
 </h2>
 <div id="outline-text-headline-20" class="outline-text-2">
+=======
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">global-set-key</span> <span class="p">(</span><span class="nv">kbd</span> <span class="s">&#34;C-c r b&#34;</span><span class="p">)</span> <span class="ss">&#39;org-roam-buffer-toggle</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-2">
+<h2 id="headline-13">
+Install and configure ox-hugo
+</h2>
+<div id="outline-text-headline-13" class="outline-text-2">
+>>>>>>> origin/main
 <p>This block ensures that ox-hugo is installed and cofigured, as described in the <a href="https://ox-hugo.scripter.co/doc/installation/">ox-hugo documentation</a>.</p>
 <p>
 <strong><strong>NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of <code class="verbatim">ox-hugo</code> is compromised, but everything is working fine so far.</strong></strong></p>
@@ -691,12 +847,22 @@ Install and configure <code class="verbatim">ox-hugo</code>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-21" class="outline-2">
 <h2 id="headline-21">
 Configure function for blog post capture
 </h2>
 <div id="outline-text-headline-21" class="outline-text-2">
 <p>The following is a function created by the author of <code class="verbatim">ox-hugo</code> for capturing blog posts.</p>
+=======
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
+Configure function for blog post capture
+</h2>
+<div id="outline-text-headline-14" class="outline-text-2">
+<p>
+The following is a function created by the author of <code class="verbatim">ox-hugo</code> for capturing blog posts.</p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Hugo capture</span>
 </span></span><span class="line"><span class="cl">
@@ -719,17 +885,27 @@ Configure function for blog post capture
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-22" class="outline-2">
 <h2 id="headline-22">
 Configure export backends
 </h2>
 <div id="outline-text-headline-22" class="outline-text-2">
 <p>This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website directory to share my configuration file.</p>
+=======
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Configure export backends
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website to share my configuration file.</p>
+>>>>>>> origin/main
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;ox-org</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-23" class="outline-2">
 <h2 id="headline-23">
 Ensure and enable <code class="verbatim">spacious-padding</code>
@@ -739,12 +915,24 @@ Ensure and enable <code class="verbatim">spacious-padding</code>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable spacious-padding.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">spacious-padding</span>
+=======
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+Ensure and enable <code class="verbatim">spacious-padding</code>
+</h2>
+<div id="outline-text-headline-16" class="outline-text-2">
+<p>
+This ensures a simple package from Prot that adds padding to buffers.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">spacious-padding</span>
+>>>>>>> origin/main
 </span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">spacious-padding-mode</span> <span class="mi">1</span><span class="p">))</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div id="outline-container-headline-24" class="outline-2">
 <h2 id="headline-24">
 Ensure <code class="verbatim">org-roam</code>
@@ -838,6 +1026,8 @@ Set <code class="verbatim">org-enforce-todo-checkbox-dependencies</code> to t
 </div>
 </div>
 </div>
+=======
+>>>>>>> origin/main
 
       </div></div>
 
