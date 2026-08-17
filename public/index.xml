@@ -1,56 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Output Error</title>
-		<link>//localhost:1313/</link>
-		<description>Recent content on Output Error</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 11 Jul 2026 14:02:00 -0400</lastBuildDate>
-		
-			<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Publishing My Emacs Config</title>
-				<link>//localhost:1313/posts/publishing-my-emacs-config/</link>
-				<pubDate>Sat, 11 Jul 2026 14:02:00 -0400</pubDate>
-				<guid>//localhost:1313/posts/publishing-my-emacs-config/</guid>
-				<description>I decided to publish my Emacs configuration.</description>
-			</item>
-			<item>
-				<title>A Fresh Start</title>
-				<link>//localhost:1313/posts/a-fresh-start/</link>
-				<pubDate>Fri, 10 Jul 2026 16:57:00 -0400</pubDate>
-				<guid>//localhost:1313/posts/a-fresh-start/</guid>
-				<description>I decided to wipe my blog.</description>
-			</item>
-			<item>
-				<title></title>
-				<link>//localhost:1313/emacs-capture-templates/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/emacs-capture-templates/</guid>
-				<description>&lt;h1 class=&#34;title&#34;&gt;Capture Templates&lt;/h1&gt;&#xA;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Preamble&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;&#xA;This document includes the templates I use for capturing material in my &lt;a href=&#34;//localhost:1313/emacs-config&#34;&gt;Emacs configuration&lt;/a&gt;. Please see the preamble on that page and note that my documentation of the emacs-lisp blocks on both pages is ongoing.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-2&#34;&gt;&#xA;Task capture template&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;This template prompts the user for a todo-item. It automatically tags the entry with &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; and includes the date it was added. I manage a single tasks file that I navigate exlusively with the agenda view, beyond basic maintenance of the org file. Automatically adding an &amp;#34;Inbox&amp;#34; tag lets me quickly capture thoughts without worrying about sorting them. Whenever I start working, I query my &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; tag, sort the item in there with the relevant tags I use, and remove the &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; tag.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title></title>
-				<link>//localhost:1313/emacs-config/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/emacs-config/</guid>
-<<<<<<< HEAD
-				<description>&lt;h1 class=&#34;title&#34;&gt;Emacs: Literate Config&lt;/h1&gt;&#xA;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Preamble&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.&lt;/li&gt;&#xA;&lt;li&gt;Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&amp;#39;s a north star.&lt;/li&gt;&#xA;&lt;li&gt;Config your own config. Now that I&amp;#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&amp;#39;m very aware of why the documentation suggests not copying others&amp;#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Both the configuration and the documentation is a work in progress.&lt;/p&gt;</description>
-=======
-				<description>&lt;h1 class=&#34;title&#34;&gt;Emacs: Literate Config&lt;/h1&gt;&#xA;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Preamble&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.&lt;/li&gt;&#xA;&lt;li&gt;Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&amp;#39;s a north star.&lt;/li&gt;&#xA;&lt;li&gt;Config your own config. Now that I&amp;#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&amp;#39;m very aware of why the documentation suggests not copying others&amp;#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guidelines, I (at least) type them in rather than copy them over. I learn more that way.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Both the configuration and the documentation is a work in progress.&lt;/p&gt;</description>
->>>>>>> origin/main
-			</item>
-			<item>
-				<title>About</title>
-				<link>//localhost:1313/about/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/about/</guid>
-				<description>&lt;p&gt;A guy on the Internet. I make music and sometimes write things down.&lt;/p&gt;&#xA;&lt;p&gt;Interests include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Electronic music.&lt;/li&gt;&#xA;&lt;li&gt;GNU/Linux.&lt;/li&gt;&#xA;&lt;li&gt;Emacs.&lt;/li&gt;&#xA;&lt;li&gt;Critical/media theory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Follow me on &lt;a href=&#34;https://outputerror.bandcamp.com&#34;&gt;Bandcamp&lt;/a&gt;.&lt;/p&gt;</description>
-			</item>
-	</channel>
+  <channel>
+    <title>Output Error</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Output Error</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Aug 2026 18:41:00 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracking Reading in Emacs</title>
+      <link>//localhost:1313/posts/tracking-reading-in-emacs/</link>
+      <pubDate>Mon, 17 Aug 2026 18:41:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/tracking-reading-in-emacs/</guid>
+      <description>A Better Reads system for tracking books in Org Mode.</description>
+    </item>
+    <item>
+      <title>Publishing My Emacs Config</title>
+      <link>//localhost:1313/posts/publishing-my-emacs-config/</link>
+      <pubDate>Sat, 11 Jul 2026 14:02:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/publishing-my-emacs-config/</guid>
+      <description>I decided to publish my Emacs configuration.</description>
+    </item>
+    <item>
+      <title>A Fresh Start</title>
+      <link>//localhost:1313/posts/a-fresh-start/</link>
+      <pubDate>Fri, 10 Jul 2026 16:57:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/a-fresh-start/</guid>
+      <description>I decided to wipe my blog.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/emacs-capture-templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/emacs-capture-templates/</guid>
+      <description>&lt;h1 class=&#34;title&#34;&gt;Capture Templates&lt;/h1&gt;&#xA;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Preamble&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;&#xA;This document includes the templates I use for capturing material in my &lt;a href=&#34;//localhost:1313/emacs-config&#34;&gt;Emacs configuration&lt;/a&gt;. Please see the preamble on that page and note that my documentation of the emacs-lisp blocks on both pages is ongoing.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-2&#34;&gt;&#xA;Task capture template&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;This template prompts the user for a todo-item. It automatically tags the entry with &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; and includes the date it was added. I manage a single tasks file that I navigate exlusively with the agenda view, beyond basic maintenance of the org file. Automatically adding an &amp;#34;Inbox&amp;#34; tag lets me quickly capture thoughts without worrying about sorting them. Whenever I start working, I query my &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; tag, sort the item in there with the relevant tags I use, and remove the &lt;code class=&#34;verbatim&#34;&gt;Inbox&lt;/code&gt; tag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/emacs-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/emacs-config/</guid>
+      <description>&lt;h1 class=&#34;title&#34;&gt;Emacs: Literate Config&lt;/h1&gt;&#xA;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Preamble&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.&lt;/li&gt;&#xA;&lt;li&gt;Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&amp;#39;s a north star.&lt;/li&gt;&#xA;&lt;li&gt;Config your own config. Now that I&amp;#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&amp;#39;m very aware of why the documentation suggests not copying others&amp;#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Both the configuration and the documentation is a work in progress.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;A guy on the Internet. I make music and sometimes write things down.&lt;/p&gt;&#xA;&lt;p&gt;Interests include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Electronic music.&lt;/li&gt;&#xA;&lt;li&gt;GNU/Linux.&lt;/li&gt;&#xA;&lt;li&gt;Emacs.&lt;/li&gt;&#xA;&lt;li&gt;Critical/media theory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Follow me on &lt;a href=&#34;https://outputerror.bandcamp.com&#34;&gt;Bandcamp&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
