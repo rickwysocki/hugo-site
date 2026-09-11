@@ -30,5 +30,9 @@
     <loc>//localhost:1313/about/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/test-post/</loc>
+  </url><url>
+    <loc>//localhost:1313/posts/prepping-courses-with-org-mode/</loc>
   </url>
 </urlset>

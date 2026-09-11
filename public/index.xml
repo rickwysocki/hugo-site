@@ -6,8 +6,15 @@
     <description>Recent content on Output Error</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 18:41:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 12:50:00 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un-Learning the LMS: Prepping Courses with Org Mode</title>
+      <link>//localhost:1313/posts/prepping-courses-with-org-mode/</link>
+      <pubDate>Fri, 11 Sep 2026 12:50:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/prepping-courses-with-org-mode/</guid>
+      <description>How I use Org Mode for better course materials, better pedagogy, and more agency in the college classroom.</description>
+    </item>
     <item>
       <title>Tracking Reading in Emacs</title>
       <link>//localhost:1313/posts/tracking-reading-in-emacs/</link>
@@ -49,6 +56,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;A guy on the Internet. I make music and sometimes write things down.&lt;/p&gt;&#xA;&lt;p&gt;Interests include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Electronic music.&lt;/li&gt;&#xA;&lt;li&gt;GNU/Linux.&lt;/li&gt;&#xA;&lt;li&gt;Emacs.&lt;/li&gt;&#xA;&lt;li&gt;Critical/media theory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Follow me on &lt;a href=&#34;https://outputerror.bandcamp.com&#34;&gt;Bandcamp&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test post</title>
+      <link>//localhost:1313/posts/test-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/test-post/</guid>
+      <description>&lt;p&gt;This is a test post of my Mac hugo config.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
