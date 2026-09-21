@@ -1,17 +1,17 @@
-# Created 2026-07-22 Wed 16:15
+# Created 2026-09-21 Mon 12:42
 #+title: Emacs: Literate Config
 #+author: Rick Wysocki
 #+property: header-args :tangle "~/.emacs.d/init.el"
 #+export_file_name: ~/Blog/content/emacs-config.org
 #+tags: emacs
 * Preamble
-This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+This document 0:17:55 0:17:51 cincludes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
 
 - Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.
 - Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it's a north star.
 - Config your own config. Now that I'm a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I'm very aware of why the documentation suggests not copying others' config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.
 
-Both the configuration and the documentation is a work in progress.
+Both the configuration and the documentation is a work in progress. the linux versions suck just as much 
 * Setup and load custom.el
 
 This block puts any customization options created by Emacs into a =custom.el= file. This is helpful, as it keeps the =init.el= file clean.
@@ -29,6 +29,28 @@ This block declares the package archives for my Emacs configuration.
   ;; Add Melpa package archives
   (require 'package)
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+#+end_src
+* Load default theme and configure custom headings
+
+This block loads my preferred default theme. Additionally, I configure some headings beforehand. I will likely want to break this into separate blocks if this gets /any/ more complicated.
+
+#+begin_src emacs-lisp
+  (setq modus-themes-headings
+        '((1 . (variable-pitch 1.5))
+          (2 . (1.3))
+          (agenda-date . (1.3))
+          (agenda-structure . (variable-pitch light 1.8))
+          (t . (1.1))))
+  (setq modus-themes-mixed-fonts t)
+  (setq modus-themes-common-palette-overrides
+        '((bg-mode-line-active bg-cyan-intense)
+          (fg-mode-line-active fg-main)
+          (border-mode-line-active blue-intense)
+          (fg-heading-1 blue-warmer)
+          (fg-heading-2 yellow-cooler)
+          (fg-heading-3 cyan-cooler)))
+  ;; Load theme.
+  (load-theme 'modus-operandi)
 #+end_src
 * Install Fontaine package and configure fonts
 
@@ -132,14 +154,6 @@ This block installs and configures the Fontaine package and sets up my fonts. Cu
               (variable-pitch-mode 1) ; Enable variable pitch for Org text
               (set-face-attribute 'org-block nil :inherit 'fixed-pitch)))
 #+end_src
-* Load default theme
-
-This block loads my preferred default theme.
-
-#+begin_src emacs-lisp
-  ;; Load theme.
-  (load-theme 'modus-operandi)
-#+end_src
 * Disable scroll-bar-mode, menu-bar-mode, and tool-bar-mode
 
 This block disables the scroll bar, menu bar, and tool bar in Emacs, making the Emacs cleaner and removing elements I don't use.
@@ -149,6 +163,10 @@ This block disables the scroll bar, menu bar, and tool bar in Emacs, making the 
   (scroll-bar-mode -1)
   (tool-bar-mode -1)
   (menu-bar-mode -1)
+#+end_src
+* Enable ~global-hl-line-mode~
+#+begin_src emacs-lisp
+  (setq global-hl-line-mode t)
 #+end_src
 * Ensure and configure Emacs dashboard
 This block installs and configures my Emacs dashboard that launches at startup.
@@ -313,7 +331,9 @@ This block ensures that the Magit package is installed.
     :ensure t)
 #+end_src
 * Configure Elfeed
-This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.
+This block ensures that Elfeed is installed and includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.
+
+Additionally, I call on the built-in =elfeed-show-update-hook= to ensure that elfeed entries open in =visual-line-mode=.
 #+begin_src emacs-lisp
   ;; Ensure elfeed.
   (use-package elfeed
@@ -324,6 +344,8 @@ This block ensures that Elfeed is installed. Additionally, it includes the list 
             "https://9to5linux.com/feed"
             "pluralistic.net/feed"))
     (setq-default elfeed-search-filter "@1-week-ago +unread"))
+
+  (add-hook 'elfeed-show-update-hook 'visual-line-mode)
 #+end_src
 * Declare agenda file
 This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.
@@ -338,7 +360,7 @@ This block (the most important in my configuration) creates a few simple but use
 - **Journal capture**: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dictates, everything goes into one file that can be sorted as necessary.
 - **Blog capture:** This capture blog posts drafts. It relies on the =org-hugo-new-subtree-capture-template= function. (See below.)
 - **Book capture:** This captures books into my reading list file.
-
+- *Opening Question*: This is a simple template that allows me to capture quick "icebreaker" type questions I ask my students before each class.
 Readers may also be interested in the [[/emacs-capture-templates][template files]] that each of these rely on.
 
 #+begin_src emacs-lisp
@@ -351,6 +373,9 @@ Readers may also be interested in the [[/emacs-capture-templates][template files
         ("j" "Journal entry" entry
            (file+olp+datetree "~/Org/journal.org")
            (file "~/Org/templates/tpl-journal.org"))
+        ("r" "103 Teaching Notes" entry
+           (file+olp+datetree "~/Org/2026/fall/eng-103/teaching-notes.org")
+           (file "~/Org/templates/tpl-journal.org"))
         ("h"                ;`org-capture' binding + h
          "Hugo post"
          entry
@@ -361,7 +386,10 @@ Readers may also be interested in the [[/emacs-capture-templates][template files
          (function org-hugo-new-subtree-post-capture-template))
         ("b" "Book to read" entry       
          (file "~/Org/books.org")
-         (file "~/Org/templates/tpl-book.org") :empty-lines-before 1)))
+         (file "~/Org/templates/tpl-book.org") :empty-lines-before 1)
+        ("q" "Teaching questions" checkitem
+         (file "~/Org/teaching-questions.org")
+         (file "~/Org/templates/tpl-checkbox.org"))))
 #+end_src
 * Configure custom keybindings
 This block declares my custom keybindings.
@@ -434,7 +462,9 @@ This ensures a simple package from Prot that adds padding to buffers.
     (spacious-padding-mode 1))
 #+end_src
 * Ensure =org-roam=
-This block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to [[https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/][System Crafters]] for the fix for warnings and functionality issues post-install. (See the comment in the source block.)
+The first block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to [[https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/][System Crafters]] for the fix for warnings and functionality issues post-install. (See the comment in the source block.)
+
+Additionally, the second block ensures that tags are included in buffer completions, making it easier to parse the returned notes and possible to search by tag.
 
 #+begin_src emacs-lisp
   ;; Ensure and configure org-roam.
@@ -445,6 +475,12 @@ This block ensures that org-roam is installed. This package manages my research 
     :custom
     (org-roam-directory "~/Org/Org-roam/")
     (setq find-file-visit-truename t))
+
+  (setq org-roam-node-display-template
+      (concat "${title:*} "
+              (propertize "${tags:10}" 'face 'org-tag)))
+
+  (org-roam-db-autosync-mode)
 #+end_src
 * Setup =abbrev-mode=
 I use =abbrev-mode= for short-form text expansion that doesn't warrant a more complex =yasnippet= template.
@@ -452,7 +488,8 @@ I use =abbrev-mode= for short-form text expansion that doesn't warrant a more co
   (define-abbrev-table 'org-mode-abbrev-table
     '(
       ("krtp" "/Kairos: A Journal of Rhetoric, Technology, and Pedagogy/")
-          ("disp" "/Disputatio/")))
+          ("disp" "/Disputatio/")
+            ("zk" "Zettelkasten")))
 #+end_src
 * Configure org-mode citation system
 This block configures the citation system I used for writing in Emacs. I will eventually explain this system in more detail, but the brief explanation is that I manage my academic sources and citations in Zotero, which is configured to automatically updated the .bib file declared in the source block. This allows me to use =org-cite= within Emacs to select citations from my citation database.
@@ -484,4 +521,144 @@ This block installs =pdf-tools=, which allows me to use Emacs as my primary PDF 
 This block enables a behavior that blocks the user from completing a task with unchecked checkboxes.
 #+begin_src emacs-lisp
   (setq org-enforce-todo-checkbox-dependencies t)
+#+end_src
+* Ensure and configure =writeroom-mode=
+This block installs and configures the =writeroom-mode= package for a better writing environment in Emacs.
+#+begin_src emacs-lisp
+  (use-package writeroom-mode
+    :ensure t)
+#+end_src
+* Ensure =wc-mode=
+This block ensures that =wc-mode= is installed, which provides a wordcount in the modeline.
+#+begin_src emacs-lisp
+  (use-package wc-mode
+    :ensure t
+    :config
+    (setq wc-modeline-format "WC: S: %W | C: %w | G: %gwo | T: %tw"))
+
+  (add-hook 'org-mode-hook 'wc-mode)
+#+end_src
+* Enable ~dired-hide-details-mode~
+#+begin_src emacs-lisp
+  (add-hook 'dired-mode-hook (lambda () (dired-hide-details-mode 1)))
+#+end_src
+* Ensure and configure ~tmr~ package
+#+begin_src emacs-lisp
+  (use-package tmr
+    :ensure t)
+#+end_src
+* ~org-agenda-custom-commands~
+#+begin_src emacs-lisp
+  (add-to-list 'org-agenda-custom-commands
+                 '("u" "Unestimated tasks" tags-todo "EFFORT=\"\""))
+#+end_src
+* Custom Functions
+The following are functions I've written to to simplify various tasks.
+
+#+begin_src emacs-lisp
+      (defun rick-insert-default-directory ()
+      "Inserts default-directory at cursor."
+      (interactive)
+      (insert default-directory)
+      )
+
+
+    (defun rick-extract-to-newfile ()
+      "Cuts the active subtree and queries the user for a new location to paste it."
+      (interactive)
+      (org-cut-subtree)
+      (find-file (read-file-name "Filename: "))
+      (if (/= (buffer-size) 0)
+          (progn (point-max) (newline 2) (yank))
+        (yank)))
+
+    (defun rick-encapusulate-quote-region ()
+      "Encapsulates the currently marked region in a quote block."
+      (interactive)
+      (kill-region (region-beginning) (region-end))
+      (org-insert-structure-template "quote")
+      (org-yank)
+      (newline)
+      )
+
+    (defun rick-encapusulate-quote-paragraph ()
+      "Prompts the user for a number of paragraphs and encapulates them in a quote block."
+      (interactive)
+      (let ((n (read-number "Number: ")))
+        (kill-paragraph n))
+      (org-insert-structure-template "quote")
+      (org-yank)
+      (newline))
+
+    (defun rick-text-expander ()
+      "Queries a user for the content of a heading in a text expansion file and copied it to the kill-ring."
+      (interactive)
+      (switch-to-buffer "text-expansions.org")
+      (consult-outline)
+      (org-mark-subtree)
+      (next-line)
+      (kill-ring-save (region-beginning) (region-end)))
+
+    ;; The following functions are called by a progam I wrote for a very specialized editorial task. They won't be useful to anyone besides me.
+
+  (defun rick-format-creator-string ()
+    "Formats a DC.creator string based on user input."
+    (format "<meta name=\"DC.creator\" content=\"%s\">\n" (read-string "Name: ")))
+
+  (defun author-count (number)
+    "Prompts user for number of authors"
+    (let (mylist)
+      (dotimes (i number)
+        (push (rick-format-creator-string) mylist))
+      (mapconcat 'identity (nreverse mylist))))
+
+  (defun rick-check-for-multiple-authors (number)
+    "Checks whether value of rick-count-authors function and inserts et-al if greater than 1."
+    (if (> number 1)
+        (format "-et-al")))
+#+end_src
+* Configure publishing projects
+#+begin_src emacs-lisp
+  (require 'ox-publish)
+  (setq org-publish-project-alist
+        '(
+          ;; 103 course publishing
+          ("103-orgfiles"
+            :base-directory "~/Org/2026/fall/eng-103/"
+            :base-extension "org"
+            :recursive t
+            :exclude ".*"
+            :include ("~/Org/2026/fall/eng-103/103-slides.org") ;; list files to include when publishing.
+            :publishing-function org-html-publish-to-html
+            :publishing-directory "~/Github/rhetoric-and-writing")
+          ("103-images"
+           :base-directory "~/Org/2026/fall/eng-103/images/"
+           :base-extension "jpeg\\|jpg\\|png"
+           :publishing-function org-publish-attachment
+           :publishing-directory "~/Github/rhetoric-and-writing/images/")
+          ("103-site" :components ("103-orgfiles" "103-images"))
+
+          ;; 213 course publishing
+          ("213-orgfiles"
+            :base-directory "~/Org/2026/fall/eng-213/"
+            :base-extension "org"
+            :recursive t
+            :exclude ".*"
+            :include ("~/Org/2026/fall/eng-213/213-slides.org") ;; list files to include when publishing.
+            :publishing-function org-html-publish-to-html
+            :publishing-directory "~/Github/digital-literacies")
+          ("213-notes"
+            :base-directory "~/Org/2026/fall/eng-213/"
+            :base-extension "org"
+            :recursive t
+            :exclude ".*"
+            :include ("~/Org/2026/fall/eng-213/213-notes.org") ;; list files to include when publishing.
+            :publishing-function org-html-publish-to-html
+            :publishing-directory "~/Github/digital-literacies")
+          ("213-images"
+           :base-directory "~/Org/2026/fall/eng-213/images/"
+           :base-extension "jpeg\\|jpg\\|png"
+           :publishing-function org-publish-attachment
+           :publishing-directory "~/Github/digital-literacies/images/")
+          ("213-site" :components ("213-orgfiles" "213-images" "213-notes"))))
 #+end_src

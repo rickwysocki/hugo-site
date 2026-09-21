@@ -6,9 +6,8 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
-Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
-" />
+<meta name="description" content="Emacs: Literate Config Preamble This document 0:17:55 0:17:51 cincludes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress. the linux versions suck just as much " />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -80,9 +79,8 @@ Stay minimal. I generally try to reduce digital claustrophobia by, whenever poss
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="">
-<meta property="og:description" content="Emacs: Literate Config Preamble This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
-Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress.
-" />
+<meta property="og:description" content="Emacs: Literate Config Preamble This document 0:17:55 0:17:51 cincludes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:
+Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc. Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star. Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way. Both the configuration and the documentation is a work in progress. the linux versions suck just as much " />
 <meta property="og:url" content="//localhost:1313/emacs-config/" />
 <meta property="og:site_name" content="Output Error" />
 
@@ -193,13 +191,13 @@ Stay minimal. I generally try to reduce digital claustrophobia by, whenever poss
 Preamble
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
-<p>This document includes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:</p>
+<p>This document 0:17:55 0:17:51 cincludes the source blocks and documentation for my Emacs configuration file. My Emacs philosophy adheres to the following loose guidelines, which are present throughout my configuration:</p>
 <ul>
 <li>Stay minimal. I generally try to reduce digital claustrophobia by, whenever possible, choosing the option that leads to fewer files, fewer lines of code, fewer (unnecessary) options, etc.</li>
 <li>Embrace default options. There is more functionality than I could ever need (or learn) built into Emacs. With that in mind, I try to make configuration decisions that err toward using built-in options that ship with Emacs. I break this convention frequently, but it&#39;s a north star.</li>
 <li>Config your own config. Now that I&#39;m a few years into my Emacs journey, with lots of periods where my configuration has gotten totally out of control, I&#39;m very aware of why the documentation suggests not copying others&#39; config files. With some exceptions, I try to write my own configuration blocks. When I have to break this guideline, I (at least) type them in rather than copy them over. I learn more that way.</li>
 </ul>
-<p>Both the configuration and the documentation is a work in progress.</p>
+<p>Both the configuration and the documentation is a work in progress. the linux versions suck just as much </p>
 </div>
 </div>
 <div id="outline-container-headline-2" class="outline-2">
@@ -232,9 +230,36 @@ This block declares the package archives for my Emacs configuration.</p>
 </div>
 <div id="outline-container-headline-4" class="outline-2">
 <h2 id="headline-4">
-Install Fontaine package and configure fonts
+Load default theme and configure custom headings
 </h2>
 <div id="outline-text-headline-4" class="outline-text-2">
+<p>
+This block loads my preferred default theme. Additionally, I configure some headings beforehand. I will likely want to break this into separate blocks if this gets <em>any</em> more complicated.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">modus-themes-headings</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="mi">1</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="mf">1.5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="mi">2</span> <span class="o">.</span> <span class="p">(</span><span class="mf">1.3</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">agenda-date</span> <span class="o">.</span> <span class="p">(</span><span class="mf">1.3</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">agenda-structure</span> <span class="o">.</span> <span class="p">(</span><span class="nv">variable-pitch</span> <span class="nv">light</span> <span class="mf">1.8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="no">t</span> <span class="o">.</span> <span class="p">(</span><span class="mf">1.1</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">modus-themes-mixed-fonts</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">modus-themes-common-palette-overrides</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">((</span><span class="nv">bg-mode-line-active</span> <span class="nv">bg-cyan-intense</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">fg-mode-line-active</span> <span class="nv">fg-main</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">border-mode-line-active</span> <span class="nv">blue-intense</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">fg-heading-1</span> <span class="nv">blue-warmer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">fg-heading-2</span> <span class="nv">yellow-cooler</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nv">fg-heading-3</span> <span class="nv">cyan-cooler</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">;; Load theme.</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;modus-operandi</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+Install Fontaine package and configure fonts
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
 <p>
 This block installs and configures the Fontaine package and sets up my fonts. Currently, everything here is shamelessly ripped from Prot&#39;s suggested config and needs to be edited for my own purposes. I am also unsure whether the final block is necessary, and need to test it when removed.</p>
 <div class="src src-emacs-lisp">
@@ -337,19 +362,6 @@ This block installs and configures the Fontaine package and sets up my fonts. Cu
 </div>
 </div>
 </div>
-<div id="outline-container-headline-5" class="outline-2">
-<h2 id="headline-5">
-Load default theme
-</h2>
-<div id="outline-text-headline-5" class="outline-text-2">
-<p>
-This block loads my preferred default theme.</p>
-<div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Load theme.</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">load-theme</span> <span class="ss">&#39;modus-operandi</span><span class="p">)</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
 <div id="outline-container-headline-6" class="outline-2">
 <h2 id="headline-6">
 Disable scroll-bar-mode, menu-bar-mode, and tool-bar-mode
@@ -367,9 +379,19 @@ This block disables the scroll bar, menu bar, and tool bar in Emacs, making the 
 </div>
 <div id="outline-container-headline-7" class="outline-2">
 <h2 id="headline-7">
-Ensure and configure Emacs dashboard
+Enable <code>global-hl-line-mode</code>
 </h2>
 <div id="outline-text-headline-7" class="outline-text-2">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">global-hl-line-mode</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Ensure and configure Emacs dashboard
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
 <p>This block installs and configures my Emacs dashboard that launches at startup.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and configure Emacs dashboard.</span>
@@ -392,11 +414,11 @@ Ensure and configure Emacs dashboard
 </div>
 </div>
 </div>
-<div id="outline-container-headline-8" class="outline-2">
-<h2 id="headline-8">
+<div id="outline-container-headline-9" class="outline-2">
+<h2 id="headline-9">
 Configure Nerd Font Icons
 </h2>
-<div id="outline-text-headline-8" class="outline-text-2">
+<div id="outline-text-headline-9" class="outline-text-2">
 <p>This block installs and configures the <code class="verbatim">nerd-icons</code> package, which is used in other elements of my configuration.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">nerd-icons</span>
@@ -409,11 +431,11 @@ Configure Nerd Font Icons
 </div>
 </div>
 </div>
-<div id="outline-container-headline-9" class="outline-2">
-<h2 id="headline-9">
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
 Ensure and Configure <code class="verbatim">nerd-icons-dired</code>
 </h2>
-<div id="outline-text-headline-9" class="outline-text-2">
+<div id="outline-text-headline-10" class="outline-text-2">
 <p>This block installs and configures <code class="verbatim">nerd-icons-dired</code> to apply icons when in dired-mode.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">nerd-icons-dired</span>
@@ -423,11 +445,11 @@ Ensure and Configure <code class="verbatim">nerd-icons-dired</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-10" class="outline-2">
-<h2 id="headline-10">
+<div id="outline-container-headline-11" class="outline-2">
+<h2 id="headline-11">
 Enable savehist-mode
 </h2>
-<div id="outline-text-headline-10" class="outline-text-2">
+<div id="outline-text-headline-11" class="outline-text-2">
 <p>This block enables history to be saved across Emacs sessions.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Enable savehist-mode.</span>
@@ -435,22 +457,22 @@ Enable savehist-mode
 </div>
 </div>
 </div>
-<div id="outline-container-headline-11" class="outline-2">
-<h2 id="headline-11">
+<div id="outline-container-headline-12" class="outline-2">
+<h2 id="headline-12">
 Configure <code class="verbatim">org-log-done</code>
 </h2>
-<div id="outline-text-headline-11" class="outline-text-2">
+<div id="outline-text-headline-12" class="outline-text-2">
 <p>This block ensures that a time stamp is set when a todo is completed. This is necessary to automatically apply a date for blog posts. (See information on <code class="verbatim">ox-hugo</code> below). It is also necessary for the lo-fi book tracking system I use within Emacs.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-log-done</span> <span class="ss">&#39;time</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-12" class="outline-2">
-<h2 id="headline-12">
+<div id="outline-container-headline-13" class="outline-2">
+<h2 id="headline-13">
 Install and configure <code class="verbatim">yasnippet</code>
 </h2>
-<div id="outline-text-headline-12" class="outline-text-2">
+<div id="outline-text-headline-13" class="outline-text-2">
 <p>This block ensures and configures yasnippet. While I tried (briefly) to write some simple document templating functions in basic Elisp, it became too annoying, and I reverted back to <code class="verbatim">yasnippet</code>.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">yasnippet</span>
@@ -462,11 +484,11 @@ Install and configure <code class="verbatim">yasnippet</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-13" class="outline-2">
-<h2 id="headline-13">
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
 Install Dokuwiki backend
 </h2>
-<div id="outline-text-headline-13" class="outline-text-2">
+<div id="outline-text-headline-14" class="outline-text-2">
 <p>This block installs a backend for Dokuwiki. While I am not a fan of the DokuWiki syntax, I nevertheless have to use it for certain work requirements. This backend allows me to write in Emacs org-mode and simply export that content into DokuWiki syntax.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-wk</span>
@@ -474,11 +496,11 @@ Install Dokuwiki backend
 </div>
 </div>
 </div>
-<div id="outline-container-headline-14" class="outline-2">
-<h2 id="headline-14">
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
 Configure completion packages.
 </h2>
-<div id="outline-text-headline-14" class="outline-text-2">
+<div id="outline-text-headline-15" class="outline-text-2">
 <p>This block ensures and configures the various packages I employ related to completion. These include:</p>
 <ul>
 <li>Vertico</li>
@@ -566,11 +588,11 @@ Configure completion packages.
 </div>
 </div>
 </div>
-<div id="outline-container-headline-15" class="outline-2">
-<h2 id="headline-15">
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
 Configure Magit
 </h2>
-<div id="outline-text-headline-15" class="outline-text-2">
+<div id="outline-text-headline-16" class="outline-text-2">
 <p>
 This block ensures that the Magit package is installed.</p>
 <div class="src src-emacs-lisp">
@@ -580,12 +602,14 @@ This block ensures that the Magit package is installed.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-16" class="outline-2">
-<h2 id="headline-16">
+<div id="outline-container-headline-17" class="outline-2">
+<h2 id="headline-17">
 Configure Elfeed
 </h2>
-<div id="outline-text-headline-16" class="outline-text-2">
-<p>This block ensures that Elfeed is installed. Additionally, it includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.</p>
+<div id="outline-text-headline-17" class="outline-text-2">
+<p>This block ensures that Elfeed is installed and includes the list of RSS feeds indexed by Elfeed. I have not yet moved all my feeds over since switching to a literate config, and also need to move over my tagging system to make reading my feeds more manageable.</p>
+<p>
+Additionally, I call on the built-in <code class="verbatim">elfeed-show-update-hook</code> to ensure that elfeed entries open in <code class="verbatim">visual-line-mode</code>.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure elfeed.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">elfeed</span>
@@ -595,15 +619,17 @@ Configure Elfeed
 </span></span><span class="line"><span class="cl">          <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;theintercept.com/feed&#34;</span>
 </span></span><span class="line"><span class="cl">            <span class="s">&#34;https://9to5linux.com/feed&#34;</span>
 </span></span><span class="line"><span class="cl">            <span class="s">&#34;pluralistic.net/feed&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">elfeed-search-filter</span> <span class="s">&#34;@1-week-ago +unread&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">elfeed-search-filter</span> <span class="s">&#34;@1-week-ago +unread&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;elfeed-show-update-hook</span> <span class="ss">&#39;visual-line-mode</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-17" class="outline-2">
-<h2 id="headline-17">
+<div id="outline-container-headline-18" class="outline-2">
+<h2 id="headline-18">
 Declare agenda file
 </h2>
-<div id="outline-text-headline-17" class="outline-text-2">
+<div id="outline-text-headline-18" class="outline-text-2">
 <p>This block declares the single agenda file I used for task and project management. I prefer using agenda-view to filter and sort the items in this file rather than having several files for different contexts.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Declare agenda file.</span>
@@ -611,17 +637,18 @@ Declare agenda file
 </div>
 </div>
 </div>
-<div id="outline-container-headline-18" class="outline-2">
-<h2 id="headline-18">
+<div id="outline-container-headline-19" class="outline-2">
+<h2 id="headline-19">
 Set up capture templates
 </h2>
-<div id="outline-text-headline-18" class="outline-text-2">
+<div id="outline-text-headline-19" class="outline-text-2">
 <p>This block (the most important in my configuration) creates a few simple but useful capture templates:</p>
 <ul>
 <li><strong><strong>Task capture</strong></strong>: This captures items into my tasks.org file.</li>
 <li><strong><strong>Journal capture</strong></strong>: This captures entries into a multiyear journal I maintain in Emacs using a useful datetree heading structure. As my Emacs philosophy dictates, everything goes into one file that can be sorted as necessary.</li>
 <li><strong><strong>Blog capture:</strong></strong> This capture blog posts drafts. It relies on the <code class="verbatim">org-hugo-new-subtree-capture-template</code> function. (See below.)</li>
 <li><strong><strong>Book capture:</strong></strong> This captures books into my reading list file.</li>
+<li><strong>Opening Question</strong>: This is a simple template that allows me to capture quick &#34;icebreaker&#34; type questions I ask my students before each class.</li>
 </ul>
 <p>Readers may also be interested in the <a href="/emacs-capture-templates">template files</a> that each of these rely on.</p>
 <div class="src src-emacs-lisp">
@@ -633,6 +660,9 @@ Set up capture templates
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;j&#34;</span> <span class="s">&#34;Journal entry&#34;</span> <span class="nv">entry</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="s">&#34;~/Org/journal.org&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-journal.org&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;r&#34;</span> <span class="s">&#34;103 Teaching Notes&#34;</span> <span class="nv">entry</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file+olp+datetree</span> <span class="s">&#34;~/Org/2026/fall/eng-103/teaching-notes.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-journal.org&#34;</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;h&#34;</span>                <span class="c1">;`org-capture&#39; binding + h</span>
 </span></span><span class="line"><span class="cl">         <span class="s">&#34;Hugo post&#34;</span>
 </span></span><span class="line"><span class="cl">         <span class="nv">entry</span>
@@ -643,15 +673,18 @@ Set up capture templates
 </span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nb">function</span> <span class="nv">org-hugo-new-subtree-post-capture-template</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;b&#34;</span> <span class="s">&#34;Book to read&#34;</span> <span class="nv">entry</span>       
 </span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/books.org&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-book.org&#34;</span><span class="p">)</span> <span class="nb">:empty-lines-before</span> <span class="mi">1</span><span class="p">)))</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-book.org&#34;</span><span class="p">)</span> <span class="nb">:empty-lines-before</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="s">&#34;q&#34;</span> <span class="s">&#34;Teaching questions&#34;</span> <span class="nv">checkitem</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/teaching-questions.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="p">(</span><span class="nv">file</span> <span class="s">&#34;~/Org/templates/tpl-checkbox.org&#34;</span><span class="p">))))</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-19" class="outline-2">
-<h2 id="headline-19">
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
 Configure custom keybindings
 </h2>
-<div id="outline-text-headline-19" class="outline-text-2">
+<div id="outline-text-headline-20" class="outline-text-2">
 <p>This block declares my custom keybindings.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Custom keybindings.</span>
@@ -674,11 +707,11 @@ Configure custom keybindings
 </div>
 </div>
 </div>
-<div id="outline-container-headline-20" class="outline-2">
-<h2 id="headline-20">
+<div id="outline-container-headline-21" class="outline-2">
+<h2 id="headline-21">
 Install and configure <code class="verbatim">ox-hugo</code>
 </h2>
-<div id="outline-text-headline-20" class="outline-text-2">
+<div id="outline-text-headline-21" class="outline-text-2">
 <p>This block ensures that ox-hugo is installed and cofigured, as described in the <a href="https://ox-hugo.scripter.co/doc/installation/">ox-hugo documentation</a>.</p>
 <p>
 <strong><strong>NOTE: When I first installed ox-hugo, Emacs displayed a number of warnings about depreciated elements. However, when I restarted Emacs, no warnings were displayed. I am currently unsure whether the functionality of <code class="verbatim">ox-hugo</code> is compromised, but everything is working fine so far.</strong></strong></p>
@@ -691,11 +724,11 @@ Install and configure <code class="verbatim">ox-hugo</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-21" class="outline-2">
-<h2 id="headline-21">
+<div id="outline-container-headline-22" class="outline-2">
+<h2 id="headline-22">
 Configure function for blog post capture
 </h2>
-<div id="outline-text-headline-21" class="outline-text-2">
+<div id="outline-text-headline-22" class="outline-text-2">
 <p>The following is a function created by the author of <code class="verbatim">ox-hugo</code> for capturing blog posts.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Hugo capture</span>
@@ -719,22 +752,22 @@ Configure function for blog post capture
 </div>
 </div>
 </div>
-<div id="outline-container-headline-22" class="outline-2">
-<h2 id="headline-22">
+<div id="outline-container-headline-23" class="outline-2">
+<h2 id="headline-23">
 Configure export backends
 </h2>
-<div id="outline-text-headline-22" class="outline-text-2">
+<div id="outline-text-headline-23" class="outline-text-2">
 <p>This block configures extra backends for exporting Org files. Currently, I only require the org backend here, which I use to export this file to my website directory to share my configuration file.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;ox-org</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-23" class="outline-2">
-<h2 id="headline-23">
+<div id="outline-container-headline-24" class="outline-2">
+<h2 id="headline-24">
 Ensure and enable <code class="verbatim">spacious-padding</code>
 </h2>
-<div id="outline-text-headline-23" class="outline-text-2">
+<div id="outline-text-headline-24" class="outline-text-2">
 <p>This ensures a simple package from Prot that adds padding to buffers.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and enable spacious-padding.</span>
@@ -745,12 +778,14 @@ Ensure and enable <code class="verbatim">spacious-padding</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-24" class="outline-2">
-<h2 id="headline-24">
+<div id="outline-container-headline-25" class="outline-2">
+<h2 id="headline-25">
 Ensure <code class="verbatim">org-roam</code>
 </h2>
-<div id="outline-text-headline-24" class="outline-text-2">
-<p>This block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to <a href="https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/">System Crafters</a> for the fix for warnings and functionality issues post-install. (See the comment in the source block.)</p>
+<div id="outline-text-headline-25" class="outline-text-2">
+<p>The first block ensures that org-roam is installed. This package manages my research and note-taking in Emacs. Thanks to <a href="https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/">System Crafters</a> for the fix for warnings and functionality issues post-install. (See the comment in the source block.)</p>
+<p>
+Additionally, the second block ensures that tags are included in buffer completions, making it easier to parse the returned notes and possible to search by tag.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="c1">;; Ensure and configure org-roam.</span>
 </span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">org-roam</span>
@@ -759,51 +794,58 @@ Ensure <code class="verbatim">org-roam</code>
 </span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">:custom</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nv">org-roam-directory</span> <span class="s">&#34;~/Org/Org-roam/&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">find-file-visit-truename</span> <span class="no">t</span><span class="p">))</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-25" class="outline-2">
-<h2 id="headline-25">
-Setup <code class="verbatim">abbrev-mode</code>
-</h2>
-<div id="outline-text-headline-25" class="outline-text-2">
-<p>I use <code class="verbatim">abbrev-mode</code> for short-form text expansion that doesn&#39;t warrant a more complex <code class="verbatim">yasnippet</code> template.</p>
-<div class="src src-emacs-lisp">
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">define-abbrev-table</span> <span class="ss">&#39;org-mode-abbrev-table</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&#39;</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;krtp&#34;</span> <span class="s">&#34;/Kairos: A Journal of Rhetoric, Technology, and Pedagogy/&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;disp&#34;</span> <span class="s">&#34;/Disputatio/&#34;</span><span class="p">)))</span></span></span></code></pre></div>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">find-file-visit-truename</span> <span class="no">t</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-roam-node-display-template</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">concat</span> <span class="s">&#34;${title:*} &#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="nf">propertize</span> <span class="s">&#34;${tags:10}&#34;</span> <span class="ss">&#39;face</span> <span class="ss">&#39;org-tag</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">org-roam-db-autosync-mode</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
 <div id="outline-container-headline-26" class="outline-2">
 <h2 id="headline-26">
-Configure org-mode citation system
+Setup <code class="verbatim">abbrev-mode</code>
 </h2>
 <div id="outline-text-headline-26" class="outline-text-2">
+<p>I use <code class="verbatim">abbrev-mode</code> for short-form text expansion that doesn&#39;t warrant a more complex <code class="verbatim">yasnippet</code> template.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">define-abbrev-table</span> <span class="ss">&#39;org-mode-abbrev-table</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&#39;</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="s">&#34;krtp&#34;</span> <span class="s">&#34;/Kairos: A Journal of Rhetoric, Technology, and Pedagogy/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;disp&#34;</span> <span class="s">&#34;/Disputatio/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="s">&#34;zk&#34;</span> <span class="s">&#34;Zettelkasten&#34;</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-2">
+<h2 id="headline-27">
+Configure org-mode citation system
+</h2>
+<div id="outline-text-headline-27" class="outline-text-2">
 <p>This block configures the citation system I used for writing in Emacs. I will eventually explain this system in more detail, but the brief explanation is that I manage my academic sources and citations in Zotero, which is configured to automatically updated the .bib file declared in the source block. This allows me to use <code class="verbatim">org-cite</code> within Emacs to select citations from my citation database.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-cite-global-bibliography</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;~/Org/Ref/bibliography.bib&#34;</span><span class="p">))</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-27" class="outline-2">
-<h2 id="headline-27">
+<div id="outline-container-headline-28" class="outline-2">
+<h2 id="headline-28">
 Enable <code class="verbatim">org-indent-mode</code>
 </h2>
-<div id="outline-text-headline-27" class="outline-text-2">
+<div id="outline-text-headline-28" class="outline-text-2">
 <p>The following block indents subheadings in Org files to enhance readability.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-startup-indented</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-28" class="outline-2">
-<h2 id="headline-28">
+<div id="outline-container-headline-29" class="outline-2">
+<h2 id="headline-29">
 Ensure and configure <code class="verbatim">emms</code>
 </h2>
-<div id="outline-text-headline-28" class="outline-text-2">
+<div id="outline-text-headline-29" class="outline-text-2">
 <p>This block installs and configures <code class="verbatim">emms</code>, which allows me to play my music library within Emacs.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">emms</span>
@@ -815,11 +857,11 @@ Ensure and configure <code class="verbatim">emms</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-29" class="outline-2">
-<h2 id="headline-29">
+<div id="outline-container-headline-30" class="outline-2">
+<h2 id="headline-30">
 Ensure <code class="verbatim">pdf-tools</code>
 </h2>
-<div id="outline-text-headline-29" class="outline-text-2">
+<div id="outline-text-headline-30" class="outline-text-2">
 <p>This block installs <code class="verbatim">pdf-tools</code>, which allows me to use Emacs as my primary PDF reader.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">pdf-tools</span>
@@ -827,14 +869,195 @@ Ensure <code class="verbatim">pdf-tools</code>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-30" class="outline-2">
-<h2 id="headline-30">
+<div id="outline-container-headline-31" class="outline-2">
+<h2 id="headline-31">
 Set <code class="verbatim">org-enforce-todo-checkbox-dependencies</code> to t
 </h2>
-<div id="outline-text-headline-30" class="outline-text-2">
+<div id="outline-text-headline-31" class="outline-text-2">
 <p>This block enables a behavior that blocks the user from completing a task with unchecked checkboxes.</p>
 <div class="src src-emacs-lisp">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-enforce-todo-checkbox-dependencies</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-32" class="outline-2">
+<h2 id="headline-32">
+Ensure and configure <code class="verbatim">writeroom-mode</code>
+</h2>
+<div id="outline-text-headline-32" class="outline-text-2">
+<p>This block installs and configures the <code class="verbatim">writeroom-mode</code> package for a better writing environment in Emacs.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">writeroom-mode</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-33" class="outline-2">
+<h2 id="headline-33">
+Ensure <code class="verbatim">wc-mode</code>
+</h2>
+<div id="outline-text-headline-33" class="outline-text-2">
+<p>This block ensures that <code class="verbatim">wc-mode</code> is installed, which provides a wordcount in the modeline.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">wc-mode</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">setq</span> <span class="nv">wc-modeline-format</span> <span class="s">&#34;WC: S: %W | C: %w | G: %gwo | T: %tw&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;org-mode-hook</span> <span class="ss">&#39;wc-mode</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-34" class="outline-2">
+<h2 id="headline-34">
+Enable <code>dired-hide-details-mode</code>
+</h2>
+<div id="outline-text-headline-34" class="outline-text-2">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;dired-mode-hook</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nv">dired-hide-details-mode</span> <span class="mi">1</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-35" class="outline-2">
+<h2 id="headline-35">
+Ensure and configure <code>tmr</code> package
+</h2>
+<div id="outline-text-headline-35" class="outline-text-2">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">tmr</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">:ensure</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-36" class="outline-2">
+<h2 id="headline-36">
+<code>org-agenda-custom-commands</code>
+</h2>
+<div id="outline-text-headline-36" class="outline-text-2">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;org-agenda-custom-commands</span>
+</span></span><span class="line"><span class="cl">                 <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;u&#34;</span> <span class="s">&#34;Unestimated tasks&#34;</span> <span class="nv">tags-todo</span> <span class="s">&#34;EFFORT=\&#34;\&#34;&#34;</span><span class="p">))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-37" class="outline-2">
+<h2 id="headline-37">
+Custom Functions
+</h2>
+<div id="outline-text-headline-37" class="outline-text-2">
+<p>The following are functions I&#39;ve written to to simplify various tasks.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-insert-default-directory</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Inserts default-directory at cursor.&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">insert</span> <span class="nv">default-directory</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-extract-to-newfile</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Cuts the active subtree and queries the user for a new location to paste it.&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-cut-subtree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">find-file</span> <span class="p">(</span><span class="nv">read-file-name</span> <span class="s">&#34;Filename: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">/=</span> <span class="p">(</span><span class="nf">buffer-size</span><span class="p">)</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nb">progn</span> <span class="p">(</span><span class="nf">point-max</span><span class="p">)</span> <span class="p">(</span><span class="nv">newline</span> <span class="mi">2</span><span class="p">)</span> <span class="p">(</span><span class="nv">yank</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">yank</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-encapusulate-quote-region</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Encapsulates the currently marked region in a quote block.&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">kill-region</span> <span class="p">(</span><span class="nf">region-beginning</span><span class="p">)</span> <span class="p">(</span><span class="nf">region-end</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-insert-structure-template</span> <span class="s">&#34;quote&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-yank</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">newline</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-encapusulate-quote-paragraph</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Prompts the user for a number of paragraphs and encapulates them in a quote block.&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">let</span> <span class="p">((</span><span class="nv">n</span> <span class="p">(</span><span class="nv">read-number</span> <span class="s">&#34;Number: &#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nv">kill-paragraph</span> <span class="nv">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-insert-structure-template</span> <span class="s">&#34;quote&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-yank</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">newline</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-text-expander</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Queries a user for the content of a heading in a text expansion file and copied it to the kill-ring.&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">switch-to-buffer</span> <span class="s">&#34;text-expansions.org&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">consult-outline</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">org-mark-subtree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">next-line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nv">kill-ring-save</span> <span class="p">(</span><span class="nf">region-beginning</span><span class="p">)</span> <span class="p">(</span><span class="nf">region-end</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">;; The following functions are called by a progam I wrote for a very specialized editorial task. They won&#39;t be useful to anyone besides me.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-format-creator-string</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Formats a DC.creator string based on user input.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;&lt;meta name=\&#34;DC.creator\&#34; content=\&#34;%s\&#34;&gt;\n&#34;</span> <span class="p">(</span><span class="nf">read-string</span> <span class="s">&#34;Name: &#34;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">author-count</span> <span class="p">(</span><span class="nv">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Prompts user for number of authors&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">let</span> <span class="p">(</span><span class="nv">mylist</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nb">dotimes</span> <span class="p">(</span><span class="nv">i</span> <span class="nv">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nb">push</span> <span class="p">(</span><span class="nv">rick-format-creator-string</span><span class="p">)</span> <span class="nv">mylist</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">      <span class="p">(</span><span class="nf">mapconcat</span> <span class="ss">&#39;identity</span> <span class="p">(</span><span class="nf">nreverse</span> <span class="nv">mylist</span><span class="p">))))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">rick-check-for-multiple-authors</span> <span class="p">(</span><span class="nv">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;Checks whether value of rick-count-authors function and inserts et-al if greater than 1.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">if</span> <span class="p">(</span><span class="nf">&gt;</span> <span class="nv">number</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="nf">format</span> <span class="s">&#34;-et-al&#34;</span><span class="p">)))</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-38" class="outline-2">
+<h2 id="headline-38">
+Configure publishing projects
+</h2>
+<div id="outline-text-headline-38" class="outline-text-2">
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;ox-publish</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">org-publish-project-alist</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&#39;</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="c1">;; 103 course publishing</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;103-orgfiles&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-directory</span> <span class="s">&#34;~/Org/2026/fall/eng-103/&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-extension</span> <span class="s">&#34;org&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:recursive</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:exclude</span> <span class="s">&#34;.*&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:include</span> <span class="p">(</span><span class="s">&#34;~/Org/2026/fall/eng-103/103-slides.org&#34;</span><span class="p">)</span> <span class="c1">;; list files to include when publishing.</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-function</span> <span class="nv">org-html-publish-to-html</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-directory</span> <span class="s">&#34;~/Github/rhetoric-and-writing&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;103-images&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:base-directory</span> <span class="s">&#34;~/Org/2026/fall/eng-103/images/&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:base-extension</span> <span class="s">&#34;jpeg\\|jpg\\|png&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:publishing-function</span> <span class="nv">org-publish-attachment</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:publishing-directory</span> <span class="s">&#34;~/Github/rhetoric-and-writing/images/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;103-site&#34;</span> <span class="nb">:components</span> <span class="p">(</span><span class="s">&#34;103-orgfiles&#34;</span> <span class="s">&#34;103-images&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="c1">;; 213 course publishing</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;213-orgfiles&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-directory</span> <span class="s">&#34;~/Org/2026/fall/eng-213/&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-extension</span> <span class="s">&#34;org&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:recursive</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:exclude</span> <span class="s">&#34;.*&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:include</span> <span class="p">(</span><span class="s">&#34;~/Org/2026/fall/eng-213/213-slides.org&#34;</span><span class="p">)</span> <span class="c1">;; list files to include when publishing.</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-function</span> <span class="nv">org-html-publish-to-html</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-directory</span> <span class="s">&#34;~/Github/digital-literacies&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;213-notes&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-directory</span> <span class="s">&#34;~/Org/2026/fall/eng-213/&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:base-extension</span> <span class="s">&#34;org&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:recursive</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:exclude</span> <span class="s">&#34;.*&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:include</span> <span class="p">(</span><span class="s">&#34;~/Org/2026/fall/eng-213/213-notes.org&#34;</span><span class="p">)</span> <span class="c1">;; list files to include when publishing.</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-function</span> <span class="nv">org-html-publish-to-html</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">:publishing-directory</span> <span class="s">&#34;~/Github/digital-literacies&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;213-images&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:base-directory</span> <span class="s">&#34;~/Org/2026/fall/eng-213/images/&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:base-extension</span> <span class="s">&#34;jpeg\\|jpg\\|png&#34;</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:publishing-function</span> <span class="nv">org-publish-attachment</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">:publishing-directory</span> <span class="s">&#34;~/Github/digital-literacies/images/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="s">&#34;213-site&#34;</span> <span class="nb">:components</span> <span class="p">(</span><span class="s">&#34;213-orgfiles&#34;</span> <span class="s">&#34;213-images&#34;</span> <span class="s">&#34;213-notes&#34;</span><span class="p">))))</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
